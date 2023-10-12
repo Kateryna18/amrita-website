@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amrita</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container head__container">
+        <nav class="header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link"
+                >Services
+                <svg width="22" height="22" class="nav__link-icon">
+                  <use
+                    href="./images/icons_sprite.svg.svg#arrow-up-right"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">About Us</a>
+            </li>
+            <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="./index.html" class="header__logo">
+          <svg width="155" height="16" class="logo__icon">
+            <use href="./images/icons_sprite.svg.svg#logo"></use>
+          </svg>
+        </a>
+        <div class="header-content">
+          <div class="search__container">
+              <input
+                type="text"
+                placeholder="Search prochedure"
+                class="search__input"
+              />
+              <button type="button" class="search__button">
+                <svg width="20" height="20" class="search__button__icon">
+                  <use href="./images/icons_sprite.svg.svg#search"></use>
+                </svg>
+              </button>
+          </div>
+          <div class="language__container">
+            <select id="language-label" class="language__select">
+              <option value="ua" class="language__option">EN</option>
+              <option value="en" class="language__option">Ukr</option>
+            </select>
+          </div>
+        </div>
+        <div class="header__buttons">
+          <button class="header__button-search">
+            <svg
+              width="32"
+              height="32"
+              class="logo__icon"
+              class="button-search__icon"
+            >
+              <use href="./images/icons_sprite.svg.svg#search"></use>
+            </svg>
+          </button>
+          <button class="header__button-menu">
+            <svg
+              width="32"
+              height="32"
+              class="logo__icon"
+              class="button-menu__icon"
+            >
+              <use
+                href="./images/icons_sprite.svg.svg#button_menu-burger"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="header__decor"></div>
+      <div class="container services__container">
+        <ul class="services__list">
+            <li class="services__item"><button type="button" class="services__button">Body massage</button></li>
+            <li class="services__item"><button type="button" class="services__button">Face massage</button></li>
+            <li class="services__item"><button type="button" class="services__button">Body care</button></li>
+            <li class="services__item"><button type="button" class="services__button">Body care</button></li>
+            <li class="services__item"><button type="button" class="services__button">Endosphere therapy</button></li>
+            <li class="services__item"><button type="button" class="services__button">MesoBioStim</button></li>
+            <li class="services__item"><button type="button" class="services__button">Epilation</button></li>
+            <li class="services__item"><button type="button" class="services__button">Eyelashes</button></li>
+            <li class="services__item"><button type="button" class="services__button">Manicure</button></li>
+            <li class="services__item"><button type="button" class="services__button">Pedicure</button></li>
+        </ul>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
