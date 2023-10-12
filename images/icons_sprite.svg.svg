@@ -61,10 +61,6 @@
 <path fill="none" stroke="#802c25" style="stroke: var(--color1, #802c25)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M28 14.903v1.104c-0.001 2.588-0.839 5.106-2.389 7.178s-3.727 3.589-6.209 4.323c-2.481 0.734-5.134 0.646-7.561-0.251s-4.5-2.554-5.908-4.725-2.077-4.739-1.907-7.321c0.17-2.582 1.171-5.040 2.852-7.007s3.953-3.338 6.478-3.908c2.524-0.57 5.165-0.309 7.529 0.744"></path>
 <path fill="none" stroke="#802c25" style="stroke: var(--color1, #802c25)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M28 6.667l-11.282 12-3.385-3.596"></path>
 </symbol>
-<symbol id="arrow-up-right-1" viewBox="0 0 32 32">
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M9.333 22.667l13.333-13.333"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M9.333 9.333h13.333v13.333"></path>
-</symbol>
 <symbol id="chevron-right" viewBox="0 0 32 32">
 <path fill="none" stroke="#802c25" style="stroke: var(--color1, #802c25)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.5" d="M10 4l12 12-12 12"></path>
 </symbol>
@@ -92,6 +88,13 @@
 <path fill="#802c25" style="fill: var(--color1, #802c25)" d="M24.727 8.86c0 0.876-0.71 1.587-1.587 1.587s-1.587-0.71-1.587-1.587c0-0.876 0.71-1.587 1.587-1.587s1.587 0.71 1.587 1.587z"></path>
 <path fill="#802c25" style="fill: var(--color1, #802c25)" d="M24.727 16c0 0.876-0.71 1.587-1.587 1.587s-1.587-0.71-1.587-1.587c0-0.876 0.71-1.587 1.587-1.587s1.587 0.71 1.587 1.587z"></path>
 <path fill="#802c25" style="fill: var(--color1, #802c25)" d="M24.727 23.14c0 0.876-0.71 1.587-1.587 1.587s-1.587-0.71-1.587-1.587c0-0.876 0.71-1.587 1.587-1.587s1.587 0.71 1.587 1.587z"></path>
+</symbol>
+<symbol id="plus" viewBox="0 0 32 32">
+<path fill="none" stroke="#802c25" style="stroke: var(--color1, #802c25)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.5" d="M16 4v24"></path>
+<path fill="none" stroke="#802c25" style="stroke: var(--color1, #802c25)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.5" d="M4 16h24"></path>
+</symbol>
+<symbol id="minus" viewBox="0 0 32 32">
+<path fill="none" stroke="#802c25" style="stroke: var(--color1, #802c25)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.5" d="M4 16h24"></path>
 </symbol>
 </defs>
 </svg>

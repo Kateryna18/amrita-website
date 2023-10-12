@@ -14,7 +14,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./index.js"></script>
   </head>
   <body>
     <header class="header">
@@ -47,16 +53,16 @@
         </a>
         <div class="header-content">
           <div class="search__container">
-              <input
-                type="text"
-                placeholder="Search prochedure"
-                class="search__input"
-              />
-              <button type="button" class="search__button">
-                <svg width="20" height="20" class="search__button__icon">
-                  <use href="./images/icons_sprite.svg.svg#search"></use>
-                </svg>
-              </button>
+            <input
+              type="text"
+              placeholder="Search prochedure"
+              class="search__input"
+            />
+            <button type="button" class="search__button">
+              <svg width="20" height="20" class="search__button__icon">
+                <use href="./images/icons_sprite.svg.svg#search"></use>
+              </svg>
+            </button>
           </div>
           <div class="language__container">
             <select id="language-label" class="language__select">
@@ -93,20 +99,733 @@
       <div class="header__decor"></div>
       <div class="container services__container">
         <ul class="services__list">
-            <li class="services__item"><button type="button" class="services__button">Body massage</button></li>
-            <li class="services__item"><button type="button" class="services__button">Face massage</button></li>
-            <li class="services__item"><button type="button" class="services__button">Body care</button></li>
-            <li class="services__item"><button type="button" class="services__button">Body care</button></li>
-            <li class="services__item"><button type="button" class="services__button">Endosphere therapy</button></li>
-            <li class="services__item"><button type="button" class="services__button">MesoBioStim</button></li>
-            <li class="services__item"><button type="button" class="services__button">Epilation</button></li>
-            <li class="services__item"><button type="button" class="services__button">Eyelashes</button></li>
-            <li class="services__item"><button type="button" class="services__button">Manicure</button></li>
-            <li class="services__item"><button type="button" class="services__button">Pedicure</button></li>
+          <li class="services__item">
+            <button type="button" class="services__button">Body massage</button>
+          </li>
+          <li class="services__item">
+            <button type="button" class="services__button">Face massage</button>
+          </li>
+          <li class="services__item">
+            <button type="button" class="services__button">Body care</button>
+          </li>
+          <li class="services__item">
+            <button type="button" class="services__button">Body care</button>
+          </li>
+          <li class="services__item">
+            <button type="button" class="services__button">
+              Endosphere therapy
+            </button>
+          </li>
+          <li class="services__item">
+            <button type="button" class="services__button">MesoBioStim</button>
+          </li>
+          <li class="services__item">
+            <button type="button" class="services__button">Epilation</button>
+          </li>
+          <li class="services__item">
+            <button type="button" class="services__button">Eyelashes</button>
+          </li>
+          <li class="services__item">
+            <button type="button" class="services__button">Manicure</button>
+          </li>
+          <li class="services__item">
+            <button type="button" class="services__button">Pedicure</button>
+          </li>
         </ul>
       </div>
     </header>
-    <main></main>
+    <main class="main">
+      <!-- -------------------------CIRCLE INFO---------------------- -->
+      <section class="circle-info">
+        <div class="container">
+          <div class="circle__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="circle-info__thumb">
+                  <img
+                    class="circle-info__img"
+                    src="./images/circle-info/promo-s.png"
+                    alt="Our Promotions"
+                  />
+                </div>
+                <p class="circle-info__text">Our Prom...</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="circle-info__thumb">
+                  <img
+                    class="circle-info__img"
+                    src="./images/circle-info/blog-s.png"
+                    alt="Amrita Blog"
+                  />
+                </div>
+                <p class="circle-info__text">Amrita Blog</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="circle-info__thumb">
+                  <img
+                    class="circle-info__img"
+                    src="./images/circle-info/masters-s.png"
+                    alt="Masters"
+                  />
+                </div>
+                <p class="circle-info__text">Masters</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="circle-info__thumb">
+                  <img
+                    class="circle-info__img"
+                    src="./images/circle-info/cabinets-s.png"
+                    alt="Cabinets"
+                  />
+                </div>
+                <p class="circle-info__text">Cabinets</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="circle-info__thumb">
+                  <img
+                    class="circle-info__img"
+                    src="./images/circle-info/massage-s.png"
+                    alt="Massage"
+                  />
+                </div>
+                <p class="circle-info__text">Massage</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- -------------------------BANNER---------------------- -->
+      <section class="banner">
+        <div class="container">
+          <div class="swiper banner__swiper">
+            <div class="swiper-wrapper banner__swiper-wrapper">
+              <div class="swiper-slide banner__swiper-slide">
+                <div class="banner__thumb">
+                  <img
+                    src="https://109.te.ua/firms/photos/16871/4_1.jpg"
+                    alt=""
+                  />
+                  <div class="banner__thumb-content">
+                    <p class="banner__text">
+                      Modern beauty salon with massage services in the center of
+                      Rome.
+                    </p>
+                    <button class="banner__button">
+                      Book a procedure
+                      <svg width="22" height="22" class="banner__icon">
+                        <use
+                          href="./images/icons_sprite.svg.svg#arrow-up-right"
+                        ></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide banner__swiper-slide">
+                <div class="banner__thumb">
+                  <img
+                    src="https://109.te.ua/firms/photos/16871/0_1.jpg"
+                    alt=""
+                  />
+                  <div class="banner__thumb-content">
+                    <p class="banner__text">
+                      New procedure! Sign up for eyelash curling and get a 10%
+                      discount.
+                    </p>
+                    <button class="banner__button">
+                      Book a procedure
+                      <svg width="22" height="22" class="banner__icon">
+                        <use
+                          href="./images/icons_sprite.svg.svg#arrow-up-right"
+                        ></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide banner__swiper-slide">
+                <div class="banner__thumb">
+                  <img
+                    src="https://barb.ua/uploads/2022_/01/04/980451/YQKHzu.jpg"
+                    alt=""
+                  />
+                  <div class="banner__thumb-content">
+                    <p class="banner__text">
+                      Opening of a new salon in the center of Milan! Discounts
+                      up to 50% are valid.
+                    </p>
+                    <button class="banner__button">
+                      Book a procedure
+                      <svg width="22" height="22" class="banner__icon">
+                        <use
+                          href="./images/icons_sprite.svg.svg#arrow-up-right"
+                        ></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination banner__swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- -------------------------SERVICES---------------------- -->
+      <section class="procedures">
+        <div class="container">
+          <h2 class="tittle">
+            <span class="tittle-accent">Be beautiful </span>with us
+          </h2>
+          <p class="description">
+            Whether your goals are to rejuvenate your skin, restore facial
+            volume, reshape your face and your body or restore your hair, Amrita
+            has you covered.
+          </p>
+          <ul class="procedures__list">
+            <li class="procedures__item">
+              <div class="procedures__item-content">
+                <div class="procedures__thumb">
+                  <img
+                    src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="procedures__info-text">
+                  <h3 class="procedures__title">Massage</h3>
+                  <p class="procedures__description">13 services</p>
+                </div>
+              </div>
+              <button class="procedures__button">
+                <svg width="32" height="32">
+                  <use
+                    href="./images/icons_sprite.svg.svg#plus"
+                    class="procedures__icon"
+                  ></use>
+                </svg>
+              </button>
+              <div class="procedures__item-catalog">
+                <ul class="item-catalog__list">
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="procedures__item">
+              <div class="procedures__item-content">
+                <div class="procedures__thumb">
+                  <img
+                    src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="procedures__info-text">
+                  <h3 class="procedures__title">Body care</h3>
+                  <p class="procedures__description">9 services</p>
+                </div>
+              </div>
+              <button class="procedures__button">
+                <svg width="32" height="32">
+                  <use
+                    href="./images/icons_sprite.svg.svg#plus"
+                    class="procedures__icon"
+                  ></use>
+                </svg>
+              </button>
+              <div class="procedures__item-catalog">
+                <ul class="item-catalog__list">
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="procedures__item">
+              <div class="procedures__item-content">
+                <div class="procedures__thumb">
+                  <img
+                    src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="procedures__info-text">
+                  <h3 class="procedures__title">Technological care</h3>
+                  <p class="procedures__description">4 services</p>
+                </div>
+              </div>
+              <button class="procedures__button">
+                <svg width="32" height="32">
+                  <use
+                    href="./images/icons_sprite.svg.svg#plus"
+                    class="procedures__icon"
+                  ></use>
+                </svg>
+              </button>
+              <div class="procedures__item-catalog">
+                <ul class="item-catalog__list">
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="procedures__item">
+              <div class="procedures__item-content">
+                <div class="procedures__thumb">
+                  <img
+                    src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="procedures__info-text">
+                  <h3 class="procedures__title">Hair removal</h3>
+                  <p class="procedures__description">4 services</p>
+                </div>
+              </div>
+              <button class="procedures__button">
+                <svg width="32" height="32">
+                  <use
+                    href="./images/icons_sprite.svg.svg#plus"
+                    class="procedures__icon"
+                  ></use>
+                </svg>
+              </button>
+              <div class="procedures__item-catalog">
+                <ul class="item-catalog__list">
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="procedures__item">
+              <div class="procedures__item-content">
+                <div class="procedures__thumb">
+                  <img
+                    src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="procedures__info-text">
+                  <h3 class="procedures__title">Eyelashes</h3>
+                  <p class="procedures__description">2 services</p>
+                </div>
+              </div>
+              <button class="procedures__button">
+                <svg width="32" height="32">
+                  <use
+                    href="./images/icons_sprite.svg.svg#plus"
+                    class="procedures__icon"
+                  ></use>
+                </svg>
+              </button>
+              <div class="procedures__item-catalog">
+                <ul class="item-catalog__list">
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="procedures__item">
+              <div class="procedures__item-content">
+                <div class="procedures__thumb">
+                  <img
+                    src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="procedures__info-text">
+                  <h3 class="procedures__title">Manicure & Pedicure</h3>
+                  <p class="procedures__description">8 services</p>
+                </div>
+              </div>
+              <button class="procedures__button">
+                <svg width="32" height="32">
+                  <use
+                    href="./images/icons_sprite.svg.svg#plus"
+                    class="procedures__icon"
+                  ></use>
+                </svg>
+              </button>
+              <div class="procedures__item-catalog">
+                <ul class="item-catalog__list">
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                  <li class="item-catalog__item">
+                    <div class="item-catalog__thumb">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                        alt="Procedure Name"
+                      />
+                    </div>
+                    <h4 class="item-catalog__title">Procedure Name</h4>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <ul class="procedures__list-desc">
+            <li class="procedures-list-desc__item">
+              <img
+                src="https://www.borisbecker.ae/assets/uploads/media-uploader/noimage1688562406.jpg"
+                alt=""
+              />
+              <div class="procedures-list-desc__content">
+                <div class="procedures-list-desc__info">
+                  <h3 class="procedures__title">Massage</h3>
+                  <p class="procedures__description">13 services</p>
+                </div>
+                <button type="button" class="procedures-list-desc__button">
+                  <svg width="32" height="32">
+                    <use href="./images/icons_sprite.svg.svg#arrow-up-right"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="procedures-list-desc__item">
+              <img
+                src="https://www.borisbecker.ae/assets/uploads/media-uploader/noimage1688562406.jpg"
+                alt=""
+              />
+              <div class="procedures-list-desc__content">
+                <div class="procedures-list-desc__info">
+                  <h3 class="procedures__title">Body care</h3>
+                  <p class="procedures__description">9 services</p>
+                </div>
+                <button type="button" class="procedures-list-desc__button">
+                  <svg width="32" height="32">
+                    <use href="./images/icons_sprite.svg.svg#arrow-up-right"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="procedures-list-desc__item">
+              <img
+                src="https://www.borisbecker.ae/assets/uploads/media-uploader/noimage1688562406.jpg"
+                alt=""
+              />
+              <div class="procedures-list-desc__content">
+                <div class="procedures-list-desc__info">
+                  <h3 class="procedures__title">Technological care</h3>
+                  <p class="procedures__description">4 services</p>
+                </div>
+                <button type="button" class="procedures-list-desc__button">
+                  <svg width="32" height="32">
+                    <use href="./images/icons_sprite.svg.svg#arrow-up-right"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="procedures-list-desc__item">
+              <img
+                src="https://www.borisbecker.ae/assets/uploads/media-uploader/noimage1688562406.jpg"
+                alt=""
+              />
+              <div class="procedures-list-desc__content">
+                <div class="procedures-list-desc__info">
+                  <h3 class="procedures__title">Hair removal</h3>
+                  <p class="procedures__description">2 services</p>
+                </div>
+                <button type="button" class="procedures-list-desc__button">
+                  <svg width="32" height="32">
+                    <use href="./images/icons_sprite.svg.svg#arrow-up-right"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="procedures-list-desc__item">
+              <img
+                src="https://www.borisbecker.ae/assets/uploads/media-uploader/noimage1688562406.jpg"
+                alt=""
+              />
+              <div class="procedures-list-desc__content">
+                <div class="procedures-list-desc__info">
+                  <h3 class="procedures__title">Eyelashes</h3>
+                  <p class="procedures__description">2 services</p>
+                </div>
+                <button type="button" class="procedures-list-desc__button">
+                  <svg width="32" height="32">
+                    <use href="./images/icons_sprite.svg.svg#arrow-up-right"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="procedures-list-desc__item">
+              <img
+                src="https://www.borisbecker.ae/assets/uploads/media-uploader/noimage1688562406.jpg"
+                alt=""
+              />
+              <div class="procedures-list-desc__content">
+                <div class="procedures-list-desc__info">
+                  <h3 class="procedures__title">Manicure & Pedicure</h3>
+                  <p class="procedures__description">8 services</p>
+                </div>
+                <button type="button" class="procedures-list-desc__button">
+                  <svg width="32" height="32">
+                    <use href="./images/icons_sprite.svg.svg#arrow-up-right"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- -------------------------POPULAR---------------------- -->
+    </main>
     <footer></footer>
   </body>
 </html>
