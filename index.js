@@ -110,7 +110,6 @@ ratingIcons.forEach((icon, index) => {
 
 
 //------------------------------SHOW/HIDE FEEDBACK-------------------/
-// Знаходимо всі кнопки .feedback__toggle-button
 const toggleButtons = document.querySelectorAll('.feedback__toggle-button');
 
 toggleButtons.forEach(button => {
@@ -133,16 +132,4 @@ toggleButtons.forEach(button => {
       icon.setAttribute('href', `${iconEyeOn}`);
     }
   });
-});
-
-
-const checkbox = document.querySelector('.checkbox-container-castom');
-const checkmark = document.querySelector('.subscripe__icon-checkbox');
-
-checkbox.addEventListener('change', function () {
-  if (this.checked) {
-    checkmark.style.visibility = 'visible';
-  } else {
-    checkmark.style.visibility = 'hidden';
-  }
 });
