@@ -64,7 +64,7 @@ const feedbackSwiper = new Swiper(".feedback__swiper", {
     1440: {
       slidesPerView: "auto",
       spaceBetween: 30,
-    }
+    },
   },
   pagination: {
     el: ".swiper-pagination",
@@ -89,10 +89,10 @@ buttons.forEach((button, index) => {
 });
 
 //------------------------------TOGGLE RATING STARS-------------------/
-const ratingIcons = document.querySelectorAll('.feedback__icon-rating');
+const ratingIcons = document.querySelectorAll(".feedback__icon-rating");
 
 ratingIcons.forEach((icon, index) => {
-  icon.addEventListener('click', () => {
+  icon.addEventListener("click", () => {
     const activeIcon = "./images/icons_sprite.svg.svg#chooseon";
     const inactiveIcon = "./images/icons_sprite.svg.svg#chooseoff";
 
@@ -100,36 +100,102 @@ ratingIcons.forEach((icon, index) => {
 
     ratingIcons.forEach((ratingIcon, i) => {
       if (i <= currentIndex) {
-        ratingIcon.querySelector('use').setAttribute('href', activeIcon);
+        ratingIcon.querySelector("use").setAttribute("href", activeIcon);
       } else {
-        ratingIcon.querySelector('use').setAttribute('href', inactiveIcon);
+        ratingIcon.querySelector("use").setAttribute("href", inactiveIcon);
       }
     });
   });
 });
 
-
 //------------------------------SHOW/HIDE FEEDBACK-------------------/
-const toggleButtons = document.querySelectorAll('.feedback__toggle-button');
+const toggleButtons = document.querySelectorAll(".feedback__toggle-button");
 
-toggleButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const icon = button.querySelector('.toggle-button__icon use'); 
+toggleButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const icon = button.querySelector(".toggle-button__icon use");
     console.log(icon);
 
     const iconEyeOn = "./images/icons_sprite.svg.svg#eye";
     const iconEyeOff = "./images/icons_sprite.svg.svg#eye-off";
 
-    const textPart = button.previousElementSibling.querySelector('.feedback__text-part');
-    
-    if (textPart.style.display === 'none' || textPart.style.display === '') {
-      textPart.style.display = 'block';
-      button.textContent = 'Hide all text';
-      icon.setAttribute('href', `${iconEyeOff}`);
+    const textPart = button.previousElementSibling.querySelector(
+      ".feedback__text-part"
+    );
+
+    if (textPart.style.display === "none" || textPart.style.display === "") {
+      textPart.style.display = "block";
+      button.textContent = "Hide all text";
+      icon.setAttribute("href", `${iconEyeOff}`);
     } else {
-      textPart.style.display = 'none';
-      button.textContent = 'View all text';
-      icon.setAttribute('href', `${iconEyeOn}`);
+      textPart.style.display = "none";
+      button.textContent = "View all text";
+      icon.setAttribute("href", `${iconEyeOn}`);
     }
   });
 });
+
+//-----------------MOBILE MENU------------------------------------
+(() => {
+  const mobileMenu = document.querySelector(".js-menu-container");
+  const openMenuBtn = document.querySelector(".js-open-menu");
+  const closeMenuBtn = document.querySelectorAll(".js-close-menu");
+
+  const toggleMenu = () => {
+    const isMenuOpen =
+      openMenuBtn.getAttribute("aria-expanded") === "true" || false;
+    openMenuBtn.setAttribute("aria-expanded", !isMenuOpen);
+    mobileMenu.classList.toggle("is-open");
+
+    if (!isMenuOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  };
+
+  openMenuBtn.addEventListener("click", toggleMenu);
+  for (let item of closeMenuBtn) {
+    item.addEventListener("click", toggleMenu);
+  }
+
+  // Close the mobile menu on wider screens if the device orientation changes
+  window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
+    if (!e.matches) return;
+    mobileMenu.classList.remove("is-open");
+    openMenuBtn.setAttribute("aria-expanded", false);
+    document.body.classList.remove("no-scroll");
+  });
+})();
+
+(() => {
+  const mobileMenu = document.querySelector(".js-menu2-container");
+  const openMenuBtn = document.querySelector(".js-open-menu2");
+  const closeMenuBtn = document.querySelectorAll(".js-close-menu2");
+
+  const toggleMenu = () => {
+    const isMenuOpen =
+      openMenuBtn.getAttribute("aria-expanded") === "true" || false;
+    openMenuBtn.setAttribute("aria-expanded", !isMenuOpen);
+    mobileMenu.classList.toggle("is-open");
+
+    if (!isMenuOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  };
+
+  openMenuBtn.addEventListener("click", toggleMenu);
+  for (let item of closeMenuBtn) {
+    item.addEventListener("click", toggleMenu);
+  }
+
+  // Close the mobile menu on wider screens if the device orientation changes
+  window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
+    if (!e.matches) return;
+    mobileMenu.classList.remove("is-open");
+    openMenuBtn.setAttribute("aria-expanded", false);
+    document.body.classList.remove("no-scroll");
+  });
+})();

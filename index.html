@@ -82,12 +82,13 @@
               <use href="./images/icons_sprite.svg.svg#search"></use>
             </svg>
           </button>
-          <button class="header__button-menu">
+          <button class="header__button-menu js-open-menu">
             <svg
               width="32"
               height="32"
               class="logo__icon"
-              class="button-menu__icon"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
             >
               <use
                 href="./images/icons_sprite.svg.svg#button_menu-burger"
@@ -2079,5 +2080,188 @@
         </p>
       </div>
     </footer>
+    <!---------------------------MOBILE MENU---------------------- -->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <!-- <div class="mobile-menu__header"> -->
+          <div class="container mobile-menu__header">
+            <a href="./index.html" class="header__logo">
+              <svg width="155" height="16" class="logo__icon">
+                <use href="./images/icons_sprite.svg.svg#logo"></use>
+              </svg>
+            </a>
+            <div class="header__buttons">
+              <div class="language__container">
+                <select id="language-label" class="language__select">
+                  <option value="ua" class="language__option">EN</option>
+                  <option value="en" class="language__option">Ukr</option>
+                </select>
+              </div>
+              <button class="header__button-menu js-close-menu">
+                <svg
+                  width="32"
+                  height="32"
+                  class="logo__icon"
+                  class="button-menu__icon"
+                >
+                  <use
+                    href="./images/icons_sprite.svg.svg#close-icon"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        <!-- </div> -->
+        <div class="mobile-menu__main">
+          <div class="container mobile-menu__main-container">
+            <div class="mobile-menu__content">
+              <div class="search__container mobile-menu__search-container">
+                <input
+                  type="text"
+                  placeholder="Search prochedure"
+                  class="search__input"
+                />
+                <button type="button" class="search__button">
+                  <svg width="20" height="20" class="search__button__icon">
+                    <use href="./images/icons_sprite.svg.svg#search"></use>
+                  </svg>
+                </button>
+              </div>
+              <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__list">
+                  <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="./index.html">Home page
+                  </a></li>
+                  <li class="mobile-menu__nav-item"><button class="mobile-menu__nav-button js-open-menu2" type="button">Services
+                    <svg class="mobile-menu__nav-icon"width="40" height="40"><use href="./images/icons_sprite.svg.svg#arrow-up-right"></use></svg>
+                  </button></li>
+                  <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">About Us</a></li>
+                  <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Blog</a></li>
+                  <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Contacts</a></li>
+                </ul>
+              </nav>
+            </div>
+              <button type="button" class="mobile-menu__button">View Services Page
+                <svg width="24" height="24"><use href="./images/icons_sprite.svg.svg#arrow-up-right"></use></svg>
+              </button>
+          </div>
+        </div>
+    </div>
+    <!---------------------------MOBILE SUBMENU---------------------- -->
+    <div class="mobile-menu__submenu js-menu2-container">
+      <div class="container mobile-menu__header">
+        <a href="./index.html" class="header__logo">
+          <svg width="155" height="16" class="logo__icon">
+            <use href="./images/icons_sprite.svg.svg#logo"></use>
+          </svg>
+        </a>
+        <div class="header__buttons">
+          <div class="language__container">
+            <select id="language-label" class="language__select">
+              <option value="ua" class="language__option">EN</option>
+              <option value="en" class="language__option">Ukr</option>
+            </select>
+          </div>
+          <button class="header__button-menu js-close-menu2">
+            <svg
+              width="32"
+              height="32"
+              class="logo__icon"
+              class="button-menu__icon"
+            >
+              <use
+                href="./images/icons_sprite.svg.svg#close-icon"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu__main">
+        <div class="container mobile-menu__main-container">
+          <div class="mobile-menu__content">
+            <button class="mobile-menu__nav-button mobile-submenu__nav-button js-close-menu2" type="button">
+              <svg width="24" height="24">
+                <use href="./images/icons_sprite.svg.svg#chevron-left"></use>
+              </svg>Services
+            </button>
+            <div class="mobile-submenu__content">
+              <ul class="mobile-submenu__list-services">
+                <li class="mobile-submenu__item-services">
+                  <button class="mobile-submenu__button-services" type="button">
+                    Body massage
+                <svg width="24" height="24" class="mobile-submenu__icon-services">
+                <use href="./images/icons_sprite.svg.svg#plus"></use>
+              </svg></button>
+            </li>
+            <li class="mobile-submenu__item-services">
+              <button class="mobile-submenu__button-services" type="button">
+                Face massage
+            <svg width="24" height="24" class="mobile-submenu__icon-services">
+            <use href="./images/icons_sprite.svg.svg#plus"></use>
+          </svg></button>
+        </li>
+        <li class="mobile-submenu__item-services">
+          <button class="mobile-submenu__button-services" type="button">
+            Body care
+        <svg width="24" height="24" class="mobile-submenu__icon-services">
+        <use href="./images/icons_sprite.svg.svg#plus"></use>
+      </svg></button>
+    </li>
+    <li class="mobile-submenu__item-services">
+      <button class="mobile-submenu__button-services" type="button">
+        Face care
+    <svg width="24" height="24" class="mobile-submenu__icon-services">
+    <use href="./images/icons_sprite.svg.svg#plus"></use>
+  </svg></button>
+  </li>
+  <li class="mobile-submenu__item-services">
+    <button class="mobile-submenu__button-services" type="button">
+      Endosphere therapy
+  <svg width="24" height="24" class="mobile-submenu__icon-services">
+  <use href="./images/icons_sprite.svg.svg#plus"></use>
+  </svg></button>
+  </li>
+  <li class="mobile-submenu__item-services">
+    <button class="mobile-submenu__button-services" type="button">
+      MesoBioStim
+  <svg width="24" height="24" class="mobile-submenu__icon-services">
+  <use href="./images/icons_sprite.svg.svg#plus"></use>
+  </svg></button>
+  </li>
+  <li class="mobile-submenu__item-services">
+    <button class="mobile-submenu__button-services" type="button">
+      Epilation
+  <svg width="24" height="24" class="mobile-submenu__icon-services">
+  <use href="./images/icons_sprite.svg.svg#plus"></use>
+  </svg></button>
+  </li>
+  <li class="mobile-submenu__item-services">
+    <button class="mobile-submenu__button-services" type="button">
+      Eyelashes
+  <svg width="24" height="24" class="mobile-submenu__icon-services">
+  <use href="./images/icons_sprite.svg.svg#plus"></use>
+  </svg></button>
+  </li>
+  <li class="mobile-submenu__item-services">
+    <button class="mobile-submenu__button-services" type="button">
+      Manicure
+  <svg width="24" height="24" class="mobile-submenu__icon-services">
+  <use href="./images/icons_sprite.svg.svg#plus"></use>
+  </svg></button>
+  </li>
+  <li class="mobile-submenu__item-services">
+    <button class="mobile-submenu__button-services" type="button">
+      Pedicure
+  <svg width="24" height="24" class="mobile-submenu__icon-services">
+  <use href="./images/icons_sprite.svg.svg#plus"></use>
+  </svg></button>
+  </li>
+          </ul>
+            </div>
+          </div>
+          <button type="button" class="mobile-menu__button">View Services Page
+            <svg width="24" height="24"><use href="./images/icons_sprite.svg.svg#arrow-up-right"></use></svg>
+          </button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
