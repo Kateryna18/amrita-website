@@ -32,6 +32,24 @@ const swiper = new Swiper('.circle__swiper', {
   },
   });
 
+  const popularSwiper = new Swiper('.popular__swiper', {
+    spaceBetween: 20,
+    slidesPerView: 'auto',
+    loop: true,
+    slideToClickedSlide: true,
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+  },
+    breakpoints: {
+    1440: {
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    },
+  }});
+
 //------------------------------TOGGLE PROCEDURES CATALOG-------------------
 const buttons = document.querySelectorAll('.procedures__button');
 const catalogs = document.querySelectorAll('.procedures__item-catalog');
