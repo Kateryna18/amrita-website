@@ -96,5 +96,18 @@
 <symbol id="minus" viewBox="0 0 32 32">
 <path fill="none" stroke="#802c25" style="stroke: var(--color1, #802c25)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.5" d="M4 16h24"></path>
 </symbol>
+<symbol id="eye-off" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M22.48 22.48c-1.865 1.421-4.135 2.209-6.48 2.247-7.636 0-12-8.727-12-8.727 1.357-2.529 3.239-4.738 5.52-6.48M13.709 7.535c0.751-0.176 1.52-0.264 2.291-0.262 7.636 0 12 8.727 12 8.727-0.662 1.239-1.452 2.405-2.356 3.48M18.313 18.313c-0.3 0.322-0.661 0.579-1.062 0.758s-0.835 0.275-1.274 0.283c-0.439 0.008-0.876-0.073-1.283-0.238s-0.778-0.41-1.089-0.72c-0.311-0.311-0.556-0.681-0.72-1.089s-0.245-0.844-0.238-1.283c0.008-0.439 0.104-0.873 0.283-1.274s0.437-0.763 0.758-1.062M4 4l24 24"></path>
+</symbol>
+<symbol id="eye" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M4 16c0 0 4.364-8 12-8s12 8 12 8-4.364 8-12 8c-7.636 0-12-8-12-8z"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M16 19c1.807 0 3.273-1.343 3.273-3s-1.465-3-3.273-3c-1.807 0-3.273 1.343-3.273 3s1.465 3 3.273 3z"></path>
+</symbol>
+<symbol id="chooseoff" viewBox="0 0 32 32">
+<path fill="none" stroke="#ffa149" style="stroke: var(--color1, #ffa149)" stroke-linejoin="round" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M16 6.374l2.653 5.711c0.146 0.315 0.445 0.531 0.79 0.572l6.274 0.739-4.634 4.255c-0.257 0.236-0.373 0.59-0.304 0.933l1.232 6.157-5.526-3.071c-0.302-0.168-0.67-0.168-0.972 0l-5.526 3.072 1.232-6.157c0.069-0.343-0.047-0.696-0.304-0.933l-4.634-4.257 6.276-0.739c0.345-0.041 0.644-0.257 0.79-0.572l2.652-5.71z"></path>
+</symbol>
+<symbol id="chooseon" viewBox="0 0 32 32">
+<path fill="#ff8a00" style="fill: var(--color2, #ff8a00)" d="M16 4l3.56 7.663 8.44 0.994-6.24 5.729 1.656 8.278-7.417-4.122-7.417 4.123 1.656-8.278-6.24-5.732 8.441-0.994 3.559-7.662z"></path>
+</symbol>
 </defs>
 </svg>
