@@ -134,3 +134,15 @@ toggleButtons.forEach(button => {
     }
   });
 });
+
+
+const checkbox = document.querySelector('.checkbox-container-castom');
+const checkmark = document.querySelector('.subscripe__icon-checkbox');
+
+checkbox.addEventListener('change', function () {
+  if (this.checked) {
+    checkmark.style.visibility = 'visible';
+  } else {
+    checkmark.style.visibility = 'hidden';
+  }
+});

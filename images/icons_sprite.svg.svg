@@ -109,5 +109,8 @@
 <symbol id="chooseon" viewBox="0 0 32 32">
 <path fill="#ff8a00" style="fill: var(--color2, #ff8a00)" d="M16 4l3.56 7.663 8.44 0.994-6.24 5.729 1.656 8.278-7.417-4.122-7.417 4.123 1.656-8.278-6.24-5.732 8.441-0.994 3.559-7.662z"></path>
 </symbol>
+<symbol id="check" viewBox="0 0 32 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.4286" d="M4 15.789l7.714 8.21 16.286-17.333"></path>
+</symbol>
 </defs>
 </svg>
