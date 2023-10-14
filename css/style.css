@@ -1,9 +1,3 @@
-/* --прибрати пусті селектори
---swiper
---photo 
---іконка на кнопці в свайпері в чорний колір
---картинки в каталог процедур та назви процедур
-*/
 :root {
   --accent-color: #802c25;
   --text-color: #000000;
@@ -77,10 +71,6 @@ body {
 }
 
 /*----------------------------------------------HEADER-------------------- ----------------------*/
-/* --падінги на айтемах. айтем Services показаний в ховері чи він завжди такий
---зробити кастомний селект */
-.header {
-}
 .container.head__container {
   padding-top: 18px;
   padding-bottom: 18px;
@@ -135,13 +125,6 @@ body {
 .nav__link-icon {
   fill: currentColor;
 }
-
-/*----------------------header logo*/
-.header__logo {
-}
-.logo__icon {
-}
-
 /*----------------------header content*/
 .header-content {
   display: none;
@@ -182,8 +165,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.search__button__icon {
 }
   /* ----select */
   .select {
@@ -259,8 +240,6 @@ body {
   width: 69px;
   height: 42px;
 }
-.language__label {
-}
 .language__select {
   appearance: none;
   width: 100%;
@@ -277,8 +256,6 @@ body {
 }
 
 /*----------------------header buttons*/
-.header__buttons {
-}
 @media screen and (min-width: 1440px) {
   .header__buttons {
     display: none;
@@ -384,13 +361,9 @@ body {
     margin-bottom: 44px;
   }
 }
-.container {
-}
 .swiper {
   width: 100%;
   /* height: 100px; */
-}
-.swiper-wrapper {
 }
 .swiper-slide {
   width: 64px;
@@ -440,11 +413,6 @@ body {
   .banner {
     margin-bottom: 160px;
   }
-}
-
-.container {
-}
-.banner__swiper {
 }
 @media screen and (min-width: 1440px) {
   .banner__swiper {
@@ -555,8 +523,6 @@ body {
     margin-bottom: 160px;
   }
 }
-.container {
-}
 .tittle {
   margin-bottom: 24px;
 
@@ -589,8 +555,6 @@ body {
   }
 }
 
-.procedures__list {
-}
 @media screen and (min-width: 1440px) {
   .procedures__list {
     display: none;
@@ -663,8 +627,6 @@ body {
   border: none;
   background-color: transparent;
   cursor: pointer;
-}
-.procedures__icon {
 }
 
 .procedures__item-catalog {
@@ -744,8 +706,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.procedures-list-desc__info {
 }
 .procedures-list-desc__button {
   display: flex;
@@ -991,8 +951,6 @@ body {
 .feedback__input {
   display: none;
 }
-.feedback__icon-rating {
-}
 .feedback__avtor {
   font-size: 14px;
   line-height: 1.4;
@@ -1076,8 +1034,6 @@ body {
     margin-bottom: 40px;
   }
 }
-.swiper.blog__swiper {
-}
 .swiper-wrapper {
   margin-bottom: 30px;
 }
@@ -1140,13 +1096,9 @@ body {
   line-height: 1.4;
   color: #8b8b8b;
 }
-.feedback__button-link {
-}
 .swiper-pagination {
   position: static;
   bottom: 0;
-}
-.feedback__button {
 }
 
 /* <!---------------------------SUBSCRIPE---------------------- --> */
@@ -1156,8 +1108,6 @@ body {
 
   background-color: rgba(127, 43, 37, 0.779);
   box-shadow: 0px 4px 61px 0px rgba(127, 43, 37, 0.14);
-}
-.subscripe__content-box {
 }
 @media screen and (min-width: 843px) {
   .subscripe__content-box {
@@ -1198,8 +1148,6 @@ body {
 .subscripe__form {
   display: flex;
   flex-direction: column;
-}
-.subscripe__label-email {
 }
 .subscripe__input-email {
   height: 46px;
@@ -1243,8 +1191,6 @@ body {
   .subscripe__button-submit {
     margin-bottom: 32px;
   }
-}
-.subscripe__icon {
 }
 .checkbox-container {
   display: flex;
@@ -1391,8 +1337,6 @@ input[type="checkbox"]:checked + label {
 .footer__table {
   width: 100%;
 }
-.footer__table-tr {
-}
 .footer__table-td {
   font-size: 14px;
   line-height: 1.4;
@@ -1423,8 +1367,6 @@ input[type="checkbox"]:checked + label {
     font-size: 16px;
     color: var(--global-text-color);
   }
-}
-.footer__pages-list {
 }
 .footer__pages-item {
   margin-bottom: 16px;
@@ -1462,8 +1404,6 @@ input[type="checkbox"]:checked + label {
   border: none;
   background-color: transparent;
 }
-.footer__pages-icon {
-}
 /* -----------------footer-socials */
 .footer__socials-container {
   padding-bottom: 30px;
@@ -1492,8 +1432,6 @@ input[type="checkbox"]:checked + label {
   align-items: center;
   justify-content: center;
 }
-.footer__socials-icon {
-}
 /* -------------footer-info-line */
 .footer__info-line {
   padding-top: 14px;
@@ -1521,8 +1459,6 @@ input[type="checkbox"]:checked + label {
   color: #b9b9b9;
 }
 /* -----------------footer__services */
-.footer__services {
-}
 @media screen and (max-width: 1439px) {
   .footer__services {
     display: none;
@@ -1539,8 +1475,6 @@ input[type="checkbox"]:checked + label {
   display: flex;
   align-items: center;
   gap: 100px;
-}
-.footer__list {
 }
 .footer__services-item {
   margin-bottom: 16px;
@@ -1698,10 +1632,6 @@ input[type="checkbox"]:checked + label {
   justify-content: normal;
   margin-bottom: 20px;
 }
-.mobile-submenu__content {
-}
-.mobile-submenu__list-services {
-}
 .mobile-submenu__item-services {
   margin-bottom: 6px;
 }
@@ -1717,6 +1647,4 @@ input[type="checkbox"]:checked + label {
     background-color: transparent;
 
   font-size: 22px;
-}
-.mobile-submenu__icon-services {
 }

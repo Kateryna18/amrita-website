@@ -1,9 +1,3 @@
-// --розкидати по файлам
-// --зірки однаково обираються на всіх айтемах
-// --зникає іконка при натисканні на фідбек
-// --різна висота тексту і від цього різа висота контейнера
-// --стрілки що огортають пагінацію
-
 //----------------------------------------SWIPERS-------------------
 const swiper = new Swiper(".circle__swiper", {
   direction: "horizontal",
@@ -159,7 +153,6 @@ toggleButtons.forEach((button) => {
     item.addEventListener("click", toggleMenu);
   }
 
-  // Close the mobile menu on wider screens if the device orientation changes
   window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
     if (!e.matches) return;
     mobileMenu.classList.remove("is-open");
@@ -191,7 +184,6 @@ toggleButtons.forEach((button) => {
     item.addEventListener("click", toggleMenu);
   }
 
-  // Close the mobile menu on wider screens if the device orientation changes
   window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
     if (!e.matches) return;
     mobileMenu.classList.remove("is-open");
