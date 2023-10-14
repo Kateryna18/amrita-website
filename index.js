@@ -17,14 +17,14 @@ const swiper = new Swiper(".circle__swiper", {
 
 const bannerSwiper = new Swiper(".banner__swiper", {
   spaceBetween: 30,
-  slidesPerView: 1,
+  slidesPerView: 'auto',
   loop: true,
   slideToClickedSlide: true,
-  // breakpoints: {
-  //   390: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 20
-  //   },
+  breakpoints: {
+    1440: {
+      slidesPerView: 1,
+    }
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
