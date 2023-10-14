@@ -185,6 +185,70 @@ body {
 }
 .search__button__icon {
 }
+  /* ----select */
+  .select {
+    position: relative;
+    width: 86px;
+  }
+  .select.is-active .select-body{
+    display: block;
+  }
+  .select-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--accent-color);
+    border-radius: 100px;
+    cursor: pointer;
+  }
+  .select-current {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.33;
+    color: var(--accent-color);
+  }
+  .select-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .select-body {
+    width: 125px;
+    display: none;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--global-text-color);
+  }
+  .select-item {
+    margin-bottom: 8px;
+    padding: 8px 15px;
+    cursor: pointer;
+  
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.33;
+    color: var(--accent-color);
+  }
+  .select-item:last-child {
+    margin-bottom: 0;
+  }
+  .select-item:hover, .select-item:focus {
+    border-radius: 100px;
+    color: var(--global-text-color);
+    background-color: var(--accent-color);
+  }
+  /* // */
 .language__container {
   position: relative;
   display: inline-block;

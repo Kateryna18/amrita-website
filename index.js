@@ -202,6 +202,38 @@ toggleButtons.forEach((button) => {
 
 
 // ---------------------CUSTOM SELECT----------------------
+const select = function() {
+  const selectHeader = document.querySelectorAll(".select-header");
+  const selectItem = document.querySelectorAll(".select-item");
+
+  selectHeader.forEach(item => {
+    item.addEventListener('click', function() {
+      const select = this.parentElement;
+      select.classList.toggle("is-active");
+      const chevronIcon = select.querySelector('.select-icon svg use');
+      if (select.classList.contains('is-active')) {
+        chevronIcon.setAttribute('href', './images/icons_sprite.svg.svg#chevron-up');
+      } else {
+        chevronIcon.setAttribute('href', './images/icons_sprite.svg.svg#chevron-down');
+      }
+    });
+  });
+
+  selectItem.forEach(item => {
+    item.addEventListener('click', function() {
+      const text = this.innerText,
+        select = this.closest('.select'),
+        currentText = select.querySelector('.select-current');
+      currentText.innerText = text;
+      select.classList.remove('is-active');
+
+      const chevronIcon = select.querySelector('.select-icon svg use');
+      chevronIcon.setAttribute('href', './images/icons_sprite.svg.svg#chevron-down');
+    });
+  });
+}
+
+select();
 
 
 

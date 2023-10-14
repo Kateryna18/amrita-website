@@ -70,6 +70,9 @@
 <symbol id="chevron-down" viewBox="0 0 32 32">
 <path fill="none" stroke="#802c25" style="stroke: var(--color1, #802c25)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M4 10l12 12 12-12"></path>
 </symbol>
+<symbol id="chevron-up" viewBox="0 0 32 32">
+	<path fill="none" stroke="#802c25" style="stroke: var(--color1, #802c25)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M4 22l12-12 12 12"></path>
+	</symbol>
 <symbol id="search" viewBox="0 0 32 32">
 <path fill="none" stroke="#802c25" style="stroke: var(--color1, #802c25)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4" d="M13.333 22.667c5.155 0 9.333-4.179 9.333-9.333s-4.179-9.333-9.333-9.333c-5.155 0-9.333 4.179-9.333 9.333s4.179 9.333 9.333 9.333z"></path>
 <path fill="none" stroke="#802c25" style="stroke: var(--color1, #802c25)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4" d="M28 28l-8-8"></path>
