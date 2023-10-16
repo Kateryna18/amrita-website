@@ -1,0 +1,40 @@
+.main {
+    padding-top: 20px;
+    padding-bottom: 160px;
+}
+@media screen and (min-width: 843px) {
+    .main {
+        padding-top: 24px;
+        padding-bottom: 160px;
+    }
+  }
+@media screen and (min-width: 1440px) {
+    .main {
+        padding-top: 40px;
+        padding-bottom: 200px;
+    }
+  }
+
+/* ---------------------------BREADCRUMBS------------------- */
+.breadcrumbs li{
+    display: inline-block;
+}
+.breadcrumbs a {
+    font-size: 12px;
+    line-height: 1.4;
+    /* color: var(--accent-color); */
+    text-decoration: none;
+    color: var(--typography-t60);
+}
+.breadcrumbs li:last-child a {
+    color: var(--accent-color);
+}
+.breadcrumbs span {
+    display: inline-block;
+    margin: 0 10px;
+    color: var(--typography-t60);
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
