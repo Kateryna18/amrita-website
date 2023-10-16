@@ -1,302 +1,519 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amrita catalog services</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/pagesStyles/services.css" />
-    <script type="module" src="./index.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amrita catalog services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/pagesStyles/services.css" />
+  <script type="module" src="./index.js"></script>
 </head>
+
 <body>
-<!---------------------------HEADER---------------------- -->    
-    <header class="header">
-        <div class="container head__container">
-          <nav class="header__nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="./services.html" class="nav__link"
-                  >Services
-                  <svg width="22" height="22" class="nav__link-icon">
-                    <use
-                      href="./images/icons_sprite.svg.svg#arrow-up-right"
-                    ></use>
+  <!---------------------------HEADER---------------------- -->
+  <header class="header">
+    <div class="container head__container">
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="./services.html" class="nav__link">Services
+              <svg width="22" height="22" class="nav__link-icon">
+                <use href="./images/icons_sprite.svg.svg#arrow-up-right"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">About Us</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="./index.html" class="header__logo">
+        <svg width="155" height="16" class="logo__icon">
+          <use href="./images/icons_sprite.svg.svg#logo"></use>
+        </svg>
+      </a>
+      <div class="header-content">
+        <div class="search__container">
+          <input type="text" placeholder="Search prochedure" class="search__input" />
+          <button type="button" class="search__button">
+            <svg width="20" height="20" class="search__button__icon">
+              <use href="./images/icons_sprite.svg.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="select">
+          <div class="select-header">
+            <span class="select-current">EN</span>
+            <div class="select-icon">
+              <svg width="24" height="24">
+                <use class="select-icon" href="./images/icons_sprite.svg.svg#chevron-down"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="select-body">
+            <div class="select-item">EN</div>
+            <div class="select-item">IT</div>
+            <div class="select-item">UA</div>
+            <div class="select-item">RU</div>
+          </div>
+        </div>
+      </div>
+      <div class="header__buttons">
+        <button class="header__button-search">
+          <svg width="32" height="32" class="logo__icon" class="button-search__icon">
+            <use href="./images/icons_sprite.svg.svg#search"></use>
+          </svg>
+        </button>
+        <button class="header__button-menu js-open-menu">
+          <svg width="32" height="32" class="logo__icon" aria-expanded="false" aria-controls="mobile-menu">
+            <use href="./images/icons_sprite.svg.svg#button_menu-burger"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="header__decor"></div>
+    <div class="container services__container">
+      <ul class="services__list">
+        <li class="services__item">
+          <button type="button" class="services__button">Body massage</button>
+        </li>
+        <li class="services__item">
+          <button type="button" class="services__button">Face massage</button>
+        </li>
+        <li class="services__item">
+          <button type="button" class="services__button">Body care</button>
+        </li>
+        <li class="services__item">
+          <button type="button" class="services__button">Body care</button>
+        </li>
+        <li class="services__item">
+          <button type="button" class="services__button">
+            Endosphere therapy
+          </button>
+        </li>
+        <li class="services__item">
+          <button type="button" class="services__button">MesoBioStim</button>
+        </li>
+        <li class="services__item">
+          <button type="button" class="services__button">Epilation</button>
+        </li>
+        <li class="services__item">
+          <button type="button" class="services__button">Eyelashes</button>
+        </li>
+        <li class="services__item">
+          <button type="button" class="services__button">Manicure</button>
+        </li>
+        <li class="services__item">
+          <button type="button" class="services__button">Pedicure</button>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!---------------------------MAIN---------------------- -->
+  <main class="main">
+    <div class="container breadcrumbs__container">
+      <div id="breadcrumbs" class="breadcrumbs">
+        <ul class="breadcrumbs">
+          <li>
+            <a href="./services.html">Services page</a>
+            <span>&#9679;</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-----------------------------SERVICES--------------------------------->
+    <section class="services">
+      <div class="container">
+        <h2 class="title"><span class="title-accent">Be beautiful </span>with us</h2>
+        <p class="description">
+          Whether your goals are to rejuvenate your skin, restore facial volume, reshape your face and your body or
+          restore your hair, Amrita has you covered.
+        </p>
+        <div class="services-page__filter">
+          <div class="services-filter__buttons">
+            <button type="button" class="services-filter__button-filter">
+              <svg class="services-filter__icon" width="22" height="22">
+                <use href="./images/icons_sprite.svg.svg#filter"></use>
+              </svg>
+              Filter
+            </button>
+            <button type="button" class="services-filter__button-sort">
+              <svg class="services-filter__icon" width="22" height="22">
+                <use href="./images/icons_sprite.svg.svg#sort_by"></use>
+              </svg>
+              Sort by
+            </button>
+          </div>
+          <div class="services-filter__choice-list">
+            <ul class="choice-list">
+              <li class="choice-list__item">
+                <button type="button" class="choice-list__button">
+                  <svg class="choice-list__icon" width="20" height="20">
+                    <use href="./images/icons_sprite.svg.svg#close-icon"></use>
                   </svg>
-                </a>
+                  <p class="choice-list__button-text">Small</p>
+                </button>
               </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">About Us</a>
+              <li class="choice-list__item">
+                <button type="button" class="choice-list__button">
+                  <svg class="choice-list__icon" width="20" height="20">
+                    <use href="./images/icons_sprite.svg.svg#close-icon"></use>
+                  </svg>
+                  <p class="choice-list__button-text">Small</p>
+                </button>
               </li>
-              <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Contacts</a>
+              <li class="choice-list__item">
+                <button type="button" class="choice-list__button">
+                  <svg class="choice-list__icon" width="20" height="20">
+                    <use href="./images/icons_sprite.svg.svg#close-icon"></use>
+                  </svg>
+                  <p class="choice-list__button-text">Small</p>
+                </button>
+              </li>
+              <li class="choice-list__item">
+                <button type="button" class="choice-list__button">
+                  <svg class="choice-list__icon" width="20" height="20">
+                    <use href="./images/icons_sprite.svg.svg#close-icon"></use>
+                  </svg>
+                  <p class="choice-list__button-text">Small</p>
+                </button>
+              </li>
+              <li class="choice-list__item">
+                <button type="button" class="choice-list__button">
+                  <svg class="choice-list__icon" width="20" height="20">
+                    <use href="./images/icons_sprite.svg.svg#close-icon"></use>
+                  </svg>
+                  <p class="choice-list__button-text">Small</p>
+                </button>
+              </li>
+              <li class="choice-list__item">
+                <button type="button" class="choice-list__button">
+                  <svg class="choice-list__icon" width="20" height="20">
+                    <use href="./images/icons_sprite.svg.svg#close-icon"></use>
+                  </svg>
+                  <p class="choice-list__button-text">Small</p>
+                </button>
+              </li>
+              <li class="choice-list__item">
+                <button type="button" class="choice-list__button">
+                  <svg class="choice-list__icon" width="20" height="20">
+                    <use href="./images/icons_sprite.svg.svg#close-icon"></use>
+                  </svg>
+                  <p class="choice-list__button-text">Small</p>
+                </button>
+              </li>
+              <li class="choice-list__item">
+                <button type="button" class="choice-list__button">
+                  <svg class="choice-list__icon" width="20" height="20">
+                    <use href="./images/icons_sprite.svg.svg#close-icon"></use>
+                  </svg>
+                  <p class="choice-list__button-text">Small</p>
+                </button>
               </li>
             </ul>
-          </nav>
-          <a href="./index.html" class="header__logo">
-            <svg width="155" height="16" class="logo__icon">
-              <use href="./images/icons_sprite.svg.svg#logo"></use>
-            </svg>
-          </a>
-          <div class="header-content">
-            <div class="search__container">
-              <input
-                type="text"
-                placeholder="Search prochedure"
-                class="search__input"
-              />
-              <button type="button" class="search__button">
-                <svg width="20" height="20" class="search__button__icon">
-                  <use href="./images/icons_sprite.svg.svg#search"></use>
-                </svg>
-              </button>
-            </div>
-            <div class="select">
-              <div class="select-header">
-                <span class="select-current">EN</span>
-                <div class="select-icon">
-                <svg width="24" height="24">
-                  <use class="select-icon" href="./images/icons_sprite.svg.svg#chevron-down"></use>
-                </svg>
-                </div>
-              </div>
-              <div class="select-body">
-                <div class="select-item">EN</div>
-                <div class="select-item">IT</div>
-                <div class="select-item">UA</div>
-                <div class="select-item">RU</div>
-              </div>
-              </div>
           </div>
-          <div class="header__buttons">
-            <button class="header__button-search">
-              <svg
-                width="32"
-                height="32"
-                class="logo__icon"
-                class="button-search__icon"
-              >
-                <use href="./images/icons_sprite.svg.svg#search"></use>
+        </div>
+        <div class="services-page__body">
+          <ul class="services-page__list">
+            <li class="services-page__item">
+              <div class="services-page__item-thumb">
+                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg" alt="">
+                <span class="services-page__item-label">New</span>
+              </div>
+              <div class="services-page__item-content">
+                <h3 class="services-page__item-title">Decontracting </h3>
+                <p class="services-page__item-description">Massage - Body</p>
+              </div>
+              <button class="services-page__item-button">Book a procedure</button>
+            </li>
+            <li class="services-page__item">
+              <div class="services-page__item-thumb">
+                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg" alt="">
+                <span class="services-page__item-label">New</span>
+              </div>
+              <div class="services-page__item-content">
+                <h3 class="services-page__item-title">Decontracting </h3>
+                <p class="services-page__item-description">Massage - Body</p>
+              </div>
+              <button class="services-page__item-button">Book a procedure</button>
+            </li>
+            <li class="services-page__item">
+              <div class="services-page__item-thumb">
+                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg" alt="">
+                <span class="services-page__item-label">New</span>
+              </div>
+              <div class="services-page__item-content">
+                <h3 class="services-page__item-title">Decontracting </h3>
+                <p class="services-page__item-description">Massage - Body</p>
+              </div>
+              <button class="services-page__item-button">Book a procedure</button>
+            </li>
+            <li class="services-page__item">
+              <div class="services-page__item-thumb">
+                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg" alt="">
+                <span class="services-page__item-label">New</span>
+              </div>
+              <div class="services-page__item-content">
+                <h3 class="services-page__item-title">Decontracting </h3>
+                <p class="services-page__item-description">Massage - Body</p>
+              </div>
+              <button class="services-page__item-button">Book a procedure</button>
+            </li>
+            <li class="services-page__item">
+              <div class="services-page__item-thumb">
+                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg" alt="">
+                <span class="services-page__item-label">New</span>
+              </div>
+              <div class="services-page__item-content">
+                <h3 class="services-page__item-title">Decontracting </h3>
+                <p class="services-page__item-description">Massage - Body</p>
+              </div>
+              <button class="services-page__item-button">Book a procedure</button>
+            </li>
+            <li class="services-page__item">
+              <div class="services-page__item-thumb">
+                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg" alt="">
+                <span class="services-page__item-label">New</span>
+              </div>
+              <div class="services-page__item-content">
+                <h3 class="services-page__item-title">Decontracting </h3>
+                <p class="services-page__item-description">Massage - Body</p>
+              </div>
+              <button class="services-page__item-button">Book a procedure</button>
+            </li>
+            <li class="services-page__item">
+              <div class="services-page__item-thumb">
+                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg" alt="">
+                <span class="services-page__item-label">New</span>
+              </div>
+              <div class="services-page__item-content">
+                <h3 class="services-page__item-title">Decontracting </h3>
+                <p class="services-page__item-description">Massage - Body</p>
+              </div>
+              <button class="services-page__item-button">Book a procedure</button>
+            </li>
+            <li class="services-page__item">
+              <div class="services-page__item-thumb">
+                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg" alt="">
+                <span class="services-page__item-label">New</span>
+              </div>
+              <div class="services-page__item-content">
+                <h3 class="services-page__item-title">Decontracting </h3>
+                <p class="services-page__item-description">Massage - Body</p>
+              </div>
+              <button class="services-page__item-button">Book a procedure</button>
+            </li>
+            <li class="services-page__item">
+              <div class="services-page__item-thumb">
+                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg" alt="">
+                <span class="services-page__item-label">New</span>
+              </div>
+              <div class="services-page__item-content">
+                <h3 class="services-page__item-title">Decontracting </h3>
+                <p class="services-page__item-description">Massage - Body</p>
+              </div>
+              <button class="services-page__item-button">Book a procedure</button>
+            </li>
+            <li class="services-page__item">
+              <div class="services-page__item-thumb">
+                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg" alt="">
+                <span class="services-page__item-label">New</span>
+              </div>
+              <div class="services-page__item-content">
+                <h3 class="services-page__item-title">Decontracting </h3>
+                <p class="services-page__item-description">Massage - Body</p>
+              </div>
+              <button class="services-page__item-button">Book a procedure</button>
+            </li>
+            <li class="services-page__item">
+              <div class="services-page__item-thumb">
+                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg" alt="">
+                <span class="services-page__item-label">New</span>
+              </div>
+              <div class="services-page__item-content">
+                <h3 class="services-page__item-title">Decontracting </h3>
+                <p class="services-page__item-description">Massage - Body</p>
+              </div>
+              <button class="services-page__item-button">Book a procedure</button>
+            </li>
+            <li class="services-page__item">
+              <div class="services-page__item-thumb">
+                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg" alt="">
+                <span class="services-page__item-label">New</span>
+              </div>
+              <div class="services-page__item-content">
+                <h3 class="services-page__item-title">Decontracting </h3>
+                <p class="services-page__item-description">Massage - Body</p>
+              </div>
+              <button class="services-page__item-button">Book a procedure</button>
+            </li>
+          </ul>
+          <div class="services-page__pagination">
+            <button type="button" class="services-page-pagination__arrow-buttons">
+              <svg width="40" height="40" class="services-page-pagination__icon">
+                <use href="./images/icons_sprite.svg.svg#chevron-left-black"></use>
               </svg>
             </button>
-            <button class="header__button-menu js-open-menu">
-              <svg
-                width="32"
-                height="32"
-                class="logo__icon"
-                aria-expanded="false"
-                aria-controls="mobile-menu"
-              >
-                <use
-                  href="./images/icons_sprite.svg.svg#button_menu-burger"
-                ></use>
+            <ul class="services-page-pagination__list">
+              <li class="services-page-pagination__item">
+                <button type="button" class="services-page-pagination__button">1</button>
+              </li>
+              <li class="services-page-pagination__item">
+                <button type="button" class="services-page-pagination__button">2</button>
+              </li>
+              <li class="services-page-pagination__item">
+                <button type="button" class="services-page-pagination__button">3</button>
+              </li>
+              <li class="services-page-pagination__item">
+                <button type="button" class="services-page-pagination__button">4</button>
+              </li>
+              <li class="services-page-pagination__item">
+                <button type="button" class="services-page-pagination__button">5</button>
+              </li>
+            </ul>
+            <button type="button" class="services-page-pagination__arrow-buttons">
+              <svg width="40" height="40" class="services-page-pagination__icon">
+                <use href="./images/icons_sprite.svg.svg#chevron-right-black"></use>
               </svg>
             </button>
           </div>
         </div>
-        <div class="header__decor"></div>
-        <div class="container services__container">
-          <ul class="services__list">
-            <li class="services__item">
-              <button type="button" class="services__button">Body massage</button>
+      </div>
+    </section>
+  </main>
+  <!---------------------------FOOTER------------------------>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__logo-container">
+        <a href="./index.html" class="footer__logo">
+          <svg class="footer__logo-icon-part1" width="218" height="39">
+            <use href="./images/icons_sprite.svg.svg#logo_illustrationtext"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="footer__content-container">
+        <div class="footer__info">
+          <div class="footer__info-containers footer__info-contact">
+            <h3 class="footer__info-title">Contact us</h3>
+            <a class="footer__contacts footer__info-contact-tel" href="tel:+390503220606">+39 (050) 3220 606</a>
+            <a class="footer__info-contact-email" href="mailto:amrita@gmail.com">amrita@gmail.com</a>
+          </div>
+          <div class="footer__info-containers footer__info-adress">
+            <h3 class="footer__info-title">Address of our salon</h3>
+            <address class="footer__contacts footer__adress">
+              123 Via Serenità, Rome, Italy
+            </address>
+            <table class="footer__table">
+              <tr class="footer__table-tr">
+                <td class="footer__table-td">Mon-Fri</td>
+                <td class="footer__table-td footer__table-td-time">
+                  09:00 - 19:00
+                </td>
+              </tr>
+              <tr class="footer__table-tr">
+                <td class="footer__table-td">Saturday</td>
+                <td class="footer__table-td footer__table-td-time">
+                  11:00 - 18:00
+                </td>
+              </tr>
+              <tr class="footer__table-tr">
+                <td class="footer__table-td">Sunday</td>
+                <td class="footer__table-td footer__table-td-time">
+                  day off
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="footer__pages">
+          <h3 class="footer__pages-title">Pages</h3>
+          <ul class="footer__pages-list">
+            <li class="footer__pages-item">
+              <a class="footer__pages-link">Main Page</a>
             </li>
-            <li class="services__item">
-              <button type="button" class="services__button">Face massage</button>
+            <li class="footer__pages-item">
+              <a class="footer__pages-link">About Us</a>
             </li>
-            <li class="services__item">
-              <button type="button" class="services__button">Body care</button>
-            </li>
-            <li class="services__item">
-              <button type="button" class="services__button">Body care</button>
-            </li>
-            <li class="services__item">
-              <button type="button" class="services__button">
-                Endosphere therapy
+            <li class="footer__pages-item footer__pages-services">
+              <a class="footer__pages-link">Services</a>
+              <button class="footer__pages-button">
+                <svg width="24" height="24" class="footer__pages-icon">
+                  <use href="./images/icons_sprite.svg.svg#chevron-down-white"></use>
+                </svg>
               </button>
             </li>
-            <li class="services__item">
-              <button type="button" class="services__button">MesoBioStim</button>
+            <li class="footer__pages-item">
+              <a class="footer__pages-link">Booking</a>
             </li>
-            <li class="services__item">
-              <button type="button" class="services__button">Epilation</button>
+            <li class="footer__pages-item">
+              <a class="footer__pages-link">Blog</a>
             </li>
-            <li class="services__item">
-              <button type="button" class="services__button">Eyelashes</button>
-            </li>
-            <li class="services__item">
-              <button type="button" class="services__button">Manicure</button>
-            </li>
-            <li class="services__item">
-              <button type="button" class="services__button">Pedicure</button>
+            <li class="footer__pages-item">
+              <a class="footer__pages-link">Contacts</a>
             </li>
           </ul>
         </div>
-    </header>
-<!---------------------------MAIN---------------------- -->
-    <main class="main">
-        <div class="container">
-            <div id="breadcrumbs" class="breadcrumbs">
-                <ul class="breadcrumbs">
-                    <li>
-                        <a href="./services.html">Services page</a>
-                        <span>&#9679;</span>
-                    </li>
-                </ul>
-            </div>
+        <div class="footer__services">
+          <h3 class="footer__services-title">Services</h3>
+          <div class="footer__list-container">
+            <ul class="footer__list">
+              <li class="footer__services-item"><a href="#" class="footer__services-link">Body massage</a></li>
+              <li class="footer__services-item"><a href="#" class="footer__services-link">Face massage</a></li>
+              <li class="footer__services-item"><a href="#" class="footer__services-link">Body care</a></li>
+              <li class="footer__services-item"><a href="#" class="footer__services-link">Face care</a></li>
+              <li class="footer__services-item"><a href="#" class="footer__services-link">Epilation</a></li>
+            </ul>
+            <ul>
+              <li class="footer__services-item"><a href="#" class="footer__services-link">Endosphere therapy</a></li>
+              <li class="footer__services-item"><a href="#" class="footer__services-link">MesoBioStim</a></li>
+              <li class="footer__services-item"><a href="#" class="footer__services-link">Eyelashes</a></li>
+              <li class="footer__services-item"><a href="#" class="footer__services-link">Manicure</a></li>
+              <li class="footer__services-item"><a href="#" class="footer__services-link">Pedicure</a></li>
+            </ul>
+          </div>
         </div>
-        <section></section>
-    </main>
-<!---------------------------FOOTER---------------------- -->
-    <footer class="footer">
-            <div class="container">
-              <div class="footer__logo-container">
-                <a href="./index.html" class="footer__logo">
-                  <svg class="footer__logo-icon-part1" width="218" height="39">
-                    <use
-                      href="./images/icons_sprite.svg.svg#logo_illustrationtext"
-                    ></use>
-                  </svg>
-                </a>
-              </div>
-              <div class="footer__content-container">
-                <div class="footer__info">
-                  <div class="footer__info-containers footer__info-contact">
-                    <h3 class="footer__info-title">Contact us</h3>
-                    <a
-                      class="footer__contacts footer__info-contact-tel"
-                      href="tel:+390503220606"
-                      >+39 (050) 3220 606</a
-                    >
-                    <a
-                      class="footer__info-contact-email"
-                      href="mailto:amrita@gmail.com"
-                      >amrita@gmail.com</a
-                    >
-                  </div>
-                  <div class="footer__info-containers footer__info-adress">
-                    <h3 class="footer__info-title">Address of our salon</h3>
-                    <address class="footer__contacts footer__adress">
-                      123 Via Serenità, Rome, Italy
-                    </address>
-                    <table class="footer__table">
-                      <tr class="footer__table-tr">
-                        <td class="footer__table-td">Mon-Fri</td>
-                        <td class="footer__table-td footer__table-td-time">
-                          09:00 - 19:00
-                        </td>
-                      </tr>
-                      <tr class="footer__table-tr">
-                        <td class="footer__table-td">Saturday</td>
-                        <td class="footer__table-td footer__table-td-time">
-                          11:00 - 18:00
-                        </td>
-                      </tr>
-                      <tr class="footer__table-tr">
-                        <td class="footer__table-td">Sunday</td>
-                        <td class="footer__table-td footer__table-td-time">
-                          day off
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-                <div class="footer__pages">
-                  <h3 class="footer__pages-title">Pages</h3>
-                  <ul class="footer__pages-list">
-                    <li class="footer__pages-item">
-                      <a class="footer__pages-link">Main Page</a>
-                    </li>
-                    <li class="footer__pages-item">
-                      <a class="footer__pages-link">About Us</a>
-                    </li>
-                    <li class="footer__pages-item footer__pages-services">
-                      <a class="footer__pages-link">Services</a>
-                      <button class="footer__pages-button">
-                        <svg width="24" height="24" class="footer__pages-icon">
-                          <use
-                            href="./images/icons_sprite.svg.svg#chevron-down-white"
-                          ></use>
-                        </svg>
-                      </button>
-                    </li>
-                    <li class="footer__pages-item">
-                      <a class="footer__pages-link">Booking</a>
-                    </li>
-                    <li class="footer__pages-item">
-                      <a class="footer__pages-link">Blog</a>
-                    </li>
-                    <li class="footer__pages-item">
-                      <a class="footer__pages-link">Contacts</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="footer__services">
-                  <h3 class="footer__services-title">Services</h3>
-                  <div class="footer__list-container">
-                    <ul class="footer__list">
-                      <li class="footer__services-item"><a href="#" class="footer__services-link">Body massage</a></li>
-                      <li class="footer__services-item"><a href="#" class="footer__services-link">Face massage</a></li>
-                      <li class="footer__services-item"><a href="#" class="footer__services-link">Body care</a></li>
-                      <li class="footer__services-item"><a href="#" class="footer__services-link">Face care</a></li>
-                      <li class="footer__services-item"><a href="#" class="footer__services-link">Epilation</a></li>
-                    </ul>
-                    <ul>
-                      <li class="footer__services-item"><a href="#" class="footer__services-link">Endosphere therapy</a></li>
-                      <li class="footer__services-item"><a href="#" class="footer__services-link">MesoBioStim</a></li>
-                      <li class="footer__services-item"><a href="#" class="footer__services-link">Eyelashes</a></li>
-                      <li class="footer__services-item"><a href="#" class="footer__services-link">Manicure</a></li>
-                      <li class="footer__services-item"><a href="#" class="footer__services-link">Pedicure</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="footer__socials-container">
-                <ul class="footer__socials-list">
-                  <li class="footer__socials-item">
-                    <a href="#" class="footer__socials-link"
-                      ><svg width="24" height="24" class="footer__socials-icon">
-                        <use
-                          href="./images/icons_sprite.svg.svg#icon_instagram"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="footer__socials-item">
-                    <a href="#" class="footer__socials-link"
-                      ><svg width="24" height="24" class="footer__socials-icon">
-                        <use href="./images/icons_sprite.svg.svg#icon_facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="footer__info-line">
-                <div class="footer__info-line-box">
-                  <p class="footer__info-line-text">Privacy policy</p>
-                  <p class="footer__info-line-text">Terms & Conditions</p>
-                </div>
-              <p class="footer__info-line-text-part2">
-                ©2023 Amrita All Rights Reserved
-              </p>
-            </div>
-    </footer>
-<!---------------------------MOBILE MENU---------------------- -->
-    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      </div>
+      <div class="footer__socials-container">
+        <ul class="footer__socials-list">
+          <li class="footer__socials-item">
+            <a href="#" class="footer__socials-link"><svg width="24" height="24" class="footer__socials-icon">
+                <use href="./images/icons_sprite.svg.svg#icon_instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__socials-item">
+            <a href="#" class="footer__socials-link"><svg width="24" height="24" class="footer__socials-icon">
+                <use href="./images/icons_sprite.svg.svg#icon_facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__info-line">
+        <div class="footer__info-line-box">
+          <p class="footer__info-line-text">Privacy policy</p>
+          <p class="footer__info-line-text">Terms & Conditions</p>
+        </div>
+        <p class="footer__info-line-text-part2">
+          ©2023 Amrita All Rights Reserved
+        </p>
+      </div>
+  </footer>
+  <!---------------------------MOBILE MENU------------------------>
+  <div class="mobile-menu js-menu-container" id="mobile-menu">
             <div class="container mobile-menu__header">
               <a href="./index.html" class="header__logo">
                 <svg width="155" height="16" class="logo__icon">
@@ -366,8 +583,8 @@
             </div>
           </div>
     </div>
-<!---------------------------MOBILE SUBMENU---------------------- -->
-    <div class="mobile-menu__submenu js-menu2-container">
+  <!---------------------------MOBILE SUBMENU------------------------>
+  <div class="mobile-menu__submenu js-menu2-container">
         <div class="container mobile-menu__header">
           <a href="./index.html" class="header__logo">
             <svg width="155" height="16" class="logo__icon">
