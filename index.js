@@ -192,6 +192,37 @@ toggleButtons.forEach((button) => {
   });
 })();
 
+(() => {
+  const mobileMenu = document.querySelector(".js-filter-menu-container");
+  const openMenuBtn = document.querySelector(".js-open-filter-menu");
+  const closeMenuBtn = document.querySelectorAll(".js-close-filter-menu");
+
+  const toggleMenu = () => {
+    const isMenuOpen =
+      openMenuBtn.getAttribute("aria-expanded") === "true" || false;
+    openMenuBtn.setAttribute("aria-expanded", !isMenuOpen);
+    mobileMenu.classList.toggle("is-open");
+
+    if (!isMenuOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  };
+
+  openMenuBtn.addEventListener("click", toggleMenu);
+  for (let item of closeMenuBtn) {
+    item.addEventListener("click", toggleMenu);
+  }
+
+  window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
+    if (!e.matches) return;
+    mobileMenu.classList.remove("is-open");
+    openMenuBtn.setAttribute("aria-expanded", false);
+    document.body.classList.remove("no-scroll");
+  });
+})();
+
 
 // ---------------------CUSTOM SELECT----------------------
 const select = function() {
@@ -227,6 +258,55 @@ const select = function() {
 
 select();
 
+// ---------------FILTER------------
+const selectBtns = document.querySelectorAll('.filter-desctop-type__head'),
+      items = document.querySelectorAll('.filter-desctop__checkbox-item');
+
+      // console.log(selectBtn, items)
+      selectBtns.forEach(selectBtn => {
+        selectBtn.addEventListener('click', () => {
+          selectBtn.classList.toggle("open")
+        })
+      })
+
+      items.forEach(item => {
+        item.addEventListener('click', () => {
+          item.classList.toggle("checked")
+        })
+      })
 
 
+//-------------------SLIDER PRICE--------------
+const slider = document.getElementById('filter-price__range-slider');
+const input0 = document.getElementById('input-1');
+const input1 = document.getElementById('input-2');
+const inputs = [input0, input1];
 
+if (slider) {
+  noUiSlider.create(slider, {
+    start: [150, 400],
+    connect: true,
+    step: 10,
+    range: {
+      'min': [150],
+      'max': [400]
+    }
+  });
+
+  const setRangeSlider = (i, value) => {
+    let arr = [null, null];
+    arr[i] = value;
+
+    slider.noUiSlider.set(arr)
+  }
+
+  slider.noUiSlider.on('update', function(values, handle){
+    inputs[handle].value = Math.round(values[handle])
+  })
+
+  inputs.forEach((input, index) => {
+    input.addEventListener('change', event => {
+      setRangeSlider(index, event.currentTarget.value)
+    })
+  })
+}
