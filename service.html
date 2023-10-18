@@ -11,10 +11,11 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.css">
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/pagesStyles/main.css" />
   <link rel="stylesheet" href="./css/pagesStyles/services.css" />
+  <link rel="stylesheet" href="./css/pagesStyles/service.css" />
   <script type="module" src="./index.js"></script>
 </head>
 <body>
@@ -140,652 +141,430 @@
             <a href="./services.html">Services page</a>
             <span>&#9679;</span>
           </li>
+          <li>
+            <a href="./service.html">Service</a>
+            <span>&#9679;</span>
+          </li>
         </ul>
       </div>
     </div>
-    <!-----------------------------SERVICES--------------------------------->
-    <section class="services">
-      <div class="container services-page__container">
-        <div class="filter-desctop__content-box">
-          <div class="filter-desctop">
-            <div class="filter-desctop__panel">
-              <div class="filter-desctop-panel__head">
-                <h3 class="filter-desctop-panel__title">Filter</h3>
-                <svg class="filter-desctop-panel__icon" width="42" height="42">
-                  <use href="./images/icons_sprite.svg.svg#close-icon"></use>
-                </svg>
-              </div>
-              <div class="services-filter__choice-list">
-                <ul class="choice-list">
-                  <li class="choice-list__item">
-                    <button type="button" class="choice-list__button">
-                      <svg class="choice-list__icon" width="20" height="20">
-                        <use href="./images/icons_sprite.svg.svg#close-icon"></use>
-                      </svg>
-                      <p class="choice-list__button-text">Small</p>
-                    </button>
-                  </li>
-                  <li class="choice-list__item">
-                    <button type="button" class="choice-list__button">
-                      <svg class="choice-list__icon" width="20" height="20">
-                        <use href="./images/icons_sprite.svg.svg#close-icon"></use>
-                      </svg>
-                      <p class="choice-list__button-text">Small</p>
-                    </button>
-                  </li>
-                  <li class="choice-list__item">
-                    <button type="button" class="choice-list__button">
-                      <svg class="choice-list__icon" width="20" height="20">
-                        <use href="./images/icons_sprite.svg.svg#close-icon"></use>
-                      </svg>
-                      <p class="choice-list__button-text">Small</p>
-                    </button>
-                  </li>
-                  <li class="choice-list__item">
-                    <button type="button" class="choice-list__button">
-                      <svg class="choice-list__icon" width="20" height="20">
-                        <use href="./images/icons_sprite.svg.svg#close-icon"></use>
-                      </svg>
-                      <p class="choice-list__button-text">Small</p>
-                    </button>
-                  </li>
-                  <li class="choice-list__item">
-                    <button type="button" class="choice-list__button">
-                      <svg class="choice-list__icon" width="20" height="20">
-                        <use href="./images/icons_sprite.svg.svg#close-icon"></use>
-                      </svg>
-                      <p class="choice-list__button-text">Small</p>
-                    </button>
-                  </li>
-                  <li class="choice-list__item">
-                    <button type="button" class="choice-list__button">
-                      <svg class="choice-list__icon" width="20" height="20">
-                        <use href="./images/icons_sprite.svg.svg#close-icon"></use>
-                      </svg>
-                      <p class="choice-list__button-text">Small</p>
-                    </button>
-                  </li>
-                  <li class="choice-list__item">
-                    <button type="button" class="choice-list__button">
-                      <svg class="choice-list__icon" width="20" height="20">
-                        <use href="./images/icons_sprite.svg.svg#close-icon"></use>
-                      </svg>
-                      <p class="choice-list__button-text">Small</p>
-                    </button>
-                  </li>
-                  <li class="choice-list__item">
-                    <button type="button" class="choice-list__button">
-                      <svg class="choice-list__icon" width="20" height="20">
-                        <use href="./images/icons_sprite.svg.svg#close-icon"></use>
-                      </svg>
-                      <p class="choice-list__button-text">Small</p>
-                    </button>
-                  </li>
-                </ul>
-              </div>
+    <!-----------------------------INFO--------------------------------->
+    <section class="info">
+        <div class="container info__container">
+            <div class="info__thumb">
+                <img src="https://st.depositphotos.com/2934765/53192/v/450/depositphotos_531920820-stock-illustration-photo-available-vector-icon-default.jpg" alt="">
             </div>
-            <div class="filter-desctop__type">
-              <div class="filter-desctop-type__head">
-                <h4 class="filter-desctop-type__title">Type of service</h4>
-                <svg class="filter-desctop-type__icon" width="24" height="24">
-                  <use href="./images/icons_sprite.svg.svg#chevron-down"></use>
-                </svg>
-              </div>
-              <ul class="filter-desctop__checkbox-list">
-                <li class="filter-desctop__checkbox-item" data-filter="bodyMassage">
-                  <div class="filter-desctop__checkbox-container">
-                    <span class="filter-desctop__checkbox">
-                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                        <use href="./images/icons_sprite.svg.svg#check"></use>
-                      </svg>
-                    </span>
-                    <span class="filter-desctop__checkbox-text">Body massage</span>
-                  </div>
-                  <span class="filter-desctop__checkbox-number">10</span>
-                </li>
-                <li class="filter-desctop__checkbox-item" data-filter="faceMassage">
-                  <div class="filter-desctop__checkbox-container">
-                    <span class="filter-desctop__checkbox">
-                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                        <use href="./images/icons_sprite.svg.svg#check"></use>
-                      </svg>
-                    </span>
-                    <span class="filter-desctop__checkbox-text">Face massage</span>
-                  </div>
-                  <span class="filter-desctop__checkbox-number">3</span>
-                </li>
-                <li class="filter-desctop__checkbox-item" data-filter="bodyCare">
-                  <div class="filter-desctop__checkbox-container">
-                    <span class="filter-desctop__checkbox">
-                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                        <use href="./images/icons_sprite.svg.svg#check"></use>
-                      </svg>
-                    </span>
-                    <span class="filter-desctop__checkbox-text">Body care</span>
-                  </div>
-                  <span class="filter-desctop__checkbox-number">5</span>
-                </li>
-                <li class="filter-desctop__checkbox-item" data-filter="faceCare">
-                  <div class="filter-desctop__checkbox-container">
-                    <span class="filter-desctop__checkbox">
-                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                        <use href="./images/icons_sprite.svg.svg#check"></use>
-                      </svg>
-                    </span>
-                    <span class="filter-desctop__checkbox-text">Face care</span>
-                  </div>
-                  <span class="filter-desctop__checkbox-number">4</span>
-                </li>
-                <li class="filter-desctop__checkbox-item" data-filter="endosphereTherapy">
-                  <div class="filter-desctop__checkbox-container">
-                    <span class="filter-desctop__checkbox">
-                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                        <use href="./images/icons_sprite.svg.svg#check"></use>
-                      </svg>
-                    </span>
-                    <span class="filter-desctop__checkbox-text">Endosphere therapy</span>
-                  </div>
-                  <span class="filter-desctop__checkbox-number">4</span>
-                </li>
-                <li class="filter-desctop__checkbox-item" data-filter="mesoBioStim">
-                  <div class="filter-desctop__checkbox-container">
-                    <span class="filter-desctop__checkbox">
-                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                        <use href="./images/icons_sprite.svg.svg#check"></use>
-                      </svg>
-                    </span>
-                    <span class="filter-desctop__checkbox-text">MesoBioStim</span>
-                  </div>
-                  <span class="filter-desctop__checkbox-number">4</span>
-                </li>
-                <li class="filter-desctop__checkbox-item" data-filter="hairRemoval">
-                  <div class="filter-desctop__checkbox-container">
-                    <span class="filter-desctop__checkbox">
-                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                        <use href="./images/icons_sprite.svg.svg#check"></use>
-                      </svg>
-                    </span>
-                    <span class="filter-desctop__checkbox-text">Hair removal</span>
-                  </div>
-                  <span class="filter-desctop__checkbox-number">2</span>
-                </li>
-                <li class="filter-desctop__checkbox-item" data-filter="eyelashes">
-                  <div class="filter-desctop__checkbox-container">
-                    <span class="filter-desctop__checkbox">
-                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                        <use href="./images/icons_sprite.svg.svg#check"></use>
-                      </svg>
-                    </span>
-                    <span class="filter-desctop__checkbox-text">Eyelashes</span>
-                  </div>
-                  <span class="filter-desctop__checkbox-number">2</span>
-                </li>
-                <li class="filter-desctop__checkbox-item" data-filter="manicure">
-                  <div class="filter-desctop__checkbox-container">
-                    <span class="filter-desctop__checkbox">
-                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                        <use href="./images/icons_sprite.svg.svg#check"></use>
-                      </svg>
-                    </span>
-                    <span class="filter-desctop__checkbox-text">Manicure</span>
-                  </div>
-                  <span class="filter-desctop__checkbox-number">4</span>
-                </li>
-                <li class="filter-desctop__checkbox-item" data-filter="pedicure">
-                  <div class="filter-desctop__checkbox-container">
-                    <span class="filter-desctop__checkbox">
-                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                        <use href="./images/icons_sprite.svg.svg#check"></use>
-                      </svg>
-                    </span>
-                    <span class="filter-desctop__checkbox-text">Pedicure</span>
-                  </div>
-                  <span class="filter-desctop__checkbox-number">4</span>
-                </li>
-              </ul>
+            <div class="info__main">
+                <div class="info__content">
+                    <h2 class="title info__title">
+                        <span class="title-accent">Decontracting </span>body massage
+                    </h2>
+                    <ul class="info__features-list">
+                        <li class="info__features-item">
+                            <div>
+                                <svg class="info-features__icon" width="24" height="24">
+                                    <use href="./images/icons_sprite.svg.svg#relax"></use>
+                                </svg>
+                            </div>
+                            <div class="info-features__content">
+                                <h3 class="info-features__title">Effect within 24-48 hours</h3>
+                                <p class="info-features__text">After a massage, you will feel the effect of calmness and relaxation last for a long time, giving you a pleasant feeling of comfort and coziness even after the session is over.</p>
+                            </div>
+                        </li>
+                        <li class="info__features-item">
+                            <div>
+                                <svg class="info-features__icon" width="24" height="24">
+                                    <use href="./images/icons_sprite.svg.svg#spa"></use>
+                                </svg>
+                            </div>
+                            <div class="info-features__content">
+                                <h3 class="info-features__title">Deep relaxation</h3>
+                                <p class="info-features__text">Massage will help you release accumulated tension and stress, and feel deeply relaxed.</p>
+                            </div>
+                        </li>
+                        <li class="info__features-item">
+                            <div>
+                                <svg class="info-features__icon" width="24" height="24">
+                                    <use href="./images/icons_sprite.svg.svg#time"></use>
+                                </svg>
+                            </div>
+                            <div class="info-features__content">
+                                <h3 class="info-features__title">Relieving muscle tension</h3>
+                                <p class="info-features__text">Massage will help you to understand your muscles and reduce pain or discomfort associated with muscle tightness.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info__calculator">
+                    <div class="calculator__dropdouwn">
+                        <div class="calculator-dropdouwn__content">
+                            <p class="calculator-dropdouwn__text">Text</p>
+                        <svg width="24" height="24" class="calculator-dropdouwn__icon">
+                            <use href="./images/icons_sprite.svg.svg#chevron-down"></use>
+                        </svg>
+                        <div class="calculator__dropdouwn-buttons">
+                            <div class="calculator__dropdouwn-button-box">
+                                <button type="button" class="calculator-dropdouwn__button calculator-dropdouwn__button-1">50 min</button>
+                                <p class="calculator-dropdouwn__label">$250</p>
+                            </div>
+                            <div class="calculator__dropdouwn-button-box">
+                                <button type="button" class="calculator-dropdouwn__button calculator-dropdouwn__button-2">60 min</button>
+                                <p class="calculator-dropdouwn__label">$300</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="calculator__booking">
+                        <div class="calculator__total-price">
+                            <p class="calculator-total-price__text">Total: <span class="calculator-total-price__value">$250</span></p>
+                        </div>
+                        <button type="button" class="calculator__button">
+                            Book a procedure
+                            <svg class="calculator-button__icon" width="24" height="24">
+                                <use href="./images/icons_sprite.svg.svg#arrow-up-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="filter-desctop__price">
-              <h4 class="filter-desctop-type__title price__title">Price</h4>
-              <div class="filter-desctop-price__inputs">
-                <span class="filter-desctop-price__text">From</span>
-                <label class="filter-desctop-price__label">
-                  <span class="filter-desctop-price__valute">$</span>
-                  <input class="filter-desctop-price__input" min="150" max="400" type="number" name="" id="input-1">
-                </label>
-                <span class="filter-desctop-price__text">To</span>
-                <label class="filter-desctop-price__label">
-                  <span class="filter-desctop-price__valute">$</span>
-                  <input class="filter-desctop-price__input" min="150" max="400" type="number" name="" id="input-2">
-                </label>
-              </div>
-              <div class="filter-price__slider" id="filter-price__range-slider"></div>
-            </div>
-            <div class="filter-desctop__effect">
-              <div class="filter-desctop-type__head">
-                <h4 class="filter-desctop-type__title">Effect</h4>
-                <svg class="filter-desctop-type__icon" width="24" height="24">
-                  <use href="./images/icons_sprite.svg.svg#chevron-down"></use>
-                </svg>
-              </div>
-              <ul class="filter-desctop__checkbox-list">
-                <li class="filter-desctop__checkbox-item" data-filter="lifting">
-                  <div class="filter-desctop__checkbox-container">
-                    <span class="filter-desctop__checkbox">
-                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                        <use href="./images/icons_sprite.svg.svg#check"></use>
-                      </svg>
-                    </span>
-                    <span class="filter-desctop__checkbox-text">Lifting</span>
-                  </div>
-                  <span class="filter-desctop__checkbox-number">4</span>
-                </li>
-                <li class="filter-desctop__checkbox-item" data-filter="strengthening">
-                  <div class="filter-desctop__checkbox-container">
-                    <span class="filter-desctop__checkbox">
-                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                        <use href="./images/icons_sprite.svg.svg#check"></use>
-                      </svg>
-                    </span>
-                    <span class="filter-desctop__checkbox-text">Strengthening</span>
-                  </div>
-                  <span class="filter-desctop__checkbox-number">2</span>
-                </li>
-                <li class="filter-desctop__checkbox-item" data-filter="toning">
-                  <div class="filter-desctop__checkbox-container">
-                    <span class="filter-desctop__checkbox">
-                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                        <use href="./images/icons_sprite.svg.svg#check"></use>
-                      </svg>
-                    </span>
-                    <span class="filter-desctop__checkbox-text">Toning</span>
-                  </div>
-                  <span class="filter-desctop__checkbox-number">7</span>
-                </li>
-                <li class="filter-desctop__checkbox-item" data-filter="restoration">
-                  <div class="filter-desctop__checkbox-container">
-                    <span class="filter-desctop__checkbox">
-                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                        <use href="./images/icons_sprite.svg.svg#check"></use>
-                      </svg>
-                    </span>
-                    <span class="filter-desctop__checkbox-text">Restoration</span>
-                  </div>
-                  <span class="filter-desctop__checkbox-number">1</span>
-                </li>
-                <li class="filter-desctop__checkbox-item" data-filter="hydration">
-                  <div class="filter-desctop__checkbox-container">
-                    <span class="filter-desctop__checkbox">
-                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                        <use href="./images/icons_sprite.svg.svg#check"></use>
-                      </svg>
-                    </span>
-                    <span class="filter-desctop__checkbox-text">Hydration</span>
-                  </div>
-                  <span class="filter-desctop__checkbox-number">5</span>
-                </li>
-                <li class="filter-desctop__checkbox-item" data-filter="sculpting">
-                  <div class="filter-desctop__checkbox-container">
-                    <span class="filter-desctop__checkbox">
-                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                        <use href="./images/icons_sprite.svg.svg#check"></use>
-                      </svg>
-                    </span>
-                    <span class="filter-desctop__checkbox-text">Sculpting</span>
-                  </div>
-                  <span class="filter-desctop__checkbox-number">1</span>
-                </li>
-                <li class="filter-desctop__checkbox-item" data-filter="antiAging">
-                  <div class="filter-desctop__checkbox-container">
-                    <span class="filter-desctop__checkbox">
-                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                        <use href="./images/icons_sprite.svg.svg#check"></use>
-                      </svg>
-                    </span>
-                    <span class="filter-desctop__checkbox-text">Anti-aging care</span>
-                  </div>
-                  <span class="filter-desctop__checkbox-number">3</span>
-                </li>
-                <li class="filter-desctop__checkbox-item" data-filter="relievingMuscle">
-                  <div class="filter-desctop__checkbox-container">
-                    <span class="filter-desctop__checkbox">
-                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                        <use href="./images/icons_sprite.svg.svg#check"></use>
-                      </svg>
-                    </span>
-                    <span class="filter-desctop__checkbox-text">Relieving muscle tension</span>
-                  </div>
-                  <span class="filter-desctop__checkbox-number">9</span>
-                </li>
-                <li class="filter-desctop__checkbox-item" data-filter="deepRelaxation">
-                  <div class="filter-desctop__checkbox-container">
-                    <span class="filter-desctop__checkbox">
-                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                        <use href="./images/icons_sprite.svg.svg#check"></use>
-                      </svg>
-                    </span>
-                    <span class="filter-desctop__checkbox-text">Deep relaxation</span>
-                  </div>
-                  <span class="filter-desctop__checkbox-number">4</span>
-                </li>
-                <li class="filter-desctop__checkbox-item" data-filter="energyRecovery">
-                  <div class="filter-desctop__checkbox-container">
-                    <span class="filter-desctop__checkbox">
-                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                        <use href="./images/icons_sprite.svg.svg#check"></use>
-                      </svg>
-                    </span>
-                    <span class="filter-desctop__checkbox-text">Energy recovery</span>
-                  </div>
-                  <span class="filter-desctop__checkbox-number">6</span>
-                </li>
-                <li class="filter-desctop__checkbox-item" data-filter="increaseInFlexibility">
-                  <div class="filter-desctop__checkbox-container">
-                    <span class="filter-desctop__checkbox">
-                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                        <use href="./images/icons_sprite.svg.svg#check"></use>
-                      </svg>
-                    </span>
-                    <span class="filter-desctop__checkbox-text">Increase in flexibility</span>
-                  </div>
-                  <span class="filter-desctop__checkbox-number">8</span>
-                </li>
-                <li class="filter-desctop__checkbox-item" data-filter="restoration">
-                  <div class="filter-desctop__checkbox-container">
-                    <span class="filter-desctop__checkbox">
-                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                        <use href="./images/icons_sprite.svg.svg#check"></use>
-                      </svg>
-                    </span>
-                    <span class="filter-desctop__checkbox-text">Restoration of balance</span>
-                  </div>
-                  <span class="filter-desctop__checkbox-number">1</span>
-                </li>
-                <li class="filter-desctop__checkbox-item" data-filter="fatigueRelief">
-                  <div class="filter-desctop__checkbox-container">
-                    <span class="filter-desctop__checkbox">
-                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                        <use href="./images/icons_sprite.svg.svg#check"></use>
-                      </svg>
-                    </span>
-                    <span class="filter-desctop__checkbox-text">Fatigue relief</span>
-                  </div>
-                  <span class="filter-desctop__checkbox-number">2</span>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
-        <div class="services-page__content">
-          <h2 class="title"><span class="title-accent">Be beautiful </span>with us</h2>
-          <p class="description">
-            Whether your goals are to rejuvenate your skin, restore facial volume, reshape your face and your body or
-            restore your hair, Amrita has you covered.
-          </p>
-          <div class="services-page__filter">
-            <div class="services-filter__buttons">
-              <button type="button" class="services-filter__button-filter js-open-filter-menu">
-                <svg class="services-filter__icon" width="22" height="22">
-                  <use href="./images/icons_sprite.svg.svg#filter"></use>
-                </svg>
-                Filter
-              </button>
-              <button type="button" class="services-filter__button-sort">
-                <svg class="services-filter__icon" width="22" height="22">
-                  <use href="./images/icons_sprite.svg.svg#sort_by"></use>
-                </svg>
-                Sort by
-              </button>
-            </div>
-            <div class="services-page-filter__choice-list">
-              <ul class="choice-list">
-                <li class="choice-list__item">
-                  <button type="button" class="choice-list__button">
-                    <svg class="choice-list__icon" width="20" height="20">
-                      <use href="./images/icons_sprite.svg.svg#close-icon"></use>
-                    </svg>
-                    <p class="choice-list__button-text">Small</p>
-                  </button>
-                </li>
-                <li class="choice-list__item">
-                  <button type="button" class="choice-list__button">
-                    <svg class="choice-list__icon" width="20" height="20">
-                      <use href="./images/icons_sprite.svg.svg#close-icon"></use>
-                    </svg>
-                    <p class="choice-list__button-text">Small</p>
-                  </button>
-                </li>
-                <li class="choice-list__item">
-                  <button type="button" class="choice-list__button">
-                    <svg class="choice-list__icon" width="20" height="20">
-                      <use href="./images/icons_sprite.svg.svg#close-icon"></use>
-                    </svg>
-                    <p class="choice-list__button-text">Small</p>
-                  </button>
-                </li>
-                <li class="choice-list__item">
-                  <button type="button" class="choice-list__button">
-                    <svg class="choice-list__icon" width="20" height="20">
-                      <use href="./images/icons_sprite.svg.svg#close-icon"></use>
-                    </svg>
-                    <p class="choice-list__button-text">Small</p>
-                  </button>
-                </li>
-                <li class="choice-list__item">
-                  <button type="button" class="choice-list__button">
-                    <svg class="choice-list__icon" width="20" height="20">
-                      <use href="./images/icons_sprite.svg.svg#close-icon"></use>
-                    </svg>
-                    <p class="choice-list__button-text">Small</p>
-                  </button>
-                </li>
-                <li class="choice-list__item">
-                  <button type="button" class="choice-list__button">
-                    <svg class="choice-list__icon" width="20" height="20">
-                      <use href="./images/icons_sprite.svg.svg#close-icon"></use>
-                    </svg>
-                    <p class="choice-list__button-text">Small</p>
-                  </button>
-                </li>
-                <li class="choice-list__item">
-                  <button type="button" class="choice-list__button">
-                    <svg class="choice-list__icon" width="20" height="20">
-                      <use href="./images/icons_sprite.svg.svg#close-icon"></use>
-                    </svg>
-                    <p class="choice-list__button-text">Small</p>
-                  </button>
-                </li>
-                <li class="choice-list__item">
-                  <button type="button" class="choice-list__button">
-                    <svg class="choice-list__icon" width="20" height="20">
-                      <use href="./images/icons_sprite.svg.svg#close-icon"></use>
-                    </svg>
-                    <p class="choice-list__button-text">Small</p>
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="services-page__body">
-            <ul class="services-page__list">
-              <li class="services-page__item bodyMassage lifting">
-                <div class="services-page__item-thumb">
-                  <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                    alt="">
-                  <span class="services-page__item-label">New</span>
-                </div>
-                <a href="./service.html">SERVICE</a>
-                <div class="services-page__item-content">
-                  <h3 class="services-page__item-title">Decontracting </h3>
-                  <p class="services-page__item-description">Massage - Body</p>
-                </div>
-                <button class="services-page__item-button">Book a procedure</button>
-              </li>
-              <li class="services-page__item bodyMassage lifting">
-                <div class="services-page__item-thumb">
-                  <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                    alt="">
-                  <span class="services-page__item-label">New</span>
-                </div>
-                <div class="services-page__item-content">
-                  <h3 class="services-page__item-title">Decontracting </h3>
-                  <p class="services-page__item-description">Massage - Body</p>
-                </div>
-                <button class="services-page__item-button">Book a procedure</button>
-              </li>
-              <li class="services-page__item bodyMassage lifting">
-                <div class="services-page__item-thumb">
-                  <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                    alt="">
-                  <span class="services-page__item-label">New</span>
-                </div>
-                <div class="services-page__item-content">
-                  <h3 class="services-page__item-title">Decontracting </h3>
-                  <p class="services-page__item-description">Massage - Body</p>
-                </div>
-                <button class="services-page__item-button">Book a procedure</button>
-              </li>
-              <li class="services-page__item faceMassage lifting">
-                <div class="services-page__item-thumb">
-                  <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                    alt="">
-                  <span class="services-page__item-label">New</span>
-                </div>
-                <div class="services-page__item-content">
-                  <h3 class="services-page__item-title">Decontracting </h3>
-                  <p class="services-page__item-description">Massage - Body</p>
-                </div>
-                <button class="services-page__item-button">Book a procedure</button>
-              </li>
-              <li class="services-page__item faceMassage lifting">
-                <div class="services-page__item-thumb">
-                  <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                    alt="">
-                  <span class="services-page__item-label">New</span>
-                </div>
-                <div class="services-page__item-content">
-                  <h3 class="services-page__item-title">Decontracting </h3>
-                  <p class="services-page__item-description">Massage - Body</p>
-                </div>
-                <button class="services-page__item-button">Book a procedure</button>
-              </li>
-              <li class="services-page__item manicure toning">
-                <div class="services-page__item-thumb">
-                  <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                    alt="">
-                  <span class="services-page__item-label">New</span>
-                </div>
-                <div class="services-page__item-content">
-                  <h3 class="services-page__item-title">Decontracting </h3>
-                  <p class="services-page__item-description">Massage - Body</p>
-                </div>
-                <button class="services-page__item-button">Book a procedure</button>
-              </li>
-              <li class="services-page__item manicure toning">
-                <div class="services-page__item-thumb">
-                  <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                    alt="">
-                  <span class="services-page__item-label">New</span>
-                </div>
-                <div class="services-page__item-content">
-                  <h3 class="services-page__item-title">Decontracting </h3>
-                  <p class="services-page__item-description">Massage - Body</p>
-                </div>
-                <button class="services-page__item-button">Book a procedure</button>
-              </li>
-              <li class="services-page__item manicure toning">
-                <div class="services-page__item-thumb">
-                  <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                    alt="">
-                  <span class="services-page__item-label">New</span>
-                </div>
-                <div class="services-page__item-content">
-                  <h3 class="services-page__item-title">Decontracting </h3>
-                  <p class="services-page__item-description">Massage - Body</p>
-                </div>
-                <button class="services-page__item-button">Book a procedure</button>
-              </li>
-              <li class="services-page__item manicure hydration">
-                <div class="services-page__item-thumb">
-                  <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                    alt="">
-                  <span class="services-page__item-label">New</span>
-                </div>
-                <div class="services-page__item-content">
-                  <h3 class="services-page__item-title">Decontracting </h3>
-                  <p class="services-page__item-description">Massage - Body</p>
-                </div>
-                <button class="services-page__item-button">Book a procedure</button>
-              </li>
-              <li class="services-page__item hairRemoval hydration">
-                <div class="services-page__item-thumb">
-                  <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                    alt="">
-                  <span class="services-page__item-label">New</span>
-                </div>
-                <div class="services-page__item-content">
-                  <h3 class="services-page__item-title">Decontracting </h3>
-                  <p class="services-page__item-description">Massage - Body</p>
-                </div>
-                <button class="services-page__item-button">Book a procedure</button>
-              </li>
-              <li class="services-page__item hairRemoval hydration">
-                <div class="services-page__item-thumb">
-                  <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                    alt="">
-                  <span class="services-page__item-label">New</span>
-                </div>
-                <div class="services-page__item-content">
-                  <h3 class="services-page__item-title">Decontracting </h3>
-                  <p class="services-page__item-description">Massage - Body</p>
-                </div>
-                <button class="services-page__item-button">Book a procedure</button>
-              </li>
-              <li class="services-page__item hairRemoval hydration">
-                <div class="services-page__item-thumb">
-                  <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                    alt="">
-                  <span class="services-page__item-label">New</span>
-                </div>
-                <div class="services-page__item-content">
-                  <h3 class="services-page__item-title">Decontracting </h3>
-                  <p class="services-page__item-description">Massage - Body</p>
-                </div>
-                <button class="services-page__item-button">Book a procedure</button>
-              </li>
-            </ul>
-            <div class="services-page__pagination">
-              <button type="button" class="services-page-pagination__arrow-buttons">
-                <svg width="40" height="40" class="services-page-pagination__icon">
-                  <use href="./images/icons_sprite.svg.svg#chevron-left-black"></use>
-                </svg>
-              </button>
-              <ul class="services-page-pagination__list">
-                <li class="services-page-pagination__item">
-                  <button type="button" class="services-page-pagination__button">1</button>
-                </li>
-                <li class="services-page-pagination__item">
-                  <button type="button" class="services-page-pagination__button">2</button>
-                </li>
-                <li class="services-page-pagination__item">
-                  <button type="button" class="services-page-pagination__button">3</button>
-                </li>
-                <li class="services-page-pagination__item">
-                  <button type="button" class="services-page-pagination__button">4</button>
-                </li>
-                <li class="services-page-pagination__item">
-                  <button type="button" class="services-page-pagination__button">5</button>
-                </li>
-              </ul>
-              <button type="button" class="services-page-pagination__arrow-buttons">
-                <svg width="40" height="40" class="services-page-pagination__icon">
-                  <use href="./images/icons_sprite.svg.svg#chevron-right-black"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
+    <!-----------------------------ABOUT PROCEDURE--------------------------------->
+    <section class="about-procedure">
+        <div class="container about-procedure__container">
+            <div class="about-procedure__head">
+                <h2 class="title about-procedure__title">
+                    <span class="title-accent">About </span>procedure
+                </h2>
+                <p class="description about-procedure__description">Relive the feeling of deep relaxation and balance your inner state with our Body Relaxation Massage service. Our expert massage therapists will help you release tension and fatigue by working with healthy techniques and inspiration. </p>
+                <div class="about-procedure__instruction-box">
+                    <h3 class="about-procedure__instruction-title">What else </h3>
+                    <p class="about-procedure__instruction-text">The beneficial effect of manual massage on the human body is difficult to overestimate. Nowadays, massage is one of the means of recovery. Due to its effectiveness, massage helps to quickly recover from stress, relax tense muscles and restore a sense of calm and well-being. Real masters of their craft, high-quality cosmetic materials, a cozy and warm atmosphere will give you complete relaxation and well-being.</p>
+                    <h3 class="about-procedure__instruction-title">For whom it is intended</h3>
+                    <p class="about-procedure__instruction-text">Anyone who feels tired from a busy lifestyle. And also has a desire to get rid of the visible manifestations of cellulite, feels pain in the muscles.</p>
+                    <h3 class="about-procedure__instruction-title">Who is not suitable for</h3>
+                    <p class="about-procedure__instruction-text margin-none">Pregnant women, only with the consent of a doctor.</p>
+                </div>
+            </div>
+            <div class="about-procedure__main">
+                <ul class="about-procedure__list">
+                    <li class="about-procedure-list__item">
+                        <p class="about-procedure-item__title">Duration</p>
+                        <p class="about-procedure-item__text">50 - 60 minutes</p>
+                    </li>
+                    <li class="about-procedure-list__item">
+                        <p class="about-procedure-item__title">Techniques</p>
+                        <p class="about-procedure-item__text">Gentle, relaxing movements and stretching of the muscles.</p>
+                    </li>
+                    <li class="about-procedure-list__item">
+                        <p class="about-procedure-item__title">Procedure</p>
+                        <p class="about-procedure-item__text">The massage is performed on a special bed using natural oils or creams. The masseur uses gentle and relaxing movements aimed at relieving muscle tension and improving blood circulation.</p>
+                    </li>
+                    <li class="about-procedure-list__item">
+                        <p class="about-procedure-item__title">Benefits</p>
+                        <p class="about-procedure-item__text">Improved sleep quality, reduced muscle pain and discomfort, improved emotional state, increased muscle flexibility.</p>
+                    </li>
+                    <li class="about-procedure-list__item">
+                            <p class="about-procedure-item__title">Recommendations</p>
+                            <p class="about-procedure-item__text">It is recommended to drink water before and after the massage to maintain hydration. It is usually recommended to repeat the procedure once every 1-2 weeks for best results.</p>
+                    </li>
+                    <li class="about-procedure-list__item">
+                        <p class="about-procedure-item__title">Contraindications</p>
+                        <p class="about-procedure-item__text">Massage may not be recommended for certain medical conditions, such as varicose veins, thrombosis, acute trauma, inflammation of the skin, etc. It is recommended to consult a doctor before having a massage.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-----------------------------FEEDBACK PROCEDURE--------------------------------->
+    <section class="feedback-procedure">
+        <div class="container">
+            <div class="feedback-procedure__head">
+                <h2 class="title feedback-procedure__title">
+                    Our <span class="title-accent">customers </span>love us
+                </h2>
+                <p class="description about-procedure__description">See for yourself why our clients are so drawn to us. Beyond the procedures, we create an atmosphere of calm and care, ensuring that every contact leaves a lasting impression of renewal and satisfaction.</p>
+            </div>
+            <div class="feedback-procedure__main">
+                <div class="swiper feedback__swiper feedback-procedure__swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper feedback-procedure__swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide feedback-procedure__swiper-slide">
+                        <div class="feedback-procedure__slide-head">
+                            <div class="feedback-procedure__slide-info">
+                                <svg width="22" height="22" class="feedback-procedure__slide-icon">
+                                    <use href="./images/icons_sprite.svg.svg#icon_instagram"></use>
+                                </svg>
+                                <p class="feedback-procedure__slide-text">Instagram</p>
+                            </div>
+                            <div class="feedback-procedure__slide-data">25.08.2023</div>
+                        </div>
+                        <div class="feedback-procedure__slide-main">
+                            <img src="https://t4.ftcdn.net/jpg/03/08/67/51/360_F_308675145_Ye70fJFVPntNVnmxjtVgMy5P8MDEmusB.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide feedback-procedure__swiper-slide">
+                        <div class="feedback-procedure__slide-head">
+                            <div class="feedback-procedure__slide-info">
+                                <svg width="22" height="22" class="feedback-procedure__slide-icon">
+                                    <use href="./images/icons_sprite.svg.svg#icon_facebook"></use>
+                                </svg>
+                                <p class="feedback-procedure__slide-text">Facebook</p>
+                            </div>
+                            <div class="feedback-procedure__slide-data">13.06.23</div>
+                        </div>
+                        <div class="feedback-procedure__slide-main">
+                            <img src="https://t4.ftcdn.net/jpg/03/08/67/51/360_F_308675145_Ye70fJFVPntNVnmxjtVgMy5P8MDEmusB.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide feedback-procedure__swiper-slide">
+                        <div class="feedback-procedure__slide-head">
+                            <div class="feedback-procedure__slide-info">
+                                <svg width="22" height="22" class="feedback-procedure__slide-icon">
+                                    <use href="./images/icons_sprite.svg.svg#icon_instagram"></use>
+                                </svg>
+                                <p class="feedback-procedure__slide-text">Instagram</p>
+                            </div>
+                            <div class="feedback-procedure__slide-data">19.07.23</div>
+                        </div>
+                        <div class="feedback-procedure__slide-main">
+                            <img src="https://t4.ftcdn.net/jpg/03/08/67/51/360_F_308675145_Ye70fJFVPntNVnmxjtVgMy5P8MDEmusB.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide feedback-procedure__swiper-slide">
+                        <div class="feedback-procedure__slide-head">
+                            <div class="feedback-procedure__slide-info">
+                                <svg width="22" height="22" class="feedback-procedure__slide-icon">
+                                    <use href="./images/icons_sprite.svg.svg#icon_facebook"></use>
+                                </svg>
+                                <p class="feedback-procedure__slide-text">Facebook</p>
+                            </div>
+                            <div class="feedback-procedure__slide-data">02.05.23</div>
+                        </div>
+                        <div class="feedback-procedure__slide-main">
+                            <img src="https://t4.ftcdn.net/jpg/03/08/67/51/360_F_308675145_Ye70fJFVPntNVnmxjtVgMy5P8MDEmusB.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination feedback-procedure__swiper-pagination"></div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <!-----------------------------FAQ--------------------------------->
+    <section class="faq">
+        <div class="container faq__container">
+            <div class="faq__section">
+                <h2 class="title faq-section__title">
+                    <span class="title-accent">Faq</span>
+                </h2>
+                <p class="description faq__description">Lorem ipsum dolor sit amet consectetur. Amet tristique semper placerat risus sed quisque eget sit purus. Volutpat pulvinar purus sagittis tempor vel.</p>
+                <ul class="faq-section__list">
+                    <li class="faq-section__list-item">
+                        <div class="faq-section__item-content">
+                            <p class="faq-section__item-text">Do I need to prepare before the procedure?</p>
+                            <button type="button" class="faq-section__item-button">
+                                <svg width="32" height="32" class="faq-section__item-icon">
+                                    <use href="./images/icons_sprite.svg.svg#plus" class="procedures__icon"></use>
+                                  </svg>
+                            </button>
+                        </div>
+                        <div class="faq-section__item-dropdown">
+                            <p class="faq-section__item-dropdown-text">Lorem ipsum dolor sit amet consectetur. Tellus neque tellus magna risus pellentesque. Adipiscing congue quam faucibus nam pretium dignissim nulla. Et amet et pellentesque sit orci. Lorem faucibus luctus pulvinar massa sagittis augue ante consectetur gravida.</p>
+                        </div>
+                    </li>
+                    <li class="faq-section__list-item">
+                        <div class="faq-section__item-content">
+                            <p class="faq-section__item-text">What sensations usually occur during and after the procedure?</p>
+                            <button type="button" class="faq-section__item-button">
+                                <svg width="32" height="32" class="faq-section__item-icon">
+                                    <use href="./images/icons_sprite.svg.svg#plus" class="procedures__icon"></use>
+                                  </svg>
+                            </button>
+                        </div>
+                        <div class="faq-section__item-dropdown">
+                            <p class="faq-section__item-dropdown-text">Lorem ipsum dolor sit amet consectetur. Tellus neque tellus magna risus pellentesque. Adipiscing congue quam faucibus nam pretium dignissim nulla. Et amet et pellentesque sit orci. Lorem faucibus luctus pulvinar massa sagittis augue ante consectetur gravida.</p>
+                        </div>
+                    </li>
+                    <li class="faq-section__list-item">
+                        <div class="faq-section__item-content">
+                            <p class="faq-section__item-text">Is it allowed to undergo this procedure during pregnancy?</p>
+                            <button type="button" class="faq-section__item-button">
+                                <svg width="32" height="32" class="faq-section__item-icon">
+                                    <use href="./images/icons_sprite.svg.svg#plus" class="procedures__icon"></use>
+                                  </svg>
+                            </button>
+                        </div>
+                        <div class="faq-section__item-dropdown">
+                            <p class="faq-section__item-dropdown-text">Lorem ipsum dolor sit amet consectetur. Tellus neque tellus magna risus pellentesque. Adipiscing congue quam faucibus nam pretium dignissim nulla. Et amet et pellentesque sit orci. Lorem faucibus luctus pulvinar massa sagittis augue ante consectetur gravida.</p>
+                        </div>
+                    </li>
+                    <li class="faq-section__list-item">
+                        <div class="faq-section__item-content">
+                            <p class="faq-section__item-text">Can this procedure help improve sleep quality?
+                            </p>
+                            <button type="button" class="faq-section__item-button">
+                                <svg width="32" height="32" class="faq-section__item-icon">
+                                    <use href="./images/icons_sprite.svg.svg#plus" class="procedures__icon"></use>
+                                  </svg>
+                            </button>
+                        </div>
+                        <div class="faq-section__item-dropdown">
+                            <p class="faq-section__item-dropdown-text">Lorem ipsum dolor sit amet consectetur. Tellus neque tellus magna risus pellentesque. Adipiscing congue quam faucibus nam pretium dignissim nulla. Et amet et pellentesque sit orci. Lorem faucibus luctus pulvinar massa sagittis augue ante consectetur gravida.</p>
+                        </div>
+                    </li>
+                    <li class="faq-section__list-item">
+                        <div class="faq-section__item-content">
+                            <p class="faq-section__item-text">What are the advantages of "Body relaxation massage" compared to other types of massage?</p>
+                            <button type="button" class="faq-section__item-button">
+                                <svg width="32" height="32" class="faq-section__item-icon">
+                                    <use href="./images/icons_sprite.svg.svg#plus" class="procedures__icon"></use>
+                                  </svg>
+                            </button>
+                        </div>
+                        <div class="faq-section__item-dropdown">
+                            <p class="faq-section__item-dropdown-text">Lorem ipsum dolor sit amet consectetur. Tellus neque tellus magna risus pellentesque. Adipiscing congue quam faucibus nam pretium dignissim nulla. Et amet et pellentesque sit orci. Lorem faucibus luctus pulvinar massa sagittis augue ante consectetur gravida.</p>
+                        </div>
+                    </li>
+                    <li class="faq-section__list-item">
+                        <div class="faq-section__item-content">
+                            <p class="faq-section__item-text">What are the main areas of the body covered by the "Body Relaxation Massage"?</p>
+                            <button type="button" class="faq-section__item-button">
+                                <svg width="32" height="32" class="faq-section__item-icon">
+                                    <use href="./images/icons_sprite.svg.svg#plus" class="procedures__icon"></use>
+                                  </svg>
+                            </button>
+                        </div>
+                        <div class="faq-section__item-dropdown">
+                            <p class="faq-section__item-dropdown-text">Lorem ipsum dolor sit amet consectetur. Tellus neque tellus magna risus pellentesque. Adipiscing congue quam faucibus nam pretium dignissim nulla. Et amet et pellentesque sit orci. Lorem faucibus luctus pulvinar massa sagittis augue ante consectetur gravida.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="questions__section">
+                <h2 class="title questions-section__title">
+                    Do you <span class="title-accent">have questions?</span>
+                </h2>
+                <p class="description questions__description">Lorem ipsum dolor sit amet consectetur. Suscipit nisl enim hac turpis nec etiam diam. Purus ipsum nibh diam viverra vel hendrerit sagittis quisque.</p>
+                <form class="questions-section__form">
+                    <label class="questions-section__label">
+                        <input type="text" class="questions-section__input" name="name" placeholder="Full name">
+                    </label>
+                    <label class="questions-section__label">
+                        <input type="email" class="questions-section__input" name="email" placeholder="Email">
+                    </label>
+                    <label class="questions-section__label">
+                        <input type="text" class="questions-section__input" name="tel" placeholder="Mobile">
+                    </label>
+                    <label class="questions-section__label">
+                        <input type="text" class="questions-section__input margin-style" name="message" placeholder="Message">
+                    </label>
+                    <button class="questions-section__form-button">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!---------------------------SERVICE POPULAR---------------------- -->
+    <section class="popular service__popular">
+            <div class="container">
+              <h2 class="tittle service-popular_title">
+                <span class="tittle-accent">You </span>
+                 may also 
+                <span class="tittle-accent">like </span>
+              </h2>
+              <p class="description service-popular__description">
+                Popular services that are highly valued by our clients help to
+                reveal your natural beauty and emphasize the uniqueness of your
+                image.
+              </p>
+              <div class="swiper popular__swiper">
+                <div class="swiper-wrapper popular__swiper-wrapper">
+                  <div class="swiper-slide popular__swiper-slide">
+                    <div class="popular__thumb">
+                      <img src="https://109.te.ua/firms/photos/16871/4_1.jpg" alt="" />
+                      <div class="popular__thumb-content">
+                        <div class="popular__info-box">
+                          <h3 class="popular__title">Dermo-active peels</h3>
+                          <p class="populat__text">
+                            Used to treat common musculoskeletal disorders and improve fluid circulation, including blood and IQ. It is also highly indicated for lymphatic drainage and circulatory action.
+                          </p>
+                        </div>
+                        <button class="banner__button popular__button">
+                          Book a procedure
+                          <svg width="22" height="22" class="banner__icon">
+                            <use href="./images/icons_sprite.svg.svg#arrow-up-right2"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide popular__swiper-slide">
+                    <div class="popular__thumb">
+                      <img src="https://109.te.ua/firms/photos/16871/4_1.jpg" alt="" />
+                      <div class="popular__thumb-content">
+                        <div class="popular__info-box">
+                          <h3 class="popular__title">Ko.Bi.Do</h3>
+                          <p class="populat__text">
+                            Japanese ritual facial care technique with the goal of improving facial skin tone, just like a natural facelift.
+                          </p>
+                        </div>
+                        <button class="banner__button popular__button">
+                          Book a procedure
+                          <svg width="22" height="22" class="banner__icon">
+                            <use href="./images/icons_sprite.svg.svg#arrow-up-right2"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide popular__swiper-slide">
+                    <div class="popular__thumb">
+                      <img src="https://109.te.ua/firms/photos/16871/4_1.jpg" alt="" />
+                      <div class="popular__thumb-content">
+                        <div class="popular__info-box">
+                          <h3 class="popular__title">Endosphere therapy</h3>
+                          <p class="populat__text">
+                            Body: Antalgic, draining, shaping, toning, circulatory
+                            action
+                          </p>
+                        </div>
+                        <button class="banner__button popular__button">
+                          Book a procedure
+                          <svg width="22" height="22" class="banner__icon">
+                            <use href="./images/icons_sprite.svg.svg#arrow-up-right2"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide popular__swiper-slide">
+                    <div class="popular__thumb">
+                      <img src="https://109.te.ua/firms/photos/16871/4_1.jpg" alt="" />
+                      <div class="popular__thumb-content">
+                        <div class="popular__info-box">
+                          <h3 class="popular__title">
+                            Kinesiological Taping
+                          </h3>
+                          <p class="populat__text">
+                            It's a therapeutic system using adhesive bands to relieve physiological strain on the body, stabilize ligaments, and counteract tissue swelling.
+                          </p>
+                        </div>
+                        <button class="banner__button popular__button">
+                          Book a procedure
+                          <svg width="22" height="22" class="banner__icon">
+                            <use href="./images/icons_sprite.svg.svg#arrow-up-right2"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination popular__swiper-pagination"></div>
+              </div>
+            </div>
+          </section>
   </main>
   <!---------------------------FOOTER------------------------>
   <footer class="footer">
@@ -1471,6 +1250,5 @@
       </div>
     </div>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js"></script>
 </body>
 </html>
