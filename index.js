@@ -225,12 +225,12 @@ toggleButtons.forEach((button) => {
 
 
 // ---------------------CUSTOM SELECT----------------------
-const select = function() {
+const select = function () {
   const selectHeader = document.querySelectorAll(".select-header");
   const selectItem = document.querySelectorAll(".select-item");
 
   selectHeader.forEach(item => {
-    item.addEventListener('click', function() {
+    item.addEventListener('click', function () {
       const select = this.parentElement;
       select.classList.toggle("is-active");
       const chevronIcon = select.querySelector('.select-icon svg use');
@@ -243,7 +243,7 @@ const select = function() {
   });
 
   selectItem.forEach(item => {
-    item.addEventListener('click', function() {
+    item.addEventListener('click', function () {
       const text = this.innerText,
         select = this.closest('.select'),
         currentText = select.querySelector('.select-current');
@@ -260,20 +260,32 @@ select();
 
 // ---------------FILTER------------
 const selectBtns = document.querySelectorAll('.filter-desctop-type__head'),
-      items = document.querySelectorAll('.filter-desctop__checkbox-item');
+  items = document.querySelectorAll('.filter-desctop__checkbox-item');
 
-      // console.log(selectBtn, items)
-      selectBtns.forEach(selectBtn => {
-        selectBtn.addEventListener('click', () => {
-          selectBtn.classList.toggle("open")
-        })
-      })
+const servicesList = document.querySelectorAll('.services-page__item');
 
-      items.forEach(item => {
-        item.addEventListener('click', () => {
-          item.classList.toggle("checked")
-        })
-      })
+selectBtns.forEach(selectBtn => {
+  selectBtn.addEventListener('click', () => {
+    selectBtn.classList.toggle("open")
+  })
+})
+
+
+items.forEach(item => {
+  item.addEventListener('click', (e) => {
+    item.classList.toggle("checked");
+
+    let filterTypeClass = e.currentTarget.dataset['filter'];
+    let filterEffectClass = e.currentTarget.dataset['filter'];
+    
+    servicesList.forEach(item => {
+      if (!item.classList.contains(filterTypeClass) || !item.classList.contains(filterEffectClass)) {
+        item.classList.toggle('hide-services-page__item')
+      }
+    })
+  })
+})
+
 
 
 //-------------------SLIDER PRICE--------------
@@ -300,7 +312,7 @@ if (slider) {
     slider.noUiSlider.set(arr)
   }
 
-  slider.noUiSlider.on('update', function(values, handle){
+  slider.noUiSlider.on('update', function (values, handle) {
     inputs[handle].value = Math.round(values[handle])
   })
 
