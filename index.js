@@ -286,6 +286,7 @@ selectBtns.forEach(selectBtn => {
   })
 })
 
+const choiceList = document.querySelector('.choice-list');
 
 items.forEach(item => {
   item.addEventListener('click', (e) => {
@@ -301,7 +302,6 @@ items.forEach(item => {
     })
   })
 })
-
 
 
 //-------------------SLIDER PRICE--------------
@@ -341,3 +341,17 @@ function createSlider(sliderId, inputIds) {
 createSlider('filter-price__range-slider', ['input-1', 'input-2']);
 createSlider('filter-price-mob__range-slider', ['input-3', 'input-4']);
 
+
+// -------------------SEARCH PANEL--------------------
+const searchButton = document.getElementById('js-open-panelSearch');
+const searchPanelHeader = document.getElementById('js-search-panel-header');
+const serachIcon = document.getElementById('js-search-button-icon');
+
+searchButton.addEventListener('click', (e) => {
+  searchPanelHeader.classList.toggle("is-open");
+  if (searchPanelHeader.classList.contains("is-open")) {
+    serachIcon.querySelector('use').setAttribute('href', './images/icons_sprite.svg.svg#close-icon');
+  } else {
+    serachIcon.querySelector('use').setAttribute('href', './images/icons_sprite.svg.svg#search');
+  }
+})

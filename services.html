@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +18,7 @@
   <link rel="stylesheet" href="./css/pagesStyles/services.css" />
   <script type="module" src="./index.js"></script>
 </head>
+
 <body>
   <!---------------------------HEADER---------------------- -->
   <header class="header">
@@ -71,8 +73,8 @@
         </div>
       </div>
       <div class="header__buttons">
-        <button class="header__button-search">
-          <svg width="32" height="32" class="logo__icon" class="button-search__icon">
+        <button class="header__button-search" id="js-open-panelSearch">
+          <svg width="32" height="32" class="logo__icon" class="button-search__icon" id="js-search-button-icon">
             <use href="./images/icons_sprite.svg.svg#search"></use>
           </svg>
         </button>
@@ -84,6 +86,16 @@
       </div>
     </div>
     <div class="header__decor"></div>
+    <div class="container header__search-panel" id="js-search-panel-header">
+      <label class="header__search-panel-label">
+        <input type="text" placeholder="Search prochedure" class="search__input" />
+        <button type="button" class="search__button">
+          <svg width="20" height="20" class="search__button__icon">
+            <use href="./images/icons_sprite.svg.svg#search"></use>
+          </svg>
+        </button>
+      </label>
+    </div>
     <div class="container services__container">
       <ul class="services__list">
         <li class="services__item">
@@ -221,118 +233,118 @@
                   <use href="./images/icons_sprite.svg.svg#chevron-down"></use>
                 </svg>
               </div>
-                <ul class="filter-desctop__checkbox-list">
-                  <li class="filter-desctop__checkbox-item" data-filter="bodyMassage">
-                    <div class="filter-desctop__checkbox-container">
-                      <span class="filter-desctop__checkbox">
-                        <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                          <use href="./images/icons_sprite.svg.svg#check"></use>
-                        </svg>
-                      </span>
-                      <span class="filter-desctop__checkbox-text">Body massage</span>
-                    </div>
-                    <span class="filter-desctop__checkbox-number">10</span>
-                  </li>
-                  <li class="filter-desctop__checkbox-item" data-filter="faceMassage">
-                    <div class="filter-desctop__checkbox-container">
-                      <span class="filter-desctop__checkbox">
-                        <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                          <use href="./images/icons_sprite.svg.svg#check"></use>
-                        </svg>
-                      </span>
-                      <span class="filter-desctop__checkbox-text">Face massage</span>
-                    </div>
-                    <span class="filter-desctop__checkbox-number">3</span>
-                  </li>
-                  <li class="filter-desctop__checkbox-item" data-filter="bodyCare">
-                    <div class="filter-desctop__checkbox-container">
-                      <span class="filter-desctop__checkbox">
-                        <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                          <use href="./images/icons_sprite.svg.svg#check"></use>
-                        </svg>
-                      </span>
-                      <span class="filter-desctop__checkbox-text">Body care</span>
-                    </div>
-                    <span class="filter-desctop__checkbox-number">5</span>
-                  </li>
-                  <li class="filter-desctop__checkbox-item" data-filter="faceCare">
-                    <div class="filter-desctop__checkbox-container">
-                      <span class="filter-desctop__checkbox">
-                        <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                          <use href="./images/icons_sprite.svg.svg#check"></use>
-                        </svg>
-                      </span>
-                      <span class="filter-desctop__checkbox-text">Face care</span>
-                    </div>
-                    <span class="filter-desctop__checkbox-number">4</span>
-                  </li>
-                  <li class="filter-desctop__checkbox-item" data-filter="endosphereTherapy">
-                    <div class="filter-desctop__checkbox-container">
-                      <span class="filter-desctop__checkbox">
-                        <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                          <use href="./images/icons_sprite.svg.svg#check"></use>
-                        </svg>
-                      </span>
-                      <span class="filter-desctop__checkbox-text">Endosphere therapy</span>
-                    </div>
-                    <span class="filter-desctop__checkbox-number">4</span>
-                  </li>
-                  <li class="filter-desctop__checkbox-item" data-filter="mesoBioStim">
-                    <div class="filter-desctop__checkbox-container">
-                      <span class="filter-desctop__checkbox">
-                        <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                          <use href="./images/icons_sprite.svg.svg#check"></use>
-                        </svg>
-                      </span>
-                      <span class="filter-desctop__checkbox-text">MesoBioStim</span>
-                    </div>
-                    <span class="filter-desctop__checkbox-number">4</span>
-                  </li>
-                  <li class="filter-desctop__checkbox-item" data-filter="hairRemoval">
-                    <div class="filter-desctop__checkbox-container">
-                      <span class="filter-desctop__checkbox">
-                        <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                          <use href="./images/icons_sprite.svg.svg#check"></use>
-                        </svg>
-                      </span>
-                      <span class="filter-desctop__checkbox-text">Hair removal</span>
-                    </div>
-                    <span class="filter-desctop__checkbox-number">2</span>
-                  </li>
-                  <li class="filter-desctop__checkbox-item" data-filter="eyelashes">
-                    <div class="filter-desctop__checkbox-container">
-                      <span class="filter-desctop__checkbox">
-                        <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                          <use href="./images/icons_sprite.svg.svg#check"></use>
-                        </svg>
-                      </span>
-                      <span class="filter-desctop__checkbox-text">Eyelashes</span>
-                    </div>
-                    <span class="filter-desctop__checkbox-number">2</span>
-                  </li>
-                  <li class="filter-desctop__checkbox-item" data-filter="manicure">
-                    <div class="filter-desctop__checkbox-container">
-                      <span class="filter-desctop__checkbox">
-                        <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                          <use href="./images/icons_sprite.svg.svg#check"></use>
-                        </svg>
-                      </span>
-                      <span class="filter-desctop__checkbox-text">Manicure</span>
-                    </div>
-                    <span class="filter-desctop__checkbox-number">4</span>
-                  </li>
-                  <li class="filter-desctop__checkbox-item" data-filter="pedicure">
-                    <div class="filter-desctop__checkbox-container">
-                      <span class="filter-desctop__checkbox">
-                        <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                          <use href="./images/icons_sprite.svg.svg#check"></use>
-                        </svg>
-                      </span>
-                      <span class="filter-desctop__checkbox-text">Pedicure</span>
-                    </div>
-                    <span class="filter-desctop__checkbox-number">4</span>
-                  </li>
-                </ul>
+              <ul class="filter-desctop__checkbox-list">
+                <li class="filter-desctop__checkbox-item" data-filter="bodyMassage">
+                  <div class="filter-desctop__checkbox-container">
+                    <span class="filter-desctop__checkbox">
+                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
+                        <use href="./images/icons_sprite.svg.svg#check"></use>
+                      </svg>
+                    </span>
+                    <span class="filter-desctop__checkbox-text">Body massage</span>
+                  </div>
+                  <span class="filter-desctop__checkbox-number">10</span>
+                </li>
+                <li class="filter-desctop__checkbox-item" data-filter="faceMassage">
+                  <div class="filter-desctop__checkbox-container">
+                    <span class="filter-desctop__checkbox">
+                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
+                        <use href="./images/icons_sprite.svg.svg#check"></use>
+                      </svg>
+                    </span>
+                    <span class="filter-desctop__checkbox-text">Face massage</span>
+                  </div>
+                  <span class="filter-desctop__checkbox-number">3</span>
+                </li>
+                <li class="filter-desctop__checkbox-item" data-filter="bodyCare">
+                  <div class="filter-desctop__checkbox-container">
+                    <span class="filter-desctop__checkbox">
+                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
+                        <use href="./images/icons_sprite.svg.svg#check"></use>
+                      </svg>
+                    </span>
+                    <span class="filter-desctop__checkbox-text">Body care</span>
+                  </div>
+                  <span class="filter-desctop__checkbox-number">5</span>
+                </li>
+                <li class="filter-desctop__checkbox-item" data-filter="faceCare">
+                  <div class="filter-desctop__checkbox-container">
+                    <span class="filter-desctop__checkbox">
+                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
+                        <use href="./images/icons_sprite.svg.svg#check"></use>
+                      </svg>
+                    </span>
+                    <span class="filter-desctop__checkbox-text">Face care</span>
+                  </div>
+                  <span class="filter-desctop__checkbox-number">4</span>
+                </li>
+                <li class="filter-desctop__checkbox-item" data-filter="endosphereTherapy">
+                  <div class="filter-desctop__checkbox-container">
+                    <span class="filter-desctop__checkbox">
+                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
+                        <use href="./images/icons_sprite.svg.svg#check"></use>
+                      </svg>
+                    </span>
+                    <span class="filter-desctop__checkbox-text">Endosphere therapy</span>
+                  </div>
+                  <span class="filter-desctop__checkbox-number">4</span>
+                </li>
+                <li class="filter-desctop__checkbox-item" data-filter="mesoBioStim">
+                  <div class="filter-desctop__checkbox-container">
+                    <span class="filter-desctop__checkbox">
+                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
+                        <use href="./images/icons_sprite.svg.svg#check"></use>
+                      </svg>
+                    </span>
+                    <span class="filter-desctop__checkbox-text">MesoBioStim</span>
+                  </div>
+                  <span class="filter-desctop__checkbox-number">4</span>
+                </li>
+                <li class="filter-desctop__checkbox-item" data-filter="hairRemoval">
+                  <div class="filter-desctop__checkbox-container">
+                    <span class="filter-desctop__checkbox">
+                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
+                        <use href="./images/icons_sprite.svg.svg#check"></use>
+                      </svg>
+                    </span>
+                    <span class="filter-desctop__checkbox-text">Hair removal</span>
+                  </div>
+                  <span class="filter-desctop__checkbox-number">2</span>
+                </li>
+                <li class="filter-desctop__checkbox-item" data-filter="eyelashes">
+                  <div class="filter-desctop__checkbox-container">
+                    <span class="filter-desctop__checkbox">
+                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
+                        <use href="./images/icons_sprite.svg.svg#check"></use>
+                      </svg>
+                    </span>
+                    <span class="filter-desctop__checkbox-text">Eyelashes</span>
+                  </div>
+                  <span class="filter-desctop__checkbox-number">2</span>
+                </li>
+                <li class="filter-desctop__checkbox-item" data-filter="manicure">
+                  <div class="filter-desctop__checkbox-container">
+                    <span class="filter-desctop__checkbox">
+                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
+                        <use href="./images/icons_sprite.svg.svg#check"></use>
+                      </svg>
+                    </span>
+                    <span class="filter-desctop__checkbox-text">Manicure</span>
+                  </div>
+                  <span class="filter-desctop__checkbox-number">4</span>
+                </li>
+                <li class="filter-desctop__checkbox-item" data-filter="pedicure">
+                  <div class="filter-desctop__checkbox-container">
+                    <span class="filter-desctop__checkbox">
+                      <svg width="14" height="14" class="filter-desctop__icon-checkbox">
+                        <use href="./images/icons_sprite.svg.svg#check"></use>
+                      </svg>
+                    </span>
+                    <span class="filter-desctop__checkbox-text">Pedicure</span>
+                  </div>
+                  <span class="filter-desctop__checkbox-number">4</span>
+                </li>
+              </ul>
             </div>
             <div class="filter-desctop__price">
               <h4 class="filter-desctop-type__title price__title">Price</h4>
@@ -1172,118 +1184,118 @@
             <use href="./images/icons_sprite.svg.svg#chevron-down"></use>
           </svg>
         </div>
-          <ul class="filter-desctop__checkbox-list">
-            <li class="filter-desctop__checkbox-item" data-filter="bodyMassage">
-              <div class="filter-desctop__checkbox-container">
-                <span class="filter-desctop__checkbox">
-                  <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                    <use href="./images/icons_sprite.svg.svg#check"></use>
-                  </svg>
-                </span>
-                <span class="filter-desctop__checkbox-text">Body massage</span>
-              </div>
-              <span class="filter-desctop__checkbox-number">10</span>
-            </li>
-            <li class="filter-desctop__checkbox-item" data-filter="faceMassage">
-              <div class="filter-desctop__checkbox-container">
-                <span class="filter-desctop__checkbox">
-                  <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                    <use href="./images/icons_sprite.svg.svg#check"></use>
-                  </svg>
-                </span>
-                <span class="filter-desctop__checkbox-text">Face massage</span>
-              </div>
-              <span class="filter-desctop__checkbox-number">3</span>
-            </li>
-            <li class="filter-desctop__checkbox-item" data-filter="bodyCare">
-              <div class="filter-desctop__checkbox-container">
-                <span class="filter-desctop__checkbox">
-                  <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                    <use href="./images/icons_sprite.svg.svg#check"></use>
-                  </svg>
-                </span>
-                <span class="filter-desctop__checkbox-text">Body care</span>
-              </div>
-              <span class="filter-desctop__checkbox-number">5</span>
-            </li>
-            <li class="filter-desctop__checkbox-item" data-filter="faceCare">
-              <div class="filter-desctop__checkbox-container">
-                <span class="filter-desctop__checkbox">
-                  <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                    <use href="./images/icons_sprite.svg.svg#check"></use>
-                  </svg>
-                </span>
-                <span class="filter-desctop__checkbox-text">Face care</span>
-              </div>
-              <span class="filter-desctop__checkbox-number">4</span>
-            </li>
-            <li class="filter-desctop__checkbox-item" data-filter="endosphereTherapy">
-              <div class="filter-desctop__checkbox-container">
-                <span class="filter-desctop__checkbox">
-                  <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                    <use href="./images/icons_sprite.svg.svg#check"></use>
-                  </svg>
-                </span>
-                <span class="filter-desctop__checkbox-text">Endosphere therapy</span>
-              </div>
-              <span class="filter-desctop__checkbox-number">4</span>
-            </li>
-            <li class="filter-desctop__checkbox-item" data-filter="mesoBioStim">
-              <div class="filter-desctop__checkbox-container">
-                <span class="filter-desctop__checkbox">
-                  <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                    <use href="./images/icons_sprite.svg.svg#check"></use>
-                  </svg>
-                </span>
-                <span class="filter-desctop__checkbox-text">MesoBioStim</span>
-              </div>
-              <span class="filter-desctop__checkbox-number">4</span>
-            </li>
-            <li class="filter-desctop__checkbox-item" data-filter="hairRemoval">
-              <div class="filter-desctop__checkbox-container">
-                <span class="filter-desctop__checkbox">
-                  <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                    <use href="./images/icons_sprite.svg.svg#check"></use>
-                  </svg>
-                </span>
-                <span class="filter-desctop__checkbox-text">Hair removal</span>
-              </div>
-              <span class="filter-desctop__checkbox-number">2</span>
-            </li>
-            <li class="filter-desctop__checkbox-item" data-filter="eyelashes">
-              <div class="filter-desctop__checkbox-container">
-                <span class="filter-desctop__checkbox">
-                  <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                    <use href="./images/icons_sprite.svg.svg#check"></use>
-                  </svg>
-                </span>
-                <span class="filter-desctop__checkbox-text">Eyelashes</span>
-              </div>
-              <span class="filter-desctop__checkbox-number">2</span>
-            </li>
-            <li class="filter-desctop__checkbox-item" data-filter="manicure">
-              <div class="filter-desctop__checkbox-container">
-                <span class="filter-desctop__checkbox">
-                  <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                    <use href="./images/icons_sprite.svg.svg#check"></use>
-                  </svg>
-                </span>
-                <span class="filter-desctop__checkbox-text">Manicure</span>
-              </div>
-              <span class="filter-desctop__checkbox-number">4</span>
-            </li>
-            <li class="filter-desctop__checkbox-item" data-filter="pedicure">
-              <div class="filter-desctop__checkbox-container">
-                <span class="filter-desctop__checkbox">
-                  <svg width="14" height="14" class="filter-desctop__icon-checkbox">
-                    <use href="./images/icons_sprite.svg.svg#check"></use>
-                  </svg>
-                </span>
-                <span class="filter-desctop__checkbox-text">Pedicure</span>
-              </div>
-              <span class="filter-desctop__checkbox-number">4</span>
-            </li>
-          </ul>
+        <ul class="filter-desctop__checkbox-list">
+          <li class="filter-desctop__checkbox-item" data-filter="bodyMassage">
+            <div class="filter-desctop__checkbox-container">
+              <span class="filter-desctop__checkbox">
+                <svg width="14" height="14" class="filter-desctop__icon-checkbox">
+                  <use href="./images/icons_sprite.svg.svg#check"></use>
+                </svg>
+              </span>
+              <span class="filter-desctop__checkbox-text">Body massage</span>
+            </div>
+            <span class="filter-desctop__checkbox-number">10</span>
+          </li>
+          <li class="filter-desctop__checkbox-item" data-filter="faceMassage">
+            <div class="filter-desctop__checkbox-container">
+              <span class="filter-desctop__checkbox">
+                <svg width="14" height="14" class="filter-desctop__icon-checkbox">
+                  <use href="./images/icons_sprite.svg.svg#check"></use>
+                </svg>
+              </span>
+              <span class="filter-desctop__checkbox-text">Face massage</span>
+            </div>
+            <span class="filter-desctop__checkbox-number">3</span>
+          </li>
+          <li class="filter-desctop__checkbox-item" data-filter="bodyCare">
+            <div class="filter-desctop__checkbox-container">
+              <span class="filter-desctop__checkbox">
+                <svg width="14" height="14" class="filter-desctop__icon-checkbox">
+                  <use href="./images/icons_sprite.svg.svg#check"></use>
+                </svg>
+              </span>
+              <span class="filter-desctop__checkbox-text">Body care</span>
+            </div>
+            <span class="filter-desctop__checkbox-number">5</span>
+          </li>
+          <li class="filter-desctop__checkbox-item" data-filter="faceCare">
+            <div class="filter-desctop__checkbox-container">
+              <span class="filter-desctop__checkbox">
+                <svg width="14" height="14" class="filter-desctop__icon-checkbox">
+                  <use href="./images/icons_sprite.svg.svg#check"></use>
+                </svg>
+              </span>
+              <span class="filter-desctop__checkbox-text">Face care</span>
+            </div>
+            <span class="filter-desctop__checkbox-number">4</span>
+          </li>
+          <li class="filter-desctop__checkbox-item" data-filter="endosphereTherapy">
+            <div class="filter-desctop__checkbox-container">
+              <span class="filter-desctop__checkbox">
+                <svg width="14" height="14" class="filter-desctop__icon-checkbox">
+                  <use href="./images/icons_sprite.svg.svg#check"></use>
+                </svg>
+              </span>
+              <span class="filter-desctop__checkbox-text">Endosphere therapy</span>
+            </div>
+            <span class="filter-desctop__checkbox-number">4</span>
+          </li>
+          <li class="filter-desctop__checkbox-item" data-filter="mesoBioStim">
+            <div class="filter-desctop__checkbox-container">
+              <span class="filter-desctop__checkbox">
+                <svg width="14" height="14" class="filter-desctop__icon-checkbox">
+                  <use href="./images/icons_sprite.svg.svg#check"></use>
+                </svg>
+              </span>
+              <span class="filter-desctop__checkbox-text">MesoBioStim</span>
+            </div>
+            <span class="filter-desctop__checkbox-number">4</span>
+          </li>
+          <li class="filter-desctop__checkbox-item" data-filter="hairRemoval">
+            <div class="filter-desctop__checkbox-container">
+              <span class="filter-desctop__checkbox">
+                <svg width="14" height="14" class="filter-desctop__icon-checkbox">
+                  <use href="./images/icons_sprite.svg.svg#check"></use>
+                </svg>
+              </span>
+              <span class="filter-desctop__checkbox-text">Hair removal</span>
+            </div>
+            <span class="filter-desctop__checkbox-number">2</span>
+          </li>
+          <li class="filter-desctop__checkbox-item" data-filter="eyelashes">
+            <div class="filter-desctop__checkbox-container">
+              <span class="filter-desctop__checkbox">
+                <svg width="14" height="14" class="filter-desctop__icon-checkbox">
+                  <use href="./images/icons_sprite.svg.svg#check"></use>
+                </svg>
+              </span>
+              <span class="filter-desctop__checkbox-text">Eyelashes</span>
+            </div>
+            <span class="filter-desctop__checkbox-number">2</span>
+          </li>
+          <li class="filter-desctop__checkbox-item" data-filter="manicure">
+            <div class="filter-desctop__checkbox-container">
+              <span class="filter-desctop__checkbox">
+                <svg width="14" height="14" class="filter-desctop__icon-checkbox">
+                  <use href="./images/icons_sprite.svg.svg#check"></use>
+                </svg>
+              </span>
+              <span class="filter-desctop__checkbox-text">Manicure</span>
+            </div>
+            <span class="filter-desctop__checkbox-number">4</span>
+          </li>
+          <li class="filter-desctop__checkbox-item" data-filter="pedicure">
+            <div class="filter-desctop__checkbox-container">
+              <span class="filter-desctop__checkbox">
+                <svg width="14" height="14" class="filter-desctop__icon-checkbox">
+                  <use href="./images/icons_sprite.svg.svg#check"></use>
+                </svg>
+              </span>
+              <span class="filter-desctop__checkbox-text">Pedicure</span>
+            </div>
+            <span class="filter-desctop__checkbox-number">4</span>
+          </li>
+        </ul>
       </div>
       <div class="filter-desctop__price">
         <h4 class="filter-desctop-type__title price__title">Price</h4>
@@ -1462,4 +1474,5 @@
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js"></script>
 </body>
+
 </html>

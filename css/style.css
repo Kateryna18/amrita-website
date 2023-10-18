@@ -88,6 +88,26 @@ body {
   width: 100%;
   border-bottom: 1px solid rgba(127, 43, 37, 0.14);
 }
+.header__search-panel {
+  display: none;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  background-color: var(--global-text-color);
+}
+.header__search-panel.is-open {
+  display: block;
+}
+@media screen and (min-width: 1440px) {
+  .header__search-panel.is-open {
+    display: none;
+  }
+}
+.header__search-panel-label {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
 /*----------------------header nav*/
 .header__nav {
   display: none;
