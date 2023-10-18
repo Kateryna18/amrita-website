@@ -74,6 +74,7 @@
 @media screen and (max-width: 1439px) {
     .filter-desctop {
         padding: 20px;
+        background-color: transparent;
     }
 }
 
@@ -125,6 +126,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 24px;
+    cursor: pointer;
 }
 
 .filter-desctop-type__title {
@@ -204,6 +206,13 @@
 /* --- */
 .filter-desctop__price {
     margin-bottom: 40px;
+}
+@media screen and (max-width: 1439px) {
+    .filter-desctop__price {
+       padding: 20px;
+       border-radius: 6px;       
+       background-color: var(--global-text-color);
+    }
 }
 
 .filter-desctop-type__title.price__title {
@@ -291,36 +300,16 @@ input[type='number'] {
     background-color: var(--accent-color);
 }
 
+.noUi-touch-area {
+    cursor: pointer;
+}
 .noUi-handle::after,
 .noUi-handle::before {
     display: none;
 }
 
-.filter__buttons {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-@media screen and (min-width: 1440px) {
-    .filter__buttons {
-        display: none;
-    }
-}
-.filter__mob-button {
-    width: 169px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 0;
-    border-radius: 100px;
-    border: 1px solid var(--accent-color);
-    color: var(--accent-color);
-    background-color: var(--global-text-color);
-}
-.accent {
-    border: none;
-    background-color: var(--accent-color);
-    color: var(--global-text-color);
+.filter-desctop__effect {
+    margin-bottom: 40px;
 }
 
 /* --------------- */
@@ -371,6 +360,11 @@ input[type='number'] {
     align-items: center;
     justify-content: space-between;
 }
+@media screen and (min-width: 1439px) {
+    .services-filter__buttons {
+        justify-content: flex-end;
+    }
+}
 
 .services-filter__button-filter {
     width: 153px;
@@ -386,6 +380,11 @@ input[type='number'] {
     font-size: 15px;
     letter-spacing: 0.15px;
     color: var(--global-text-color);
+}
+@media screen and (min-width: 1439px) {
+    .services-filter__button-filter {
+        display: none;
+    }
 }
 
 .services-filter__button-filter:focus {
@@ -413,6 +412,7 @@ input[type='number'] {
     font-size: 15px;
     letter-spacing: 0.15px;
     color: var(--typography-t60);
+    cursor: pointer;
 }
 
 .services-filter__button-sort:focus,
@@ -638,9 +638,16 @@ input[type='number'] {
 
     width: 100vw;
     height: 100vh;
+    overflow: auto;
 
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
+}
+@media screen and (min-width: 843px) {
+    .filter-mob-menu__content {
+        width: 390px;
+        transform: translateX(-230%);
+    }
 }
 
 .filter-mob-menu__content.is-open {
@@ -679,4 +686,31 @@ input[type='number'] {
     justify-content: center;
     border: none;
     background-color: transparent;
+}
+
+.filter__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media screen and (min-width: 1440px) {
+    .filter__buttons {
+        display: none;
+    }
+}
+.filter__mob-button {
+    width: 169px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0;
+    border-radius: 100px;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    background-color: var(--global-text-color);
+}
+.accent {
+    border: none;
+    background-color: var(--accent-color);
+    color: var(--global-text-color);
 }

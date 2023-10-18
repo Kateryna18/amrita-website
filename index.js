@@ -161,6 +161,8 @@ toggleButtons.forEach((button) => {
   });
 })();
 
+
+// -------------MOBILE SUBMENU------------
 (() => {
   const mobileMenu = document.querySelector(".js-menu2-container");
   const openMenuBtn = document.querySelector(".js-open-menu2");
@@ -192,10 +194,13 @@ toggleButtons.forEach((button) => {
   });
 })();
 
+
+// --------------FILTER MOBILE MENU-----------
 (() => {
   const mobileMenu = document.querySelector(".js-filter-menu-container");
   const openMenuBtn = document.querySelector(".js-open-filter-menu");
   const closeMenuBtn = document.querySelectorAll(".js-close-filter-menu");
+  const checkboxes = document.querySelectorAll('.filter-desctop__checkbox-item');
 
   const toggleMenu = () => {
     const isMenuOpen =
@@ -214,6 +219,17 @@ toggleButtons.forEach((button) => {
   for (let item of closeMenuBtn) {
     item.addEventListener("click", toggleMenu);
   }
+
+  checkboxes.forEach(checkbox => checkbox.addEventListener('click', (e) => {
+    if (window.innerWidth >= 1440) {
+      return
+    }
+    const condition = e.currentTarget.classList.contains('checked');
+    if (!condition) {
+      toggleMenu()
+    }
+  }))
+
 
   window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
     if (!e.matches) return;
@@ -277,7 +293,7 @@ items.forEach(item => {
 
     let filterTypeClass = e.currentTarget.dataset['filter'];
     let filterEffectClass = e.currentTarget.dataset['filter'];
-    
+
     servicesList.forEach(item => {
       if (!item.classList.contains(filterTypeClass) || !item.classList.contains(filterEffectClass)) {
         item.classList.toggle('hide-services-page__item')
@@ -289,12 +305,12 @@ items.forEach(item => {
 
 
 //-------------------SLIDER PRICE--------------
-const slider = document.getElementById('filter-price__range-slider');
-const input0 = document.getElementById('input-1');
-const input1 = document.getElementById('input-2');
-const inputs = [input0, input1];
+function createSlider(sliderId, inputIds) {
+  const slider = document.getElementById(sliderId);
+  if (!slider) return;
 
-if (slider) {
+  const inputs = inputIds.map(id => document.getElementById(id));
+
   noUiSlider.create(slider, {
     start: [150, 400],
     connect: true,
@@ -308,17 +324,20 @@ if (slider) {
   const setRangeSlider = (i, value) => {
     let arr = [null, null];
     arr[i] = value;
-
-    slider.noUiSlider.set(arr)
+    slider.noUiSlider.set(arr);
   }
 
   slider.noUiSlider.on('update', function (values, handle) {
-    inputs[handle].value = Math.round(values[handle])
-  })
+    inputs[handle].value = Math.round(values[handle]);
+  });
 
   inputs.forEach((input, index) => {
     input.addEventListener('change', event => {
-      setRangeSlider(index, event.currentTarget.value)
-    })
-  })
+      setRangeSlider(index, event.currentTarget.value);
+    });
+  });
 }
+
+createSlider('filter-price__range-slider', ['input-1', 'input-2']);
+createSlider('filter-price-mob__range-slider', ['input-3', 'input-4']);
+
