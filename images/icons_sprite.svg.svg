@@ -49,7 +49,7 @@
       <path fill="none" stroke="#802c25" style="stroke:var(--color1, #802c25)" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" d="M16 4v24M4 16h24"/>
     </symbol>
     <symbol id="minus" viewBox="0 0 32 32">
-      <path fill="none" stroke="#802c25" style="stroke:var(--color1, #802c25)" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" d="M4 16h24"/>
+      <path  stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" d="M4 16h24"/>
     </symbol>
     <symbol id="eye-off" viewBox="0 0 32 32">
       <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" d="M22.48 22.48A10.985 10.985 0 0 1 16 24.727C8.364 24.727 4 16 4 16a20.128 20.128 0 0 1 5.52-6.48m4.189-1.985A9.929 9.929 0 0 1 16 7.273C23.636 7.273 28 16 28 16a20.193 20.193 0 0 1-2.356 3.48m-7.331-1.167a3.274 3.274 0 0 1-4.708.083c-.311-.311-.556-.681-.72-1.089s-.245-.844-.238-1.283a3.274 3.274 0 0 1 1.041-2.336M4 4l24 24"/>

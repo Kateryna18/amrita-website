@@ -207,6 +207,7 @@
     }
   }
   
+
   @media screen and (min-width: 1440px) {
     .procedures__list {
       display: none;
@@ -280,7 +281,9 @@
     background-color: transparent;
     cursor: pointer;
   }
-  
+  .procedures__item.is-open .procedures__icon{
+    stroke: var(--accent-color);
+  }
   .procedures__item-catalog {
     display: none;
     position: absolute;
@@ -290,6 +293,10 @@
     width: 100%;
     height: 100%;
   }
+  .procedures__item.is-open .procedures__item-catalog{
+    display: block;
+  }
+
   .item-catalog__list {
     display: flex;
     flex-wrap: wrap;

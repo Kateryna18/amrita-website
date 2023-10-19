@@ -65,22 +65,37 @@ const feedbackSwiper = new Swiper(".feedback__swiper", {
   },
 });
 
-//------------------------------TOGGLE PROCEDURES CATALOG-------------------
-const buttons = document.querySelectorAll(".procedures__button");
-const catalogs = document.querySelectorAll(".procedures__item-catalog");
-const icons = document.querySelectorAll(".procedures__icon");
-
-buttons.forEach((button, index) => {
+//------------------------------TOGGLE DROPDOWN-------------------
+function toggleCatalogItem(button, catalog, icon) {
   button.addEventListener("click", () => {
-    if (catalogs[index].style.display === "block") {
-      catalogs[index].style.display = "none";
-      icons[index].setAttribute("href", "./images/icons_sprite.svg.svg#plus");
+    if (!catalog.classList.contains("is-open")) {
+      catalog.classList.add("is-open");
+      icon.querySelector("use").setAttribute("href", "./images/icons_sprite.svg.svg#minus");
     } else {
-      catalogs[index].style.display = "block";
-      icons[index].setAttribute("href", "./images/icons_sprite.svg.svg#minus");
+      catalog.classList.remove("is-open");
+      icon.querySelector("use").setAttribute("href", "./images/icons_sprite.svg.svg#plus");
     }
   });
+}
+
+//-----FAQ SECTION
+const buttonsFaqSection = document.querySelectorAll(".faq-section__item-button");
+const catalogsFaqSection = document.querySelectorAll(".faq-section__list-item");
+const iconsFaqSection = document.querySelectorAll(".faq-section__item-icon");
+
+buttonsFaqSection.forEach((button, index) => {
+  toggleCatalogItem(button, catalogsFaqSection[index], iconsFaqSection[index]);
 });
+
+//-----PROCEDURES
+const buttonsProcedures = document.querySelectorAll(".procedures__button");
+const catalogsProcedures = document.querySelectorAll(".procedures__item");
+const iconsProcedures = document.querySelectorAll(".procedures__icon");
+
+buttonsProcedures.forEach((button, index) => {
+  toggleCatalogItem(button, catalogsProcedures[index], iconsProcedures[index]);
+});
+
 
 //------------------------------TOGGLE RATING STARS-------------------/
 const ratingIcons = document.querySelectorAll(".feedback__icon-rating");
@@ -215,7 +230,9 @@ toggleButtons.forEach((button) => {
     }
   };
 
-  openMenuBtn.addEventListener("click", toggleMenu);
+  if (openMenuBtn) {
+    openMenuBtn.addEventListener("click", toggleMenu);
+  }
   for (let item of closeMenuBtn) {
     item.addEventListener("click", toggleMenu);
   }
@@ -305,6 +322,8 @@ items.forEach(item => {
 
 
 //-------------------SLIDER PRICE--------------
+const currentPage = window.location.pathname;
+
 function createSlider(sliderId, inputIds) {
   const slider = document.getElementById(sliderId);
   if (!slider) return;
@@ -338,20 +357,45 @@ function createSlider(sliderId, inputIds) {
   });
 }
 
-createSlider('filter-price__range-slider', ['input-1', 'input-2']);
-createSlider('filter-price-mob__range-slider', ['input-3', 'input-4']);
+
+if (currentPage === "/services.html") {
+  createSlider('filter-price__range-slider', ['input-1', 'input-2']);
+  createSlider('filter-price-mob__range-slider', ['input-3', 'input-4']);
+}
 
 
-// -------------------SEARCH PANEL--------------------
+// -------------------SEARCH PANEL--------------------//
 const searchButton = document.getElementById('js-open-panelSearch');
 const searchPanelHeader = document.getElementById('js-search-panel-header');
 const serachIcon = document.getElementById('js-search-button-icon');
 
-searchButton.addEventListener('click', (e) => {
-  searchPanelHeader.classList.toggle("is-open");
-  if (searchPanelHeader.classList.contains("is-open")) {
-    serachIcon.querySelector('use').setAttribute('href', './images/icons_sprite.svg.svg#close-icon');
-  } else {
-    serachIcon.querySelector('use').setAttribute('href', './images/icons_sprite.svg.svg#search');
-  }
-})
+if (searchButton) {
+  searchButton.addEventListener('click', (e) => {
+    searchPanelHeader.classList.toggle("is-open");
+    if (searchPanelHeader.classList.contains("is-open")) {
+      serachIcon.querySelector('use').setAttribute('href', './images/icons_sprite.svg.svg#close-icon');
+    } else {
+      serachIcon.querySelector('use').setAttribute('href', './images/icons_sprite.svg.svg#search');
+    }
+  })
+}
+
+// -------------------INFO CALCULATOR--------------------//
+const calculator = document.querySelector(".calculator__dropdouwn");
+const buttonCalculatorOpen = document.querySelector(".calculator-dropdouwn__button-open");
+const buttonsPrice = document.querySelectorAll(".calculator__dropdouwn-button-box");
+const totalValue = document.querySelector(".calculator-total-price__value");
+
+if (buttonCalculatorOpen) {
+  buttonCalculatorOpen.addEventListener('click', () => {
+    calculator.classList.toggle("is-open");
+  })
+
+  buttonsPrice.forEach(button => {
+    button.addEventListener('click', (e) => {
+      const label = button.querySelector(".calculator-dropdouwn__label");
+      const labelText = label.textContent;
+      totalValue.textContent = labelText;
+    })
+  })
+}

@@ -110,18 +110,29 @@
     }
 }
 .calculator__dropdouwn {
-    margin-bottom: 134px;
+    margin-bottom: 24px;
     border-radius: 6px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     background-color: var(--global-text-color);
 }
+.calculator__dropdouwn.is-open{
+    margin-bottom: 134px;
+}
+
 @media screen and (min-width: 843px) {
     .calculator__dropdouwn {
         width: 50%;
         margin-bottom: 0;
     }
 }
+@media screen and (min-width: 1440px) {
+    .calculator__dropdouwn {
+        width: 100%;
+    }
+}
+
+
 .calculator-dropdouwn__content {
     position: relative;
     display: flex;
@@ -132,24 +143,37 @@
 .calculator-dropdouwn__text {
 
 }
+.calculator-dropdouwn__button-open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+}
 .calculator-dropdouwn__icon {
     fill: transparent;
     stroke: var(--text-color);
 }
+.calculator__dropdouwn.is-open .calculator-dropdouwn__icon{
+    transform: rotate(180deg);
+}
 .calculator__dropdouwn-buttons {
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     padding: 20px;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     gap: 20px;
     border-radius: 6px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     background-color: var(--global-text-color);
-    
+}
+.calculator__dropdouwn.is-open .calculator__dropdouwn-buttons{
+    display: flex;
 }
 .calculator__dropdouwn-button-box {
     
@@ -191,13 +215,22 @@
 .calculator-dropdouwn__button-2 {
 }
 .calculator__booking {
-
+    margin-top: 24px;
 }
+
 @media screen and (min-width: 843px) {
     .calculator__booking {
         width: 50%;
+        margin-top: 0;
+        padding-left: 40px;
     }
 }
+@media screen and (min-width: 1440px) {
+    .calculator__booking {
+        padding-left: 0;
+    }
+}
+
 .calculator__total-price {
     margin-bottom: 24px;
 }
@@ -506,6 +539,11 @@
 .faq__section {
     margin-bottom: 140px;
 }
+@media screen and (min-width: 1440px) {
+    .faq__section {
+        max-width: 590px;
+    }
+}
 
 @media screen and (min-width: 1440px) {
     .title.faq-section__title {
@@ -524,6 +562,10 @@
     margin-bottom: 10px;
     border-radius: 6px;
     background-color: var(--global-text-color);
+}
+.faq-section__list-item.is-open {
+    background-color: var(--accent-color);
+    color: var(--global-text-color);
 }
 .faq-section__list-item:last-child {
     margin-bottom: 0;
@@ -549,16 +591,24 @@
     border: none;
     background-color: transparent;
 }
-.faq-section__item-icon {
-}
-.procedures__icon {
+.faq-section__list-item.is-open .faq-section__item-icon {
+    stroke: var(--global-text-color);
 }
 .faq-section__item-dropdown {
     padding: 20px;
     border-top: 1px solid var(--primary-beige);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
     display: none;
 }
+.faq-section__list-item.is-open .faq-section__item-dropdown{
+    display: block;
+    background-color: var(--accent-color);
+    color: var(--global-text-color);
+}
 .faq-section__item-dropdown-text {
+    font-size: 14px;
+    line-height: 1.6;
 }
 /* -------------------------QUESTIONS------------------------- */
 .questions__section {
