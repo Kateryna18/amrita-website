@@ -1,4 +1,27 @@
-//----------------------------------------SWIPERS-------------------
+//----------------------------------------SEARCH FORM-------------------//
+const searchForm = document.querySelectorAll(".search-form");
+const searchButtonSubmit = document.querySelectorAll(".search__button");
+if (searchForm && searchButtonSubmit) {
+  console.log("form")
+  searchForm.forEach(form => {
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const searchValue = event.target.elements.search.value;
+      console.log(searchValue)
+
+      if (searchValue === "") {
+        return console.log("please enter text");
+      }
+
+      const searchResultsUrl = 'search-results.html?query=' + encodeURIComponent(searchValue);
+      window.location.href = searchResultsUrl;
+      
+      form.reset();
+    })
+  })
+}
+
+//----------------------------------------SWIPERS-------------------//
 const swiper = new Swiper(".circle__swiper", {
   direction: "horizontal",
   loop: false,
