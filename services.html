@@ -529,12 +529,38 @@
                 </svg>
                 Filter
               </button>
-              <button type="button" class="services-filter__button-sort">
-                <svg class="services-filter__icon" width="22" height="22">
-                  <use href="./images/icons_sprite.svg.svg#sort_by"></use>
-                </svg>
-                Sort by
-              </button>
+              <div class="services-filter__button-sort-box">
+                <button type="button" class="services-filter__button-sort js-open-sort-menu">
+                  <svg class="services-filter__icon" width="22" height="22">
+                    <use href="./images/icons_sprite.svg.svg#sort_by"></use>
+                  </svg>
+                  Sort by
+                </button>
+                <div class="services-filter__menu-sort">
+                  <div class="sort-mob-menu__main">
+                    <!-- <input type="radio" name="sort" class="sort-mob-menu__input" value="Newest" id="newest"> -->
+                    <label class="sort-mob-menu__label" for="newest">
+                      <div class="sort-mob__custom-radio"></div>
+                      Newest
+                    </label>
+                    <!-- <input type="radio" name="sort" class="sort-mob-menu__input" value="Popular" id="popular"> -->
+                    <label class="sort-mob-menu__label" for="popular">
+                      <div class="sort-mob__custom-radio"></div>
+                      Popular
+                    </label>
+                    <!-- <input type="radio" name="sort" class="sort-mob-menu__input" value="Price low to high" id="lowtohight"> -->
+                    <label class="sort-mob-menu__label" for="lowtohight">
+                      <div class="sort-mob__custom-radio"></div>
+                      Price low to high
+                    </label>
+                    <!-- <input type="radio" name="sort" class="sort-mob-menu__input" value="Price high to low" id="highttolow"> -->
+                    <label class="sort-mob-menu__label" for="highttolow">
+                      <div class="sort-mob__custom-radio"></div>
+                      Price high to low
+                    </label>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="services-page-filter__choice-list">
               <ul class="choice-list">
@@ -608,148 +634,171 @@
           <div class="services-page__body">
             <ul class="services-page__list">
               <li class="services-page__item bodyMassage lifting">
+                <a href="./service.html" class="services-page__item-link">
                 <div class="services-page__item-thumb">
                   <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
                     alt="">
                   <span class="services-page__item-label">New</span>
                 </div>
-                <a href="./service.html">SERVICE</a>
                 <div class="services-page__item-content">
                   <h3 class="services-page__item-title">Decontracting </h3>
                   <p class="services-page__item-description">Massage - Body</p>
                 </div>
+              </a>
                 <button class="services-page__item-button">Book a procedure</button>
               </li>
               <li class="services-page__item bodyMassage lifting">
-                <div class="services-page__item-thumb">
-                  <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                    alt="">
-                  <span class="services-page__item-label">New</span>
-                </div>
-                <div class="services-page__item-content">
-                  <h3 class="services-page__item-title">Decontracting </h3>
-                  <p class="services-page__item-description">Massage - Body</p>
-                </div>
+                <a href="./service.html" class="services-page__item-link">
+                  <div class="services-page__item-thumb">
+                    <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
+                      alt="">
+                    <span class="services-page__item-label">New</span>
+                  </div>
+                  <div class="services-page__item-content">
+                    <h3 class="services-page__item-title">Decontracting </h3>
+                    <p class="services-page__item-description">Massage - Body</p>
+                  </div>
+                </a>
                 <button class="services-page__item-button">Book a procedure</button>
               </li>
               <li class="services-page__item bodyMassage lifting">
-                <div class="services-page__item-thumb">
-                  <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                    alt="">
-                  <span class="services-page__item-label">New</span>
-                </div>
-                <div class="services-page__item-content">
-                  <h3 class="services-page__item-title">Decontracting </h3>
-                  <p class="services-page__item-description">Massage - Body</p>
-                </div>
+                <a href="./service.html" class="services-page__item-link">
+                  <div class="services-page__item-thumb">
+                    <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
+                      alt="">
+                    <span class="services-page__item-label">New</span>
+                  </div>
+                  <div class="services-page__item-content">
+                    <h3 class="services-page__item-title">Decontracting </h3>
+                    <p class="services-page__item-description">Massage - Body</p>
+                  </div>
+                </a>
                 <button class="services-page__item-button">Book a procedure</button>
               </li>
               <li class="services-page__item faceMassage lifting">
-                <div class="services-page__item-thumb">
-                  <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                    alt="">
-                  <span class="services-page__item-label">New</span>
-                </div>
-                <div class="services-page__item-content">
-                  <h3 class="services-page__item-title">Decontracting </h3>
-                  <p class="services-page__item-description">Massage - Body</p>
-                </div>
+                <a href="./service.html" class="services-page__item-link">
+                  <div class="services-page__item-thumb">
+                    <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
+                      alt="">
+                    <span class="services-page__item-label">New</span>
+                  </div>
+                  <div class="services-page__item-content">
+                    <h3 class="services-page__item-title">Decontracting </h3>
+                    <p class="services-page__item-description">Massage - Body</p>
+                  </div>
+                </a>
                 <button class="services-page__item-button">Book a procedure</button>
               </li>
               <li class="services-page__item faceMassage lifting">
-                <div class="services-page__item-thumb">
-                  <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                    alt="">
-                  <span class="services-page__item-label">New</span>
-                </div>
-                <div class="services-page__item-content">
-                  <h3 class="services-page__item-title">Decontracting </h3>
-                  <p class="services-page__item-description">Massage - Body</p>
-                </div>
+                <a href="./service.html" class="services-page__item-link">
+                  <div class="services-page__item-thumb">
+                    <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
+                      alt="">
+                    <span class="services-page__item-label">New</span>
+                  </div>
+                  <div class="services-page__item-content">
+                    <h3 class="services-page__item-title">Decontracting </h3>
+                    <p class="services-page__item-description">Massage - Body</p>
+                  </div>
+                </a>
                 <button class="services-page__item-button">Book a procedure</button>
               </li>
               <li class="services-page__item manicure toning">
-                <div class="services-page__item-thumb">
-                  <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                    alt="">
-                  <span class="services-page__item-label">New</span>
-                </div>
-                <div class="services-page__item-content">
-                  <h3 class="services-page__item-title">Decontracting </h3>
-                  <p class="services-page__item-description">Massage - Body</p>
-                </div>
+                <a href="./service.html" class="services-page__item-link">
+                  <div class="services-page__item-thumb">
+                    <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
+                      alt="">
+                    <span class="services-page__item-label">New</span>
+                  </div>
+                  <div class="services-page__item-content">
+                    <h3 class="services-page__item-title">Decontracting </h3>
+                    <p class="services-page__item-description">Massage - Body</p>
+                  </div>
+                </a>
                 <button class="services-page__item-button">Book a procedure</button>
               </li>
               <li class="services-page__item manicure toning">
-                <div class="services-page__item-thumb">
-                  <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                    alt="">
-                  <span class="services-page__item-label">New</span>
-                </div>
-                <div class="services-page__item-content">
-                  <h3 class="services-page__item-title">Decontracting </h3>
-                  <p class="services-page__item-description">Massage - Body</p>
-                </div>
+                <a href="./service.html" class="services-page__item-link">
+                  <div class="services-page__item-thumb">
+                    <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
+                      alt="">
+                    <span class="services-page__item-label">New</span>
+                  </div>
+                  <div class="services-page__item-content">
+                    <h3 class="services-page__item-title">Decontracting </h3>
+                    <p class="services-page__item-description">Massage - Body</p>
+                  </div>
+                </a>
                 <button class="services-page__item-button">Book a procedure</button>
               </li>
               <li class="services-page__item manicure toning">
-                <div class="services-page__item-thumb">
-                  <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                    alt="">
-                  <span class="services-page__item-label">New</span>
-                </div>
-                <div class="services-page__item-content">
-                  <h3 class="services-page__item-title">Decontracting </h3>
-                  <p class="services-page__item-description">Massage - Body</p>
-                </div>
+                <a href="./service.html" class="services-page__item-link">
+                  <div class="services-page__item-thumb">
+                    <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
+                      alt="">
+                    <span class="services-page__item-label">New</span>
+                  </div>
+                  <div class="services-page__item-content">
+                    <h3 class="services-page__item-title">Decontracting </h3>
+                    <p class="services-page__item-description">Massage - Body</p>
+                  </div>
+                </a>
                 <button class="services-page__item-button">Book a procedure</button>
               </li>
               <li class="services-page__item manicure hydration">
-                <div class="services-page__item-thumb">
-                  <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                    alt="">
-                  <span class="services-page__item-label">New</span>
-                </div>
-                <div class="services-page__item-content">
-                  <h3 class="services-page__item-title">Decontracting </h3>
-                  <p class="services-page__item-description">Massage - Body</p>
-                </div>
+                <a href="./service.html" class="services-page__item-link">
+                  <div class="services-page__item-thumb">
+                    <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
+                      alt="">
+                    <span class="services-page__item-label">New</span>
+                  </div>
+                  <div class="services-page__item-content">
+                    <h3 class="services-page__item-title">Decontracting </h3>
+                    <p class="services-page__item-description">Massage - Body</p>
+                  </div>
+                </a>
                 <button class="services-page__item-button">Book a procedure</button>
               </li>
               <li class="services-page__item hairRemoval hydration">
-                <div class="services-page__item-thumb">
-                  <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                    alt="">
-                  <span class="services-page__item-label">New</span>
-                </div>
-                <div class="services-page__item-content">
-                  <h3 class="services-page__item-title">Decontracting </h3>
-                  <p class="services-page__item-description">Massage - Body</p>
-                </div>
+                <a href="./service.html" class="services-page__item-link">
+                  <div class="services-page__item-thumb">
+                    <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
+                      alt="">
+                    <span class="services-page__item-label">New</span>
+                  </div>
+                  <div class="services-page__item-content">
+                    <h3 class="services-page__item-title">Decontracting </h3>
+                    <p class="services-page__item-description">Massage - Body</p>
+                  </div>
+                </a>
                 <button class="services-page__item-button">Book a procedure</button>
               </li>
               <li class="services-page__item hairRemoval hydration">
-                <div class="services-page__item-thumb">
-                  <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                    alt="">
-                  <span class="services-page__item-label">New</span>
-                </div>
-                <div class="services-page__item-content">
-                  <h3 class="services-page__item-title">Decontracting </h3>
-                  <p class="services-page__item-description">Massage - Body</p>
-                </div>
+                <a href="./service.html" class="services-page__item-link">
+                  <div class="services-page__item-thumb">
+                    <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
+                      alt="">
+                    <span class="services-page__item-label">New</span>
+                  </div>
+                  <div class="services-page__item-content">
+                    <h3 class="services-page__item-title">Decontracting </h3>
+                    <p class="services-page__item-description">Massage - Body</p>
+                  </div>
+                </a>
                 <button class="services-page__item-button">Book a procedure</button>
               </li>
               <li class="services-page__item hairRemoval hydration">
-                <div class="services-page__item-thumb">
-                  <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                    alt="">
-                  <span class="services-page__item-label">New</span>
-                </div>
-                <div class="services-page__item-content">
-                  <h3 class="services-page__item-title">Decontracting </h3>
-                  <p class="services-page__item-description">Massage - Body</p>
-                </div>
+                <a href="./service.html" class="services-page__item-link">
+                  <div class="services-page__item-thumb">
+                    <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
+                      alt="">
+                    <span class="services-page__item-label">New</span>
+                  </div>
+                  <div class="services-page__item-content">
+                    <h3 class="services-page__item-title">Decontracting </h3>
+                    <p class="services-page__item-description">Massage - Body</p>
+                  </div>
+                </a>
                 <button class="services-page__item-button">Book a procedure</button>
               </li>
             </ul>
@@ -1471,6 +1520,39 @@
       </div>
     </div>
   </div>
+  <!---------------------------SORT MOBILE MENU------------------------>
+  <div class="sort-mob-menu js-sort-menu">
+    <div class="sort-mob-menu__head">
+      <button type="button" class="sort-mob-menu__button js-close-sort-menu">
+        <svg width="24" height="24" class="sort-mob-menu__icon">
+          <use href="./images/icons_sprite.svg.svg#close-icon"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="sort-mob-menu__main">
+      <input type="radio" name="sort" class="sort-mob-menu__input" value="Newest" id="newest">
+      <label class="sort-mob-menu__label" for="newest">
+        <div class="sort-mob__custom-radio"></div>
+        Newest
+      </label>
+      <input type="radio" name="sort" class="sort-mob-menu__input" value="Popular" id="popular">
+      <label class="sort-mob-menu__label" for="popular">
+        <div class="sort-mob__custom-radio"></div>
+        Popular
+      </label>
+      <input type="radio" name="sort" class="sort-mob-menu__input" value="Price low to high" id="lowtohight">
+      <label class="sort-mob-menu__label" for="lowtohight">
+        <div class="sort-mob__custom-radio"></div>
+        Price low to high
+      </label>
+      <input type="radio" name="sort" class="sort-mob-menu__input" value="Price high to low" id="highttolow">
+      <label class="sort-mob-menu__label" for="highttolow">
+        <div class="sort-mob__custom-radio"></div>
+        Price high to low
+      </label>
+    </div>
+  </div>
+  <div class="overlay"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js"></script>
 </body>
 </html>

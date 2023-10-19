@@ -216,12 +216,14 @@ toggleButtons.forEach((button) => {
   const openMenuBtn = document.querySelector(".js-open-filter-menu");
   const closeMenuBtn = document.querySelectorAll(".js-close-filter-menu");
   const checkboxes = document.querySelectorAll('.filter-desctop__checkbox-item');
+  const overlay = document.querySelector(".overlay");
 
   const toggleMenu = () => {
     const isMenuOpen =
       openMenuBtn.getAttribute("aria-expanded") === "true" || false;
     openMenuBtn.setAttribute("aria-expanded", !isMenuOpen);
     mobileMenu.classList.toggle("is-open");
+    overlay.classList.toggle("overlay-visible");
 
     if (!isMenuOpen) {
       document.body.classList.add("no-scroll");
@@ -252,9 +254,65 @@ toggleButtons.forEach((button) => {
     if (!e.matches) return;
     mobileMenu.classList.remove("is-open");
     openMenuBtn.setAttribute("aria-expanded", false);
+    overlay.classList.toggle("overlay-visible");
     document.body.classList.remove("no-scroll");
   });
 })();
+
+// -------------------SORT MENU--------------------//
+(() => {
+  const mobileMenu = document.querySelector(".js-sort-menu");
+  const openMenuBtn = document.querySelector(".js-open-sort-menu");
+  const closeMenuBtn = document.querySelectorAll(".js-close-sort-menu");
+  const radioButtons = document.querySelectorAll(".sort-mob-menu__input");
+  const overlay = document.querySelector(".overlay");
+
+  const toggleMenu = () => {
+    const isMenuOpen =
+      openMenuBtn.getAttribute("aria-expanded") === "true" || false;
+    openMenuBtn.setAttribute("aria-expanded", !isMenuOpen);
+    mobileMenu.classList.toggle("is-open");
+    overlay.classList.toggle("overlay-visible");
+
+    if (!isMenuOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  };
+
+  const toggleDescMenu = () => {
+    const mobileMenu = document.querySelector(".services-filter__menu-sort");
+
+    mobileMenu.classList.toggle("is-open");
+  }
+
+  if (openMenuBtn) {
+    openMenuBtn.addEventListener("click", () => {
+      if (window.innerWidth >= 1440) {
+        toggleDescMenu()
+        return
+      }
+      toggleMenu()
+      // radioButtons.forEach(button => {
+      //   button.addEventListener('change', toggleMenu)
+      // })
+    });
+  }
+
+  for (let item of closeMenuBtn) {
+    item.addEventListener("click", toggleMenu);
+  }
+
+  window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
+    if (!e.matches) return;
+    mobileMenu.classList.remove("is-open");
+    openMenuBtn.setAttribute("aria-expanded", false);
+    overlay.classList.remove("overlay-visible");
+    document.body.classList.remove("no-scroll");
+  });
+})();
+
 
 
 // ---------------------CUSTOM SELECT----------------------
@@ -399,3 +457,4 @@ if (buttonCalculatorOpen) {
     })
   })
 }
+

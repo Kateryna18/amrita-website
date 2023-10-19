@@ -17,6 +17,21 @@
     }
 }
 
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Колір і прозорість затемнення */
+    z-index: 49; /* Має бути нижчим, ніж меню (.js-sort-menu) */
+  }
+  
+.overlay.overlay-visible {
+    display: block;
+  }
+
 /* ---------------------------BREADCRUMBS------------------- */
 .breadcrumbs__container {
     margin-bottom: 40px;
@@ -400,6 +415,10 @@ input[type='number'] {
     background-color: var(--accent-color);
 }
 
+.services-filter__button-sort-box {
+    position: relative;
+}
+
 .services-filter__button-sort {
     padding: 0;
     display: flex;
@@ -413,6 +432,24 @@ input[type='number'] {
     letter-spacing: 0.15px;
     color: var(--typography-t60);
     cursor: pointer;
+}
+
+.services-filter__menu-sort {
+    position: absolute;
+    right: 0;
+    top: 35px;
+    z-index: 10;
+    width: 226px;
+
+    display: none;
+}
+.services-filter__menu-sort.is-open {
+    display: block;
+}
+@media screen and (max-width: 1439px) {
+    .services-filter__menu-sort {
+        display: none;
+    }
 }
 
 .services-filter__button-sort:focus,
@@ -503,12 +540,17 @@ input[type='number'] {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
 }
 
 @media screen and (min-width: 1440px) {
     .services-page__item {
         width: 218.5px;
     }
+}
+
+.services-page__item-link {
+    cursor: pointer;
 }
 
 .services-page__item-thumb {
@@ -557,6 +599,7 @@ input[type='number'] {
     font-weight: 600;
     line-height: 1.2;
     letter-spacing: 0.72px;
+    color: var(--text-color);
 }
 
 .services-page__item-description {
@@ -714,3 +757,116 @@ input[type='number'] {
     background-color: var(--accent-color);
     color: var(--global-text-color);
 }
+
+/* -------------------------SORT MOBILE MENU---------- */
+.sort-mob-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+    width: 100vw;
+
+    transform: translateY(100%);
+    transition: transform 350ms ease-in-out;
+}
+.sort-mob-menu.is-open {
+    transform: translateY(0);
+    transition: transform 350ms ease-in-out;
+}
+.sort-mob-menu__head {
+    padding-right: 3px;
+    background-color: transparent;
+}
+.sort-mob-menu__button {
+    display: block;
+    width: 42px;
+    height: 42px;
+    padding: 9px;
+    margin-left: auto;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--global-text-color);
+}
+.sort-mob-menu__icon {
+}
+.sort-mob-menu__main {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 12px 36px 12px;
+    background-color: var(--global-text-color);
+}
+@media screen and (min-width: 1440px) {
+    .sort-mob-menu__main {
+        padding: 20px;
+        gap: 20px;
+        border-radius: 12px;
+    }
+}
+
+.sort-mob-menu__label {
+    position: relative;
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid var(--accent-color);
+}
+@media screen and (min-width: 1440px) {
+    .sort-mob-menu__label {
+        padding: 0;
+        border: none;
+    }
+}
+
+.sort-mob__custom-radio{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1.5px solid var(--accent-color);
+}
+@media screen and (min-width: 1440px) {
+    .sort-mob__custom-radio {
+        display: none;
+    }
+}
+
+.sort-mob__custom-radio::before{
+    content: "";
+    display: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--global-text-color);
+}
+
+.sort-mob-menu__main input[type="radio"]{
+    display: none;
+}
+
+.sort-mob-menu__main input[type="radio"]:checked + .sort-mob-menu__label{
+    background-color: var(--accent-color);
+    color: var(--global-text-color);
+} 
+@media screen and (min-width: 1440px) {
+    .sort-mob-menu__main input[type="radio"]:checked + .sort-mob-menu__label {
+        background-color: transparent;
+        color: var(--accent-color);
+    }
+}
+.sort-mob-menu__main input[type="radio"]:checked + .sort-mob-menu__label .sort-mob__custom-radio{
+    border: 1.5px solid var(--global-text-color);
+}
+
+.sort-mob-menu__main input[type="radio"]:checked + .sort-mob-menu__label .sort-mob__custom-radio::before{
+    display: block;
+}
+  
+  
+  
