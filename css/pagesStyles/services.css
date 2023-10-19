@@ -814,6 +814,11 @@ input[type='number'] {
     align-items: center;
     border-radius: 100px;
     border: 1px solid var(--accent-color);
+    cursor: pointer;
+}
+.sort-mob-menu__label.checked {
+    background-color: var(--accent-color);
+    color: var(--global-text-color);
 }
 @media screen and (min-width: 1440px) {
     .sort-mob-menu__label {
@@ -821,7 +826,12 @@ input[type='number'] {
         border: none;
     }
 }
-
+@media screen and (min-width: 1440px) {
+    .sort-mob-menu__label.checked {
+        background-color: transparent;
+        color: var(--accent-color);
+    }
+}
 .sort-mob__custom-radio{
     width: 20px;
     height: 20px;
@@ -830,6 +840,9 @@ input[type='number'] {
     justify-content: center;
     border-radius: 50%;
     border: 1.5px solid var(--accent-color);
+}
+.sort-mob-menu__label.checked .sort-mob__custom-radio{
+    border: 1.5px solid var(--global-text-color);
 }
 @media screen and (min-width: 1440px) {
     .sort-mob__custom-radio {
@@ -845,26 +858,7 @@ input[type='number'] {
     border-radius: 50%;
     background-color: var(--global-text-color);
 }
-
-.sort-mob-menu__main input[type="radio"]{
-    display: none;
-}
-
-.sort-mob-menu__main input[type="radio"]:checked + .sort-mob-menu__label{
-    background-color: var(--accent-color);
-    color: var(--global-text-color);
-} 
-@media screen and (min-width: 1440px) {
-    .sort-mob-menu__main input[type="radio"]:checked + .sort-mob-menu__label {
-        background-color: transparent;
-        color: var(--accent-color);
-    }
-}
-.sort-mob-menu__main input[type="radio"]:checked + .sort-mob-menu__label .sort-mob__custom-radio{
-    border: 1.5px solid var(--global-text-color);
-}
-
-.sort-mob-menu__main input[type="radio"]:checked + .sort-mob-menu__label .sort-mob__custom-radio::before{
+.sort-mob-menu__label.checked .sort-mob__custom-radio::before{
     display: block;
 }
   

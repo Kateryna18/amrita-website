@@ -264,7 +264,7 @@ toggleButtons.forEach((button) => {
   const mobileMenu = document.querySelector(".js-sort-menu");
   const openMenuBtn = document.querySelector(".js-open-sort-menu");
   const closeMenuBtn = document.querySelectorAll(".js-close-sort-menu");
-  const radioButtons = document.querySelectorAll(".sort-mob-menu__input");
+  const radioButtons = document.querySelectorAll(".sort-mob-menu__label");
   const overlay = document.querySelector(".overlay");
 
   const toggleMenu = () => {
@@ -273,6 +273,10 @@ toggleButtons.forEach((button) => {
     openMenuBtn.setAttribute("aria-expanded", !isMenuOpen);
     mobileMenu.classList.toggle("is-open");
     overlay.classList.toggle("overlay-visible");
+
+    radioButtons.forEach(button => {
+      button.removeEventListener('click', toggleMenu)
+    })
 
     if (!isMenuOpen) {
       document.body.classList.add("no-scroll");
@@ -293,10 +297,11 @@ toggleButtons.forEach((button) => {
         toggleDescMenu()
         return
       }
+
       toggleMenu()
-      // radioButtons.forEach(button => {
-      //   button.addEventListener('change', toggleMenu)
-      // })
+      radioButtons.forEach(button => {
+        button.addEventListener('click', toggleMenu)
+      })
     });
   }
 
@@ -313,7 +318,17 @@ toggleButtons.forEach((button) => {
   });
 })();
 
+// -------------------SORT--------------------//
+const radioButtons = document.querySelectorAll(".sort-mob-menu__label");
 
+radioButtons.forEach(radioButton => {
+  radioButton.addEventListener('click', () => {
+    radioButtons.forEach(button => {
+      button.classList.remove("checked")
+    })
+    radioButton.classList.add("checked")
+  })
+})
 
 // ---------------------CUSTOM SELECT----------------------
 const select = function () {
