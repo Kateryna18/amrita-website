@@ -1,8 +1,6 @@
 .description.blog__description {
     margin-bottom: 40px;
 }
-.blog__content {
-}
 .blog__list {
     margin-bottom: 40px;
     display: flex;
@@ -48,8 +46,6 @@
 .blog-item__link {
     display: block;
     height: 100%;
-}
-.blog-item__main {
 }
 .thumb {
     width: 310px;
@@ -133,6 +129,4 @@
 
         font-size: 15px;
     }
-}
-.blog-item__icon {
 }
