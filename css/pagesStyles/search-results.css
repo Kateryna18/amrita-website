@@ -1,0 +1,30 @@
+.title.search-title{
+    margin-bottom: 40px;
+
+    font-weight: 500;
+}
+
+.services-page__item.show{
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.search-page__noresults {
+    display: none;
+}
+.search-page__noresults.show {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width: 1440px) {
+    .search-page__noresults.show {
+        align-items: normal;
+    }
+}
+.search-page__noresults-text {
+    color: var(--help-text-color);
+}

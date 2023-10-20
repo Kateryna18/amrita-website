@@ -48,6 +48,11 @@ input:focus-visible {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+
   background-color: #f0f0f0;
   font-family: Inter, sans-serif;
   font-weight: 400;
@@ -55,6 +60,16 @@ body {
   line-height: 1.21;
   color: var(--text-color);
   background-color: #ffffff;
+}
+
+main {
+  /* Основний контент, можливо, з іншими стилями */
+  flex-grow: 1;
+}
+
+footer {
+  /* Стилі для вашого footer */
+  flex-grow: 0; /* Це заборонить footer розширюватися і притисне його до низу */
 }
 
 /*----------------------CONTAINER ----------------------*/

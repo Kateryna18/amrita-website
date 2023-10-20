@@ -2,7 +2,6 @@
 const searchForm = document.querySelectorAll(".search-form");
 const searchButtonSubmit = document.querySelectorAll(".search__button");
 if (searchForm && searchButtonSubmit) {
-  console.log("form")
   searchForm.forEach(form => {
     form.addEventListener('submit', (event) => {
       event.preventDefault();

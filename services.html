@@ -87,9 +87,9 @@
     </div>
     <div class="header__decor"></div>
     <div class="container header__search-panel" id="js-search-panel-header">
-      <form>
+      <form class="search-form">
         <label class="header__search-panel-label">
-          <input type="text" placeholder="Search prochedure" class="search__input" />
+          <input type="text" name="search" placeholder="Search prochedure" class="search__input" />
           <button type="submit" class="search__button">
             <svg width="20" height="20" class="search__button__icon">
               <use href="./images/icons_sprite.svg.svg#search"></use>
@@ -655,8 +655,8 @@
                     <span class="services-page__item-label">New</span>
                   </div>
                   <div class="services-page__item-content">
-                    <h3 class="services-page__item-title">Decontracting </h3>
-                    <p class="services-page__item-description">Massage - Body</p>
+                    <h3 class="services-page__item-title">Semi-permanent</h3>
+                    <p class="services-page__item-description">Pedicure - Body</p>
                   </div>
                 </a>
                 <button class="services-page__item-button">Book a procedure</button>
@@ -990,12 +990,14 @@
       <div class="container mobile-menu__main-container">
         <div class="mobile-menu__content">
           <div class="search__container mobile-menu__search-container">
-            <input type="text" placeholder="Search prochedure" class="search__input" />
-            <button type="button" class="search__button">
+            <form class="search-form">
+            <input type="text" name="search" placeholder="Search prochedure" class="search__input" />
+            <button type="submit" class="search__button">
               <svg width="20" height="20" class="search__button__icon">
                 <use href="./images/icons_sprite.svg.svg#search"></use>
               </svg>
             </button>
+          </form>
           </div>
           <nav class="mobile-menu__nav">
             <ul class="mobile-menu__list">

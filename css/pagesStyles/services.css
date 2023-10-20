@@ -526,7 +526,11 @@ input[type='number'] {
     flex-wrap: wrap;
     gap: 40px 10px;
 }
-
+@media screen and (min-width: 1440px) {
+    .services-page__list {
+        gap: 40px 20px;
+    }
+}
 @media screen and (min-width: 1440px) {
     .services-page__list {
         justify-content: normal;
