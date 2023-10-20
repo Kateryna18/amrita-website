@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amrita catalog services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/pagesStyles/services.css" />
+  <link rel="stylesheet" href="./css/pagesStyles/blog.css" />
+  <script type="module" src="./index.js"></script>
+</head>
+<body>
+  <!---------------------------HEADER---------------------- -->
+  <header class="header">
+    <div class="container head__container">
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="./services.html" class="nav__link">Services
+              <svg width="22" height="22" class="nav__link-icon">
+                <use href="./images/icons_sprite.svg.svg#arrow-up-right"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">About Us</a>
+          </li>
+          <li class="nav__item"><a href="./blog.html" class="nav__link">Blog</a></li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="./index.html" class="header__logo">
+        <svg width="155" height="16" class="logo__icon">
+          <use href="./images/icons_sprite.svg.svg#logo"></use>
+        </svg>
+      </a>
+      <div class="header-content">
+        <div class="search__container">
+          <form class="search-form">
+            <input type="text" name="search" placeholder="Search prochedure" class="search__input" />
+          <button type="submit" class="search__button">
+            <svg width="20" height="20" class="search__button__icon">
+              <use href="./images/icons_sprite.svg.svg#search"></use>
+            </svg>
+          </button>
+          </form>
+        </div>
+        <div class="select">
+          <div class="select-header">
+            <span class="select-current">EN</span>
+            <div class="select-icon">
+              <svg width="24" height="24">
+                <use class="select-icon" href="./images/icons_sprite.svg.svg#chevron-down"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="select-body">
+            <div class="select-item">EN</div>
+            <div class="select-item">IT</div>
+            <div class="select-item">UA</div>
+            <div class="select-item">RU</div>
+          </div>
+        </div>
+      </div>
+      <div class="header__buttons">
+        <button class="header__button-search" id="js-open-panelSearch">
+          <svg width="32" height="32" class="logo__icon" class="button-search__icon" id="js-search-button-icon">
+            <use href="./images/icons_sprite.svg.svg#search"></use>
+          </svg>
+        </button>
+        <button class="header__button-menu js-open-menu">
+          <svg width="32" height="32" class="logo__icon" aria-expanded="false" aria-controls="mobile-menu">
+            <use href="./images/icons_sprite.svg.svg#button_menu-burger"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="header__decor"></div>
+    <div class="container header__search-panel" id="js-search-panel-header">
+      <form class="search-form">
+        <label class="header__search-panel-label">
+          <input type="text" name="search" placeholder="Search prochedure" class="search__input" />
+          <button type="submit" class="search__button">
+            <svg width="20" height="20" class="search__button__icon">
+              <use href="./images/icons_sprite.svg.svg#search"></use>
+            </svg>
+          </button>
+        </label>
+      </form>
+    </div>
+    <div class="container services__container">
+      <ul class="services__list">
+        <li class="services__item">
+          <button type="button" class="services__button">Body massage</button>
+        </li>
+        <li class="services__item">
+          <button type="button" class="services__button">Face massage</button>
+        </li>
+        <li class="services__item">
+          <button type="button" class="services__button">Body care</button>
+        </li>
+        <li class="services__item">
+          <button type="button" class="services__button">Body care</button>
+        </li>
+        <li class="services__item">
+          <button type="button" class="services__button">
+            Endosphere therapy
+          </button>
+        </li>
+        <li class="services__item">
+          <button type="button" class="services__button">MesoBioStim</button>
+        </li>
+        <li class="services__item">
+          <button type="button" class="services__button">Epilation</button>
+        </li>
+        <li class="services__item">
+          <button type="button" class="services__button">Eyelashes</button>
+        </li>
+        <li class="services__item">
+          <button type="button" class="services__button">Manicure</button>
+        </li>
+        <li class="services__item">
+          <button type="button" class="services__button">Pedicure</button>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!---------------------------MAIN---------------------- -->
+  <main class="main">
+    <div class="container breadcrumbs__container">
+      <div id="breadcrumbs" class="breadcrumbs">
+        <ul class="breadcrumbs">
+          <li>
+            <a href="./services.html">Services page</a>
+            <span>&#9679;</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-----------------------------OUR BLOG--------------------------------->
+    <section class="blog">
+        <div class="container">
+        <h2 class="title">beauty in <span class="title-accent">our blog</span></h2>
+          <p class="description blog__description">
+            Welcome to our blog, where we reveal the secrets of your care and share the latest beauty trends. Find inspiration for the best version of yourself with us.
+          </p>
+          <!-- correct -->
+          <div class="services-page__filter">
+            <div class="services-filter__buttons">
+              <div class="services-filter__button-sort-box">
+                <button type="button" class="services-filter__button-sort js-open-sort-menu">
+                  <svg class="services-filter__icon" width="22" height="22">
+                    <use href="./images/icons_sprite.svg.svg#sort_by"></use>
+                  </svg>
+                  Sort by
+                </button>
+                <div class="services-filter__menu-sort">
+                  <div class="sort-mob-menu__main">
+                    <div class="sort-mob-menu__label">
+                      <div class="sort-mob__custom-radio"></div>
+                      Newest
+                    </div>
+                    <div class="sort-mob-menu__label" >
+                      <div class="sort-mob__custom-radio"></div>
+                      Popular
+                    </div>
+                    <div class="sort-mob-menu__label">
+                      <div class="sort-mob__custom-radio"></div>
+                      Price low to high
+                    </div>
+                    <div class="sort-mob-menu__label">
+                      <div class="sort-mob__custom-radio"></div>
+                      Price high to low
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- correct -->
+          <div class="blog__content">
+            <ul class="blog__list">
+                <li class="blog__list-item">
+                    <a href="./article.html" class="blog-item__link">
+                    <div class="blog-item__main">
+                        <div class="thumb">
+                            <img src="https://soap.com.ua/sites/default/files/2021-08/no-image.jpg" alt="article img">
+                        </div>
+                        <h3 class="blog-item__title">Discover the secrets of skin regeneration through care</h3>
+                        <p class="blog-item__text">Deepen your knowledge of different types of facial treatments. From exotic wraps to deep cleansing, choose your own way of recovery.</p>
+                    </div>
+                </a>
+                    <div class="blog-item__footer">
+                        <div class="blog-item__data">25.04.2023</div>
+                        <button type="button" class="blog-item__button">
+                            Read article
+                            <svg width="20" height="20" class="blog-item__icon">
+                                <use href="./images/icons_sprite.svg.svg#arrow-up-right2"></use>
+                            </svg>
+                        </button>
+                    </div> 
+                </li>
+                <li class="blog__list-item">
+                    <a href="./article.html" class="blog-item__link">
+                    <div class="blog-item__main">
+                        <div class="thumb">
+                            <img src="https://soap.com.ua/sites/default/files/2021-08/no-image.jpg" alt="article img">
+                        </div>
+                        <h3 class="blog-item__title">Curl your lashes for a dramatic look</h3>
+                        <p class="blog-item__text">Unlock the potential of your look with lash curling treatments. Find out how this procedure can add expressiveness and openness to your eyes.</p>
+                    </div>
+                </a>
+                    <div class="blog-item__footer">
+                        <div class="blog-item__data">25.04.2023</div>
+                        <button type="button" class="blog-item__button">
+                            Read article
+                            <svg width="20" height="20" class="blog-item__icon">
+                                <use href="./images/icons_sprite.svg.svg#arrow-up-right2"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+                <li class="blog__list-item">
+                    <a href="./article.html" class="blog-item__link">
+                    <div class="blog-item__main">
+                        <div class="thumb">
+                            <img src="https://soap.com.ua/sites/default/files/2021-08/no-image.jpg" alt="article img">
+                        </div>
+                        <h3 class="blog-item__title">Manicure treatments for an unbeatable presentation</h3>
+                        <p class="blog-item__text">Discover the world of manicures that will not only add beauty to your hands, but also create an elegant and unrivaled look for you.</p>
+                    </div>
+                </a>
+                    <div class="blog-item__footer">
+                        <div class="blog-item__data">25.04.2023</div>
+                        <button type="button" class="blog-item__button">
+                            Read article
+                            <svg width="20" height="20" class="blog-item__icon">
+                                <use href="./images/icons_sprite.svg.svg#arrow-up-right2"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+                <li class="blog__list-item">
+                    <a href="./article.html" class="blog-item__link">
+                    <div class="blog-item__main">
+                        <div class="thumb">
+                            <img src="https://soap.com.ua/sites/default/files/2021-08/no-image.jpg" alt="article img">
+                        </div>
+                        <h3 class="blog-item__title">Discover the Secrets of Massage</h3>
+                        <p class="blog-item__text">Learn about different types of massage and how they affect your health and well-being. Discover the world of relaxation and harmony.Learn about advanced technologies that help you achieve the perfect look. Discover modern methods of care and improvement.</p>
+                    </div>
+                </a>
+                    <div class="blog-item__footer">
+                        <div class="blog-item__data">25.04.2023</div>
+                        <button type="button" class="blog-item__button">
+                            Read article
+                            <svg width="20" height="20" class="blog-item__icon">
+                                <use href="./images/icons_sprite.svg.svg#arrow-up-right2"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+                <li class="blog__list-item">
+                    <a href="./article.html" class="blog-item__link">
+                    <div class="blog-item__main">
+                        <div class="thumb">
+                            <img src="https://soap.com.ua/sites/default/files/2021-08/no-image.jpg" alt="article img">
+                        </div>
+                        <h3 class="blog-item__title">Beauty Technologies: Innovations for Modern Women</h3>
+                        <p class="blog-item__text">Learn about advanced technologies that help you achieve the perfect look. Discover modern methods of care and improvement.Learn about advanced technologies that help you achieve the perfect look. Discover modern methods of care and improvement.</p>
+                    </div>
+                </a>
+                    <div class="blog-item__footer">
+                        <div class="blog-item__data">25.04.2023</div>
+                        <button type="button" class="blog-item__button">
+                            Read article
+                            <svg width="20" height="20" class="blog-item__icon">
+                                <use href="./images/icons_sprite.svg.svg#arrow-up-right2"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+                <li class="blog__list-item">
+                    <a href="./article.html" class="blog-item__link">
+                    <div class="blog-item__main">
+                        <div class="thumb">
+                            <img src="https://soap.com.ua/sites/default/files/2021-08/no-image.jpg" alt="article img">
+                        </div>
+                        <h3 class="blog-item__title">Tips for Hair Removal"</h3>
+                        <p class="blog-item__text">Learn how to choose the best hair removal method for smooth skin. Share the secrets of maintaining a great result. Learn how to choose the best hair removal method for smooth skin. Share the secrets of maintaining a great result.</p>
+                    </div>
+                </a>
+                    <div class="blog-item__footer">
+                        <div class="blog-item__data">25.04.2023</div>
+                        <button type="button" class="blog-item__button">
+                            Read article
+                            <svg width="20" height="20" class="blog-item__icon">
+                                <use href="./images/icons_sprite.svg.svg#arrow-up-right2"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+                <li class="blog__list-item">
+                    <a href="./article.html" class="blog-item__link">
+                    <div class="blog-item__main">
+                        <div class="thumb">
+                            <img src="https://soap.com.ua/sites/default/files/2021-08/no-image.jpg" alt="article img">
+                        </div>
+                        <h3 class="blog-item__title">Eyelashes for the Eye: Trends and Tips</h3>
+                        <p class="blog-item__text">Uncover the secrets of travelers who look irresistible thanks to their eyelashes. Learn how to choose the right shape and care for your lashes.</p>
+                    </div>
+                </a>
+                    <div class="blog-item__footer">
+                        <div class="blog-item__data">25.04.2023</div>
+                        <button type="button" class="blog-item__button">
+                            Read article
+                            <svg width="20" height="20" class="blog-item__icon">
+                                <use href="./images/icons_sprite.svg.svg#arrow-up-right2"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+                <li class="blog__list-item">
+                    <a href="./article.html" class="blog-item__link">
+                    <div class="blog-item__main">
+                        <div class="thumb">
+                            <img src="https://soap.com.ua/sites/default/files/2021-08/no-image.jpg" alt="article img">
+                        </div>
+                        <h3 class="blog-item__title">First Steps to Perfection: Pedicure and its Trends</h3>
+                        <p class="blog-item__text">Learn how to choose the right pedicure for your style and ensure the health of your nails and foot skin. Give yourself comfort and elegance.</p>
+                    </div>
+                </a>
+                    <div class="blog-item__footer">
+                        <div class="blog-item__data">25.04.2023</div>
+                        <button type="button" class="blog-item__button">
+                            Read article
+                            <svg width="20" height="20" class="blog-item__icon">
+                                <use href="./images/icons_sprite.svg.svg#arrow-up-right2"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+                <li class="blog__list-item">
+                    <a href="./article.html" class="blog-item__link">
+                    <div class="blog-item__main">
+                        <div class="thumb">
+                            <img src="https://soap.com.ua/sites/default/files/2021-08/no-image.jpg" alt="article img">
+                        </div>
+                        <h3 class="blog-item__title">Secrets of the Perfect Face: Skin Care</h3>
+                        <p class="blog-item__text">Uncover the secrets of quality facial care to emphasize your natural beauty. Learn techniques that make your skin glow and look healthy.</p>
+                    </div>
+                </a>
+                    <div class="blog-item__footer">
+                        <div class="blog-item__data">25.04.2023</div>
+                        <button type="button" class="blog-item__button">
+                            Read article
+                            <svg width="20" height="20" class="blog-item__icon">
+                                <use href="./images/icons_sprite.svg.svg#arrow-up-right2"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+                <li class="blog__list-item">
+                    <a href="./article.html" class="blog-item__link">
+                    <div class="blog-item__main">
+                        <div class="thumb">
+                            <img src="https://soap.com.ua/sites/default/files/2021-08/no-image.jpg" alt="article img">
+                        </div>
+                        <h3 class="blog-item__title">Kinesiological taping: The Subtle Path to Functional Recovery</h3>
+                        <p class="blog-item__text">Learn how taping can help restore motor function and ensure faster recovery from injury. Learn effective methods of using taping to ensure an optimal rehabilitation process.</p>
+                    </div>
+                </a>
+                    <div class="blog-item__footer">
+                        <div class="blog-item__data">25.04.2023</div>
+                        <button type="button" class="blog-item__button">
+                            Read article
+                            <svg width="20" height="20" class="blog-item__icon">
+                                <use href="./images/icons_sprite.svg.svg#arrow-up-right2"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+                <li class="blog__list-item">
+                    <a href="./article.html" class="blog-item__link">
+                    <div class="blog-item__main">
+                        <div class="thumb">
+                            <img src="https://soap.com.ua/sites/default/files/2021-08/no-image.jpg" alt="article img">
+                        </div>
+                        <h3 class="blog-item__title">Kinesiological taping: The Subtle Path to Functional Recovery</h3>
+                        <p class="blog-item__text">Learn how taping can help restore motor function and ensure faster recovery from injury. Learn effective methods of using taping to ensure an optimal rehabilitation process.</p>
+                    </div>
+                </a>
+                    <div class="blog-item__footer">
+                        <div class="blog-item__data">25.04.2023</div>
+                        <button type="button" class="blog-item__button">
+                            Read article
+                            <svg width="20" height="20" class="blog-item__icon">
+                                <use href="./images/icons_sprite.svg.svg#arrow-up-right2"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+                <li class="blog__list-item">
+                    <a href="./article.html" class="blog-item__link">
+                    <div class="blog-item__main">
+                        <div class="thumb">
+                            <img src="https://soap.com.ua/sites/default/files/2021-08/no-image.jpg" alt="article img">
+                        </div>
+                        <h3 class="blog-item__title">Kinesiological taping: The Subtle Path to Functional Recovery</h3>
+                        <p class="blog-item__text">Learn how taping can help restore motor function and ensure faster recovery from injury. Learn effective methods of using taping to ensure an optimal rehabilitation process.</p>
+                    </div>
+                </a>
+                    <div class="blog-item__footer">
+                        <div class="blog-item__data">25.04.2023</div>
+                        <button type="button" class="blog-item__button">
+                            Read article
+                            <svg width="20" height="20" class="blog-item__icon">
+                                <use href="./images/icons_sprite.svg.svg#arrow-up-right2"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+            <div class="services-page__pagination">
+                <button type="button" class="services-page-pagination__arrow-buttons">
+                  <svg width="40" height="40" class="services-page-pagination__icon">
+                    <use href="./images/icons_sprite.svg.svg#chevron-left-black"></use>
+                  </svg>
+                </button>
+                <ul class="services-page-pagination__list">
+                  <li class="services-page-pagination__item">
+                    <button type="button" class="services-page-pagination__button">1</button>
+                  </li>
+                  <li class="services-page-pagination__item">
+                    <button type="button" class="services-page-pagination__button">2</button>
+                  </li>
+                  <li class="services-page-pagination__item">
+                    <button type="button" class="services-page-pagination__button">3</button>
+                  </li>
+                  <li class="services-page-pagination__item">
+                    <button type="button" class="services-page-pagination__button">4</button>
+                  </li>
+                  <li class="services-page-pagination__item">
+                    <button type="button" class="services-page-pagination__button">5</button>
+                  </li>
+                </ul>
+                <button type="button" class="services-page-pagination__arrow-buttons">
+                  <svg width="40" height="40" class="services-page-pagination__icon">
+                    <use href="./images/icons_sprite.svg.svg#chevron-right-black"></use>
+                  </svg>
+                </button>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+  <!---------------------------FOOTER------------------------>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__logo-container">
+        <a href="./index.html" class="footer__logo">
+          <svg class="footer__logo-icon-part1" width="218" height="39">
+            <use href="./images/icons_sprite.svg.svg#logo_illustrationtext"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="footer__content-container">
+        <div class="footer__info">
+          <div class="footer__info-containers footer__info-contact">
+            <h3 class="footer__info-title">Contact us</h3>
+            <a class="footer__contacts footer__info-contact-tel" href="tel:+390503220606">+39 (050) 3220 606</a>
+            <a class="footer__info-contact-email" href="mailto:amrita@gmail.com">amrita@gmail.com</a>
+          </div>
+          <div class="footer__info-containers footer__info-adress">
+            <h3 class="footer__info-title">Address of our salon</h3>
+            <address class="footer__contacts footer__adress">
+              123 Via Serenità, Rome, Italy
+            </address>
+            <table class="footer__table">
+              <tr class="footer__table-tr">
+                <td class="footer__table-td">Mon-Fri</td>
+                <td class="footer__table-td footer__table-td-time">
+                  09:00 - 19:00
+                </td>
+              </tr>
+              <tr class="footer__table-tr">
+                <td class="footer__table-td">Saturday</td>
+                <td class="footer__table-td footer__table-td-time">
+                  11:00 - 18:00
+                </td>
+              </tr>
+              <tr class="footer__table-tr">
+                <td class="footer__table-td">Sunday</td>
+                <td class="footer__table-td footer__table-td-time">
+                  day off
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="footer__pages">
+          <h3 class="footer__pages-title">Pages</h3>
+          <ul class="footer__pages-list">
+            <li class="footer__pages-item">
+              <a class="footer__pages-link">Main Page</a>
+            </li>
+            <li class="footer__pages-item">
+              <a class="footer__pages-link">About Us</a>
+            </li>
+            <li class="footer__pages-item footer__pages-services">
+              <a class="footer__pages-link">Services</a>
+              <button class="footer__pages-button">
+                <svg width="24" height="24" class="footer__pages-icon">
+                  <use href="./images/icons_sprite.svg.svg#chevron-down-white"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="footer__pages-item">
+              <a class="footer__pages-link">Booking</a>
+            </li>
+            <li class="footer__pages-item">
+              <a class="footer__pages-link">Blog</a>
+            </li>
+            <li class="footer__pages-item">
+              <a class="footer__pages-link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__services">
+          <h3 class="footer__services-title">Services</h3>
+          <div class="footer__list-container">
+            <ul class="footer__list">
+              <li class="footer__services-item"><a href="#" class="footer__services-link">Body massage</a></li>
+              <li class="footer__services-item"><a href="#" class="footer__services-link">Face massage</a></li>
+              <li class="footer__services-item"><a href="#" class="footer__services-link">Body care</a></li>
+              <li class="footer__services-item"><a href="#" class="footer__services-link">Face care</a></li>
+              <li class="footer__services-item"><a href="#" class="footer__services-link">Epilation</a></li>
+            </ul>
+            <ul>
+              <li class="footer__services-item"><a href="#" class="footer__services-link">Endosphere therapy</a></li>
+              <li class="footer__services-item"><a href="#" class="footer__services-link">MesoBioStim</a></li>
+              <li class="footer__services-item"><a href="#" class="footer__services-link">Eyelashes</a></li>
+              <li class="footer__services-item"><a href="#" class="footer__services-link">Manicure</a></li>
+              <li class="footer__services-item"><a href="#" class="footer__services-link">Pedicure</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__socials-container">
+        <ul class="footer__socials-list">
+          <li class="footer__socials-item">
+            <a href="#" class="footer__socials-link"><svg width="24" height="24" class="footer__socials-icon">
+                <use href="./images/icons_sprite.svg.svg#icon_instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__socials-item">
+            <a href="#" class="footer__socials-link"><svg width="24" height="24" class="footer__socials-icon">
+                <use href="./images/icons_sprite.svg.svg#icon_facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__info-line">
+        <div class="footer__info-line-box">
+          <p class="footer__info-line-text">Privacy policy</p>
+          <p class="footer__info-line-text">Terms & Conditions</p>
+        </div>
+        <p class="footer__info-line-text-part2">
+          ©2023 Amrita All Rights Reserved
+        </p>
+      </div>
+  </footer>
+  <!---------------------------MOBILE MENU------------------------>
+  <div class="mobile-menu js-menu-container" id="mobile-menu">
+    <div class="container mobile-menu__header">
+      <a href="./index.html" class="header__logo">
+        <svg width="155" height="16" class="logo__icon">
+          <use href="./images/icons_sprite.svg.svg#logo"></use>
+        </svg>
+      </a>
+      <div class="header__buttons">
+        <div class="select">
+          <div class="select-header">
+            <span class="select-current">EN</span>
+            <div class="select-icon">
+              <svg width="24" height="24">
+                <use href="./images/icons_sprite.svg.svg#chevron-down"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="select-body">
+            <div class="select-item">EN</div>
+            <div class="select-item">IT</div>
+            <div class="select-item">UA</div>
+            <div class="select-item">RU</div>
+          </div>
+        </div>
+        <button class="header__button-menu js-close-menu">
+          <svg width="32" height="32" class="logo__icon" class="button-menu__icon">
+            <use href="./images/icons_sprite.svg.svg#close-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu__main">
+      <div class="container mobile-menu__main-container">
+        <div class="mobile-menu__content">
+          <div class="search__container mobile-menu__search-container">
+            <form class="search-form">
+            <input type="text" name="search" placeholder="Search prochedure" class="search__input" />
+            <button type="submit" class="search__button">
+              <svg width="20" height="20" class="search__button__icon">
+                <use href="./images/icons_sprite.svg.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+          </div>
+          <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="./index.html">Home page
+                </a></li>
+              <li class="mobile-menu__nav-item"><button class="mobile-menu__nav-button js-open-menu2"
+                  type="button">Services
+                  <svg class="mobile-menu__nav-icon" width="40" height="40">
+                    <use href="./images/icons_sprite.svg.svg#arrow-up-right2"></use>
+                  </svg>
+                </button></li>
+              <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">About Us</a></li>
+              <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Blog</a></li>
+              <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+        <button type="button" class="mobile-menu__button">View Services Page
+          <svg width="24" height="24">
+            <use href="./images/icons_sprite.svg.svg#arrow-up-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!---------------------------MOBILE SUBMENU------------------------>
+  <div class="mobile-menu__submenu js-menu2-container">
+    <div class="container mobile-menu__header">
+      <a href="./index.html" class="header__logo">
+        <svg width="155" height="16" class="logo__icon">
+          <use href="./images/icons_sprite.svg.svg#logo"></use>
+        </svg>
+      </a>
+      <div class="header__buttons">
+        <div class="select">
+          <div class="select-header">
+            <span class="select-current">EN</span>
+            <div class="select-icon">
+              <svg width="24" height="24">
+                <use href="./images/icons_sprite.svg.svg#chevron-down"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="select-body">
+            <div class="select-item">EN</div>
+            <div class="select-item">IT</div>
+            <div class="select-item">UA</div>
+            <div class="select-item">RU</div>
+          </div>
+        </div>
+        <button class="header__button-menu js-close-menu2">
+          <svg width="32" height="32" class="logo__icon" class="button-menu__icon">
+            <use href="./images/icons_sprite.svg.svg#close-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu__main">
+      <div class="container mobile-menu__main-container">
+        <div class="mobile-menu__content">
+          <button class="mobile-menu__nav-button mobile-submenu__nav-button js-close-menu2" type="button">
+            <svg width="24" height="24">
+              <use href="./images/icons_sprite.svg.svg#chevron-left"></use>
+            </svg>Services
+          </button>
+          <div class="mobile-submenu__content">
+            <ul class="mobile-submenu__list-services">
+              <li class="mobile-submenu__item-services">
+                <button class="mobile-submenu__button-services" type="button">
+                  Body massage
+                  <svg width="24" height="24" class="mobile-submenu__icon-services">
+                    <use href="./images/icons_sprite.svg.svg#plus"></use>
+                  </svg></button>
+              </li>
+              <li class="mobile-submenu__item-services">
+                <button class="mobile-submenu__button-services" type="button">
+                  Face massage
+                  <svg width="24" height="24" class="mobile-submenu__icon-services">
+                    <use href="./images/icons_sprite.svg.svg#plus"></use>
+                  </svg></button>
+              </li>
+              <li class="mobile-submenu__item-services">
+                <button class="mobile-submenu__button-services" type="button">
+                  Body care
+                  <svg width="24" height="24" class="mobile-submenu__icon-services">
+                    <use href="./images/icons_sprite.svg.svg#plus"></use>
+                  </svg></button>
+              </li>
+              <li class="mobile-submenu__item-services">
+                <button class="mobile-submenu__button-services" type="button">
+                  Face care
+                  <svg width="24" height="24" class="mobile-submenu__icon-services">
+                    <use href="./images/icons_sprite.svg.svg#plus"></use>
+                  </svg></button>
+              </li>
+              <li class="mobile-submenu__item-services">
+                <button class="mobile-submenu__button-services" type="button">
+                  Endosphere therapy
+                  <svg width="24" height="24" class="mobile-submenu__icon-services">
+                    <use href="./images/icons_sprite.svg.svg#plus"></use>
+                  </svg></button>
+              </li>
+              <li class="mobile-submenu__item-services">
+                <button class="mobile-submenu__button-services" type="button">
+                  MesoBioStim
+                  <svg width="24" height="24" class="mobile-submenu__icon-services">
+                    <use href="./images/icons_sprite.svg.svg#plus"></use>
+                  </svg></button>
+              </li>
+              <li class="mobile-submenu__item-services">
+                <button class="mobile-submenu__button-services" type="button">
+                  Epilation
+                  <svg width="24" height="24" class="mobile-submenu__icon-services">
+                    <use href="./images/icons_sprite.svg.svg#plus"></use>
+                  </svg></button>
+              </li>
+              <li class="mobile-submenu__item-services">
+                <button class="mobile-submenu__button-services" type="button">
+                  Eyelashes
+                  <svg width="24" height="24" class="mobile-submenu__icon-services">
+                    <use href="./images/icons_sprite.svg.svg#plus"></use>
+                  </svg></button>
+              </li>
+              <li class="mobile-submenu__item-services">
+                <button class="mobile-submenu__button-services" type="button">
+                  Manicure
+                  <svg width="24" height="24" class="mobile-submenu__icon-services">
+                    <use href="./images/icons_sprite.svg.svg#plus"></use>
+                  </svg></button>
+              </li>
+              <li class="mobile-submenu__item-services">
+                <button class="mobile-submenu__button-services" type="button">
+                  Pedicure
+                  <svg width="24" height="24" class="mobile-submenu__icon-services">
+                    <use href="./images/icons_sprite.svg.svg#plus"></use>
+                  </svg></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button type="button" class="mobile-menu__button">View Services Page
+          <svg width="24" height="24">
+            <use href="./images/icons_sprite.svg.svg#arrow-up-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!---------------------------SORT MOBILE MENU------------------------>
+  <div class="sort-mob-menu js-sort-menu">
+    <div class="sort-mob-menu__head">
+      <button type="button" class="sort-mob-menu__button js-close-sort-menu">
+        <svg width="24" height="24" class="sort-mob-menu__icon">
+          <use href="./images/icons_sprite.svg.svg#close-icon"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="sort-mob-menu__main">
+      <div class="sort-mob-menu__label">
+        <div class="sort-mob__custom-radio"></div>
+        Newest
+      </div>
+      <div class="sort-mob-menu__label" >
+        <div class="sort-mob__custom-radio"></div>
+        Popular
+      </div>
+      <div class="sort-mob-menu__label">
+        <div class="sort-mob__custom-radio"></div>
+        Price low to high
+      </div>
+      <div class="sort-mob-menu__label">
+        <div class="sort-mob__custom-radio"></div>
+        Price high to low
+      </div>
+    </div>
+  </div>
+  <div class="overlay"></div>
+</body>
+</html>
