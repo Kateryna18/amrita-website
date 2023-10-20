@@ -11,13 +11,13 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.css">
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/pagesStyles/main.css" />
   <link rel="stylesheet" href="./css/pagesStyles/services.css" />
-  <link rel="stylesheet" href="./css/pagesStyles/search-results.css" />
+  <link rel="stylesheet" href="./css/pagesStyles/service.css" />
+  <link rel="stylesheet" href="./css/pagesStyles/article.css" />
   <script type="module" src="./index.js"></script>
-  <script defer src="./search-results.js"></script>
 </head>
 <body>
   <!---------------------------HEADER---------------------- -->
@@ -33,7 +33,7 @@
             </a>
           </li>
           <li class="nav__item">
-            <a href="./about.html" class="nav__link">About Us</a>
+            <a href="#" class="nav__link">About Us</a>
           </li>
           <li class="nav__item"><a href="./blog.html" class="nav__link">Blog</a></li>
           <li class="nav__item">
@@ -89,16 +89,16 @@
     </div>
     <div class="header__decor"></div>
     <div class="container header__search-panel" id="js-search-panel-header">
-      <form>
-        <label class="header__search-panel-label">
-          <input type="text" placeholder="Search prochedure" class="search__input" />
-          <button type="submit" class="search__button">
-            <svg width="20" height="20" class="search__button__icon">
-              <use href="./images/icons_sprite.svg.svg#search"></use>
-            </svg>
-          </button>
-        </label>
-      </form>
+      <form class="search-form">
+      <label class="header__search-panel-label">
+        <input type="text" name="search" placeholder="Search prochedure" class="search__input" />
+        <button type="submit" class="search__button">
+          <svg width="20" height="20" class="search__button__icon">
+            <use href="./images/icons_sprite.svg.svg#search"></use>
+          </svg>
+        </button>
+      </label>
+    </form>
     </div>
     <div class="container services__container">
       <ul class="services__list">
@@ -137,286 +137,184 @@
       </ul>
     </div>
   </header>
-  <!---------------------------MAIN---------------------- -->
+  <!---------------------------MAIN----------------------------->
   <main class="main">
     <div class="container breadcrumbs__container">
       <div id="breadcrumbs" class="breadcrumbs">
         <ul class="breadcrumbs">
           <li>
-            <a href="./search-results.html">Search page</a>
+            <a href="./about.html">About page</a>
             <span>&#9679;</span>
           </li>
         </ul>
       </div>
     </div>
-    <!-----------------------------SERVICES--------------------------------->
-    <section class="services">
-      <div class="container">
-        <h2 class="title search-title"><span class="title-accent">results</span> search</h2>
-      <div class="services-page__body">
-        <ul class="services-page__list">
-          <li class="services-page__item bodyMassage lifting">
-            <a href="./service.html" class="services-page__item-link">
-            <div class="services-page__item-thumb">
-              <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                alt="">
-              <span class="services-page__item-label">New</span>
+    <!---------------------------ABOUT US---------------------->
+    <section class="about-us">
+        <div class="container">
+            <div>
+                <h2 class="tittle">
+                    AMRITA is a beauty spa founded by Valentyna Chyzhevska in 2023. 
+                </h2>
+                <p></p>
             </div>
-            <div class="services-page__item-content">
-              <h3 class="services-page__item-title">Decontracting </h3>
-              <p class="services-page__item-description">Massage - Body</p>
+            <div>
+                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg" alt="">
             </div>
-          </a>
-            <button class="services-page__item-button">Book a procedure</button>
-          </li>
-          <li class="services-page__item bodyMassage lifting">
-            <a href="./service.html" class="services-page__item-link">
-              <div class="services-page__item-thumb">
-                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                  alt="">
-                <span class="services-page__item-label">New</span>
-              </div>
-              <div class="services-page__item-content">
-                <h3 class="services-page__item-title">Semi-permanent</h3>
-                <p class="services-page__item-description">Pedicure - Body</p>
-              </div>
-            </a>
-            <button class="services-page__item-button">Book a procedure</button>
-          </li>
-          <li class="services-page__item bodyMassage lifting">
-            <a href="./service.html" class="services-page__item-link">
-              <div class="services-page__item-thumb">
-                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                  alt="">
-                <span class="services-page__item-label">New</span>
-              </div>
-              <div class="services-page__item-content">
-                <h3 class="services-page__item-title">Dermo-active peels care</h3>
-                <p class="services-page__item-description">Body care - Face</p>
-              </div>
-            </a>
-            <button class="services-page__item-button">Book a procedure</button>
-          </li>
-          <li class="services-page__item faceMassage lifting">
-            <a href="./service.html" class="services-page__item-link">
-              <div class="services-page__item-thumb">
-                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                  alt="">
-                <span class="services-page__item-label">New</span>
-              </div>
-              <div class="services-page__item-content">
-                <h3 class="services-page__item-title">Endosphere therapy</h3>
-                <p class="services-page__item-description">Technological care - Body</p>
-              </div>
-            </a>
-            <button class="services-page__item-button">Book a procedure</button>
-          </li>
-          <li class="services-page__item faceMassage lifting">
-            <a href="./service.html" class="services-page__item-link">
-              <div class="services-page__item-thumb">
-                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                  alt="">
-                <span class="services-page__item-label">New</span>
-              </div>
-              <div class="services-page__item-content">
-                <h3 class="services-page__item-title">Ko.Bi.Do massage</h3>
-                <p class="services-page__item-description">Massage - Face</p>
-              </div>
-            </a>
-            <button class="services-page__item-button">Book a procedure</button>
-          </li>
-          <li class="services-page__item manicure toning">
-            <a href="./service.html" class="services-page__item-link">
-              <div class="services-page__item-thumb">
-                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                  alt="">
-                <span class="services-page__item-label">New</span>
-              </div>
-              <div class="services-page__item-content">
-                <h3 class="services-page__item-title">Eyelash extensions</h3>
-                <p class="services-page__item-description">Eyelashes - Face</p>
-              </div>
-            </a>
-            <button class="services-page__item-button">Book a procedure</button>
-          </li>
-          <li class="services-page__item manicure toning">
-            <a href="./service.html" class="services-page__item-link">
-              <div class="services-page__item-thumb">
-                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                  alt="">
-                <span class="services-page__item-label">New</span>
-              </div>
-              <div class="services-page__item-content">
-                <h3 class="services-page__item-title">Water lymphatic drainage</h3>
-                <p class="services-page__item-description">Massage - Body</p>
-              </div>
-            </a>
-            <button class="services-page__item-button">Massage - Body</button>
-          </li>
-          <li class="services-page__item manicure toning">
-            <a href="./service.html" class="services-page__item-link">
-              <div class="services-page__item-thumb">
-                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                  alt="">
-                <span class="services-page__item-label">New</span>
-              </div>
-              <div class="services-page__item-content">
-                <h3 class="services-page__item-title">Anticellulite </h3>
-                <p class="services-page__item-description">Massage - Body</p>
-              </div>
-            </a>
-            <button class="services-page__item-button">Book a procedure</button>
-          </li>
-          <li class="services-page__item manicure hydration">
-            <a href="./service.html" class="services-page__item-link">
-              <div class="services-page__item-thumb">
-                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                  alt="">
-                <span class="services-page__item-label">New</span>
-              </div>
-              <div class="services-page__item-content">
-                <h3 class="services-page__item-title">Classic wax</h3>
-                <p class="services-page__item-description">Hair removal - Body</p>
-              </div>
-            </a>
-            <button class="services-page__item-button">Book a procedure</button>
-          </li>
-          <li class="services-page__item hairRemoval hydration">
-            <a href="./service.html" class="services-page__item-link">
-              <div class="services-page__item-thumb">
-                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                  alt="">
-                <span class="services-page__item-label">New</span>
-              </div>
-              <div class="services-page__item-content">
-                <h3 class="services-page__item-title">MesoBioStim</h3>
-                <p class="services-page__item-description">Technological care - Face</p>
-              </div>
-            </a>
-            <button class="services-page__item-button">Book a procedure</button>
-          </li>
-          <li class="services-page__item hairRemoval hydration">
-            <a href="./service.html" class="services-page__item-link">
-              <div class="services-page__item-thumb">
-                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                  alt="">
-                <span class="services-page__item-label">New</span>
-              </div>
-              <div class="services-page__item-content">
-                <h3 class="services-page__item-title">Jar technique</h3>
-                <p class="services-page__item-description">Massage - Body</p>
-              </div>
-            </a>
-            <button class="services-page__item-button">Book a procedure</button>
-          </li>
-          <li class="services-page__item hairRemoval hydration">
-            <a href="./service.html" class="services-page__item-link">
-              <div class="services-page__item-thumb">
-                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                  alt="">
-                <span class="services-page__item-label">New</span>
-              </div>
-              <div class="services-page__item-content">
-                <h3 class="services-page__item-title">"Perfect" manicure with a semi-permanent coating</h3>
-                <p class="services-page__item-description">Manicure - Body</p>
-              </div>
-            </a>
-            <button class="services-page__item-button">Book a procedure</button>
-          </li>
-          <li class="services-page__item hairRemoval hydration">
-            <a href="./service.html" class="services-page__item-link">
-              <div class="services-page__item-thumb">
-                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                  alt="">
-                <span class="services-page__item-label">New</span>
-              </div>
-              <div class="services-page__item-content">
-                <h3 class="services-page__item-title">Endosphere therapy</h3>
-                <p class="services-page__item-description">Technological care - Body</p>
-              </div>
-            </a>
-            <button class="services-page__item-button">Book a procedure</button>
-          </li>
-          <li class="services-page__item hairRemoval hydration">
-            <a href="./service.html" class="services-page__item-link">
-              <div class="services-page__item-thumb">
-                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                  alt="">
-                <span class="services-page__item-label">New</span>
-              </div>
-              <div class="services-page__item-content">
-                <h3 class="services-page__item-title">Ko.Bi.Do massage</h3>
-                <p class="services-page__item-description">Massage - Face</p>
-              </div>
-            </a>
-            <button class="services-page__item-button">Book a procedure</button>
-          </li>
-          <li class="services-page__item hairRemoval hydration">
-            <a href="./service.html" class="services-page__item-link">
-              <div class="services-page__item-thumb">
-                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                  alt="">
-                <span class="services-page__item-label">New</span>
-              </div>
-              <div class="services-page__item-content">
-                <h3 class="services-page__item-title">Semi-permanent</h3>
-                <p class="services-page__item-description">Pedicure - Body</p>
-              </div>
-            </a>
-            <button class="services-page__item-button">Book a procedure</button>
-          </li>
-          <li class="services-page__item hairRemoval hydration">
-            <a href="./service.html" class="services-page__item-link">
-              <div class="services-page__item-thumb">
-                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
-                  alt="">
-                <span class="services-page__item-label">New</span>
-              </div>
-              <div class="services-page__item-content">
-                <h3 class="services-page__item-title">MesoBioStim</h3>
-                <p class="services-page__item-description">Technological care - Face</p>
-              </div>
-            </a>
-            <button class="services-page__item-button">Book a procedure</button>
-          </li>
-        </ul>
-        <div class="services-page__pagination">
-          <button type="button" class="services-page-pagination__arrow-buttons">
-            <svg width="40" height="40" class="services-page-pagination__icon">
-              <use href="./images/icons_sprite.svg.svg#chevron-left-black"></use>
-            </svg>
-          </button>
-          <ul class="services-page-pagination__list">
-            <li class="services-page-pagination__item">
-              <button type="button" class="services-page-pagination__button">1</button>
-            </li>
-            <li class="services-page-pagination__item">
-              <button type="button" class="services-page-pagination__button">2</button>
-            </li>
-            <li class="services-page-pagination__item">
-              <button type="button" class="services-page-pagination__button">3</button>
-            </li>
-            <li class="services-page-pagination__item">
-              <button type="button" class="services-page-pagination__button">4</button>
-            </li>
-            <li class="services-page-pagination__item">
-              <button type="button" class="services-page-pagination__button">5</button>
-            </li>
-          </ul>
-          <button type="button" class="services-page-pagination__arrow-buttons">
-            <svg width="40" height="40" class="services-page-pagination__icon">
-              <use href="./images/icons_sprite.svg.svg#chevron-right-black"></use>
-            </svg>
-          </button>
+            <p>It was created to help you find harmony and restore your natural beauty. Our philosophy is based on the combination of personal experience and important values of a modern person: relaxation, self-expression, health and self-support.
+                We have a team of professionals with many years of experience in beauty care and relaxation. Each of our specialists is an expert in their field, ready to do everything possible to make you feel comfortable and satisfied.</p>
         </div>
-      </div>
-      <div class="search-page__noresults">
-        <p class="search-page__noresults-text">At the moment, no such service was found.</p>
-      </div>
-      </div>
+    </section>
+    <!---------------------------EDUCATION---------------------->
+    <section class="education">
+        <div class="container">
+            <div>
+                <h2 class="tittle">
+                    <span class="tittle-accent">Professional </span>education
+                  </h2>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet consectetur. Sed risus ut mattis amet. Sollicitudin purus iaculis feugiat viverra augue adipiscing mauris.
+                  </p>
+            </div>
+            <div>
+                <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!---------------------------EXPIRIENCE---------------------->
+    <section class="expirience">
+        <div class="container">
+            <div>
+                <h2 class="tittle">Work experience
+                    <span class="tittle-accent"> over 11 years</span>
+                  </h2>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet consectetur. Eget adipiscing tincidunt mi scelerisque. Lorem eu cras nec arcu augue vitae.
+                  </p>
+            </div>
+            <div>
+                <div class="about-procedure__main">
+                    <ul class="about-procedure__list">
+                        <li class="about-procedure-list__item">
+                            <p class="about-procedure-item__title">2012 - 2015</p>
+                            <p class="about-procedure-item__text">Lorem ipsum dolor sit amet consectetur. Dignissim amet vel mattis ultricies vitae tempus id.</p>
+                        </li>
+                        <li class="about-procedure-list__item">
+                            <p class="about-procedure-item__title">2015 - 2019</p>
+                            <p class="about-procedure-item__text">Lorem ipsum dolor sit amet consectetur. Dignissim amet vel mattis ultricies vitae tempus id.</p>
+                        </li>
+                        <li class="about-procedure-list__item">
+                            <p class="about-procedure-item__title">2019-2020</p>
+                            <p class="about-procedure-item__text">Lorem ipsum dolor sit amet consectetur. Dignissim amet vel mattis ultricies vitae tempus id.</p>
+                        </li>
+                        <li class="about-procedure-list__item">
+                            <p class="about-procedure-item__title">2021-2023</p>
+                            <p class="about-procedure-item__text">Lorem ipsum dolor sit amet consectetur. Dignissim amet vel mattis ultricies vitae tempus id.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------------CERTIFICATES---------------------->
+    <section class="certificates">
+        <div class="container">
+            <div>
+                <h2 class="tittle">
+                    <span class="tittle-accent">Certificates</span>
+                  </h2>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet consectetur. Eget adipiscing tincidunt mi scelerisque. Lorem eu cras nec arcu augue vitae.
+                  </p>
+            </div>
+            <div></div>
+        </div>
+    </section>
+    <!---------------------------APPROACH---------------------->
+    <section class="approach">
+        <div class="container">
+            <div>
+                <h2 class="tittle">
+                    <span class="tittle-accent">Our Approach</span>
+                  </h2>
+                  <p class="description">
+                    We believe in the power of nature and innovation. Our approach is based on the use of natural ingredients and advanced technologies to achieve the best results.
+                  </p>
+            </div>
+            <div>
+                <ul class="about__list">
+                    <li class="about__item">
+                      <div class="about__icon-box">
+                        <svg width="24" height="24" class="about__icon">
+                          <use href="./images/icons_sprite.svg.svg#check-circle"></use>
+                        </svg>
+                      </div>
+                      <div class="about__content">
+                        <h3 class="about__title">Individual approach</h3>
+                        <p class="about__text">
+                            Our team believes in the importance of individualized approach to each client. We understand that each individual has unique needs and desires, and that is why we work hard to provide a personalized experience and the best possible results.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="about__item">
+                      <div class="about__icon-box">
+                        <svg width="24" height="24" class="about__icon">
+                          <use href="./images/icons_sprite.svg.svg#check-circle"></use>
+                        </svg>
+                      </div>
+                      <div class="about__content">
+                        <h3 class="about__title">Sterility</h3>
+                        <p class="about__text">
+                            We pay special attention to the level of sterility and hygiene to ensure your safety and comfort.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="about__item">
+                      <div class="about__icon-box">
+                        <svg width="24" height="24" class="about__icon">
+                          <use href="./images/icons_sprite.svg.svg#check-circle"></use>
+                        </svg>
+                      </div>
+                      <div class="about__content">
+                        <h3 class="about__title">Professional development</h3>
+                        <p class="about__text">
+                            We are committed to continuous professional development of our team. Our specialists regularly participate in training and master classes to keep abreast of the latest techniques and approaches in the industry.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="about__item">
+                      <div class="about__icon-box">
+                        <svg width="24" height="24" class="about__icon">
+                          <use href="./images/icons_sprite.svg.svg#check-circle"></use>
+                        </svg>
+                      </div>
+                      <div class="about__content">
+                        <h3 class="about__title">Professional cosmetics</h3>
+                        <p class="about__text">
+                            Lorem ipsum dolor sit amet consectetur. In enim ac sem adipiscing tincidunt placerat consequat lectus ut. Vestibulum leo dignissim nisi amet.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+    </section>
+    <!---------------------------OUR TEAM------------------------>
+    <section class="team">
+        <div class="container">
+            <div>
+                <h2 class="tittle">
+                    <span class="tittle-accent">Our Team</span>
+                  </h2>
+                  <p class="description">
+                    The AMRITA SPA team are professionals with deep experience in the field of beauty and well-being. We work together to provide you with the highest quality of service and relaxation.
+                  </p>
+            </div>
+            <div></div>
+        </div>
     </section>
   </main>
-  <!---------------------------FOOTER------------------------>
+  <!---------------------------FOOTER---------------------------->
   <footer class="footer">
     <div class="container">
       <div class="footer__logo-container">
@@ -534,7 +432,7 @@
         </p>
       </div>
   </footer>
-  <!---------------------------MOBILE MENU------------------------>
+  <!---------------------------MOBILE MENU----------------------->
   <div class="mobile-menu js-menu-container" id="mobile-menu">
     <div class="container mobile-menu__header">
       <a href="./index.html" class="header__logo">
@@ -570,12 +468,14 @@
       <div class="container mobile-menu__main-container">
         <div class="mobile-menu__content">
           <div class="search__container mobile-menu__search-container">
-            <input type="text" placeholder="Search prochedure" class="search__input" />
-            <button type="button" class="search__button">
+            <form class="search-form">
+            <input type="text" name="search" placeholder="Search prochedure" class="search__input" />
+            <button type="submit" class="search__button">
               <svg width="20" height="20" class="search__button__icon">
                 <use href="./images/icons_sprite.svg.svg#search"></use>
               </svg>
             </button>
+          </form>
           </div>
           <nav class="mobile-menu__nav">
             <ul class="mobile-menu__list">
@@ -601,7 +501,7 @@
       </div>
     </div>
   </div>
-  <!---------------------------MOBILE SUBMENU------------------------>
+  <!---------------------------MOBILE SUBMENU-------------------->
   <div class="mobile-menu__submenu js-menu2-container">
     <div class="container mobile-menu__header">
       <a href="./index.html" class="header__logo">
