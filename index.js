@@ -95,10 +95,14 @@ function toggleCatalogItem(button, catalog, icon) {
   button.addEventListener("click", () => {
     if (!catalog.classList.contains("is-open")) {
       catalog.classList.add("is-open");
-      icon.querySelector("use").setAttribute("href", "./images/icons_sprite.svg.svg#minus");
+      if (icon) {
+        icon.querySelector("use").setAttribute("href", "./images/icons_sprite.svg.svg#minus");
+      }
     } else {
       catalog.classList.remove("is-open");
-      icon.querySelector("use").setAttribute("href", "./images/icons_sprite.svg.svg#plus");
+      if (icon) {
+        icon.querySelector("use").setAttribute("href", "./images/icons_sprite.svg.svg#plus");
+      }
     }
   });
 }
@@ -121,6 +125,12 @@ buttonsProcedures.forEach((button, index) => {
   toggleCatalogItem(button, catalogsProcedures[index], iconsProcedures[index]);
 });
 
+//-----FOOTER
+const buttonFooterItem = document.querySelector(".footer__pages-button");
+const catalogFooterServices = document.querySelector(".footer-pages-services__box");
+if (buttonFooterItem) {
+  toggleCatalogItem(buttonFooterItem, catalogFooterServices);
+}
 
 //------------------------------TOGGLE RATING STARS-------------------/
 const feedbackSlides = document.querySelectorAll(".feedback__swiper-slide");
