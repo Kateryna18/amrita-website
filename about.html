@@ -16,7 +16,8 @@
   <link rel="stylesheet" href="./css/pagesStyles/main.css" />
   <link rel="stylesheet" href="./css/pagesStyles/services.css" />
   <link rel="stylesheet" href="./css/pagesStyles/service.css" />
-  <link rel="stylesheet" href="./css/pagesStyles/article.css" />
+  <!-- <link rel="stylesheet" href="./css/pagesStyles/article.css" /> -->
+  <link rel="stylesheet" href="./css/pagesStyles/about.css" />
   <script type="module" src="./index.js"></script>
 </head>
 <body>
@@ -150,64 +151,65 @@
       </div>
     </div>
     <!---------------------------ABOUT US---------------------->
-    <section class="about-us">
-        <div class="container">
-            <div>
-                <h2 class="tittle">
+    <section class="sections about-us">
+        <div class="container about-us__container">
+            <div class="about-us__head">
+                <h2 class="tittle about__title about-us__title">
                     AMRITA is a beauty spa founded by Valentyna Chyzhevska in 2023. 
                 </h2>
-                <p></p>
+                <p class="description about-us__description">It was created to help you find harmony and restore your natural beauty. Our philosophy is based on the combination of personal experience and important values of a modern person: relaxation, self-expression, health and self-support.
+                  We have a team of professionals with many years of experience in beauty care and relaxation. Each of our specialists is an expert in their field, ready to do everything possible to make you feel comfortable and satisfied.</p>
             </div>
-            <div>
+            <div class="about-us__thumb">
                 <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg" alt="">
             </div>
-            <p>It was created to help you find harmony and restore your natural beauty. Our philosophy is based on the combination of personal experience and important values of a modern person: relaxation, self-expression, health and self-support.
+            <p class="about-us__text">It was created to help you find harmony and restore your natural beauty. Our philosophy is based on the combination of personal experience and important values of a modern person: relaxation, self-expression, health and self-support.
                 We have a team of professionals with many years of experience in beauty care and relaxation. Each of our specialists is an expert in their field, ready to do everything possible to make you feel comfortable and satisfied.</p>
         </div>
     </section>
     <!---------------------------EDUCATION---------------------->
-    <section class="education">
-        <div class="container">
-            <div>
-                <h2 class="tittle">
+    <section class="sections education">
+        <div class="container education__container">
+            <div class="sections__head education__head">
+                <h2 class="tittle about__title">
                     <span class="tittle-accent">Professional </span>education
                   </h2>
                   <p class="description">
                     Lorem ipsum dolor sit amet consectetur. Sed risus ut mattis amet. Sollicitudin purus iaculis feugiat viverra augue adipiscing mauris.
                   </p>
             </div>
-            <div>
+            <div class="education__thumb">
                 <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg" alt="">
             </div>
         </div>
     </section>
     <!---------------------------EXPIRIENCE---------------------->
-    <section class="expirience">
-        <div class="container">
-            <div>
-                <h2 class="tittle">Work experience
+    <section class="sections expirience">
+        <div class="container education__container">
+            <div class="sections__head expirience__head">
+                <h2 class="tittle about__title">Work experience
                     <span class="tittle-accent"> over 11 years</span>
                   </h2>
                   <p class="description">
                     Lorem ipsum dolor sit amet consectetur. Eget adipiscing tincidunt mi scelerisque. Lorem eu cras nec arcu augue vitae.
                   </p>
             </div>
-            <div>
+            <div class="expirience__main">
                 <div class="about-procedure__main">
                     <ul class="about-procedure__list">
-                        <li class="about-procedure-list__item">
+                        <li class="about-procedure-list__item expirience-list__item">
                             <p class="about-procedure-item__title">2012 - 2015</p>
                             <p class="about-procedure-item__text">Lorem ipsum dolor sit amet consectetur. Dignissim amet vel mattis ultricies vitae tempus id.</p>
                         </li>
-                        <li class="about-procedure-list__item">
+                        <li class="about-procedure-list__item expirience-list__item">
                             <p class="about-procedure-item__title">2015 - 2019</p>
                             <p class="about-procedure-item__text">Lorem ipsum dolor sit amet consectetur. Dignissim amet vel mattis ultricies vitae tempus id.</p>
                         </li>
-                        <li class="about-procedure-list__item">
+                        <li class="about-procedure-list__item expirience-list__item">
                             <p class="about-procedure-item__title">2019-2020</p>
                             <p class="about-procedure-item__text">Lorem ipsum dolor sit amet consectetur. Dignissim amet vel mattis ultricies vitae tempus id.</p>
                         </li>
-                        <li class="about-procedure-list__item">
+                        <li class="about-procedure-list__item expirience-list__item">
                             <p class="about-procedure-item__title">2021-2023</p>
                             <p class="about-procedure-item__text">Lorem ipsum dolor sit amet consectetur. Dignissim amet vel mattis ultricies vitae tempus id.</p>
                         </li>
@@ -216,25 +218,59 @@
             </div>
         </div>
     </section>
-    <!---------------------------CERTIFICATES---------------------->
-    <section class="certificates">
+    <!---------------------------CERTIFICATES-------------------->
+    <section class="sections certificates">
         <div class="container">
-            <div>
-                <h2 class="tittle">
+            <div class="sections__head">
+                <h2 class="tittle about__title certificates__title">
                     <span class="tittle-accent">Certificates</span>
                   </h2>
                   <p class="description">
                     Lorem ipsum dolor sit amet consectetur. Eget adipiscing tincidunt mi scelerisque. Lorem eu cras nec arcu augue vitae.
                   </p>
             </div>
-            <div></div>
+            <div class="swiper certificates__swiper">
+              <div class="swiper-wrapper certificates__wrapper">
+                <div class="swiper-slide certificates__slide">
+                  <div class="certificates-slide__thumb">
+                    <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg" alt="">
+                  </div>
+                  <p class="certificates-slide__text">Lorem ipsum dolor sit amet consectetur. Orci lorem aliquet sed vestibulum volutpat. Montes curabitur sit suspendisse sem.</p>
+                </div>
+                <div class="swiper-slide certificates__slide">
+                  <div class="certificates-slide__thumb">
+                    <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg" alt="">
+                  </div>
+                  <p class="certificates-slide__text">Lorem ipsum dolor sit amet consectetur. Orci lorem aliquet sed vestibulum volutpat. Montes curabitur sit suspendisse sem.</p>
+                </div>
+                <div class="swiper-slide certificates__slide">
+                  <div class="certificates-slide__thumb">
+                    <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg" alt="">
+                  </div>
+                  <p class="certificates-slide__text">Lorem ipsum dolor sit amet consectetur. Orci lorem aliquet sed vestibulum volutpat. Montes curabitur sit suspendisse sem.</p>
+                </div>
+                <div class="swiper-slide certificates__slide">
+                  <div class="certificates-slide__thumb">
+                    <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg" alt="">
+                  </div>
+                  <p class="certificates-slide__text">Lorem ipsum dolor sit amet consectetur. Orci lorem aliquet sed vestibulum volutpat. Montes curabitur sit suspendisse sem.</p>
+                </div>
+                <div class="swiper-slide certificates__slide">
+                  <div class="certificates-slide__thumb">
+                    <img src="https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg" alt="">
+                  </div>
+                  <p class="certificates-slide__text">Lorem ipsum dolor sit amet consectetur. Orci lorem aliquet sed vestibulum volutpat. Montes curabitur sit suspendisse sem.</p>
+                </div>
+              </div>
+              <div class="swiper-pagination certificates__pagination"></div>
+            </div>
         </div>
     </section>
-    <!---------------------------APPROACH---------------------->
-    <section class="approach">
+    <!---------------------------APPROACH------------------------>
+    <section class="sections approach">
         <div class="container">
-            <div>
-                <h2 class="tittle">
+            <div class="sections__head">
+                <h2 class="tittle about__title approach__title">
                     <span class="tittle-accent">Our Approach</span>
                   </h2>
                   <p class="description">
@@ -302,15 +338,47 @@
     <!---------------------------OUR TEAM------------------------>
     <section class="team">
         <div class="container">
-            <div>
-                <h2 class="tittle">
+            <div class="sections__head">
+                <h2 class="tittle about__title team__title">
                     <span class="tittle-accent">Our Team</span>
                   </h2>
                   <p class="description">
                     The AMRITA SPA team are professionals with deep experience in the field of beauty and well-being. We work together to provide you with the highest quality of service and relaxation.
                   </p>
             </div>
-            <div></div>
+            <div class="swiper team__swiper">
+              <div class="swiper-wrapper team__wrapper">
+                <div class="swiper-slide team__slide">
+                  <img src="https://climate.onep.go.th/wp-content/uploads/2020/01/default-image.jpg" alt="">
+                  <div class="team-slide__info">
+                    <p class="team-slide__name">Valentyna Chyzhevska</p>
+                    <p class="team-slide__specialty">Massage therapist</p>
+                  </div>
+                </div>
+                <div class="swiper-slide team__slide">
+                  <img src="https://climate.onep.go.th/wp-content/uploads/2020/01/default-image.jpg" alt="">
+                  <div class="team-slide__info">
+                    <p class="team-slide__name">Olivia Smith</p>
+                    <p class="team-slide__specialty">Cosmetologist</p>
+                  </div>
+                </div>
+                <div class="swiper-slide team__slide">
+                  <img src="https://climate.onep.go.th/wp-content/uploads/2020/01/default-image.jpg" alt="">
+                  <div class="team-slide__info">
+                    <p class="team-slide__name">Sophia Williams</p>
+                    <p class="team-slide__specialty">Hair removal specialist</p>
+                  </div>
+                </div>
+                <div class="swiper-slide team__slide">
+                  <img src="https://climate.onep.go.th/wp-content/uploads/2020/01/default-image.jpg" alt="">
+                  <div class="team-slide__info">
+                    <p class="team-slide__name">Emily Johnson</p>
+                    <p class="team-slide__specialty">Master of nail service</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination team__pagination"></div>
+            </div>
         </div>
     </section>
   </main>
@@ -368,12 +436,28 @@
               <a class="footer__pages-link">About Us</a>
             </li>
             <li class="footer__pages-item footer__pages-services">
-              <a class="footer__pages-link">Services</a>
               <button class="footer__pages-button">
+                <p class="footer__pages-link">Services</p>
                 <svg width="24" height="24" class="footer__pages-icon">
                   <use href="./images/icons_sprite.svg.svg#chevron-down-white"></use>
                 </svg>
               </button>
+              <div class="footer-pages-services__box">
+                <ul class="footer__list">
+                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Body massage</a></li>
+                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Face massage</a></li>
+                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Body care</a></li>
+                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Face care</a></li>
+                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Epilation</a></li>
+                </ul>
+                <ul>
+                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Endosphere therapy</a></li>
+                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">MesoBioStim</a></li>
+                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Eyelashes</a></li>
+                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Manicure</a></li>
+                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Pedicure</a></li>
+                </ul>
+              </div>
             </li>
             <li class="footer__pages-item">
               <a class="footer__pages-link">Booking</a>
@@ -390,18 +474,18 @@
           <h3 class="footer__services-title">Services</h3>
           <div class="footer__list-container">
             <ul class="footer__list">
-              <li class="footer__services-item"><a href="#" class="footer__services-link">Body massage</a></li>
-              <li class="footer__services-item"><a href="#" class="footer__services-link">Face massage</a></li>
-              <li class="footer__services-item"><a href="#" class="footer__services-link">Body care</a></li>
-              <li class="footer__services-item"><a href="#" class="footer__services-link">Face care</a></li>
-              <li class="footer__services-item"><a href="#" class="footer__services-link">Epilation</a></li>
+              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Body massage</a></li>
+              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Face massage</a></li>
+              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Body care</a></li>
+              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Face care</a></li>
+              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Epilation</a></li>
             </ul>
             <ul>
-              <li class="footer__services-item"><a href="#" class="footer__services-link">Endosphere therapy</a></li>
-              <li class="footer__services-item"><a href="#" class="footer__services-link">MesoBioStim</a></li>
-              <li class="footer__services-item"><a href="#" class="footer__services-link">Eyelashes</a></li>
-              <li class="footer__services-item"><a href="#" class="footer__services-link">Manicure</a></li>
-              <li class="footer__services-item"><a href="#" class="footer__services-link">Pedicure</a></li>
+              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Endosphere therapy</a></li>
+              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">MesoBioStim</a></li>
+              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Eyelashes</a></li>
+              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Manicure</a></li>
+              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Pedicure</a></li>
             </ul>
           </div>
         </div>

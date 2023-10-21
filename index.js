@@ -90,6 +90,46 @@ const feedbackSwiper = new Swiper(".feedback__swiper", {
   },
 });
 
+const certificatesSwiper = new Swiper(".certificates__swiper", {
+  spaceBetween: 20,
+  slidesPerView: "auto",
+  loop: true,
+  slideToClickedSlide: true,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+  breakpoints: {
+    1440: {
+      spaceBetween: 30,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+const teamSwiper = new Swiper(".team__swiper", {
+  spaceBetween: 40,
+  slidesPerView: "auto",
+  loop: true,
+  slideToClickedSlide: true,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+  breakpoints: {
+    1440: {
+      spaceBetween: 30,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
 //------------------------------TOGGLE DROPDOWN-------------------
 function toggleCatalogItem(button, catalog, icon) {
   button.addEventListener("click", () => {
