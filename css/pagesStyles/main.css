@@ -149,6 +149,8 @@
     border: none;
     border-radius: 100px;
     background-color: var(--global-text-color);
+    color: var(--text-color);
+    cursor: pointer;
   
     font-size: 15px;
   }
@@ -657,6 +659,7 @@
     padding: 0;
     border: none;
     background-color: transparent;
+    color: var(--text-color);
   
     font-size: 15px;
     letter-spacing: 0.15px;

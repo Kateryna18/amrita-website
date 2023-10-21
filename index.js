@@ -51,24 +51,27 @@ const bannerSwiper = new Swiper(".banner__swiper", {
   },
 });
 
+
 const popularSwiper = new Swiper(".popular__swiper", {
-  spaceBetween: 20,
-  slidesPerView: "auto",
-  loop: true,
-  slideToClickedSlide: true,
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
-  },
-  breakpoints: {
-    1440: {
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+    spaceBetween: 20,
+    slidesPerView: "auto",
+    loop: true,
+    slideToClickedSlide: true,
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
+    breakpoints: {
+      1440: {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
       },
     },
-  },
-});
+  });
+
+
 
 const feedbackSwiper = new Swiper(".feedback__swiper", {
   loop: true,
