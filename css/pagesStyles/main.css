@@ -562,7 +562,9 @@
   }
   
   .feedback__swiper-slide {
-    min-height: 251px;
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
     padding: 20px;
     border-radius: 12px;
     background-color: var(--global-text-color);
@@ -576,6 +578,7 @@
   @media screen and (min-width: 1440px) {
     .feedback__swiper-slide {
       width: 360px;
+      min-height: 267px;
     }
   }
   
@@ -620,6 +623,7 @@
     color: #8b8b8b;
   }
   .feedback__main {
+    flex-grow: 1;
     margin-bottom: 26px;
   }
   .feedback__text {
@@ -641,6 +645,10 @@
   
     font-size: 14px;
     line-height: 1.4;
+  }
+  .toggle-button__icon {
+    fill: var(--global-text-color);
+    stroke: var(--text-color);
   }
   .feedback__button-link {
     display: flex;

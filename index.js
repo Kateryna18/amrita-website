@@ -120,21 +120,23 @@ buttonsProcedures.forEach((button, index) => {
 
 
 //------------------------------TOGGLE RATING STARS-------------------/
-const ratingIcons = document.querySelectorAll(".feedback__icon-rating");
+const feedbackSlides = document.querySelectorAll(".feedback__swiper-slide");
 
-ratingIcons.forEach((icon, index) => {
-  icon.addEventListener("click", () => {
-    const activeIcon = "./images/icons_sprite.svg.svg#chooseon";
-    const inactiveIcon = "./images/icons_sprite.svg.svg#chooseoff";
+feedbackSlides.forEach((slide) => {
+  const ratingIcons = slide.querySelectorAll(".feedback__icon-rating");
 
-    const currentIndex = Array.from(ratingIcons).indexOf(icon);
+  ratingIcons.forEach((icon, index) => {
+    icon.addEventListener("click", () => {
+      const activeIcon = "./images/icons_sprite.svg.svg#chooseon";
+      const inactiveIcon = "./images/icons_sprite.svg.svg#chooseoff";
 
-    ratingIcons.forEach((ratingIcon, i) => {
-      if (i <= currentIndex) {
-        ratingIcon.querySelector("use").setAttribute("href", activeIcon);
-      } else {
-        ratingIcon.querySelector("use").setAttribute("href", inactiveIcon);
-      }
+      ratingIcons.forEach((ratingIcon, i) => {
+        if (i <= index) {
+          ratingIcon.parentElement.querySelector("use").setAttribute("href", activeIcon);
+        } else {
+          ratingIcon.parentElement.querySelector("use").setAttribute("href", inactiveIcon);
+        }
+      });
     });
   });
 });
@@ -145,26 +147,25 @@ const toggleButtons = document.querySelectorAll(".feedback__toggle-button");
 toggleButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const icon = button.querySelector(".toggle-button__icon use");
-    console.log(icon);
+    const buttonText = button.querySelector(".button-text");
 
     const iconEyeOn = "./images/icons_sprite.svg.svg#eye";
     const iconEyeOff = "./images/icons_sprite.svg.svg#eye-off";
 
-    const textPart = button.previousElementSibling.querySelector(
-      ".feedback__text-part"
-    );
+    const textPart = button.previousElementSibling.querySelector(".feedback__text-part");
 
     if (textPart.style.display === "none" || textPart.style.display === "") {
       textPart.style.display = "block";
-      button.textContent = "Hide all text";
+      buttonText.textContent = "Hide all text";
       icon.setAttribute("href", `${iconEyeOff}`);
     } else {
       textPart.style.display = "none";
-      button.textContent = "View all text";
+      buttonText.textContent = "View all text";
       icon.setAttribute("href", `${iconEyeOn}`);
     }
   });
 });
+
 
 //-----------------MOBILE MENU------------------------------------
 (() => {
