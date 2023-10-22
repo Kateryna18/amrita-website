@@ -21,38 +21,46 @@ if (searchForm && searchButtonSubmit) {
 }
 
 //----------------------------------------SWIPERS-------------------//
-const swiper = new Swiper(".circle__swiper", {
-  direction: "horizontal",
-  loop: false,
-  slidesPerView: "auto",
-  enabled: true,
-  sticky: true,
-  momentumBounce: false,
-  spaceBetween: 14,
-});
-
-const bannerSwiper = new Swiper(".banner__swiper", {
-  spaceBetween: 30,
-  slidesPerView: 'auto',
-  loop: true,
-  slideToClickedSlide: true,
-  breakpoints: {
-    1440: {
-      slidesPerView: 1,
-    }
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  keyboard: {
+const circleSwiper = document.querySelector(".circle__swiper");
+if (circleSwiper) {
+  const swiper = new Swiper(".circle__swiper", {
+    direction: "horizontal",
+    loop: false,
+    slidesPerView: "auto",
     enabled: true,
-    onlyInViewport: true,
-  },
-});
+    sticky: true,
+    momentumBounce: false,
+    spaceBetween: 14,
+  });
+}
+
+const bannerSwiper = document.querySelector(".banner__swiper");
+if (bannerSwiper) {
+  const swiper = new Swiper(".banner__swiper", {
+    spaceBetween: 30,
+    slidesPerView: 'auto',
+    loop: true,
+    slideToClickedSlide: true,
+    breakpoints: {
+      1440: {
+        slidesPerView: 1,
+      }
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
+  });
+}
 
 
-const popularSwiper = new Swiper(".popular__swiper", {
+const popularSwiper = document.querySelector(".popular__swiper");
+if (popularSwiper) {
+  const popularSwiper = new Swiper(".popular__swiper", {
     spaceBetween: 20,
     slidesPerView: "auto",
     loop: true,
@@ -70,65 +78,76 @@ const popularSwiper = new Swiper(".popular__swiper", {
       },
     },
   });
+}
 
 
 
-const feedbackSwiper = new Swiper(".feedback__swiper", {
-  loop: true,
-  breakpoints: {
-    843: {
-      slidesPerView: "auto",
-      spaceBetween: 40,
+const feedbackSwiper = document.querySelector(".feedback__swiper");
+if (feedbackSwiper) {
+  const feedbackSwiper = new Swiper(".feedback__swiper", {
+    loop: true,
+    breakpoints: {
+      843: {
+        slidesPerView: "auto",
+        spaceBetween: 40,
+      },
+      1440: {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+      },
     },
-    1440: {
-      slidesPerView: "auto",
-      spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
     },
-  },
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
+  });
+}
 
-const certificatesSwiper = new Swiper(".certificates__swiper", {
-  spaceBetween: 20,
-  slidesPerView: "auto",
-  loop: true,
-  slideToClickedSlide: true,
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
-  },
-  breakpoints: {
-    1440: {
-      spaceBetween: 30,
+const certificatesSwiper = document.querySelector(".certificates__swiper");
+if (certificatesSwiper) {
+  const certificatesSwiper = new Swiper(".certificates__swiper", {
+    spaceBetween: 20,
+    slidesPerView: "auto",
+    loop: true,
+    slideToClickedSlide: true,
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
     },
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+    breakpoints: {
+      1440: {
+        spaceBetween: 30,
+      },
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+}
 
-const teamSwiper = new Swiper(".team__swiper", {
-  spaceBetween: 40,
-  slidesPerView: "auto",
-  loop: true,
-  slideToClickedSlide: true,
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
-  },
-  breakpoints: {
-    1440: {
-      spaceBetween: 30,
+const teamSwiper = document.querySelector(".team__swiper");
+if (teamSwiper) {
+  const teamSwiper = new Swiper(".team__swiper", {
+    spaceBetween: 40,
+    slidesPerView: "auto",
+    loop: true,
+    slideToClickedSlide: true,
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
     },
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+    breakpoints: {
+      1440: {
+        spaceBetween: 30,
+      },
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+}
+
 
 //------------------------------TOGGLE DROPDOWN-------------------
 function toggleCatalogItem(button, catalog, icon) {
@@ -544,8 +563,30 @@ if (buttonCalculatorOpen) {
     button.addEventListener('click', (e) => {
       const label = button.querySelector(".calculator-dropdouwn__label");
       const labelText = label.textContent;
-      totalValue.textContent = labelText;
+      
+      if (totalValue) {
+        totalValue.textContent = labelText;
+      }
     })
   })
+}
+
+// -------------------CALENDAR--------------------//
+const calendar = document.getElementById("airdatepicker");
+if (calendar) {
+  new AirDatepicker('#airdatepicker', {
+    locale: {
+      days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+      daysMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+      months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+      monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      today: 'Today',
+      clear: 'Clear',
+      dateFormat: 'MM/dd/yyyy',
+      timeFormat: 'hh:mm aa',
+      firstDay: 0
+    },
+  });
 }
 

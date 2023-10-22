@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amrita catalog services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.4.0/air-datepicker.min.css">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/pagesStyles/main.css" />
+  <link rel="stylesheet" href="./css/pagesStyles/services.css" />
+  <link rel="stylesheet" href="./css/pagesStyles/service.css" />
+  <link rel="stylesheet" href="./css/pagesStyles/booking.css" />
+  <script type="module" src="./index.js"></script>
+</head>
+<body>
+  <!---------------------------HEADER---------------------->
+  <header class="header">
+    <div class="container head__container">
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="./services.html" class="nav__link">Services
+              <svg width="22" height="22" class="nav__link-icon">
+                <use href="./images/icons_sprite.svg.svg#arrow-up-right"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="./about.html" class="nav__link">About Us</a>
+          </li>
+          <li class="nav__item"><a href="./blog.html" class="nav__link">Blog</a></li>
+          <li class="nav__item">
+            <a href="./contacts.html" class="nav__link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="./index.html" class="header__logo">
+        <svg width="155" height="16" class="logo__icon">
+          <use href="./images/icons_sprite.svg.svg#logo"></use>
+        </svg>
+      </a>
+      <div class="header-content">
+        <div class="search__container">
+          <form class="search-form">
+            <input type="text" name="search" placeholder="Search prochedure" class="search__input" />
+          <button type="submit" class="search__button">
+            <svg width="20" height="20" class="search__button__icon">
+              <use href="./images/icons_sprite.svg.svg#search"></use>
+            </svg>
+          </button>
+          </form>
+        </div>
+        <div class="select">
+          <div class="select-header">
+            <span class="select-current">EN</span>
+            <div class="select-icon">
+              <svg width="24" height="24">
+                <use class="select-icon" href="./images/icons_sprite.svg.svg#chevron-down"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="select-body">
+            <div class="select-item">EN</div>
+            <div class="select-item">IT</div>
+            <div class="select-item">UA</div>
+            <div class="select-item">RU</div>
+          </div>
+        </div>
+      </div>
+      <div class="header__buttons">
+        <button class="header__button-search" id="js-open-panelSearch">
+          <svg width="32" height="32" class="logo__icon" class="button-search__icon" id="js-search-button-icon">
+            <use href="./images/icons_sprite.svg.svg#search"></use>
+          </svg>
+        </button>
+        <button class="header__button-menu js-open-menu">
+          <svg width="32" height="32" class="logo__icon" aria-expanded="false" aria-controls="mobile-menu">
+            <use href="./images/icons_sprite.svg.svg#button_menu-burger"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="header__decor"></div>
+    <div class="container header__search-panel" id="js-search-panel-header">
+      <form class="search-form">
+      <label class="header__search-panel-label">
+        <input type="text" name="search" placeholder="Search prochedure" class="search__input" />
+        <button type="submit" class="search__button">
+          <svg width="20" height="20" class="search__button__icon">
+            <use href="./images/icons_sprite.svg.svg#search"></use>
+          </svg>
+        </button>
+      </label>
+    </form>
+    </div>
+    <div class="container services__container">
+      <ul class="services__list">
+        <li class="services__item">
+          <button type="button" class="services__button">Body massage</button>
+        </li>
+        <li class="services__item">
+          <button type="button" class="services__button">Face massage</button>
+        </li>
+        <li class="services__item">
+          <button type="button" class="services__button">Body care</button>
+        </li>
+        <li class="services__item">
+          <button type="button" class="services__button">Body care</button>
+        </li>
+        <li class="services__item">
+          <button type="button" class="services__button">
+            Endosphere therapy
+          </button>
+        </li>
+        <li class="services__item">
+          <button type="button" class="services__button">MesoBioStim</button>
+        </li>
+        <li class="services__item">
+          <button type="button" class="services__button">Epilation</button>
+        </li>
+        <li class="services__item">
+          <button type="button" class="services__button">Eyelashes</button>
+        </li>
+        <li class="services__item">
+          <button type="button" class="services__button">Manicure</button>
+        </li>
+        <li class="services__item">
+          <button type="button" class="services__button">Pedicure</button>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!---------------------------MAIN------------------------>
+  <main class="main">
+    <div class="container breadcrumbs__container">
+      <div id="breadcrumbs" class="breadcrumbs">
+        <ul class="breadcrumbs">
+          <li>
+            <a href="./services.html">Services page</a>
+            <span>&#9679;</span>
+          </li>
+          <li>
+            <a href="./service.html">Service</a>
+            <span>&#9679;</span>
+          </li>
+          <li>
+            <a href="./booking.html">Booking page</a>
+            <span>&#9679;</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+      <!---------------------------BOOK HEAD------------------------>
+      <section class="book-head">
+        <div class="container book-head__container">
+                <div class="book-head__thumb">
+                    <img src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" alt="">
+                </div>
+                <div class="book-head__content">
+                    <h1 class="tittle book-head__tittle"><span class="title-accent">Book Procedure</span></h1>
+                    <p class="description book-head__description">Relive the feeling of deep relaxation and balance your inner state with our Body Relaxation Massage service. Our expert massage therapists will help you release tension and fatigue by working with healthy techniques and inspiration. </p>
+                    <div class="booking__info-block">
+                        <div class="booking-info-block__item">
+                            <p class="booking-info-block__value">Decontracting body massage</p>
+                            <p class="booking-info-block__name">Type of procedure</p>
+                        </div>
+                        <div class="booking-info-block__item">
+                            <p class="booking-info-block__value">50 min</p>
+                            <p class="booking-info-block__name">Duration</p>
+                        </div>
+                        <div class="booking-info-block__item margin">
+                            <p class="booking-info-block__value">$250</p>
+                            <p class="booking-info-block__name">Cost</p>
+                        </div>
+                    </div>
+                    <h2 class="booking__subtitle book-head__subtitle">1. Choose time procedure</h2>
+                    <div class="info__calculator">
+                        <div class="calculator__dropdouwn booking__dropdown">
+                            <div class="calculator-dropdouwn__content">
+                                <p class="calculator-dropdouwn__text">Text</p>
+                                <button type="button" class="calculator-dropdouwn__button-open">
+                                  <svg width="24" height="24" class="calculator-dropdouwn__icon">
+                                    <use href="./images/icons_sprite.svg.svg#chevron-down"></use>
+                                </svg>
+                                </button>
+                            <div class="calculator__dropdouwn-buttons">
+                                <div class="calculator__dropdouwn-button-box">
+                                    <button type="button" class="calculator-dropdouwn__button calculator-dropdouwn__button-1">50 min</button>
+                                    <p class="calculator-dropdouwn__label">$250</p>
+                                </div>
+                                <div class="calculator__dropdouwn-button-box">
+                                    <button type="button" class="calculator-dropdouwn__button calculator-dropdouwn__button-2">60 min</button>
+                                    <p class="calculator-dropdouwn__label">$300</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+      </section>
+      <!---------------------------CHOOSE DATA---------------------->
+      <section class="data">
+        <div class="container">
+            <h2 class="booking__subtitle data__subtitle">1. Choose time procedure</h2>
+            <div class="data__content">
+                <div class="data__calendar">
+                    <div id="airdatepicker"></div>
+                </div>
+                <div class="data__time">
+                    <div class="data-time__box">
+                        <button class="data-time__toggle-button">
+                            Morning
+                            <svg width="24" height="24" class="data-time__toggle-icon">
+                                <use href="./images/icons_sprite.svg.svg#chevron-down"></use>
+                            </svg>
+                        </button>
+                        <div class="data-time__dropdown">
+                            <ul class="data-time__list">
+                                <li class="data-time__list-item">
+                                    <button type="button" class="data-time__list-button">09:00</button>
+                                </li>
+                                <li class="data-time__list-item">
+                                    <button type="button" class="data-time__list-button">10:00</button>
+                                </li>
+                                <li class="data-time__list-item">
+                                    <button type="button" class="data-time__list-button">11:00</button>
+                                </li>
+                                <li class="data-time__list-item">
+                                    <button type="button" class="data-time__list-button">12:00</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="data-time__box">
+                        <button class="data-time__toggle-button">
+                            Afternoon
+                            <svg width="24" height="24" class="data-time__toggle-icon">
+                                <use href="./images/icons_sprite.svg.svg#chevron-down"></use>
+                            </svg>
+                        </button>
+                        <div class="data-time__dropdown">
+                            <ul class="data-time__list">
+                                <li class="data-time__list-item">
+                                    <button type="button" class="data-time__list-button">13:00</button>
+                                </li>
+                                <li class="data-time__list-item">
+                                    <button type="button" class="data-time__list-button">14:00</button>
+                                </li>
+                                <li class="data-time__list-item">
+                                    <button type="button" class="data-time__list-button">15:00</button>
+                                </li>
+                                <li class="data-time__list-item">
+                                    <button type="button" class="data-time__list-button">16:00</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="data-time__box margin">
+                        <button class="data-time__toggle-button">
+                            Evening
+                            <svg width="24" height="24" class="data-time__toggle-icon">
+                                <use href="./images/icons_sprite.svg.svg#chevron-down"></use>
+                            </svg>
+                        </button>
+                        <div class="data-time__dropdown">
+                            <ul class="data-time__list">
+                                <li class="data-time__list-item">
+                                    <button type="button" class="data-time__list-button">17:00</button>
+                                </li>
+                                <li class="data-time__list-item">
+                                    <button type="button" class="data-time__list-button">18:00</button>
+                                </li>
+                                <li class="data-time__list-item">
+                                    <button type="button" class="data-time__list-button">18:00</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="data__time-desctop">
+                    <ul class="data-time__list">
+                        <li class="data-time__list-item">
+                            <button type="button" class="data-time__list-button">09:00</button>
+                        </li>
+                        <li class="data-time__list-item">
+                            <button type="button" class="data-time__list-button">10:00</button>
+                        </li>
+                        <li class="data-time__list-item">
+                            <button type="button" class="data-time__list-button">11:00</button>
+                        </li>
+                        <li class="data-time__list-item">
+                            <button type="button" class="data-time__list-button">12:00</button>
+                        </li>
+                        <li class="data-time__list-item">
+                            <button type="button" class="data-time__list-button">13:00</button>
+                        </li>
+                        <li class="data-time__list-item">
+                            <button type="button" class="data-time__list-button">14:00</button>
+                        </li>
+                        <li class="data-time__list-item">
+                            <button type="button" class="data-time__list-button">15:00</button>
+                        </li>
+                        <li class="data-time__list-item">
+                            <button type="button" class="data-time__list-button">16:00</button>
+                        </li>
+                        <li class="data-time__list-item">
+                            <button type="button" class="data-time__list-button">17:00</button>
+                        </li>
+                        <li class="data-time__list-item">
+                            <button type="button" class="data-time__list-button">18:00</button>
+                        </li>
+                        <li class="data-time__list-item">
+                            <button type="button" class="data-time__list-button">19:00</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!---------------------------CHOOSE SPECIALIST---------------->
+      <section class="specialists">
+        <div class="container">
+            <h2 class="booking__subtitle specialists__subtitle">2. Choose specialist</h2>
+            <p class="description specialists__description">Lorem ipsum dolor sit amet consectetur. Eget adipiscing tincidunt mi scelerisque. Lorem eu cras nec arcu augue vitae.</p>
+            <div class="specialists__content">
+                <div class="specialists__head">
+                    <div class="specialists__head-thumb">
+                        <img src="https://st3.depositphotos.com/9998432/13335/v/450/depositphotos_133352156-stock-illustration-default-placeholder-profile-icon.jpg" alt="avatar">
+                    </div>
+                    <button class="specialists__head-button">
+                        Choose your specialist
+                        <svg width="24" height="24" class="specialists__head-icon">
+                            <use href="./images/icons_sprite.svg.svg#chevron-down"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="specialists__dropdown">
+                    <ul class="specialists__list">
+                        <li class="specialists-list__item">
+                            <div class="specialists-dropdown__thumb">
+                                <img src="https://st3.depositphotos.com/9998432/13335/v/450/depositphotos_133352156-stock-illustration-default-placeholder-profile-icon.jpg" alt="avatar">
+                            </div>
+                            <div class="specialists-dropdown__content">
+                                <p class="specialists-dropdown__name">Specialist Name</p>
+                                <p class="specialists-dropdown__position">Position</p>
+                            </div>
+                        </li>
+                        <li class="specialists-list__item">
+                            <div class="specialists-dropdown__thumb">
+                                <img src="https://st3.depositphotos.com/9998432/13335/v/450/depositphotos_133352156-stock-illustration-default-placeholder-profile-icon.jpg" alt="avatar">
+                            </div>
+                            <div class="specialists-dropdown__content">
+                                <p class="specialists-dropdown__name">Specialist Name</p>
+                                <p class="specialists-dropdown__position">Position</p>
+                            </div>
+                        </li>
+                        <li class="specialists-list__item">
+                            <div class="specialists-dropdown__thumb">
+                                <img src="https://st3.depositphotos.com/9998432/13335/v/450/depositphotos_133352156-stock-illustration-default-placeholder-profile-icon.jpg" alt="avatar">
+                            </div>
+                            <div class="specialists-dropdown__content">
+                                <p class="specialists-dropdown__name">Specialist Name</p>
+                                <p class="specialists-dropdown__position">Position</p>
+                            </div>
+                        </li>
+                        <li class="specialists-list__item">
+                            <div class="specialists-dropdown__thumb">
+                                <img src="https://st3.depositphotos.com/9998432/13335/v/450/depositphotos_133352156-stock-illustration-default-placeholder-profile-icon.jpg" alt="avatar">
+                            </div>
+                            <div class="specialists-dropdown__content">
+                                <p class="specialists-dropdown__name">Specialist Name</p>
+                                <p class="specialists-dropdown__position">Position</p>
+                            </div>
+                        </li>
+                        <li class="specialists-list__item">
+                            <div class="specialists-dropdown__thumb">
+                                <img src="https://st3.depositphotos.com/9998432/13335/v/450/depositphotos_133352156-stock-illustration-default-placeholder-profile-icon.jpg" alt="avatar">
+                            </div>
+                            <div class="specialists-dropdown__content">
+                                <p class="specialists-dropdown__name">Specialist Name</p>
+                                <p class="specialists-dropdown__position">Position</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="specialists__content-desctop">
+                <ul class="specialists__list-desctop">
+                    <li class="specialists__item-desctop">
+                        <label class="specialists__label-desctop">
+                            <div class="specialists__thumb-desctop">
+                                <img src="https://asp24.ru/upload/medialibrary/122/122312db203e0c2249988a21c8bc7581.jpg" alt="">
+                            </div>
+                            <div class="specialists__main-desctop">
+                                <div class="specialists__button-desctop">
+                                    <input type="radio" name="specialist" class="specialists__input-desctop">
+                                    <div class="specialists__button-check-desctop"></div>
+                                </div>
+                                <div class="specialists__info-desctop">
+                                    <p class="specialists__name-desctop">Specialist Name</p>
+                                    <p class="specialists__position-desctop">Position</p>
+                                </div>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="specialists__item-desctop">
+                        <label class="specialists__label-desctop">
+                            <div class="specialists__thumb-desctop">
+                                <img src="https://asp24.ru/upload/medialibrary/122/122312db203e0c2249988a21c8bc7581.jpg" alt="">
+                            </div>
+                            <div class="specialists__main-desctop">
+                                <div class="specialists__button-desctop">
+                                    <input type="radio" name="specialist" class="specialists__input-desctop">
+                                    <div class="specialists__button-check-desctop"></div>
+                                </div>
+                                <div class="specialists__info-desctop">
+                                    <p class="specialists__name-desctop">Specialist Name</p>
+                                    <p class="specialists__position-desctop">Position</p>
+                                </div>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="specialists__item-desctop">
+                        <label class="specialists__label-desctop">
+                            <div class="specialists__thumb-desctop">
+                                <img src="https://asp24.ru/upload/medialibrary/122/122312db203e0c2249988a21c8bc7581.jpg" alt="">
+                            </div>
+                            <div class="specialists__main-desctop">
+                                <div class="specialists__button-desctop">
+                                    <input type="radio" name="specialist" class="specialists__input-desctop">
+                                    <div class="specialists__button-check-desctop"></div>
+                                </div>
+                                <div class="specialists__info-desctop">
+                                    <p class="specialists__name-desctop">Specialist Name</p>
+                                    <p class="specialists__position-desctop">Position</p>
+                                </div>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="specialists__item-desctop">
+                        <label class="specialists__label-desctop">
+                            <div class="specialists__thumb-desctop">
+                                <img src="https://asp24.ru/upload/medialibrary/122/122312db203e0c2249988a21c8bc7581.jpg" alt="">
+                            </div>
+                            <div class="specialists__main-desctop">
+                                <div class="specialists__button-desctop">
+                                    <input type="radio" name="specialist" class="specialists__input-desctop">
+                                    <div class="specialists__button-check-desctop"></div>
+                                </div>
+                                <div class="specialists__info-desctop">
+                                    <p class="specialists__name-desctop">Specialist Name</p>
+                                    <p class="specialists__position-desctop">Position</p>
+                                </div>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="specialists__item-desctop">
+                        <label class="specialists__label-desctop">
+                            <div class="specialists__thumb-desctop">
+                                <img src="https://asp24.ru/upload/medialibrary/122/122312db203e0c2249988a21c8bc7581.jpg" alt="">
+                            </div>
+                            <div class="specialists__main-desctop">
+                                <div class="specialists__button-desctop">
+                                    <input type="radio" name="specialist" class="specialists__input-desctop">
+                                    <div class="specialists__button-check-desctop"></div>
+                                </div>
+                                <div class="specialists__info-desctop">
+                                    <p class="specialists__name-desctop">Specialist Name</p>
+                                    <p class="specialists__position-desctop">Position</p>
+                                </div>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="specialists__item-desctop">
+                        <label class="specialists__label-desctop">
+                            <div class="specialists__thumb-desctop">
+                                <img src="https://asp24.ru/upload/medialibrary/122/122312db203e0c2249988a21c8bc7581.jpg" alt="">
+                            </div>
+                            <div class="specialists__main-desctop">
+                                <div class="specialists__button-desctop">
+                                    <input type="radio" name="specialist" class="specialists__input-desctop">
+                                    <div class="specialists__button-check-desctop"></div>
+                                </div>
+                                <div class="specialists__info-desctop">
+                                    <p class="specialists__name-desctop">Specialist Name</p>
+                                    <p class="specialists__position-desctop">Position</p>
+                                </div>
+                            </div>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </section>
+      <!---------------------------CONFIRMATION--------------------->
+      <section class="confirmation">
+        <div class="container">
+            <h2 class="booking__subtitle confirmation__subtitle">3. Booking</h2>
+            <p class="confirmation__description">Check if all the data about your chosen service is correct</p>
+            <div class="confirmation__content">
+                <div class="booking__info-block confirmation__info-block">
+                    <div class="booking-info-block__item">
+                        <p class="booking-info-block__value">Decontracting body massage</p>
+                        <p class="booking-info-block__name">Type of procedure</p>
+                    </div>
+                    <div class="booking-info-block__item">
+                        <p class="booking-info-block__value">Valentyna Chyzhevska</p>
+                        <p class="booking-info-block__name">Specialist</p>
+                    </div>
+                    <div class="booking-info-block__item">
+                        <p class="booking-info-block__value">09.25.2023, 17:00</p>
+                        <p class="booking-info-block__name">Time</p>
+                    </div>
+                    <div class="booking-info-block__item">
+                        <p class="booking-info-block__value">50 min</p>
+                        <p class="booking-info-block__name">Duration</p>
+                    </div>
+                    <div class="booking-info-block__item margin">
+                        <p class="booking-info-block__value">$250</p>
+                        <p class="booking-info-block__name">Cost</p>
+                    </div>
+                </div>
+                <div class="confirmation__form-box">
+                    <p class="confirmation__description confirmation__description-form">Please enter your details to book a procedure</p>
+                    <form class="confirmation__form">
+                        <label for="" class="confirmation-form__label">
+                            <input type="text" class="confirmation-form__input" placeholder="Full name">
+                        </label>
+                        <label for="" class="confirmation-form__label">
+                            <input type="email" class="confirmation-form__input" placeholder="Email">
+                        </label>
+                        <label for="" class="confirmation-form__label">
+                            <input type="text" class="confirmation-form__input" placeholder="Mobile">
+                        </label>
+                        <label for="" class="confirmation-form__label">
+                            <input type="text" class="confirmation-form__input margin" placeholder="Message">
+                        </label>
+                        <button type="submit" class="confirmation-form__button">
+                            Book a procedure
+                            <svg width="24" height="24" class="confirmation-form__icon">
+                                <use href="./images/icons_sprite.svg.svg#arrow-up-right"></use>
+                            </svg>
+                        </button>
+                    </form>
+                    <p class="confirmation__terms">By clicking book you agree to our rules and procedures. 
+                        Details can be found here: <a href="#" class="confirmation-terms__link">Terms & Conditions</a></p>
+                </div>
+            </div>
+        </div>
+      </section>
+  </main>
+  <!---------------------------FOOTER---------------------- -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__logo-container">
+        <a href="./index.html" class="footer__logo">
+          <svg class="footer__logo-icon-part1" width="218" height="39">
+            <use href="./images/icons_sprite.svg.svg#logo_illustrationtext"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="footer__content-container">
+        <div class="footer__info">
+          <div class="footer__info-containers footer__info-contact">
+            <h3 class="footer__info-title">Contact us</h3>
+            <a class="footer__contacts footer__info-contact-tel" href="tel:+390503220606">+39 (050) 3220 606</a>
+            <a class="footer__info-contact-email" href="mailto:amrita@gmail.com">amrita@gmail.com</a>
+          </div>
+          <div class="footer__info-containers footer__info-adress">
+            <h3 class="footer__info-title">Address of our salon</h3>
+            <address class="footer__contacts footer__adress">
+              123 Via Serenità, Rome, Italy
+            </address>
+            <table class="footer__table">
+              <tr class="footer__table-tr">
+                <td class="footer__table-td">Mon-Fri</td>
+                <td class="footer__table-td footer__table-td-time">
+                  09:00 - 19:00
+                </td>
+              </tr>
+              <tr class="footer__table-tr">
+                <td class="footer__table-td">Saturday</td>
+                <td class="footer__table-td footer__table-td-time">
+                  11:00 - 18:00
+                </td>
+              </tr>
+              <tr class="footer__table-tr">
+                <td class="footer__table-td">Sunday</td>
+                <td class="footer__table-td footer__table-td-time">
+                  day off
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="footer__pages">
+          <h3 class="footer__pages-title">Pages</h3>
+          <ul class="footer__pages-list">
+            <li class="footer__pages-item">
+              <a class="footer__pages-link">Main Page</a>
+            </li>
+            <li class="footer__pages-item">
+              <a class="footer__pages-link">About Us</a>
+            </li>
+            <li class="footer__pages-item footer__pages-services">
+              <button class="footer__pages-button">
+                <p class="footer__pages-link">Services</p>
+                <svg width="24" height="24" class="footer__pages-icon">
+                  <use href="./images/icons_sprite.svg.svg#chevron-down-white"></use>
+                </svg>
+              </button>
+              <div class="footer-pages-services__box">
+                <ul class="footer__list">
+                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Body massage</a></li>
+                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Face massage</a></li>
+                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Body care</a></li>
+                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Face care</a></li>
+                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Epilation</a></li>
+                </ul>
+                <ul>
+                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Endosphere therapy</a></li>
+                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">MesoBioStim</a></li>
+                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Eyelashes</a></li>
+                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Manicure</a></li>
+                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Pedicure</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="footer__pages-item">
+              <a class="footer__pages-link">Booking</a>
+            </li>
+            <li class="footer__pages-item">
+              <a class="footer__pages-link">Blog</a>
+            </li>
+            <li class="footer__pages-item">
+              <a class="footer__pages-link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__services">
+          <h3 class="footer__services-title">Services</h3>
+          <div class="footer__list-container">
+            <ul class="footer__list">
+              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Body massage</a></li>
+              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Face massage</a></li>
+              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Body care</a></li>
+              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Face care</a></li>
+              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Epilation</a></li>
+            </ul>
+            <ul>
+              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Endosphere therapy</a></li>
+              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">MesoBioStim</a></li>
+              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Eyelashes</a></li>
+              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Manicure</a></li>
+              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Pedicure</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__socials-container">
+        <ul class="footer__socials-list">
+          <li class="footer__socials-item">
+            <a href="#" class="footer__socials-link"><svg width="24" height="24" class="footer__socials-icon">
+                <use href="./images/icons_sprite.svg.svg#icon_instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__socials-item">
+            <a href="#" class="footer__socials-link"><svg width="24" height="24" class="footer__socials-icon">
+                <use href="./images/icons_sprite.svg.svg#icon_facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__info-line">
+        <div class="footer__info-line-box">
+          <p class="footer__info-line-text">Privacy policy</p>
+          <p class="footer__info-line-text">Terms & Conditions</p>
+        </div>
+        <p class="footer__info-line-text-part2">
+          ©2023 Amrita All Rights Reserved
+        </p>
+      </div>
+  </footer>
+  <!---------------------------MOBILE MENU------------------------>
+  <div class="mobile-menu js-menu-container" id="mobile-menu">
+    <div class="container mobile-menu__header">
+      <a href="./index.html" class="header__logo">
+        <svg width="155" height="16" class="logo__icon">
+          <use href="./images/icons_sprite.svg.svg#logo"></use>
+        </svg>
+      </a>
+      <div class="header__buttons">
+        <div class="select">
+          <div class="select-header">
+            <span class="select-current">EN</span>
+            <div class="select-icon">
+              <svg width="24" height="24">
+                <use href="./images/icons_sprite.svg.svg#chevron-down"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="select-body">
+            <div class="select-item">EN</div>
+            <div class="select-item">IT</div>
+            <div class="select-item">UA</div>
+            <div class="select-item">RU</div>
+          </div>
+        </div>
+        <button class="header__button-menu js-close-menu">
+          <svg width="32" height="32" class="logo__icon" class="button-menu__icon">
+            <use href="./images/icons_sprite.svg.svg#close-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu__main">
+      <div class="container mobile-menu__main-container">
+        <div class="mobile-menu__content">
+          <div class="search__container mobile-menu__search-container">
+            <form class="search-form">
+            <input type="text" name="search" placeholder="Search prochedure" class="search__input" />
+            <button type="submit" class="search__button">
+              <svg width="20" height="20" class="search__button__icon">
+                <use href="./images/icons_sprite.svg.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+          </div>
+          <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="./index.html">Home page
+                </a></li>
+              <li class="mobile-menu__nav-item"><button class="mobile-menu__nav-button js-open-menu2"
+                  type="button">Services
+                  <svg class="mobile-menu__nav-icon" width="40" height="40">
+                    <use href="./images/icons_sprite.svg.svg#arrow-up-right2"></use>
+                  </svg>
+                </button></li>
+              <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">About Us</a></li>
+              <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Blog</a></li>
+              <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+        <button type="button" class="mobile-menu__button">View Services Page
+          <svg width="24" height="24">
+            <use href="./images/icons_sprite.svg.svg#arrow-up-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!---------------------------MOBILE SUBMENU------------------------>
+  <div class="mobile-menu__submenu js-menu2-container">
+    <div class="container mobile-menu__header">
+      <a href="./index.html" class="header__logo">
+        <svg width="155" height="16" class="logo__icon">
+          <use href="./images/icons_sprite.svg.svg#logo"></use>
+        </svg>
+      </a>
+      <div class="header__buttons">
+        <div class="select">
+          <div class="select-header">
+            <span class="select-current">EN</span>
+            <div class="select-icon">
+              <svg width="24" height="24">
+                <use href="./images/icons_sprite.svg.svg#chevron-down"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="select-body">
+            <div class="select-item">EN</div>
+            <div class="select-item">IT</div>
+            <div class="select-item">UA</div>
+            <div class="select-item">RU</div>
+          </div>
+        </div>
+        <button class="header__button-menu js-close-menu2">
+          <svg width="32" height="32" class="logo__icon" class="button-menu__icon">
+            <use href="./images/icons_sprite.svg.svg#close-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu__main">
+      <div class="container mobile-menu__main-container">
+        <div class="mobile-menu__content">
+          <button class="mobile-menu__nav-button mobile-submenu__nav-button js-close-menu2" type="button">
+            <svg width="24" height="24">
+              <use href="./images/icons_sprite.svg.svg#chevron-left"></use>
+            </svg>Services
+          </button>
+          <div class="mobile-submenu__content">
+            <ul class="mobile-submenu__list-services">
+              <li class="mobile-submenu__item-services">
+                <button class="mobile-submenu__button-services" type="button">
+                  Body massage
+                  <svg width="24" height="24" class="mobile-submenu__icon-services">
+                    <use href="./images/icons_sprite.svg.svg#plus"></use>
+                  </svg></button>
+              </li>
+              <li class="mobile-submenu__item-services">
+                <button class="mobile-submenu__button-services" type="button">
+                  Face massage
+                  <svg width="24" height="24" class="mobile-submenu__icon-services">
+                    <use href="./images/icons_sprite.svg.svg#plus"></use>
+                  </svg></button>
+              </li>
+              <li class="mobile-submenu__item-services">
+                <button class="mobile-submenu__button-services" type="button">
+                  Body care
+                  <svg width="24" height="24" class="mobile-submenu__icon-services">
+                    <use href="./images/icons_sprite.svg.svg#plus"></use>
+                  </svg></button>
+              </li>
+              <li class="mobile-submenu__item-services">
+                <button class="mobile-submenu__button-services" type="button">
+                  Face care
+                  <svg width="24" height="24" class="mobile-submenu__icon-services">
+                    <use href="./images/icons_sprite.svg.svg#plus"></use>
+                  </svg></button>
+              </li>
+              <li class="mobile-submenu__item-services">
+                <button class="mobile-submenu__button-services" type="button">
+                  Endosphere therapy
+                  <svg width="24" height="24" class="mobile-submenu__icon-services">
+                    <use href="./images/icons_sprite.svg.svg#plus"></use>
+                  </svg></button>
+              </li>
+              <li class="mobile-submenu__item-services">
+                <button class="mobile-submenu__button-services" type="button">
+                  MesoBioStim
+                  <svg width="24" height="24" class="mobile-submenu__icon-services">
+                    <use href="./images/icons_sprite.svg.svg#plus"></use>
+                  </svg></button>
+              </li>
+              <li class="mobile-submenu__item-services">
+                <button class="mobile-submenu__button-services" type="button">
+                  Epilation
+                  <svg width="24" height="24" class="mobile-submenu__icon-services">
+                    <use href="./images/icons_sprite.svg.svg#plus"></use>
+                  </svg></button>
+              </li>
+              <li class="mobile-submenu__item-services">
+                <button class="mobile-submenu__button-services" type="button">
+                  Eyelashes
+                  <svg width="24" height="24" class="mobile-submenu__icon-services">
+                    <use href="./images/icons_sprite.svg.svg#plus"></use>
+                  </svg></button>
+              </li>
+              <li class="mobile-submenu__item-services">
+                <button class="mobile-submenu__button-services" type="button">
+                  Manicure
+                  <svg width="24" height="24" class="mobile-submenu__icon-services">
+                    <use href="./images/icons_sprite.svg.svg#plus"></use>
+                  </svg></button>
+              </li>
+              <li class="mobile-submenu__item-services">
+                <button class="mobile-submenu__button-services" type="button">
+                  Pedicure
+                  <svg width="24" height="24" class="mobile-submenu__icon-services">
+                    <use href="./images/icons_sprite.svg.svg#plus"></use>
+                  </svg></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button type="button" class="mobile-menu__button">View Services Page
+          <svg width="24" height="24">
+            <use href="./images/icons_sprite.svg.svg#arrow-up-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/air-datepicker@3.4.0/air-datepicker.min.js"></script>
+</body>
+</html>
