@@ -556,12 +556,23 @@
 }
 .margin {
 }
-.confirmation__form-box {
+@media screen and (min-width: 1440px) {
+    .confirmation__form-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
 }
+
 
 @media screen and (min-width: 843px) {
     .confirmation__description.confirmation__description-form{
         margin-bottom: 44px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .confirmation__description.confirmation__description-form{
+        margin-bottom: 24px;
     }
 }
 
@@ -577,6 +588,25 @@
         padding: 0;
     }
 }
+@media screen and (min-width: 1440px) {
+    .confirmation__form {
+        width: 630px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .confirmation__form-container{
+        display: flex;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .confirmation__labels-container{
+        width: 100%;
+    }
+}
+
 .confirmation-form__label {
 }
 .confirmation-form__input {
@@ -619,6 +649,13 @@
         margin-right: auto;
     }
 }
+@media screen and (min-width: 1440px) {
+    .confirmation-form__button{
+        width: 300px;
+        margin-left: 0;
+        margin-right: auto;
+    }
+}
 
 .confirmation__terms {
     margin-top: 20px;
@@ -636,6 +673,16 @@
         text-align: center;
     }
 }
+@media screen and (min-width: 1440px) {
+    .confirmation__terms{
+        width: 300px;
+        margin-left: 0;
+        margin-right: auto;
+
+        text-align: start;
+    }
+}
+
 .confirmation-terms__link {
     color: var(--accent-color);
 }

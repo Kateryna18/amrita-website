@@ -530,18 +530,24 @@
                 <div class="confirmation__form-box">
                     <p class="confirmation__description confirmation__description-form">Please enter your details to book a procedure</p>
                     <form class="confirmation__form">
-                        <label for="" class="confirmation-form__label">
-                            <input type="text" class="confirmation-form__input" placeholder="Full name">
-                        </label>
-                        <label for="" class="confirmation-form__label">
-                            <input type="email" class="confirmation-form__input" placeholder="Email">
-                        </label>
-                        <label for="" class="confirmation-form__label">
-                            <input type="text" class="confirmation-form__input" placeholder="Mobile">
-                        </label>
-                        <label for="" class="confirmation-form__label">
-                            <input type="text" class="confirmation-form__input margin" placeholder="Message">
-                        </label>
+                        <div class="confirmation__form-container">
+                            <div class="confirmation__labels-container">
+                                <label for="" class="confirmation-form__label">
+                                    <input type="text" class="confirmation-form__input" placeholder="Full name">
+                                </label>
+                                <label for="" class="confirmation-form__label">
+                                    <input type="email" class="confirmation-form__input" placeholder="Email">
+                                </label>
+                            </div>
+                            <div class="confirmation__labels-container">
+                                <label for="" class="confirmation-form__label">
+                                    <input type="text" class="confirmation-form__input" placeholder="Mobile">
+                                </label>
+                                <label for="" class="confirmation-form__label">
+                                    <input type="text" class="confirmation-form__input margin" placeholder="Message">
+                                </label>
+                            </div>
+                        </div>
                         <button type="submit" class="confirmation-form__button">
                             Book a procedure
                             <svg width="24" height="24" class="confirmation-form__icon">
