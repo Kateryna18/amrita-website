@@ -44,7 +44,6 @@
 .breadcrumbs a {
     font-size: 12px;
     line-height: 1.4;
-    /* color: var(--accent-color); */
     text-decoration: none;
     color: var(--typography-t60);
     transition: var(--main-transition);
@@ -120,9 +119,7 @@
 .filter-desctop-panel__icon {
     stroke: var(--text-color);
 }
-.services-filter__choice-list {
 
-}
 @media screen and (max-width: 1439px) {
     .services-filter__choice-list {
         display: none;
@@ -493,8 +490,6 @@ input[type='number'] {
     color: var(--accent-color);
 }
 
-.services-page-filter__choice-list {}
-
 @media screen and (min-width: 1440px) {
     .services-page-filter__choice-list {
         display: none;
@@ -560,8 +555,6 @@ input[type='number'] {
 .services-page__item.hide-services-page__item {
     display: none;
 }
-.services-page__body {}
-
 .services-page__list {
     margin-bottom: 40px;
     display: flex;
@@ -852,8 +845,6 @@ input[type='number'] {
     border: none;
     border-radius: 50%;
     background-color: var(--global-text-color);
-}
-.sort-mob-menu__icon {
 }
 .sort-mob-menu__main {
     display: flex;

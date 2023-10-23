@@ -50,8 +50,6 @@
 .title.info__title {
     margin-bottom: 40px;
 }
-.info__features-list {
-}
 .info__features-item {
     display: flex;
     gap: 12px;
@@ -68,8 +66,6 @@
 .info__features-item:last-child {
     margin-bottom: 0;
     border-bottom: none;
-}
-.info-features__content {
 }
 .info-features__title {
     margin-bottom: 13px;
@@ -96,8 +92,7 @@
         font-size: 14px;
     }
 }
-.info__calculator {
-}
+
 @media screen and (min-width: 843px) {
     .info__calculator {
         display: flex;
@@ -141,9 +136,7 @@
     justify-content: space-between;
     padding: 20px;
 }
-.calculator-dropdouwn__text {
 
-}
 .calculator-dropdouwn__button-open {
     display: flex;
     align-items: center;
@@ -166,7 +159,6 @@
     left: 0;
     width: 100%;
     padding: 20px;
-    /* display: flex; */
     align-items: center;
     gap: 20px;
     border-radius: 6px;
@@ -177,9 +169,7 @@
 .calculator__dropdouwn.is-open .calculator__dropdouwn-buttons{
     display: flex;
 }
-.calculator__dropdouwn-button-box {
-    
-}
+
 .calculator-dropdouwn__button {
     width: 90px;
     display: flex;
@@ -208,16 +198,14 @@
     background-color: var(--accent-color);
     color: var(--global-text-color);
 }
-.calculator-dropdouwn__button-1 {
-}
+
 .calculator-dropdouwn__label {
     text-align: center;
     font-size: 14px;
     line-height: 1.4;
     color: var(--help-text-color);
 }
-.calculator-dropdouwn__button-2 {
-}
+
 .calculator__booking {
     margin-top: 24px;
 }
@@ -359,8 +347,6 @@
     border-radius: 12px;
     background-color: var(--accent-color);
 }
-.about-procedure__list {
-}
 .about-procedure-list__item {
     margin-bottom: 14px;
     padding: 14px;
@@ -429,10 +415,6 @@
     .title.feedback-procedure__title {
         margin-bottom: 12px;
     }
-}
-.feedback-procedure__main {
-}
-.swiper {
 }
 .swiper.feedback-procedure__swiper {
     width: 350px;
@@ -593,10 +575,6 @@
 .description.faq__description {
     margin-bottom: 40px;
 }
-.about-procedure__description {
-}
-.faq-section__list {
-}
 .faq-section__list-item {
     margin-bottom: 10px;
     border-radius: 6px;
@@ -661,8 +639,6 @@
     line-height: 1.6;
 }
 /* -------------------------QUESTIONS------------------------- */
-.questions__section {
-}
 @media screen and (min-width: 1440px) {
     .title.questions-section__title {
         margin-bottom: 12px;
@@ -686,8 +662,6 @@
         width: 100%;
         padding: 0;
     }
-}
-.questions-section__label {
 }
 .questions-section__input {
     width: 100%;
