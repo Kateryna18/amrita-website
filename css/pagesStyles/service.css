@@ -115,6 +115,7 @@
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     background-color: var(--global-text-color);
+    box-shadow: var(--main-box-shadow);
 }
 .calculator__dropdouwn.is-open{
     margin-bottom: 134px;
@@ -149,6 +150,7 @@
     justify-content: center;
     border: none;
     background-color: transparent;
+    cursor: pointer;
 }
 .calculator-dropdouwn__icon {
     fill: transparent;
@@ -191,10 +193,12 @@
     background-color: var(--global-text-color);
     
     color: var(--accent-color);
+    transition: var(--main-transition);
+    cursor: pointer;
     font-size: 15px;
     letter-spacing: 0.15px;
 }
-.calculator-dropdouwn__button:hover, .calculator-dropdouwn__button:focus {
+.calculator-dropdouwn__button:hover, .calculator-dropdouwn__button:focus{
     border: none;
     background-color: var(--button-color-red-80);
     color: var(--global-text-color);
@@ -254,9 +258,17 @@
     border: none;
     border-radius: 100px;
     background-color: var(--accent-color);
-    cursor: pointer;
     color: var(--global-text-color);
+    cursor: pointer;
+    transition: var(--main-transition);
 }
+.calculator__button:hover{
+    background-color: var(--button-color-red-80);
+  }
+.calculator__button:focus{
+    outline: none;
+    border: 2px solid var(--button-color-red-80);
+  }
 @media screen and (min-width: 843px) {
     .calculator__button {
         width: 300px;
@@ -265,6 +277,8 @@
 }
 .calculator-button__icon {
     margin-left: 10px;
+    fill: transparent;
+    stroke: var(--global-text-color);
 }
 
 /* -------------------------ABOUT PROCEDURE------------------------- */
@@ -451,6 +465,15 @@
     padding: 20px;
     border-radius: 12px;
     background-color: var(--global-text-color);
+    box-shadow: var(--main-box-shadow);
+    transition: var(--main-transition);
+}
+.swiper-slide.feedback-procedure__swiper-slide:hover{
+    background-color: var(--accent-color);
+}
+.swiper-slide.feedback-procedure__swiper-slide:focus{
+    background-color: var(--global-text-color);
+    border: 2px solid var(--accent-color);
 }
 @media screen and (min-width: 843px) {
     .swiper-slide.feedback-procedure__swiper-slide {
@@ -463,8 +486,6 @@
     }
 }
 
-.feedback-procedure__swiper-slide {
-}
 .feedback-procedure__slide-head {
     display: flex;
     align-items: center;
@@ -477,22 +498,40 @@
     gap: 8px;
 }
 .feedback-procedure__slide-icon {
+    fill: var(--accent-color);
+    transition: var(--main-transition);
+}
+.swiper-slide.feedback-procedure__swiper-slide:hover .feedback-procedure__slide-icon{
+    fill: var(--global-text-color);
 }
 .feedback-procedure__slide-text {
     font-size: 15px;
     letter-spacing: 0.15px;
     color: var(--accent-color);
+    transition: var(--main-transition);
+}
+.swiper-slide.feedback-procedure__swiper-slide:hover .feedback-procedure__slide-text{
+    color: var(--global-text-color);
 }
 .feedback-procedure__slide-data {
     font-size: 14px;
     line-height: 1.4;
     color: var(--typography-t60);
+    transition: var(--main-transition);
+}
+.swiper-slide.feedback-procedure__swiper-slide:hover .feedback-procedure__slide-data{
+    color: var(--default-30);
 }
 .feedback-procedure__slide-main {
     width: 100%;
     height: 463px;
     border-radius: 12px;
     overflow: hidden;
+}
+@media screen and (min-width: 1440px) {
+    .feedback-procedure__slide-main {
+        height: 488px;
+    }
 }
 .feedback-procedure__slide-main > img {
     display: block;
@@ -562,6 +601,10 @@
     margin-bottom: 10px;
     border-radius: 6px;
     background-color: var(--global-text-color);
+    box-shadow: var(--main-box-shadow);
+}
+.faq-section__list-item:focus {
+    border: 2px solid var(--button-color-red-80);
 }
 .faq-section__list-item.is-open {
     background-color: var(--accent-color);
@@ -579,6 +622,12 @@
 .faq-section__item-text {
     font-size: 14px;
 }
+.faq-section__item-content:hover {
+    color: var(--accent-color);
+}
+.faq-section__list-item.is-open .faq-section__item-text{
+    color: var(--global-text-color);
+}
 @media screen and (min-width: 1440px) {
     .faq-section__item-text {
         font-size: 16px;
@@ -590,6 +639,7 @@
     justify-content: center;
     border: none;
     background-color: transparent;
+    cursor: pointer;
 }
 .faq-section__list-item.is-open .faq-section__item-icon {
     stroke: var(--global-text-color);
@@ -650,6 +700,14 @@
     font-size: 16px;
     color: var(--accent-color);
 }
+.questions-section__input:hover{
+    border-width: 2px;
+    border-color: var(--button-color-red-80);
+}
+.questions-section__input:focus{
+    border-width: 2px;
+    border-color: var(--button-color-red-80);
+}
 .questions-section__input::placeholder {
     font-size: 16px;
     color: var(--accent-color);
@@ -667,7 +725,15 @@
     background-color: var(--accent-color);
     color: var(--global-text-color);
     cursor: pointer;
+    transition: var(--main-transition);
 }
+.questions-section__form-button:hover{
+    background-color: var(--button-color-red-80);
+  }
+.questions-section__form-button:focus{
+    outline: none;
+    border: 2px solid var(--button-color-red-80);
+  }
 @media screen and (min-width: 843px) {
     .questions-section__form-button {
         display: block;

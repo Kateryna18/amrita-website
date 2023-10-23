@@ -200,6 +200,7 @@
     border: 1px solid var(--accent-color);
     border-radius: 100px;
     background-color: var(--global-text-color);
+    transition: var(--main-transition);
 }
 
 @media screen and (min-width: 1440px) {
@@ -209,8 +210,22 @@
         background-color: transparent;
     }
 }
-
-.subscribe-article-button__icon {}
+@media screen and (min-width: 1440px) {
+    .subscribe-article__button:hover {
+        padding: 9px;
+        border-radius: 8px;
+        background-color: var(--accent-color);
+    }
+}
+.subscribe-article-button__icon {
+    fill: var(--accent-color);
+    transition: var(--main-transition);
+}
+@media screen and (min-width: 1440px) {
+    .subscribe-article__button:hover .subscribe-article-button__icon {
+        fill: var(--global-text-color);
+    }
+}
 
 .subscribe-article-button__text {
     font-size: 16px;

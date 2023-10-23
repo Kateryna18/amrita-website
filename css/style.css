@@ -9,13 +9,47 @@
   --button-color-red-80: #63130D;
   --button-color-red-30: #D2B9B7;
   --other-red: #A32116;
+  --default-30: #D1D1D1;
   --default-50: #A2A2A2;
   --primary-beige: #D4C399;
+  --main-box-shadow: 0px 4px 61px 0px rgba(127, 43, 37, 0.14);
 
   --main-transition: all 0.4s ease;
 
   --second-font-family: "Playfair Display", serif;
 }
+
+/* ---------button-white -------*/
+/* transition: var(--main-transition); */
+/* hover */
+/* {
+  background-color: var(--accent-color);
+  color: var(--global-text-color);
+} */
+/* {
+  stroke: var(--global-text-color);
+} */
+/* focus */
+/* {
+  outline: none;
+  border: 2px solid var(--accent-color);
+  background-color: var(--global-text-color);
+  color: var(--accent-color);
+} */
+/* {
+  stroke: var(--accent-color);
+} */
+
+/* ---------button red -------*/
+/* hover */
+/* {
+  background-color: var(--button-color-red-80);
+} */
+/* focus */
+/* {
+  outline: none;
+  border: 2px solid var(--button-color-red-80);
+} */
 
 /*---------------------- RESET ----------------------*/
 h1,
@@ -64,13 +98,11 @@ body {
 }
 
 main {
-  /* Основний контент, можливо, з іншими стилями */
   flex-grow: 1;
 }
 
 footer {
-  /* Стилі для вашого footer */
-  flex-grow: 0; /* Це заборонить footer розширюватися і притисне його до низу */
+  flex-grow: 0;
 }
 
 /*----------------------CONTAINER ----------------------*/
@@ -165,7 +197,12 @@ footer {
   color: var(--global-text-color);
 }
 .nav__link-icon {
-  fill: currentColor;
+  fill: transparent;
+  stroke: var(--text-color);
+}
+.nav__item:hover .nav__link-icon{
+  fill: transparent;
+  stroke: var(--global-text-color);
 }
 /*----------------------header content*/
 .header-content {
@@ -207,7 +244,18 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: var(--main-transition);
 }
+.search__button__icon{
+  fill: transparent;
+  stroke: var(--accent-color);
+}
+.search__button:hover .search__button__icon, .search__button:focus .search__button__icon{
+  outline: none;
+  stroke: var(--button-color-red-80);
+}
+
   /* ----select */
   .select {
     position: relative;
@@ -293,7 +341,15 @@ footer {
   cursor: pointer;
 }
 .button-menu__icon {
-  stroke: var(--text-color);
+  fill: var(--accent-color);
+}
+.header__button-menu:hover .button-menu__icon{
+  fill: var(--button-color-red-80);
+}
+.header__button-menu:focus .button-menu__icon{
+  outline: none;
+  fill: var(--button-color-red-80);
+  stroke: var(--button-color-red-80);
 }
 
 /* -----------services container */
@@ -323,6 +379,7 @@ footer {
   border: none;
   border-bottom: none;
   cursor: pointer;
+  transition: var(--main-transition);
  
 
   font-size: 15px;
@@ -494,9 +551,7 @@ footer {
 .footer__pages-item {
   margin-bottom: 16px;
 }
-/* .footer__pages-item.footer__pages-services {
-  display: flex;
-} */
+
 @media screen and (min-width: 1440px) {
   .footer__pages-item.footer__pages-services {
     display: none;
@@ -564,6 +619,15 @@ footer {
   height: 42px;
   background-color: var(--global-text-color);
   border-radius: 8px;
+  transition: var(--main-transition);
+}
+.footer__socials-item:hover{
+  background-color: var(--accent-color);
+}
+.footer__socials-item:focus{
+  outline: none;
+  border: 2px solid var(--accent-color);
+  background-color: var(--global-text-color);
 }
 .footer__socials-link {
   width: 100%;
@@ -571,6 +635,17 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.footer__socials-icon{
+  fill: var(--accent-color);
+  transition: var(--main-transition);
+}
+.footer__socials-item:hover .footer__socials-icon{
+  fill: var(--global-text-color);
+}
+.footer__socials-item:focus .footer__socials-icon{
+  fill: var(--accent-color);
 }
 /* -------------footer-info-line */
 .footer__info-line {

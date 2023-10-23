@@ -312,6 +312,7 @@
     border-radius: 100px;
     border: 1px solid var(--accent-color);
     background-color: transparent;
+    transition: var(--main-transition);
     cursor: pointer;
     
 
@@ -450,6 +451,10 @@
     align-items: flex-start;
     gap: 20px;
 }
+.specialists-list__item:focus{
+    border: 1px solid var(--accent-color);
+    border-radius: 6px;
+}
 .specialists-dropdown__thumb {
     width: 46px;
     height: 46px;
@@ -466,6 +471,9 @@
 }
 .specialists-dropdown__name {
     margin-bottom: 4px;
+}
+.specialists-list__item:hover .specialists-dropdown__name{
+    color: var(--accent-color);
 }
 .specialists-dropdown__position {
     font-size: 14px;
@@ -492,6 +500,7 @@
 .specialists__item-desctop {
 }
 .specialists__label-desctop {
+    cursor: pointer;
 }
 .specialists__thumb-desctop {
     width: 253px;
@@ -518,7 +527,6 @@
     justify-content: center;
     width: 20px;
     height: 20px;
-    padding: 4px;
     border-radius: 50%;
     border: 1.5px solid var(--typography-t60);
 }
@@ -672,6 +680,9 @@
         margin-bottom: 60px;
     }
 }
+.confirmation-form__input:hover, .confirmation-form__input:focus{
+    border-width: 2px;
+}
 
 .confirmation-form__input::placeholder{
     color: var(--accent-color);
@@ -686,6 +697,8 @@
     border-radius: 100px;
     background-color: var(--accent-color);
     color: var(--global-text-color);
+    transition: var(--main-transition);
+    cursor: pointer;
 }
 @media screen and (min-width: 843px) {
     .confirmation-form__button{
@@ -701,7 +714,18 @@
         margin-right: auto;
     }
 }
+.confirmation-form__button:hover{
+    background-color: var(--button-color-red-80);
+  }
+.confirmation-form__button:focus{
+    outline: none;
+    border: 2px solid var(--button-color-red-80);
+  }
 
+.confirmation-form__icon{
+    fill: transparent;
+    stroke: var(--global-text-color);
+}
 .confirmation__terms {
     margin-top: 20px;
 

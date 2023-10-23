@@ -73,7 +73,7 @@
       </div>
       <div class="header__buttons">
         <button class="header__button-search" id="js-open-panelSearch">
-          <svg width="32" height="32" class="logo__icon" class="button-search__icon" id="js-search-button-icon">
+          <svg width="32" height="32" class="search__button__icon" id="js-search-button-icon">
             <use href="./images/icons_sprite.svg.svg#search"></use>
           </svg>
         </button>
@@ -159,13 +159,13 @@
           <h3 class="contacts__subtitle contacts-socials__title">Social Media</h3>
           <div class="contacts-socials__box">
             <a href="#" class="contacts-socials__link">
-              <svg width="24" height="24">
+              <svg width="24" height="24" class="contacts-socials-link__icon">
                 <use href="./images/icons_sprite.svg.svg#icon_instagram"></use>
               </svg>
               <p class="contacts-socials__text">Instagram</p>
             </a>
             <a href="#" class="contacts-socials__link">
-              <svg width="24" height="24">
+              <svg width="24" height="24" class="contacts-socials-link__icon">
                 <use href="./images/icons_sprite.svg.svg#icon_facebook"></use>
               </svg>
               <p class="contacts-socials__text">Facebook</p>
@@ -221,8 +221,8 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d23756.9584069282!2d12.44945189177534!3d41.901033050671536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s123%20Via%20Serenit%C3%A0%2C%20Rome%2C%20Italy!5e0!3m2!1suk!2sua!4v1697914706275!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" gestureHandling="none"></iframe>
             <a href="https://www.google.com/maps/search/123+Via+Serenit%C3%A0,+Rome,+Italy/@41.9178671,12.5090144,11z?hl=uk-UK" class="address__link" target="_blank">
               <p class="address-link__text">See in Google Maps</p>
-              <svg width="22" height="22">
-                <use href="./images/icons_sprite.svg.svg#arrow-up-right2"></use>
+              <svg width="22" height="22" class="address-link__icon">
+                <use href="./images/icons_sprite.svg.svg#arrow-up-right"></use>
               </svg>
             </a>
           </div>
@@ -230,140 +230,142 @@
       </section>
     </div>
   </main>
-  <!---------------------------FOOTER--------------------------->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__logo-container">
-        <a href="./index.html" class="footer__logo">
-          <svg class="footer__logo-icon-part1" width="218" height="39">
-            <use href="./images/icons_sprite.svg.svg#logo_illustrationtext"></use>
-          </svg>
-        </a>
-      </div>
-      <div class="footer__content-container">
-        <div class="footer__info">
-          <div class="footer__info-containers footer__info-contact">
-            <h3 class="footer__info-title">Contact us</h3>
-            <a class="footer__contacts footer__info-contact-tel" href="tel:+390503220606">+39 (050) 3220 606</a>
-            <a class="footer__info-contact-email" href="mailto:amrita@gmail.com">amrita@gmail.com</a>
-          </div>
-          <div class="footer__info-containers footer__info-adress">
-            <h3 class="footer__info-title">Address of our salon</h3>
-            <address class="footer__contacts footer__adress">
-              123 Via Serenità, Rome, Italy
-            </address>
-            <table class="footer__table">
-              <tr class="footer__table-tr">
-                <td class="footer__table-td">Mon-Fri</td>
-                <td class="footer__table-td footer__table-td-time">
-                  09:00 - 19:00
-                </td>
-              </tr>
-              <tr class="footer__table-tr">
-                <td class="footer__table-td">Saturday</td>
-                <td class="footer__table-td footer__table-td-time">
-                  11:00 - 18:00
-                </td>
-              </tr>
-              <tr class="footer__table-tr">
-                <td class="footer__table-td">Sunday</td>
-                <td class="footer__table-td footer__table-td-time">
-                  day off
-                </td>
-              </tr>
-            </table>
-          </div>
+<!---------------------------FOOTER---------------------- -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__logo-container">
+      <a href="./index.html" class="footer__logo">
+        <svg class="footer__logo-icon-part1" width="218" height="39">
+          <use href="./images/icons_sprite.svg.svg#logo_illustrationtext"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="footer__content-container">
+      <div class="footer__info">
+        <div class="footer__info-containers footer__info-contact">
+          <h3 class="footer__info-title">Contact us</h3>
+          <a class="footer__contacts footer__info-contact-tel" href="tel:+390503220606">+39 (050) 3220 606</a>
+          <a class="footer__info-contact-email" href="mailto:amrita@gmail.com">amrita@gmail.com</a>
         </div>
-        <div class="footer__pages">
-          <h3 class="footer__pages-title">Pages</h3>
-          <ul class="footer__pages-list">
-            <li class="footer__pages-item">
-              <a class="footer__pages-link">Main Page</a>
-            </li>
-            <li class="footer__pages-item">
-              <a class="footer__pages-link">About Us</a>
-            </li>
-            <li class="footer__pages-item footer__pages-services">
-              <button class="footer__pages-button">
-                <p class="footer__pages-link">Services</p>
-                <svg width="24" height="24" class="footer__pages-icon">
-                  <use href="./images/icons_sprite.svg.svg#chevron-down-white"></use>
-                </svg>
-              </button>
-              <div class="footer-pages-services__box">
-                <ul class="footer__list">
-                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Body massage</a></li>
-                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Face massage</a></li>
-                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Body care</a></li>
-                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Face care</a></li>
-                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Epilation</a></li>
-                </ul>
-                <ul>
-                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Endosphere therapy</a></li>
-                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">MesoBioStim</a></li>
-                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Eyelashes</a></li>
-                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Manicure</a></li>
-                  <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Pedicure</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="footer__pages-item">
-              <a class="footer__pages-link">Booking</a>
-            </li>
-            <li class="footer__pages-item">
-              <a class="footer__pages-link">Blog</a>
-            </li>
-            <li class="footer__pages-item">
-              <a class="footer__pages-link">Contacts</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__services">
-          <h3 class="footer__services-title">Services</h3>
-          <div class="footer__list-container">
-            <ul class="footer__list">
-              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Body massage</a></li>
-              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Face massage</a></li>
-              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Body care</a></li>
-              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Face care</a></li>
-              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Epilation</a></li>
-            </ul>
-            <ul>
-              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Endosphere therapy</a></li>
-              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">MesoBioStim</a></li>
-              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Eyelashes</a></li>
-              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Manicure</a></li>
-              <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Pedicure</a></li>
-            </ul>
-          </div>
+        <div class="footer__info-containers footer__info-adress">
+          <h3 class="footer__info-title">Address of our salon</h3>
+          <address class="footer__contacts footer__adress">
+            123 Via Serenità, Rome, Italy
+          </address>
+          <table class="footer__table">
+            <tr class="footer__table-tr">
+              <td class="footer__table-td">Mon-Fri</td>
+              <td class="footer__table-td footer__table-td-time">
+                09:00 - 19:00
+              </td>
+            </tr>
+            <tr class="footer__table-tr">
+              <td class="footer__table-td">Saturday</td>
+              <td class="footer__table-td footer__table-td-time">
+                11:00 - 18:00
+              </td>
+            </tr>
+            <tr class="footer__table-tr">
+              <td class="footer__table-td">Sunday</td>
+              <td class="footer__table-td footer__table-td-time">
+                day off
+              </td>
+            </tr>
+          </table>
         </div>
       </div>
-      <div class="footer__socials-container">
-        <ul class="footer__socials-list">
-          <li class="footer__socials-item">
-            <a href="#" class="footer__socials-link"><svg width="24" height="24" class="footer__socials-icon">
-                <use href="./images/icons_sprite.svg.svg#icon_instagram"></use>
-              </svg>
-            </a>
+      <div class="footer__pages">
+        <h3 class="footer__pages-title">Pages</h3>
+        <ul class="footer__pages-list">
+          <li class="footer__pages-item">
+            <a href="./index.html" class="footer__pages-link">Main Page</a>
           </li>
-          <li class="footer__socials-item">
-            <a href="#" class="footer__socials-link"><svg width="24" height="24" class="footer__socials-icon">
-                <use href="./images/icons_sprite.svg.svg#icon_facebook"></use>
+          <li class="footer__pages-item">
+            <a href="./about.html" class="footer__pages-link">About Us</a>
+          </li>
+          <li class="footer__pages-item footer__pages-services">
+            <button class="footer__pages-button">
+              <p class="footer__pages-link">Services</p>
+              <svg width="24" height="24" class="footer__pages-icon">
+                <use href="./images/icons_sprite.svg.svg#chevron-down-white"></use>
               </svg>
-            </a>
+            </button>
+            <div class="footer-pages-services__box">
+              <ul class="footer__list">
+                <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Body massage</a></li>
+                <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Face massage</a></li>
+                <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Body care</a></li>
+                <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Face care</a></li>
+                <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Epilation</a></li>
+              </ul>
+              <ul>
+                <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Endosphere therapy</a></li>
+                <li class="footer__services-item"><a href="./services.html" class="footer__services-link">MesoBioStim</a></li>
+                <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Eyelashes</a></li>
+                <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Manicure</a></li>
+                <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Pedicure</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer__pages-item">
+            <a href="./booking.html" class="footer__pages-link">Booking</a>
+          </li>
+          <li class="footer__pages-item">
+            <a href="./blog.html" class="footer__pages-link">Blog</a>
+          </li>
+          <li class="footer__pages-item">
+            <a href="./contacts.html" class="footer__pages-link">Contacts</a>
           </li>
         </ul>
       </div>
-      <div class="footer__info-line">
-        <div class="footer__info-line-box">
-          <p class="footer__info-line-text">Privacy policy</p>
-          <p class="footer__info-line-text">Terms & Conditions</p>
+      <div class="footer__services">
+        <h3 class="footer__services-title">Services</h3>
+        <div class="footer__list-container">
+          <ul class="footer__list">
+            <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Body massage</a></li>
+            <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Face massage</a></li>
+            <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Body care</a></li>
+            <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Face care</a></li>
+            <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Epilation</a></li>
+          </ul>
+          <ul>
+            <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Endosphere therapy</a></li>
+            <li class="footer__services-item"><a href="./services.html" class="footer__services-link">MesoBioStim</a></li>
+            <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Eyelashes</a></li>
+            <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Manicure</a></li>
+            <li class="footer__services-item"><a href="./services.html" class="footer__services-link">Pedicure</a></li>
+          </ul>
         </div>
-        <p class="footer__info-line-text-part2">
-          ©2023 Amrita All Rights Reserved
-        </p>
       </div>
-  </footer>
+    </div>
+    <div class="footer__socials-container">
+      <ul class="footer__socials-list">
+        <li class="footer__socials-item">
+          <a href="#" class="footer__socials-link">
+            <svg width="24" height="24" class="footer__socials-icon">
+              <use href="./images/icons_sprite.svg.svg#icon_instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__socials-item">
+          <a href="#" class="footer__socials-link">
+            <svg width="24" height="24" class="footer__socials-icon">
+              <use href="./images/icons_sprite.svg.svg#icon_facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__info-line">
+      <div class="footer__info-line-box">
+        <p class="footer__info-line-text">Privacy policy</p>
+        <p class="footer__info-line-text">Terms & Conditions</p>
+      </div>
+      <p class="footer__info-line-text-part2">
+        ©2023 Amrita All Rights Reserved
+      </p>
+    </div>
+</footer>
   <!----------------------------- MOBILE MENU --------------------------->
   <div class="mobile-menu js-menu-container" id="mobile-menu">
     <div class="container mobile-menu__header">
