@@ -283,12 +283,15 @@
     stroke: var(--text-color);
 }
 .data-time__dropdown {
-    /* display: none; */
+    display: none;
     padding-top: 40px;
 }
-/* .data-time__dropdown.is-open{
+.data-time__box.is-open .data-time__dropdown{
     display: block;
-} */
+}
+.data-time__box.is-open .data-time__toggle-icon{
+    transform: rotate(180deg);
+}
 .data-time__list {
     display: flex;
     flex-wrap: wrap;
@@ -316,13 +319,21 @@
     letter-spacing: 0.15px;
     color: var(--accent-color);
 }
-
-/* .data-time__list-button:active{
+.data-time__list-button:hover{
     border: none;
     background-color: var(--accent-color);
     color: var(--global-text-color);
-} */
-
+}
+.data-time__list-button:focus{
+    border: 2px solid var(--button-color-red-80);
+    background-color: var(--accent-color);
+    color: var(--global-text-color);
+}
+.data-time__list-button:disabled{
+    border: 1px solid var(--typography-t60);
+    background-color: transparent;
+    color: var(--typography-t60);
+}
 
 /* ------------------------CHOOSE SPECIALIST------------------- */
 .specialists {
@@ -365,11 +376,22 @@
     }
 }
 
+
+
 .specialists__head {
     display: flex;
     padding: 24px;
     gap: 20px;
+    border-radius: 6px;
 }
+.specialists__head:focus{
+    border: 1px solid var(--accent-color);
+}
+.specialists__head.selected{
+    border: none;
+    background-color: var(--accent-color);
+}
+
 .specialists__head-thumb {
     width: 46px;
     height: 46px;
@@ -390,13 +412,36 @@
     border: none;
     background-color: transparent;
 }
+.specialists__head:hover .specialists__head-button{
+    color: var(--accent-color);
+}
+
+.specialists__head.selected .specialists-head__button-text{
+    color: var(--global-text-color);
+}
+
 .specialists__head-icon {
     fill: transparent;
     stroke: var(--text-color);
 }
+.specialists__head.selected .specialists__head-icon{
+    stroke: var(--global-text-color);
+}
+.specialists__head:hover .specialists__head-icon{
+    stroke: var(--accent-color);
+}
+.specialists__head.is-open .specialists__head-icon{
+    transform: rotate(180deg);
+}
+
 .specialists__dropdown {
+    display: none;
     border-top: 1px solid var(--primary-beige);
 }
+.specialists__head.is-open + .specialists__dropdown{
+    display: block;
+}
+
 .specialists__list {
 }
 .specialists-list__item {

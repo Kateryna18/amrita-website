@@ -149,7 +149,7 @@ if (teamSwiper) {
 }
 
 
-//------------------------------TOGGLE DROPDOWN-------------------
+//------------------------------TOGGLE DROPDOWN-------------------//
 function toggleCatalogItem(button, catalog, icon) {
   button.addEventListener("click", () => {
     if (!catalog.classList.contains("is-open")) {
@@ -190,6 +190,43 @@ const catalogFooterServices = document.querySelector(".footer-pages-services__bo
 if (buttonFooterItem) {
   toggleCatalogItem(buttonFooterItem, catalogFooterServices);
 }
+
+//-----TOOGLE CHOOSE TIME
+const buttonChooseTime = document.querySelectorAll(".data-time__toggle-button");
+if (buttonChooseTime.length) {
+  buttonChooseTime.forEach((button, index) => {
+    const listChooseTime = document.querySelectorAll(".data-time__box");
+    toggleCatalogItem(button, listChooseTime[index]);
+  })
+}
+
+//-----TOOGLE CHOOSE SPECIALIST
+const buttonChooseSpecialist = document.querySelector(".specialists__head-button");
+const catalogChooseSpecialist = document.querySelector(".specialists__head");
+if (buttonChooseSpecialist) {
+  toggleCatalogItem(buttonChooseSpecialist, catalogChooseSpecialist);
+
+    const specialistsList = document.querySelectorAll(".specialists-list__item");
+    if (specialistsList.length) {
+      specialistsList.forEach((item, index) => {
+        catalogChooseSpecialist.classList.remove("selected");
+        item.addEventListener("click", (e) => {
+          e.stopPropagation()
+  
+          const specialistsName = document.querySelectorAll(".specialists-dropdown__name");
+          const buttonTitle = document.querySelector(".specialists-head__button-text");
+  
+          buttonTitle.textContent = specialistsName[index].textContent;
+  
+          catalogChooseSpecialist.classList.add("selected");
+          catalogChooseSpecialist.classList.toggle("is-open");
+        })
+      })
+    }
+}
+
+
+
 
 //------------------------------TOGGLE RATING STARS-------------------/
 const feedbackSlides = document.querySelectorAll(".feedback__swiper-slide");
