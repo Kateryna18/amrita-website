@@ -19,38 +19,6 @@
   --second-font-family: "Playfair Display", serif;
 }
 
-/* ---------button-white -------*/
-/* transition: var(--main-transition); */
-/* hover */
-/* {
-  background-color: var(--accent-color);
-  color: var(--global-text-color);
-} */
-/* {
-  stroke: var(--global-text-color);
-} */
-/* focus */
-/* {
-  outline: none;
-  border: 2px solid var(--accent-color);
-  background-color: var(--global-text-color);
-  color: var(--accent-color);
-} */
-/* {
-  stroke: var(--accent-color);
-} */
-
-/* ---------button red -------*/
-/* hover */
-/* {
-  background-color: var(--button-color-red-80);
-} */
-/* focus */
-/* {
-  outline: none;
-  border: 2px solid var(--button-color-red-80);
-} */
-
 /*---------------------- RESET ----------------------*/
 h1,
 h2,
@@ -773,8 +741,10 @@ footer {
   justify-content: space-between;
   padding-top: 30px;
   padding-bottom: 30px;
+  overflow-y: scroll;
 }
 .mobile-menu__content {
+  margin-bottom: 20px;
   flex-grow: 1;
 }
 .mobile-menu__search-container {
@@ -807,16 +777,24 @@ footer {
   font-size: 28px;
   color: var(--text-color);
 }
+.mobile-menu__nav-icon{
+  fill: transparent;
+  stroke: var(--text-color);
+}
 .mobile-menu__button {
   width: 100%;
   padding: 12px 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
   border: none;
   border-radius: 100px;
   background-color: var(--accent-color);
   color: var(--global-text-color)
+}
+.mobile-menu__button:hover, .mobile-menu__button:focus{
+  background-color: var(--button-color-red-80);
 }
 @media screen and (min-width: 843px) {
   .mobile-menu__button {
@@ -824,6 +802,10 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+}
+.mobile-menu-button__icon{
+  fill: transparent;
+  stroke: var(--global-text-color);
 }
 
 /* <!---------------------------MOBILE SUBMENU---------------------- --> */
@@ -846,6 +828,7 @@ footer {
 
 .mobile-menu__nav-button.mobile-submenu__nav-button {
   justify-content: normal;
+  padding-bottom: 12px;
   margin-bottom: 20px;
 }
 .mobile-submenu__item-services {
@@ -859,6 +842,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 7.5px;
     border: none;
     background-color: transparent;
 

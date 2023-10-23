@@ -24,8 +24,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Колір і прозорість затемнення */
-    z-index: 49; /* Має бути нижчим, ніж меню (.js-sort-menu) */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 49;
   }
   
 .overlay.overlay-visible {
