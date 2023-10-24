@@ -33,6 +33,15 @@
         letter-spacing: 3.4px;
     }
 }
+.tittle-accent--size{
+    font-size: 42px;
+}
+@media screen and (min-width: 1440px) {
+    .tittle-accent--size{
+        font-size: 50px;
+        line-height: 1;
+    }
+}
 
 /* ------------------------ABOUT US------------------- */
 @media screen and (min-width: 1440px) {
@@ -97,7 +106,15 @@
         display: none;
     }
 }
-
+.about-us__text-part1{
+    display: block;
+    margin-bottom: 14px;
+}
+@media screen and (min-width: 1440px) {
+    .about-us__text-part1 {
+        margin-bottom: 16px;
+    }
+}
 /* ------------------------EDUCATION------------------- */
 @media screen and (min-width: 1440px) {
     .container.education__container {

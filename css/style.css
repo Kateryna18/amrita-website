@@ -115,7 +115,7 @@ footer {
   display: block;
   width: 100%;
   position: absolute;
-  z-index: 55;
+  z-index: 45;
 
 }
 @media screen and (min-width: 1440px) {

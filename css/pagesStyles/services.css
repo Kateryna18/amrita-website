@@ -52,6 +52,9 @@
 .breadcrumbs li:last-child a {
     color: var(--accent-color);
 }
+.breadcrumbs li:first-child a {
+    color: var(--typography-t60);
+}
 
 .breadcrumbs span {
     display: inline-block;
@@ -394,11 +397,18 @@ input[type='number'] {
     gap: 8px;
     border: none;
     border-radius: 100px;
-    background-color: var(--button-color-40);
+    background-color: var(--accent-color);
 
     font-size: 15px;
     letter-spacing: 0.15px;
     color: var(--global-text-color);
+}
+.services-filter__button-filter:hover {
+    background-color: var(--button-color-red-80);
+}
+.services-filter__button-filter:focus {
+    border: 2px solid var(--button-color-red-80);
+    background-color: var(--accent-color);
 }
 @media screen and (min-width: 1439px) {
     .services-filter__button-filter {
