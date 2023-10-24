@@ -347,6 +347,11 @@
     border-radius: 12px;
     background-color: var(--accent-color);
 }
+@media screen and (min-width: 1440px) {
+    .about-procedure__main {
+        width: 600px;
+    }
+}
 .about-procedure-list__item {
     margin-bottom: 14px;
     padding: 14px;
@@ -373,6 +378,9 @@
         display: block;
         width: 200px;
         margin-right: 10px;
+        margin-bottom: 0;
+
+        font-size: 15px;
     }
 }
 @media screen and (min-width: 1440px) {
@@ -388,11 +396,14 @@
 @media screen and (min-width: 843px) {
     .about-procedure-item__text {
         display: block;
-        width: calc(100% - 200px);
+        width: 488px;
+
+        font-size: 14px;
     }
 }
 @media screen and (min-width: 1440px) {
     .about-procedure-item__text {
+        width: 334px;
         font-size: 14px;
     }
 }

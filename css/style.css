@@ -113,6 +113,10 @@ footer {
 }
 .header__search-panel.is-open {
   display: block;
+  width: 100%;
+  position: absolute;
+  z-index: 55;
+
 }
 @media screen and (min-width: 1440px) {
   .header__search-panel.is-open {
@@ -383,12 +387,12 @@ footer {
   }
 }
 /* DESKTOP SCREEN */
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .main {
     background-image: url("../images/bg_lg@1x.png");
   }
 }
-@media (min-resolution: 192dpi) and (min-width: 1440px) {
+@media (min-resolution: 192dpi) and (min-width: 1280px) {
   .main {
     background-image: url("../images/bg_lg@2x.png");
   }

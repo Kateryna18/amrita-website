@@ -62,7 +62,7 @@ const popularSwiper = document.querySelector(".popular__swiper");
 if (popularSwiper) {
   const popularSwiper = new Swiper(".popular__swiper", {
     spaceBetween: 20,
-    slidesPerView: "auto",
+    slidesPerView: 1.19,
     loop: true,
     slideToClickedSlide: true,
     keyboard: {
@@ -70,7 +70,11 @@ if (popularSwiper) {
       onlyInViewport: true,
     },
     breakpoints: {
+      843: {
+        slidesPerView: 2.52,
+      },
       1440: {
+        slidesPerView: "auto",
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
