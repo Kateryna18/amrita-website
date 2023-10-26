@@ -185,7 +185,7 @@
 }
 @media screen and (min-width: 1440px) {
     .subscribe-article__content {
-        gap: 12px;
+        gap: 24px;
     }
 }
 

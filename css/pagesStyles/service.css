@@ -534,11 +534,7 @@
 }
 .swiper-pagination.feedback-procedure__swiper-pagination {
     bottom: 0;
-}
-@media screen and (min-width: 843px) {
-    .swiper-pagination.feedback-procedure__swiper-pagination {
-        position: absolute;
-    }
+    position: absolute;
 }
 .swiper-pagination-bullet {
     width: 10px;
@@ -574,6 +570,7 @@
 @media screen and (min-width: 1440px) {
     .faq__section {
         max-width: 590px;
+        margin-bottom: 0;
     }
 }
 
@@ -697,7 +694,7 @@
     font-size: 16px;
     color: var(--accent-color);
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 843px) {
     .questions-section__input.margin-style {
         margin-bottom: 40px;
     }
@@ -745,6 +742,6 @@
 
 @media screen and (min-width: 1440px) {
     .swiper-pagination.popular__swiper-pagination {
-        position: absolute;
+        position: static;
     }
 }

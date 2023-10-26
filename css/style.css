@@ -93,6 +93,9 @@ footer {
 }
 
 /*-----------------------------------------HEADER-------------------------------*/
+.header {
+  box-shadow: var(--main-box-shadow);
+}
 .container.head__container {
   padding-top: 18px;
   padding-bottom: 18px;
@@ -100,6 +103,12 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media screen and (min-width: 843px) {
+  .container.head__container {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
 }
 .header__decor {
   width: 100%;
@@ -378,6 +387,7 @@ footer {
 /* TABLET SCREEN */
 @media screen and (min-width: 843px) {
   .main {
+    padding-top: 24px;
     background-image: url("../images/bg_md@1x.png");
   }
 }
@@ -389,6 +399,7 @@ footer {
 /* DESKTOP SCREEN */
 @media screen and (min-width: 1280px) {
   .main {
+    padding-top: 30px;
     background-image: url("../images/bg_lg@1x.png");
   }
 }

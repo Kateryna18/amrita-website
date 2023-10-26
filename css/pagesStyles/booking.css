@@ -72,6 +72,7 @@
     padding: 14px;
     border-radius: 6px;
     background-color: var(--accent-color);
+    box-shadow: var(--main-box-shadow);
 }
 .booking-info-block__item {
     margin-bottom: 14px;

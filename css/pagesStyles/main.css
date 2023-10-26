@@ -12,7 +12,7 @@
 
 @media screen and (min-width: 1440px) {
   .circle-info {
-    margin-bottom: 44px;
+    margin-bottom: 40px;
   }
 }
 
@@ -93,6 +93,7 @@
 }
 
 .banner__swiper-slide {
+  position: relative;
   width: 100%;
   height: 100%;
 }
@@ -113,6 +114,17 @@
   position: relative;
   width: 100%;
   height: 520px;
+  overflow: hidden;
+}
+.banner__thumb::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.40) 1.23%, rgba(0, 0, 0, 0.00) 69.92%);
 }
 
 @media screen and (min-width: 842px) {
@@ -240,6 +252,8 @@
 
 @media screen and (min-width: 1440px) {
   .tittle {
+    margin-bottom: 12px;
+
     font-size: 38px;
     letter-spacing: 3.8px;
   }
@@ -493,7 +507,7 @@
 
 @media screen and (min-width: 1440px) {
   .popular__swiper-wrapper {
-    height: 648px;
+    height: 556px;
   }
 }
 
@@ -513,6 +527,16 @@
 .popular__thumb {
   width: 100%;
   height: 430px;
+}
+.popular__thumb::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.40) 1.23%, rgba(0, 0, 0, 0.00) 69.92%);
 }
 
 @media screen and (min-width: 1440px) {
@@ -622,6 +646,11 @@
   .about__item:last-child {
     padding-bottom: 0;
     border-bottom: none;
+  }
+}
+@media screen and (max-width: 1439px) {
+  .about__item:first-child {
+    padding-top: 0;
   }
 }
 
@@ -954,7 +983,7 @@
   padding-bottom: 60px;
 
   background-color: rgba(127, 43, 37, 0.779);
-  box-shadow: 0px 4px 61px 0px rgba(127, 43, 37, 0.14);
+  box-shadow: var(--main-box-shadow);
 }
 
 @media screen and (min-width: 843px) {
@@ -983,12 +1012,19 @@
   font-size: 32px;
   line-height: 1.45;
   letter-spacing: 5.6px;
+  text-transform: uppercase;
   color: var(--global-text-color);
 }
 
 @media screen and (min-width: 843px) {
   .subscripe__title {
     text-align: center;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .subscripe__title {
+    font-size: 38px;
+    letter-spacing: 3.8px;
   }
 }
 
@@ -1137,4 +1173,9 @@ input[type="checkbox"]:checked+label {
   font-size: 12px;
   line-height: 1.4;
   color: var(--global-text-color);
+}
+@media screen and (min-width: 1440px) {
+  .subscripe__text-checkbox {
+    font-size: 14px;
+  }
 }

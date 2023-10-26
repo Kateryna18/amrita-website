@@ -85,6 +85,7 @@
     align-self: start;
     border-radius: 6px;
     background-color: var(--global-text-color);
+    box-shadow: var(--main-box-shadow);
 }
 @media screen and (max-width: 1439px) {
     .filter-desctop {
@@ -348,7 +349,9 @@ input[type='number'] {
 }
 
 @media screen and (min-width: 1440px) {
-    .tittle {
+    .title {
+        margin-bottom: 12px;
+
         font-size: 38px;
         letter-spacing: 3.8px;
     }
@@ -367,6 +370,8 @@ input[type='number'] {
 
 @media screen and (min-width: 1440px) {
     .description {
+        margin-bottom: 20px;
+
         line-height: 1.6;
     }
 }
@@ -500,12 +505,12 @@ input[type='number'] {
     color: var(--accent-color);
 }
 
-@media screen and (min-width: 1440px) {
+
+@media screen and (max-width: 1440px) {
     .services-page-filter__choice-list {
         display: none;
     }
 }
-
 .choice-list {
     display: flex;
     align-items: center;
@@ -573,7 +578,7 @@ input[type='number'] {
     flex-wrap: wrap;
     gap: 40px 10px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 843px) {
     .services-page__list {
         gap: 40px 20px;
     }

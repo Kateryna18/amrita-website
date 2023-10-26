@@ -23,25 +23,36 @@ if (searchForm && searchButtonSubmit) {
 //----------------------------------------SWIPERS-------------------//
 const circleSwiper = document.querySelector(".circle__swiper");
 if (circleSwiper) {
-  const swiper = new Swiper(".circle__swiper", {
-    direction: "horizontal",
-    loop: false,
+  new Swiper(".circle__swiper", {
     slidesPerView: "auto",
+    spaceBetween: 14,
+    loop: false,
     enabled: true,
     sticky: true,
     momentumBounce: false,
-    spaceBetween: 14,
+    breakpoints: {
+      843: {
+        spaceBetween: 20,
+      },
+      1440: {
+        spaceBetween: 30,
+      }
+    },
   });
 }
 
 const bannerSwiper = document.querySelector(".banner__swiper");
 if (bannerSwiper) {
-  const swiper = new Swiper(".banner__swiper", {
-    spaceBetween: 30,
-    slidesPerView: 'auto',
+  new Swiper(".banner__swiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
     loop: true,
     slideToClickedSlide: true,
     breakpoints: {
+      843: {
+        spaceBetween: 40,
+        slidesPerView: 'auto',
+      },
       1440: {
         slidesPerView: 1,
       }
@@ -60,7 +71,7 @@ if (bannerSwiper) {
 
 const popularSwiper = document.querySelector(".popular__swiper");
 if (popularSwiper) {
-  const popularSwiper = new Swiper(".popular__swiper", {
+  new Swiper(".popular__swiper", {
     spaceBetween: 20,
     slidesPerView: 1.19,
     loop: true,
@@ -72,9 +83,11 @@ if (popularSwiper) {
     breakpoints: {
       843: {
         slidesPerView: 2.52,
+        spaceBetween: 20,
       },
       1440: {
         slidesPerView: "auto",
+        spaceBetween: 30,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
@@ -88,7 +101,7 @@ if (popularSwiper) {
 
 const feedbackSwiper = document.querySelector(".feedback__swiper");
 if (feedbackSwiper) {
-  const feedbackSwiper = new Swiper(".feedback__swiper", {
+  new Swiper(".feedback__swiper", {
     loop: true,
     breakpoints: {
       843: {
@@ -108,7 +121,7 @@ if (feedbackSwiper) {
 
 const certificatesSwiper = document.querySelector(".certificates__swiper");
 if (certificatesSwiper) {
-  const certificatesSwiper = new Swiper(".certificates__swiper", {
+  new Swiper(".certificates__swiper", {
     spaceBetween: 20,
     slidesPerView: "auto",
     loop: true,
@@ -131,7 +144,7 @@ if (certificatesSwiper) {
 
 const teamSwiper = document.querySelector(".team__swiper");
 if (teamSwiper) {
-  const teamSwiper = new Swiper(".team__swiper", {
+  new Swiper(".team__swiper", {
     spaceBetween: 40,
     slidesPerView: "auto",
     loop: true,

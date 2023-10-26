@@ -1,6 +1,11 @@
 .description.blog__description {
     margin-bottom: 40px;
 }
+@media screen and (min-width: 1440px) {
+    .description.blog__description {
+        margin-bottom: 20px;
+    }
+}
 .blog__list {
     margin-bottom: 40px;
     display: flex;
