@@ -608,11 +608,11 @@ function createSlider(sliderId, inputIds) {
   const inputs = inputIds.map((id) => document.getElementById(id));
 
   noUiSlider.create(slider, {
-    start: [150, 400],
+    start: [0, 0],
     connect: true,
     step: 10,
     range: {
-      min: [150],
+      min: [0],
       max: [400],
     },
   });
