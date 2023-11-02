@@ -380,7 +380,6 @@ input[type='number'] {
 .services-page__filter {
     margin-bottom: 40px;
 }
-
 .services-filter__buttons {
     margin-bottom: 20px;
     display: flex;
@@ -506,7 +505,7 @@ input[type='number'] {
 }
 
 
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
     .services-page-filter__choice-list {
         display: none;
     }
@@ -514,25 +513,13 @@ input[type='number'] {
 .choice-list {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: normal;
     flex-wrap: wrap;
-    gap: 16px;
-}
-
-@media screen and (min-width: 1440px) {
-    .choice-list {
-        justify-content: normal;
-        gap: 12px;
-    }
+    gap: 12px;
 }
 
 .choice-list__item {
-    width: 70px;
-}
-@media screen and (min-width: 1440px) {
-    .choice-list__item {
-        width: 62px;
-    }
+    display: none;
 }
 
 .choice-list__button {
@@ -549,6 +536,10 @@ input[type='number'] {
     .choice-list__button {
         padding: 0;
     }
+}
+.choice-list__icon{
+    width: 20px;
+    height: 20px;
 }
 .choice-list__button-text {
     font-size: 14px;

@@ -2,22 +2,23 @@
 const searchForm = document.querySelectorAll(".search-form");
 const searchButtonSubmit = document.querySelectorAll(".search__button");
 if (searchForm && searchButtonSubmit) {
-  searchForm.forEach(form => {
-    form.addEventListener('submit', (event) => {
+  searchForm.forEach((form) => {
+    form.addEventListener("submit", (event) => {
       event.preventDefault();
       const searchValue = event.target.elements.search.value;
-      console.log(searchValue)
+      console.log(searchValue);
 
       if (searchValue === "") {
         return console.log("please enter text");
       }
 
-      const searchResultsUrl = 'search-results.html?query=' + encodeURIComponent(searchValue);
+      const searchResultsUrl =
+        "search-results.html?query=" + encodeURIComponent(searchValue);
       window.location.href = searchResultsUrl;
-      
+
       form.reset();
-    })
-  })
+    });
+  });
 }
 
 //----------------------------------------SWIPERS-------------------//
@@ -36,7 +37,7 @@ if (circleSwiper) {
       },
       1440: {
         spaceBetween: 30,
-      }
+      },
     },
   });
 }
@@ -51,11 +52,11 @@ if (bannerSwiper) {
     breakpoints: {
       843: {
         spaceBetween: 40,
-        slidesPerView: 'auto',
+        slidesPerView: "auto",
       },
       1440: {
         slidesPerView: 1,
-      }
+      },
     },
     pagination: {
       el: ".swiper-pagination",
@@ -68,14 +69,13 @@ if (bannerSwiper) {
   });
 }
 
-
 const popularSwiper = document.querySelector(".popular__swiper");
 if (popularSwiper) {
   new Swiper(".popular__swiper", {
     spaceBetween: 20,
     slidesPerView: 1.19,
-    loop: true,
-    slideToClickedSlide: true,
+    // loop: true,
+    // slideToClickedSlide: true,
     keyboard: {
       enabled: true,
       onlyInViewport: true,
@@ -90,14 +90,12 @@ if (popularSwiper) {
         spaceBetween: 30,
         pagination: {
           el: ".swiper-pagination",
-          clickable: true,
+          // clickable: true,
         },
       },
     },
   });
 }
-
-
 
 const feedbackSwiper = document.querySelector(".feedback__swiper");
 if (feedbackSwiper) {
@@ -165,26 +163,31 @@ if (teamSwiper) {
   });
 }
 
-
 //------------------------------TOGGLE DROPDOWN-------------------//
 function toggleCatalogItem(button, catalog, icon) {
   button.addEventListener("click", () => {
     if (!catalog.classList.contains("is-open")) {
       catalog.classList.add("is-open");
       if (icon) {
-        icon.querySelector("use").setAttribute("href", "./images/icons_sprite.svg.svg#minus");
+        icon
+          .querySelector("use")
+          .setAttribute("href", "./images/icons_sprite.svg.svg#minus");
       }
     } else {
       catalog.classList.remove("is-open");
       if (icon) {
-        icon.querySelector("use").setAttribute("href", "./images/icons_sprite.svg.svg#plus");
+        icon
+          .querySelector("use")
+          .setAttribute("href", "./images/icons_sprite.svg.svg#plus");
       }
     }
   });
 }
 
 //-----FAQ SECTION
-const buttonsFaqSection = document.querySelectorAll(".faq-section__item-button");
+const buttonsFaqSection = document.querySelectorAll(
+  ".faq-section__item-button"
+);
 const catalogsFaqSection = document.querySelectorAll(".faq-section__list-item");
 const iconsFaqSection = document.querySelectorAll(".faq-section__item-icon");
 
@@ -203,7 +206,9 @@ buttonsProcedures.forEach((button, index) => {
 
 //-----FOOTER
 const buttonFooterItem = document.querySelector(".footer__pages-button");
-const catalogFooterServices = document.querySelector(".footer-pages-services__box");
+const catalogFooterServices = document.querySelector(
+  ".footer-pages-services__box"
+);
 if (buttonFooterItem) {
   toggleCatalogItem(buttonFooterItem, catalogFooterServices);
 }
@@ -214,36 +219,39 @@ if (buttonChooseTime.length) {
   buttonChooseTime.forEach((button, index) => {
     const listChooseTime = document.querySelectorAll(".data-time__box");
     toggleCatalogItem(button, listChooseTime[index]);
-  })
+  });
 }
 
 //-----TOOGLE CHOOSE SPECIALIST
-const buttonChooseSpecialist = document.querySelector(".specialists__head-button");
+const buttonChooseSpecialist = document.querySelector(
+  ".specialists__head-button"
+);
 const catalogChooseSpecialist = document.querySelector(".specialists__head");
 if (buttonChooseSpecialist) {
   toggleCatalogItem(buttonChooseSpecialist, catalogChooseSpecialist);
 
-    const specialistsList = document.querySelectorAll(".specialists-list__item");
-    if (specialistsList.length) {
-      specialistsList.forEach((item, index) => {
-        catalogChooseSpecialist.classList.remove("selected");
-        item.addEventListener("click", (e) => {
-          e.stopPropagation()
-  
-          const specialistsName = document.querySelectorAll(".specialists-dropdown__name");
-          const buttonTitle = document.querySelector(".specialists-head__button-text");
-  
-          buttonTitle.textContent = specialistsName[index].textContent;
-  
-          catalogChooseSpecialist.classList.add("selected");
-          catalogChooseSpecialist.classList.toggle("is-open");
-        })
-      })
-    }
+  const specialistsList = document.querySelectorAll(".specialists-list__item");
+  if (specialistsList.length) {
+    specialistsList.forEach((item, index) => {
+      catalogChooseSpecialist.classList.remove("selected");
+      item.addEventListener("click", (e) => {
+        e.stopPropagation();
+
+        const specialistsName = document.querySelectorAll(
+          ".specialists-dropdown__name"
+        );
+        const buttonTitle = document.querySelector(
+          ".specialists-head__button-text"
+        );
+
+        buttonTitle.textContent = specialistsName[index].textContent;
+
+        catalogChooseSpecialist.classList.add("selected");
+        catalogChooseSpecialist.classList.toggle("is-open");
+      });
+    });
+  }
 }
-
-
-
 
 //------------------------------TOGGLE RATING STARS-------------------/
 const feedbackSlides = document.querySelectorAll(".feedback__swiper-slide");
@@ -258,9 +266,13 @@ feedbackSlides.forEach((slide) => {
 
       ratingIcons.forEach((ratingIcon, i) => {
         if (i <= index) {
-          ratingIcon.parentElement.querySelector("use").setAttribute("href", activeIcon);
+          ratingIcon.parentElement
+            .querySelector("use")
+            .setAttribute("href", activeIcon);
         } else {
-          ratingIcon.parentElement.querySelector("use").setAttribute("href", inactiveIcon);
+          ratingIcon.parentElement
+            .querySelector("use")
+            .setAttribute("href", inactiveIcon);
         }
       });
     });
@@ -278,7 +290,9 @@ toggleButtons.forEach((button) => {
     const iconEyeOn = "./images/icons_sprite.svg.svg#eye";
     const iconEyeOff = "./images/icons_sprite.svg.svg#eye-off";
 
-    const textPart = button.previousElementSibling.querySelector(".feedback__text-part");
+    const textPart = button.previousElementSibling.querySelector(
+      ".feedback__text-part"
+    );
 
     if (textPart.style.display === "none" || textPart.style.display === "") {
       textPart.style.display = "block";
@@ -291,7 +305,6 @@ toggleButtons.forEach((button) => {
     }
   });
 });
-
 
 //-----------------MOBILE MENU------------------------------------
 (() => {
@@ -325,7 +338,6 @@ toggleButtons.forEach((button) => {
   });
 })();
 
-
 // -------------MOBILE SUBMENU------------
 (() => {
   const mobileMenu = document.querySelector(".js-menu2-container");
@@ -358,13 +370,14 @@ toggleButtons.forEach((button) => {
   });
 })();
 
-
 // --------------FILTER MOBILE MENU-----------
 (() => {
   const mobileMenu = document.querySelector(".js-filter-menu-container");
   const openMenuBtn = document.querySelector(".js-open-filter-menu");
   const closeMenuBtn = document.querySelectorAll(".js-close-filter-menu");
-  const checkboxes = document.querySelectorAll('.filter-desctop__checkbox-item');
+  const checkboxes = document.querySelectorAll(
+    ".filter-desctop__checkbox-item"
+  );
   const overlay = document.querySelector(".overlay");
 
   const toggleMenu = () => {
@@ -388,16 +401,17 @@ toggleButtons.forEach((button) => {
     item.addEventListener("click", toggleMenu);
   }
 
-  checkboxes.forEach(checkbox => checkbox.addEventListener('click', (e) => {
-    if (window.innerWidth >= 1440) {
-      return
-    }
-    const condition = e.currentTarget.classList.contains('checked');
-    if (!condition) {
-      toggleMenu()
-    }
-  }))
-
+  checkboxes.forEach((checkbox) =>
+    checkbox.addEventListener("click", (e) => {
+      if (window.innerWidth >= 1440) {
+        return;
+      }
+      const condition = e.currentTarget.classList.contains("checked");
+      if (!condition) {
+        toggleMenu();
+      }
+    })
+  );
 
   window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
     if (!e.matches) return;
@@ -423,9 +437,9 @@ toggleButtons.forEach((button) => {
     mobileMenu.classList.toggle("is-open");
     overlay.classList.toggle("overlay-visible");
 
-    radioButtons.forEach(button => {
-      button.removeEventListener('click', toggleMenu)
-    })
+    radioButtons.forEach((button) => {
+      button.removeEventListener("click", toggleMenu);
+    });
 
     if (!isMenuOpen) {
       document.body.classList.add("no-scroll");
@@ -438,19 +452,19 @@ toggleButtons.forEach((button) => {
     const mobileMenu = document.querySelector(".services-filter__menu-sort");
 
     mobileMenu.classList.toggle("is-open");
-  }
+  };
 
   if (openMenuBtn) {
     openMenuBtn.addEventListener("click", () => {
       if (window.innerWidth >= 1440) {
-        toggleDescMenu()
-        return
+        toggleDescMenu();
+        return;
       }
 
-      toggleMenu()
-      radioButtons.forEach(button => {
-        button.addEventListener('click', toggleMenu)
-      })
+      toggleMenu();
+      radioButtons.forEach((button) => {
+        button.addEventListener("click", toggleMenu);
+      });
     });
   }
 
@@ -470,78 +484,119 @@ toggleButtons.forEach((button) => {
 // -------------------SORT--------------------//
 const radioButtons = document.querySelectorAll(".sort-mob-menu__label");
 
-radioButtons.forEach(radioButton => {
-  radioButton.addEventListener('click', () => {
-    radioButtons.forEach(button => {
-      button.classList.remove("checked")
-    })
-    radioButton.classList.add("checked")
-  })
-})
+radioButtons.forEach((radioButton) => {
+  radioButton.addEventListener("click", () => {
+    radioButtons.forEach((button) => {
+      button.classList.remove("checked");
+    });
+    radioButton.classList.add("checked");
+  });
+});
 
 // ---------------------CUSTOM SELECT----------------------
 const select = function () {
   const selectHeader = document.querySelectorAll(".select-header");
   const selectItem = document.querySelectorAll(".select-item");
 
-  selectHeader.forEach(item => {
-    item.addEventListener('click', function () {
+  selectHeader.forEach((item) => {
+    item.addEventListener("click", function () {
       const select = this.parentElement;
       select.classList.toggle("is-active");
-      const chevronIcon = select.querySelector('.select-icon svg use');
-      if (select.classList.contains('is-active')) {
-        chevronIcon.setAttribute('href', './images/icons_sprite.svg.svg#chevron-up');
+      const chevronIcon = select.querySelector(".select-icon svg use");
+      if (select.classList.contains("is-active")) {
+        chevronIcon.setAttribute(
+          "href",
+          "./images/icons_sprite.svg.svg#chevron-up"
+        );
       } else {
-        chevronIcon.setAttribute('href', './images/icons_sprite.svg.svg#chevron-down');
+        chevronIcon.setAttribute(
+          "href",
+          "./images/icons_sprite.svg.svg#chevron-down"
+        );
       }
     });
   });
 
-  selectItem.forEach(item => {
-    item.addEventListener('click', function () {
+  selectItem.forEach((item) => {
+    item.addEventListener("click", function () {
       const text = this.innerText,
-        select = this.closest('.select'),
-        currentText = select.querySelector('.select-current');
+        select = this.closest(".select"),
+        currentText = select.querySelector(".select-current");
       currentText.innerText = text;
-      select.classList.remove('is-active');
+      select.classList.remove("is-active");
 
-      const chevronIcon = select.querySelector('.select-icon svg use');
-      chevronIcon.setAttribute('href', './images/icons_sprite.svg.svg#chevron-down');
+      const chevronIcon = select.querySelector(".select-icon svg use");
+      chevronIcon.setAttribute(
+        "href",
+        "./images/icons_sprite.svg.svg#chevron-down"
+      );
     });
   });
-}
+};
 
 select();
 
 // ---------------FILTER------------
-const selectBtns = document.querySelectorAll('.filter-desctop-type__head'),
-  items = document.querySelectorAll('.filter-desctop__checkbox-item');
+const selectBtns = document.querySelectorAll(".filter-desctop-type__head"),
+  items = document.querySelectorAll(".filter-desctop__checkbox-item");
 
-const servicesList = document.querySelectorAll('.services-page__item');
 
-selectBtns.forEach(selectBtn => {
-  selectBtn.addEventListener('click', () => {
-    selectBtn.classList.toggle("open")
-  })
-})
+// відкриття-закриття меню
+selectBtns.forEach((selectBtn) => {
+  selectBtn.addEventListener("click", () => {
+    selectBtn.classList.toggle("open");
+  });
+});
 
-const choiceList = document.querySelector('.choice-list');
+items.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    let filterTypeClass = e.currentTarget.dataset["filter"];
+    let filterEffectClass = e.currentTarget.dataset["filter"];
 
-items.forEach(item => {
-  item.addEventListener('click', (e) => {
     item.classList.toggle("checked");
 
-    let filterTypeClass = e.currentTarget.dataset['filter'];
-    let filterEffectClass = e.currentTarget.dataset['filter'];
+    const choiceItemText = item.querySelector(
+      ".filter-desctop__checkbox-text"
+    ).textContent;
 
-    servicesList.forEach(item => {
-      if (!item.classList.contains(filterTypeClass) || !item.classList.contains(filterEffectClass)) {
-        item.classList.toggle('hide-services-page__item')
-      }
-    })
-  })
-})
+    const filterButtons = document.querySelectorAll(".choice-list__item");
 
+    if (item.classList.contains("checked")) {
+      filterButtons.forEach((button) => {
+        const filterButtonText = button.querySelector(
+          ".choice-list__button-text"
+        ).textContent;
+
+        if (choiceItemText === filterButtonText) {
+          button.style.display = "block";
+        }
+
+        button.addEventListener("click", () => {
+          button.style.display = "none";
+          if (choiceItemText === filterButtonText) {
+            item.classList.remove("checked");
+          }
+          filterServices(filterTypeClass, filterEffectClass);
+        });
+      });
+    }
+
+    filterServices(filterTypeClass, filterEffectClass);
+  });
+});
+
+function filterServices(filterTypeClass, filterEffectClass) {
+  const servicesList = document.querySelectorAll(".services-page__item");
+
+  servicesList.forEach((item) => {
+    if (
+      !item.classList.contains(filterTypeClass) ||
+      !item.classList.contains(filterEffectClass)
+    ) {
+      item.classList.toggle("hide-services-page__item");
+    }
+  });
+}
 
 //-------------------SLIDER PRICE--------------
 const currentPage = window.location.pathname;
@@ -550,96 +605,136 @@ function createSlider(sliderId, inputIds) {
   const slider = document.getElementById(sliderId);
   if (!slider) return;
 
-  const inputs = inputIds.map(id => document.getElementById(id));
+  const inputs = inputIds.map((id) => document.getElementById(id));
 
   noUiSlider.create(slider, {
     start: [150, 400],
     connect: true,
     step: 10,
     range: {
-      'min': [150],
-      'max': [400]
-    }
+      min: [150],
+      max: [400],
+    },
   });
 
   const setRangeSlider = (i, value) => {
     let arr = [null, null];
     arr[i] = value;
     slider.noUiSlider.set(arr);
-  }
+  };
 
-  slider.noUiSlider.on('update', function (values, handle) {
+  slider.noUiSlider.on("update", function (values, handle) {
     inputs[handle].value = Math.round(values[handle]);
   });
 
   inputs.forEach((input, index) => {
-    input.addEventListener('change', event => {
+    input.addEventListener("change", (event) => {
       setRangeSlider(index, event.currentTarget.value);
     });
   });
 }
 
-
 if (currentPage === "/services.html") {
-  createSlider('filter-price__range-slider', ['input-1', 'input-2']);
-  createSlider('filter-price-mob__range-slider', ['input-3', 'input-4']);
+  createSlider("filter-price__range-slider", ["input-1", "input-2"]);
+  createSlider("filter-price-mob__range-slider", ["input-3", "input-4"]);
 }
 
-
 // -------------------SEARCH PANEL--------------------//
-const searchButton = document.getElementById('js-open-panelSearch');
-const searchPanelHeader = document.getElementById('js-search-panel-header');
-const serachIcon = document.getElementById('js-search-button-icon');
+const searchButton = document.getElementById("js-open-panelSearch");
+const searchPanelHeader = document.getElementById("js-search-panel-header");
+const serachIcon = document.getElementById("js-search-button-icon");
 
 if (searchButton) {
-  searchButton.addEventListener('click', (e) => {
+  searchButton.addEventListener("click", (e) => {
     searchPanelHeader.classList.toggle("is-open");
     if (searchPanelHeader.classList.contains("is-open")) {
-      serachIcon.querySelector('use').setAttribute('href', './images/icons_sprite.svg.svg#close-icon');
+      serachIcon
+        .querySelector("use")
+        .setAttribute("href", "./images/icons_sprite.svg.svg#close-icon");
     } else {
-      serachIcon.querySelector('use').setAttribute('href', './images/icons_sprite.svg.svg#search');
+      serachIcon
+        .querySelector("use")
+        .setAttribute("href", "./images/icons_sprite.svg.svg#search");
     }
-  })
+  });
 }
 
 // -------------------INFO CALCULATOR--------------------//
 const calculator = document.querySelector(".calculator__dropdouwn");
-const buttonCalculatorOpen = document.querySelector(".calculator-dropdouwn__button-open");
-const buttonsPrice = document.querySelectorAll(".calculator__dropdouwn-button-box");
+const buttonCalculatorOpen = document.querySelector(
+  ".calculator-dropdouwn__button-open"
+);
+const buttonsPrice = document.querySelectorAll(
+  ".calculator__dropdouwn-button-box"
+);
 const totalValue = document.querySelector(".calculator-total-price__value");
 
 if (buttonCalculatorOpen) {
-  buttonCalculatorOpen.addEventListener('click', () => {
+  buttonCalculatorOpen.addEventListener("click", () => {
     calculator.classList.toggle("is-open");
-  })
+  });
 
-  buttonsPrice.forEach(button => {
-    button.addEventListener('click', (e) => {
+  buttonsPrice.forEach((button) => {
+    button.addEventListener("click", (e) => {
       const label = button.querySelector(".calculator-dropdouwn__label");
       const labelText = label.textContent;
-      
+
       if (totalValue) {
         totalValue.textContent = labelText;
       }
-    })
-  })
+    });
+  });
 }
 
 // -------------------CALENDAR--------------------//
 const calendar = document.getElementById("airdatepicker");
 if (calendar) {
-  new AirDatepicker('#airdatepicker', {
+  new AirDatepicker("#airdatepicker", {
     locale: {
-      days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-      daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-      daysMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-      months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-      monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-      today: 'Today',
-      clear: 'Clear',
-      dateFormat: 'MM/dd/yyyy',
-      timeFormat: 'hh:mm aa',
-      firstDay: 0
+      days: [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ],
+      daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+      daysMin: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+      months: [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ],
+      monthsShort: [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ],
+      today: "Today",
+      clear: "Clear",
+      dateFormat: "MM/dd/yyyy",
+      timeFormat: "hh:mm aa",
+      firstDay: 0,
     },
   });
 }
