@@ -193,7 +193,7 @@
     background-color: var(--button-color-red-80);
     color: var(--global-text-color);
 }
-.calculator-dropdouwn__button:active {
+.calculator__dropdouwn-button-box.selected .calculator-dropdouwn__button{
     border: none;
     background-color: var(--accent-color);
     color: var(--global-text-color);

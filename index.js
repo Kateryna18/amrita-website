@@ -74,8 +74,6 @@ if (popularSwiper) {
   new Swiper(".popular__swiper", {
     spaceBetween: 20,
     slidesPerView: 1.19,
-    // loop: true,
-    // slideToClickedSlide: true,
     keyboard: {
       enabled: true,
       onlyInViewport: true,
@@ -90,7 +88,6 @@ if (popularSwiper) {
         spaceBetween: 30,
         pagination: {
           el: ".swiper-pagination",
-          // clickable: true,
         },
       },
     },
@@ -246,10 +243,27 @@ if (buttonChooseSpecialist) {
 
         buttonTitle.textContent = specialistsName[index].textContent;
 
+        const specialistValue = document.getElementById("booking-info-block__value-specialist");
+        specialistValue.textContent = specialistsName[index].textContent;
+
         catalogChooseSpecialist.classList.add("selected");
         catalogChooseSpecialist.classList.toggle("is-open");
       });
     });
+  }
+
+  const specialistsDesctop = document.querySelectorAll(
+    ".specialists__item-desctop"
+  );
+  if (specialistsDesctop) {
+    specialistsDesctop.forEach(specialistDesctop => {
+      specialistDesctop.addEventListener("click", () => {
+        const specialistName = specialistDesctop.querySelector(".specialists__name-desctop");
+
+        const specialistValue = document.getElementById("booking-info-block__value-specialist");
+        specialistValue.textContent = specialistName.textContent;
+      })
+    })
   }
 }
 
@@ -540,7 +554,6 @@ select();
 const selectBtns = document.querySelectorAll(".filter-desctop-type__head"),
   items = document.querySelectorAll(".filter-desctop__checkbox-item");
 
-
 // відкриття-закриття меню
 selectBtns.forEach((selectBtn) => {
   selectBtn.addEventListener("click", () => {
@@ -668,6 +681,12 @@ const buttonsPrice = document.querySelectorAll(
   ".calculator__dropdouwn-button-box"
 );
 const totalValue = document.querySelector(".calculator-total-price__value");
+const priceValues = document.querySelectorAll(
+  ".booking-info-block__value-price"
+);
+const durationValues = document.querySelectorAll(
+  ".booking-info-block__value-time"
+);
 
 if (buttonCalculatorOpen) {
   buttonCalculatorOpen.addEventListener("click", () => {
@@ -676,8 +695,27 @@ if (buttonCalculatorOpen) {
 
   buttonsPrice.forEach((button) => {
     button.addEventListener("click", (e) => {
+      buttonsPrice.forEach(buttonPrice => {
+        buttonPrice.classList.remove("selected");
+      })
+      button.classList.add("selected");
+
       const label = button.querySelector(".calculator-dropdouwn__label");
       const labelText = label.textContent;
+
+      const labelDuration = button.querySelector(
+        ".calculator-dropdouwn__button"
+      );
+      const duration = labelDuration.textContent;
+
+      if (priceValues && durationValues) {
+        priceValues.forEach((priceValue) => {
+          priceValue.textContent = labelText;
+        });
+        durationValues.forEach((durationValue) => {
+          durationValue.textContent = duration;
+        });
+      }
 
       if (totalValue) {
         totalValue.textContent = labelText;
@@ -688,6 +726,7 @@ if (buttonCalculatorOpen) {
 
 // -------------------CALENDAR--------------------//
 const calendar = document.getElementById("airdatepicker");
+
 if (calendar) {
   new AirDatepicker("#airdatepicker", {
     locale: {
@@ -732,9 +771,39 @@ if (calendar) {
       ],
       today: "Today",
       clear: "Clear",
-      dateFormat: "MM/dd/yyyy",
+      dateFormat: "dd.MM.yyyy",
       timeFormat: "hh:mm aa",
       firstDay: 0,
     },
+    minDate: new Date(),
+    onSelect: ({ formattedDate }) => fillOutDateForm(formattedDate),
+  });
+}
+
+function fillOutDateForm(selctedDate) {
+  if (selctedDate) {
+    const date = document.getElementById("selectedDate");
+    date.textContent = selctedDate;
+  }
+}
+
+// -------------------CHOOSE TIME--------------------//
+const timeButtons = document.querySelectorAll(".data-time__list-button");
+
+if (timeButtons) {
+  timeButtons.forEach((timeButton) => {
+    timeButton.addEventListener("click", () => {
+      timeButtons.forEach(button => {
+        button.classList.remove("selected")
+      })
+      timeButton.classList.add("selected")
+      
+      const time = timeButton.textContent;
+
+      const selectedTime = document.getElementById("selectedTime");
+      if (selectedTime) {
+        selectedTime.textContent = time;
+      }
+    });
   });
 }

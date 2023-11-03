@@ -234,6 +234,10 @@
 .air-datepicker-cell.-selected-.-current-{
     background-color: var(--accent-color);
 }
+.air-datepicker-cell.-disabled-{
+    pointer-events: none;
+    cursor: not-allowed;
+}
 
 @media screen and (min-width: 843px) {
     .data__time {
@@ -319,7 +323,7 @@
     letter-spacing: 0.15px;
     color: var(--accent-color);
 }
-.data-time__list-button:hover{
+.data-time__list-button:hover, .data-time__list-button.selected{
     border: none;
     background-color: var(--accent-color);
     color: var(--global-text-color);
