@@ -161,21 +161,21 @@ if (teamSwiper) {
 }
 
 //------------------------------TOGGLE DROPDOWN-------------------//
-function toggleCatalogItem(button, catalog, icon) {
+function toggleCatalogItem(button, catalog, iconPlus, iconMinus) {
   button.addEventListener("click", () => {
     if (!catalog.classList.contains("is-open")) {
       catalog.classList.add("is-open");
-      if (icon) {
-        icon
-          .querySelector("use")
-          .setAttribute("href", "./images/icons_sprite.svg.svg#minus");
+      if (iconMinus) {
+        console.log(iconMinus)
+        iconPlus.style.display = "none";
+        iconMinus.style.display = "block";
       }
     } else {
       catalog.classList.remove("is-open");
-      if (icon) {
-        icon
-          .querySelector("use")
-          .setAttribute("href", "./images/icons_sprite.svg.svg#plus");
+      if (iconPlus) {
+        console.log(iconPlus)
+        iconMinus.style.display = "none";
+        iconPlus.style.display = "block";
       }
     }
   });
@@ -186,19 +186,21 @@ const buttonsFaqSection = document.querySelectorAll(
   ".faq-section__item-button"
 );
 const catalogsFaqSection = document.querySelectorAll(".faq-section__list-item");
-const iconsFaqSection = document.querySelectorAll(".faq-section__item-icon");
+const iconsFaqSectionPlus = document.querySelectorAll(".faq-section__item-icon.plus");
+const iconsFaqSectionMinus = document.querySelectorAll(".faq-section__item-icon.minus");
 
 buttonsFaqSection.forEach((button, index) => {
-  toggleCatalogItem(button, catalogsFaqSection[index], iconsFaqSection[index]);
+  toggleCatalogItem(button, catalogsFaqSection[index], iconsFaqSectionPlus[index], iconsFaqSectionMinus[index]);
 });
 
 //-----PROCEDURES
 const buttonsProcedures = document.querySelectorAll(".procedures__button");
 const catalogsProcedures = document.querySelectorAll(".procedures__item");
-const iconsProcedures = document.querySelectorAll(".procedures__icon");
+const iconsProceduresPlus = document.querySelectorAll(".procedures__icon.plus");
+const iconsProceduresMinus = document.querySelectorAll(".procedures__icon.minus");
 
 buttonsProcedures.forEach((button, index) => {
-  toggleCatalogItem(button, catalogsProcedures[index], iconsProcedures[index]);
+  toggleCatalogItem(button, catalogsProcedures[index], iconsProceduresPlus[index], iconsProceduresMinus[index]);
 });
 
 //-----FOOTER
@@ -298,11 +300,9 @@ const toggleButtons = document.querySelectorAll(".feedback__toggle-button");
 
 toggleButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    const icon = button.querySelector(".toggle-button__icon use");
+    const iconEyeOn = button.querySelector(".toggle-button__icon.eye-on");
+    const iconEyeOff = button.querySelector(".toggle-button__icon.eye-off");
     const buttonText = button.querySelector(".button-text");
-
-    const iconEyeOn = "./images/icons_sprite.svg.svg#eye";
-    const iconEyeOff = "./images/icons_sprite.svg.svg#eye-off";
 
     const textPart = button.previousElementSibling.querySelector(
       ".feedback__text-part"
@@ -311,11 +311,13 @@ toggleButtons.forEach((button) => {
     if (textPart.style.display === "none" || textPart.style.display === "") {
       textPart.style.display = "block";
       buttonText.textContent = "Hide all text";
-      icon.setAttribute("href", `${iconEyeOff}`);
+      iconEyeOn.style.display = "none";
+      iconEyeOff.style.display = "block";
     } else {
       textPart.style.display = "none";
       buttonText.textContent = "View all text";
-      icon.setAttribute("href", `${iconEyeOn}`);
+      iconEyeOff.style.display = "none";
+      iconEyeOn.style.display = "block";
     }
   });
 });
@@ -797,7 +799,7 @@ if (timeButtons) {
         button.classList.remove("selected")
       })
       timeButton.classList.add("selected")
-      
+
       const time = timeButton.textContent;
 
       const selectedTime = document.getElementById("selectedTime");

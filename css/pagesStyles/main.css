@@ -361,6 +361,9 @@
 .procedures__item.is-open .procedures__icon {
   stroke: var(--accent-color);
 }
+.procedures__icon.minus {
+  display: none;
+}
 
 .procedures__item-catalog {
   display: none;
@@ -810,6 +813,9 @@
 .toggle-button__icon {
   fill: var(--global-text-color);
   stroke: var(--text-color);
+}
+.toggle-button__icon.eye-off{
+  display: none;
 }
 
 .feedback__button-link {

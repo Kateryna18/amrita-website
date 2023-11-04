@@ -630,6 +630,9 @@
 .faq-section__list-item.is-open .faq-section__item-icon {
     stroke: var(--global-text-color);
 }
+.faq-section__item-icon.minus {
+    display: none;
+}
 .faq-section__item-dropdown {
     padding: 20px;
     border-top: 1px solid var(--primary-beige);
