@@ -228,13 +228,16 @@ footer {
 
   transition: var(--main-transition);
 }
-.search__button__icon{
+.search__button__icon, .search__button__icon-search{
   fill: transparent;
   stroke: var(--accent-color);
 }
 .search__button:hover .search__button__icon, .search__button:focus .search__button__icon{
   outline: none;
   stroke: var(--button-color-red-80);
+}
+.search__button__icon-close {
+  display: none;
 }
 
   /* ----select */

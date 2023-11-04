@@ -657,19 +657,25 @@ if (currentPage === "/services.html") {
 // -------------------SEARCH PANEL--------------------//
 const searchButton = document.getElementById("js-open-panelSearch");
 const searchPanelHeader = document.getElementById("js-search-panel-header");
-const serachIcon = document.getElementById("js-search-button-icon");
+// const serachIcon = document.getElementById("js-search-button-icon");
+const serachIcon = document.querySelector(".search__button__icon-search");
+const closeIcon = document.querySelector(".search__button__icon-close");
 
 if (searchButton) {
   searchButton.addEventListener("click", (e) => {
     searchPanelHeader.classList.toggle("is-open");
     if (searchPanelHeader.classList.contains("is-open")) {
-      serachIcon
-        .querySelector("use")
-        .setAttribute("href", "./images/icons_sprite.svg.svg#close-icon");
+      serachIcon.style.display = "none";
+      closeIcon.style.display = "block";
+      // serachIcon
+      //   .querySelector("use")
+      //   .setAttribute("href", "./images/icons_sprite.svg.svg#close-icon");
     } else {
-      serachIcon
-        .querySelector("use")
-        .setAttribute("href", "./images/icons_sprite.svg.svg#search");
+      closeIcon.style.display = "none";
+      serachIcon.style.display = "block";
+      // serachIcon
+      //   .querySelector("use")
+      //   .setAttribute("href", "./images/icons_sprite.svg.svg#search");
     }
   });
 }
