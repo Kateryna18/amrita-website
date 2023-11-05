@@ -98,6 +98,7 @@ const feedbackSwiper = document.querySelector(".feedback__swiper");
 if (feedbackSwiper) {
   new Swiper(".feedback__swiper", {
     loop: true,
+    spaceBetween: 20,
     breakpoints: {
       843: {
         slidesPerView: "auto",

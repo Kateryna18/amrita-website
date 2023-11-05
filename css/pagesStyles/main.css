@@ -688,12 +688,26 @@
   min-height: 281px;
   width: 100%;
   margin-bottom: 30px;
+  overflow-y: visible;
+  padding-left: calc((100% - 350px) / 2);
+  padding-right: calc((100% - 350px) / 2);
 }
 
 @media screen and (min-width: 843px) {
   .feedback__swiper {
     min-height: 301px;
     margin-bottom: 40px;
+    padding-left: calc((100% - 763px) / 2);
+    padding-right: calc((100% - 763px) / 2);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .feedback__swiper {
+    min-height: 301px;
+    margin-bottom: 40px;
+    padding-left: calc((100% - 1280px) / 2);
+    padding-right: calc((100% - 1280px) / 2);
+    overflow-y: visible;
   }
 }
 
