@@ -483,7 +483,7 @@
     padding: 20px;
     border-radius: 12px;
     background-color: var(--global-text-color);
-    box-shadow: var(--main-box-shadow);
+    box-shadow: 0px 4px 10px 0px rgba(127, 43, 37, 0.14);
     transition: var(--main-transition);
 }
 .swiper-slide.feedback-procedure__swiper-slide:hover{
@@ -496,6 +496,7 @@
 @media screen and (min-width: 843px) {
     .swiper-slide.feedback-procedure__swiper-slide {
         width: 350px;
+        box-shadow: 0px 0px 20px 0px rgba(127, 43, 37, 0.14);
     }
 }
 @media screen and (min-width: 1440px) {

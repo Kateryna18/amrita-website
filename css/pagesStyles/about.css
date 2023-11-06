@@ -190,14 +190,11 @@
 .swiper.certificates__swiper {
     width: 100%;
     height: 540px;
-    padding-left: calc((100% - 350px) / 2);
-    padding-right: calc((100% - 350px) / 2);
-    overflow-y: visible;
+    width: 350px;
 }
 @media screen and (min-width: 843px) {
     .swiper.certificates__swiper {
-        padding-left: calc((100% - 763px) / 2);
-        padding-right: calc((100% - 763px) / 2);
+        width: 763px;
     }
 }
 @media screen and (min-width: 1440px) {
