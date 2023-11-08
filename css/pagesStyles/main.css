@@ -361,6 +361,9 @@
 .procedures__item.is-open .procedures__icon {
   stroke: var(--accent-color);
 }
+.procedures__icon.plus {
+  stroke: var(--accent-color);
+}
 .procedures__icon.minus {
   display: none;
 }

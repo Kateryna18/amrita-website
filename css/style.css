@@ -896,12 +896,41 @@ footer {
 }
 .mobile-submenu__button-services {
   width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 7.5px;
-    border: none;
-    background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 7.5px;
+  padding-left: 0;
+  border: none;
+  background-color: transparent;
 
   font-size: 22px;
+}
+.mobile-submenu__button-services:focus{
+  color: var(--accent-color);
+}
+.mobile-submenu__icon-services.plus {
+  stroke: var(--text-color);
+}
+.mobile-submenu__icon-services.minus {
+  display: none;
+  stroke: var(--accent-color);
+}
+.mobile-submenu-item__container{
+  display: none;
+}
+.mobile-submenu-item__container.is-open {
+  display: block;
+  padding: 20px 0px 20px 20px;
+  border-left: 1px solid var(--accent-color);
+}
+.mobile-submenu-item__subcervices-list {
+}
+.mobile-submenu-item__subcervices-item {
+  margin-bottom: 20px;
+}
+.mobile-submenu-item__subcervices-item:last-child {
+  margin-bottom: 0;
+}
+.mobile-submenu-item__subcervices-name {
 }

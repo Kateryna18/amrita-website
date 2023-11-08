@@ -656,6 +656,9 @@
 .faq-section__list-item.is-open .faq-section__item-icon {
     stroke: var(--global-text-color);
 }
+.faq-section__item-icon.plus {
+    stroke: var(--accent-color);
+}
 .faq-section__item-icon.minus {
     display: none;
 }

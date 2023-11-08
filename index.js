@@ -167,20 +167,31 @@ function toggleCatalogItem(button, catalog, iconPlus, iconMinus) {
     if (!catalog.classList.contains("is-open")) {
       catalog.classList.add("is-open");
       if (iconMinus) {
-        console.log(iconMinus)
         iconPlus.style.display = "none";
         iconMinus.style.display = "block";
       }
     } else {
       catalog.classList.remove("is-open");
       if (iconPlus) {
-        console.log(iconPlus)
         iconMinus.style.display = "none";
         iconPlus.style.display = "block";
       }
     }
   });
 }
+
+//-----MOBILE/TABLET SUBMENU BUTTON SERVICES
+const mobileSubmenuButtonsServices = document.querySelectorAll(".mobile-submenu__button-services");
+const mobileSubmenuCatalogServices = document.querySelectorAll(".mobile-submenu-item__container");
+const mobileSubmenuIconPlus = document.querySelectorAll(".mobile-submenu__icon-services.plus");
+const mobileSubmenuIconMinus = document.querySelectorAll(".mobile-submenu__icon-services.minus");
+
+if (mobileSubmenuButtonsServices) {
+  mobileSubmenuButtonsServices.forEach((button, index) => {
+    toggleCatalogItem(button, mobileSubmenuCatalogServices[index], mobileSubmenuIconPlus[index], mobileSubmenuIconMinus[index]);
+  })
+}
+
 
 //-----FAQ SECTION
 const buttonsFaqSection = document.querySelectorAll(
@@ -658,7 +669,6 @@ if (currentPage === "/services.html") {
 // -------------------SEARCH PANEL--------------------//
 const searchButton = document.getElementById("js-open-panelSearch");
 const searchPanelHeader = document.getElementById("js-search-panel-header");
-// const serachIcon = document.getElementById("js-search-button-icon");
 const serachIcon = document.querySelector(".search__button__icon-search");
 const closeIcon = document.querySelector(".search__button__icon-close");
 
@@ -668,15 +678,9 @@ if (searchButton) {
     if (searchPanelHeader.classList.contains("is-open")) {
       serachIcon.style.display = "none";
       closeIcon.style.display = "block";
-      // serachIcon
-      //   .querySelector("use")
-      //   .setAttribute("href", "./images/icons_sprite.svg.svg#close-icon");
     } else {
       closeIcon.style.display = "none";
       serachIcon.style.display = "block";
-      // serachIcon
-      //   .querySelector("use")
-      //   .setAttribute("href", "./images/icons_sprite.svg.svg#search");
     }
   });
 }
@@ -827,7 +831,7 @@ if (buttons) {
       allSubcatalogServices.forEach(subcatalogServices => {
         subcatalogServices.style.display = "none";
       });
-      
+
       const subcatalogServices = button.querySelector(".subservices__container");
       subcatalogServices.style.display = "block"
 
