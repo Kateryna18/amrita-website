@@ -816,3 +816,25 @@ if (timeButtons) {
     });
   });
 }
+
+// -------------------TOGGLE DROPDOWN HEADER SUBCATALOG--------------------//
+const buttons = document.querySelectorAll(".services__item");
+
+if (buttons) {
+  buttons.forEach(button => {
+    button.addEventListener("mouseenter", () => {
+      const allSubcatalogServices = document.querySelectorAll(".subservices__container");
+      allSubcatalogServices.forEach(subcatalogServices => {
+        subcatalogServices.style.display = "none";
+      });
+      
+      const subcatalogServices = button.querySelector(".subservices__container");
+      subcatalogServices.style.display = "block"
+
+      subcatalogServices.addEventListener("mouseleave", () => {
+        subcatalogServices.style.display = "none"
+      })
+    })
+  })
+  
+}
