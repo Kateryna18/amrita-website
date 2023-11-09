@@ -530,18 +530,6 @@ const select = function () {
     item.addEventListener("click", function () {
       const select = this.parentElement;
       select.classList.toggle("is-active");
-      const chevronIcon = select.querySelector(".select-icon svg use");
-      if (select.classList.contains("is-active")) {
-        chevronIcon.setAttribute(
-          "href",
-          "./images/icons_sprite.svg.svg#chevron-up"
-        );
-      } else {
-        chevronIcon.setAttribute(
-          "href",
-          "./images/icons_sprite.svg.svg#chevron-down"
-        );
-      }
     });
   });
 
@@ -552,12 +540,6 @@ const select = function () {
         currentText = select.querySelector(".select-current");
       currentText.innerText = text;
       select.classList.remove("is-active");
-
-      const chevronIcon = select.querySelector(".select-icon svg use");
-      chevronIcon.setAttribute(
-        "href",
-        "./images/icons_sprite.svg.svg#chevron-down"
-      );
     });
   });
 };

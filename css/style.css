@@ -202,6 +202,9 @@ footer {
   width: 220px;
   height: 42px;
 }
+.search-form {
+  height: 100%;
+}
 .search__input {
   width: 100%;
   height: 100%;
@@ -244,6 +247,7 @@ footer {
   .select {
     position: relative;
     width: 86px;
+    height: 42px;
   }
   .select.is-active .select-body{
     display: block;
@@ -271,9 +275,12 @@ footer {
     justify-content: center;
     flex-shrink: 0;
   }
-  use.select-icon {
+  .select__icon {
     fill: transparent;
     stroke: var(--accent-color);
+  }
+  .select.is-active .select__icon {
+    transform: rotate(180deg);
   }
   .select-body {
     width: 125px;
