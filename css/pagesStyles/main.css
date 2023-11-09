@@ -74,7 +74,10 @@
     margin-bottom: 160px;
   }
 }
-
+.banner__swiper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 @media screen and (min-width: 1440px) {
   .banner__swiper {
     height: 704px;
@@ -130,6 +133,13 @@
 @media screen and (min-width: 842px) {
   .banner__thumb {
     height: 100%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .banner__thumb {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -226,7 +236,35 @@
   height: 10px;
   background-color: var(--accent-color);
 }
-
+@media screen and (max-width: 1439px) {
+  .swiper-button-prev.banner-swiper__button-prev {
+    display: none;
+  }
+}
+.swiper-button-prev.banner-swiper__button-prev{
+  width: 52px;
+  height: 52px;
+  left: 28px;
+  color: var(--accent-color);
+}
+.swiper-button-prev.banner-swiper__button-prev::after{
+  display: none;
+}
+@media screen and (max-width: 1439px) {
+  .swiper-button-next.banner-swiper__button-next {
+    display: none;
+  }
+}
+.swiper-button-next.banner-swiper__button-next{
+  width: 52px;
+  height: 52px;
+  right: 28px;
+  transform: rotate(180deg);
+  color: var(--accent-color);
+}
+.swiper-button-next.banner-swiper__button-next::after{
+  display: none;
+}
 /* <!-- -------------------------SERVICES---------------------- --> */
 .procedures {
   margin-bottom: 140px;

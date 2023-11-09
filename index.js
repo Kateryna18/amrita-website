@@ -46,7 +46,7 @@ const bannerSwiper = document.querySelector(".banner__swiper");
 if (bannerSwiper) {
   new Swiper(".banner__swiper", {
     slidesPerView: 1,
-    spaceBetween: 10,
+    spaceBetween: 20,
     loop: true,
     slideToClickedSlide: true,
     breakpoints: {
@@ -56,6 +56,10 @@ if (bannerSwiper) {
       },
       1440: {
         slidesPerView: 1,
+        navigation: {
+          nextEl: '.swiper-button-next.banner-swiper__button-next',
+          prevEl: '.swiper-button-prev.banner-swiper__button-prev',
+        },
       },
     },
     pagination: {
