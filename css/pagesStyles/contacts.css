@@ -51,6 +51,11 @@
         letter-spacing: 3.8px;
     }
 }
+@media screen and (min-width: 1440px) {
+    .contacts__phone{
+        height: 104px;
+    }
+}
 .contacts__subtitle {
     margin-bottom: 14px;
 
@@ -84,6 +89,7 @@
 }
 @media screen and (min-width: 1440px) {
     .contacts__main {
+        height: 104px;
         width: 620px;
         margin-top: auto;
     }
@@ -205,6 +211,12 @@
 .contacts__subscribe {
     font-size: 14px;
     line-height: 1.6;
+}
+@media screen and (min-width: 1440px) {
+    .contacts__subscribe {
+        font-size: 16px;
+        line-height: 1.6;
+    }
 }
 
 .timetable__main {

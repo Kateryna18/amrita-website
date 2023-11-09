@@ -651,8 +651,8 @@
 }
 
 .about__item {
+  margin-bottom: 20px;
   padding-bottom: 20px;
-  padding-top: 20px;
   display: flex;
   gap: 12px;
   align-items: flex-start;
@@ -662,11 +662,14 @@
 @media screen and (min-width: 1440px) {
   .about__item {
     width: 600px;
+    padding-bottom: 40px;
+    margin-bottom: 0;
   }
 }
 
 @media screen and (max-width: 1439px) {
   .about__item:last-child {
+    margin-bottom: 0;
     padding-bottom: 0;
     border-bottom: none;
   }
@@ -685,6 +688,11 @@
   font-size: 18px;
   line-height: 1.2;
   letter-spacing: 0.72px;
+}
+@media screen and (min-width: 1440px) {
+  .about__title {
+    margin-bottom: 12px;
+  }
 }
 
 .about__text {
@@ -1018,7 +1026,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  background-color: rgba(127, 43, 37, 0.779);
+  background-color: #9D443E;
   box-shadow: var(--main-box-shadow);
 }
 

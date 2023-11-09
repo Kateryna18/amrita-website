@@ -117,7 +117,9 @@
     }
 }
 
-
+.info__calculator.booking{
+    box-shadow: var(--main-box-shadow);
+}
 @media screen and (min-width: 843px) {
     .calculator__dropdouwn.booking__dropdown{
         width: 100%;

@@ -529,6 +529,7 @@ footer {
 }
 .footer__contacts {
   display: block;
+  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.4;
@@ -683,6 +684,13 @@ footer {
 .footer__info-line {
   padding-top: 14px;
 }
+@media screen and (min-width: 1440px) {
+  .footer__info-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .footer__info-line-box {
   display: flex;
   align-items: center;
@@ -693,6 +701,11 @@ footer {
   .footer__info-line-box {
     justify-content: flex-start;
     gap: 14px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer__info-line-box {
+    margin-bottom: 0;
   }
 }
 .footer__info-line-text {
