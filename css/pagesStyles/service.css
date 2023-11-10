@@ -437,6 +437,7 @@
 /* -------------------------FEEDBACK PROCEDURE------------------------- */
 .feedback-procedure {
     margin-bottom: 140px;
+    overflow: hidden;
 }
 @media screen and (min-width: 1440px) {
     .feedback-procedure {
@@ -496,7 +497,7 @@
 @media screen and (min-width: 843px) {
     .swiper-slide.feedback-procedure__swiper-slide {
         width: 350px;
-        box-shadow: 0px 0px 20px 0px rgba(127, 43, 37, 0.14);
+        box-shadow: var(--main-box-shadow);
     }
 }
 @media screen and (min-width: 1440px) {
@@ -561,6 +562,11 @@
 .swiper-pagination.feedback-procedure__swiper-pagination {
     bottom: 0;
     position: absolute;
+}
+@media screen and (min-width: 1440px) {
+    .swiper-pagination.feedback-procedure__swiper-pagination {
+        position: static;
+    }
 }
 .swiper-pagination-bullet {
     width: 10px;
@@ -779,4 +785,7 @@
     .swiper-pagination.popular__swiper-pagination {
         position: static;
     }
+}
+.swiper-button-next.popular-swiper__button-next.service, .swiper-button-prev.popular-swiper__button-prev.service{
+    width: 38px;
 }
