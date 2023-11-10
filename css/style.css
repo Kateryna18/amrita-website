@@ -764,7 +764,7 @@ footer {
   height: 100vh;
   background-color: var(--global-text-color);
 
-  transform: translateX(100%);
+  transform: translateX(200%);
   transition: transform 250ms ease-in-out;
 }
 .mobile-menu.is-open {
@@ -895,7 +895,7 @@ footer {
   width: 100vw;
   height: 100vh;
   background-color: var(--global-text-color);
-  transform: translateX(100%);
+  transform: translateX(200%);
   transition: transform 250ms ease-in-out;
 }
 

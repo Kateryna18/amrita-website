@@ -795,6 +795,7 @@
 /* -------------------FEEDBACK--------------------------- */
 .feedback {
   margin-bottom: 140px;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 1440px) {
@@ -807,22 +808,26 @@
   min-height: 281px;
   width: 100%;
   margin-bottom: 30px;
-  overflow-y: visible;
-  width: 350px;
+  overflow: visible;
+  width: 100%;
+  padding-left: calc((100% - 350px) / 2);
+  padding-right: calc((100% - 350px) / 2);
 }
 
 @media screen and (min-width: 843px) {
   .feedback__swiper {
     min-height: 301px;
     margin-bottom: 40px;
-    width: 763px;
+    padding-left: calc((100% - 763px) / 2);
+    padding-right: calc((100% - 763px) / 2);
   }
 }
 @media screen and (min-width: 1440px) {
   .feedback__swiper {
     min-height: 301px;
     margin-bottom: 40px;
-    width: 1280px;
+    padding-left: calc((100% - 1280px) / 2);
+    padding-right: calc((100% - 1280px) / 2);
   }
 }
 
@@ -845,7 +850,7 @@
   padding: 20px;
   border-radius: 12px;
   background-color: var(--global-text-color);
-  box-shadow: 0px 4px 10px 0px rgba(127, 43, 37, 0.14);
+  box-shadow: var(--main-box-shadow);
 }
 
 @media screen and (min-width: 843px) {
@@ -860,7 +865,49 @@
     min-height: 267px;
   }
 }
+/*  */
+.feedback-swiper__control-navigations{
+  width: 274px;
+  height: 52px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
 
+@media screen and (max-width: 1439px) {
+  .swiper-button-prev.feedback-swiper__button-prev {
+    display: none;
+  }
+}
+.swiper-button-prev.feedback-swiper__button-prev{
+  position: static;
+  margin-top: 0;
+  width: 52px;
+  height: 52px;
+  color: var(--accent-color);
+}
+.swiper-button-prev.feedback-swiper__button-prev::after{
+  display: none;
+}
+
+@media screen and (max-width: 1439px) {
+  .swiper-button-next.feedback-swiper__button-next {
+    display: none;
+  }
+}
+.swiper-button-next.feedback-swiper__button-next{
+  position: static;
+  margin-top: 0;
+  width: 52px;
+  height: 52px;
+  transform: rotate(180deg);
+  color: var(--accent-color);
+}
+.swiper-button-next.feedback-swiper__button-next::after{
+  display: none;
+}
+/*  */
 .swiper-pagination.feedback__swiper-pagination {
   position: static;
   bottom: 0;
@@ -1018,6 +1065,7 @@
 /* <!---------------------------BLOG---------------------- --> */
 .blog {
   margin-bottom: 160px;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 1440px) {

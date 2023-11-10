@@ -115,6 +115,10 @@ if (feedbackSwiper) {
       1440: {
         slidesPerView: "auto",
         spaceBetween: 30,
+        navigation: {
+          nextEl: '.swiper-button-next.feedback-swiper__button-next',
+          prevEl: '.swiper-button-prev.feedback-swiper__button-prev',
+        },
       },
     },
     pagination: {
