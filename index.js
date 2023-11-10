@@ -703,8 +703,8 @@ const durationValues = document.querySelectorAll(
   ".booking-info-block__value-time"
 );
 
-if (buttonCalculatorOpen) {
-  buttonCalculatorOpen.addEventListener("click", () => {
+if (calculator) {
+  calculator.addEventListener("click", () => {
     calculator.classList.toggle("is-open");
   });
 

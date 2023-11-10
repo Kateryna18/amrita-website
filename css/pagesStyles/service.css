@@ -296,7 +296,6 @@
 @media screen and (min-width: 834px) {
     .calculator__button {
         width: 300px;
-        padding-left: 40px;
     }
 }
 .calculator-button__icon {
@@ -626,6 +625,8 @@
     margin-bottom: 40px;
 }
 .faq-section__list-item {
+    position: relative;
+    /*  */
     margin-bottom: 10px;
     border-radius: 6px;
     background-color: var(--global-text-color);
@@ -679,19 +680,22 @@
     display: none;
 }
 .faq-section__item-dropdown {
-    padding: 20px;
+    padding: 0;
     border-top: 1px solid var(--primary-beige);
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
-    display: none;
-    /* height: 0;
-    transition: height 0.5s; */
+    transform: translateY(-10%);
+    height: 0;
+    opacity: 0;
+    transition: height 250ms ease-in-out, padding 250ms ease-in-out;
 }
 .faq-section__list-item.is-open .faq-section__item-dropdown{
-    display: block;
+    padding: 20px;
     background-color: var(--accent-color);
     color: var(--global-text-color);
-    /* height: 200px */
+    height: 130px;
+    transform: translateY(0);
+    opacity: 1;
 }
 .faq-section__item-dropdown-text {
     font-size: 14px;
