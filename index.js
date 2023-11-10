@@ -93,6 +93,10 @@ if (popularSwiper) {
         pagination: {
           el: ".swiper-pagination",
         },
+        navigation: {
+          nextEl: '.swiper-button-next.popular-swiper__button-next',
+          prevEl: '.swiper-button-prev.popular-swiper__button-prev',
+        },
       },
     },
   });
