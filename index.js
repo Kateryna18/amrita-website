@@ -32,7 +32,7 @@ if (circleSwiper) {
     sticky: true,
     momentumBounce: false,
     breakpoints: {
-      843: {
+      834: {
         spaceBetween: 20,
       },
       1440: {
@@ -50,7 +50,7 @@ if (bannerSwiper) {
     loop: true,
     slideToClickedSlide: true,
     breakpoints: {
-      843: {
+      834: {
         spaceBetween: 40,
         slidesPerView: "auto",
       },
@@ -83,7 +83,7 @@ if (popularSwiper) {
       onlyInViewport: true,
     },
     breakpoints: {
-      843: {
+      834: {
         slidesPerView: 2.52,
         spaceBetween: 20,
       },
@@ -108,7 +108,7 @@ if (feedbackSwiper) {
     loop: true,
     spaceBetween: 20,
     breakpoints: {
-      843: {
+      834: {
         slidesPerView: "auto",
         spaceBetween: 40,
       },

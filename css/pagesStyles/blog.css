@@ -12,8 +12,9 @@
     flex-direction: column;
     gap: 40px;
 }
-@media screen and (min-width: 843px) {
+@media screen and (min-width: 834px) {
     .blog__list {
+        justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 20px;
@@ -44,7 +45,7 @@
 .blog__list-item:focus{
     border: 2px solid var(--accent-color);
 }
-@media screen and (min-width: 843px) {
+@media screen and (min-width: 834px) {
     .blog__list-item {
         width: 367px;
     }
@@ -72,7 +73,7 @@
         width: 310px;
     }
 }
-@media screen and (min-width: 843px) {
+@media screen and (min-width: 834px) {
     .thumb {
         width: 327px;
     }

@@ -3,7 +3,7 @@
     padding-bottom: 160px;
 }
 
-@media screen and (min-width: 843px) {
+@media screen and (min-width: 834px) {
     .main {
         padding-top: 24px;
         padding-bottom: 160px;
@@ -587,7 +587,7 @@ input[type='number'] {
     flex-wrap: wrap;
     gap: 40px 10px;
 }
-@media screen and (min-width: 843px) {
+@media screen and (min-width: 834px) {
     .services-page__list {
         gap: 40px 20px;
     }
@@ -769,7 +769,7 @@ input[type='number'] {
     transform: translateX(200%);
     transition: transform 250ms ease-in-out;
 }
-@media screen and (min-width: 843px) {
+@media screen and (min-width: 834px) {
     .filter-mob-menu__content {
         width: 390px;
         transform: translateX(-230%);
@@ -794,13 +794,13 @@ input[type='number'] {
 }
 
 /* TABLET SCREEN */
-@media screen and (min-width: 843px) {
+@media screen and (min-width: 834px) {
     .filter-mob-menu__content.is-open {
         background-image: url("../../images/bg_md@1x.png");
     }
 }
 
-@media (min-resolution: 192dpi) and (min-width: 843px) {
+@media (min-resolution: 192dpi) and (min-width: 834px) {
     .filter-mob-menu__content.is-open {
         background-image: url("../../images/bg_md@2x.png");
     }

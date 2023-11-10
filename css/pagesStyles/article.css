@@ -77,7 +77,7 @@
     overflow: hidden;
 }
 
-@media screen and (min-width: 843px) {
+@media screen and (min-width: 834px) {
     .article__thumb {
         height: 450px;
     }
@@ -154,7 +154,7 @@
     letter-spacing: 4.2px;
 }
 
-@media screen and (min-width: 843px) {
+@media screen and (min-width: 834px) {
     .title.subscribe-article__title {
         margin-bottom: 40px;
     }
@@ -177,7 +177,7 @@
     gap: 12px;
 }
 
-@media screen and (min-width: 843px) {
+@media screen and (min-width: 834px) {
     .subscribe-article__content {
         flex-direction: row;
         gap: 54px;
@@ -241,12 +241,14 @@
 .title.subscribe-article__title.blog-article {
     margin-bottom: 24px;
 }
-
+.blog-article{
+    overflow: hidden;
+}
 .description.blog-article__description {
     margin-bottom: 30px;
 }
 
-@media screen and (min-width: 843px) {
+@media screen and (min-width: 834px) {
     .description.blog-article__description {
         margin-bottom: 40px;
     }

@@ -19,7 +19,7 @@
     line-height: 1.3;
     letter-spacing: 4.2px;
 }
-@media screen and (min-width: 843px) {
+@media screen and (min-width: 834px) {
     .tittle.about__title {
         margin-bottom: 40px;
     }
@@ -82,7 +82,7 @@
     border-radius: 12px;
     overflow: hidden;
 }
-@media screen and (min-width: 843px) {
+@media screen and (min-width: 834px) {
     .about-us__thumb {
         height: 609px;
         margin-bottom: 40px;
@@ -144,7 +144,7 @@
     overflow: hidden;
     border-radius: 4px;
 }
-@media screen and (min-width: 843px) {
+@media screen and (min-width: 834px) {
     .education__thumb {
         height: 562px;
     }
@@ -163,7 +163,7 @@
 }
 
 /* ------------------------EXPIRIENCE------------------- */
-@media screen and (min-width: 843px) {
+@media screen and (min-width: 834px) {
     .about-procedure-list__item.expirience-list__item {
         min-height: 108px;
     }
@@ -176,7 +176,7 @@
 }
 
 /* ------------------------CERTIFICATES------------------- */
-@media screen and (min-width: 843px) {
+@media screen and (min-width: 834px) {
     .tittle.about__title.certificates__title {
         margin-bottom: 24px;
     }
@@ -193,7 +193,7 @@
     padding-left: calc((100% - 350px) / 2);
     padding-right: calc((100% - 350px) / 2);
 }
-@media screen and (min-width: 843px) {
+@media screen and (min-width: 834px) {
     .swiper.certificates__swiper {
         padding-left: calc((100% - 763px) / 2);
         padding-right: calc((100% - 763px) / 2);
@@ -316,7 +316,7 @@
 }
 
 /* ------------------------EXPIRIENCE------------------- */
-@media screen and (min-width: 843px) {
+@media screen and (min-width: 834px) {
     .tittle.about__title.approach__title {
         margin-bottom: 24px;
     }
@@ -329,7 +329,7 @@
 
 
 /* ------------------------OUR TEAM------------------- */
-@media screen and (min-width: 843px) {
+@media screen and (min-width: 834px) {
     .tittle.about__title.team__title {
         margin-bottom: 24px;
     }
@@ -346,7 +346,7 @@
     padding-left: calc((100% - 350px) / 2);
     padding-right: calc((100% - 350px) / 2);
 }
-@media screen and (min-width: 843px) {
+@media screen and (min-width: 834px) {
     .swiper.team__swiper {
         padding-left: calc((100% - 762px) / 2);
         padding-right: calc((100% - 762px) / 2);
