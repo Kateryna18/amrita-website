@@ -378,7 +378,7 @@ toggleButtons.forEach((button) => {
     item.addEventListener("click", toggleMenu);
   }
 
-  window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
+  window.matchMedia("(min-width: 834px)").addEventListener("change", (e) => {
     if (!e.matches) return;
     mobileMenu.classList.remove("is-open");
     openMenuBtn.setAttribute("aria-expanded", false);

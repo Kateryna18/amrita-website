@@ -775,9 +775,11 @@ footer {
 }
 
 /* <!---------------------------MOBILE MENU-------------------------> */
-.no-scroll {
-  position: fixed;
-  overflow-y: scroll;
+body.no-scroll {
+  overflow-y: hidden;
+}
+body:not(.no-scroll) {
+  overflow-y: auto;
 }
 .mobile-menu {
   position: fixed;
