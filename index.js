@@ -141,6 +141,10 @@ if (certificatesSwiper) {
     breakpoints: {
       1440: {
         spaceBetween: 30,
+        navigation: {
+          nextEl: '.swiper-button-next.certificates-swiper__button-next',
+          prevEl: '.swiper-button-prev.certificates-swiper__button-prev',
+        },
       },
     },
     pagination: {
