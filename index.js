@@ -168,6 +168,10 @@ if (teamSwiper) {
     breakpoints: {
       1440: {
         spaceBetween: 30,
+        navigation: {
+          nextEl: '.swiper-button-next.team-swiper__button-next',
+          prevEl: '.swiper-button-prev.team-swiper__button-prev',
+        },
       },
     },
     pagination: {
