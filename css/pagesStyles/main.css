@@ -2,6 +2,7 @@
 /* --------------circle-info */
 .circle-info {
   margin-bottom: 30px;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 843px) {
@@ -560,6 +561,12 @@
 }
 .popular__swiper-wrapper {
   height: 430px;
+  padding-left: 10px;
+}
+@media screen and (min-width: 390px) {
+  .popular__swiper-wrapper{
+    padding-left: 0;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -810,8 +817,14 @@
   margin-bottom: 30px;
   overflow: visible;
   width: 100%;
-  padding-left: calc((100% - 350px) / 2);
-  padding-right: calc((100% - 350px) / 2);
+  padding-left: calc((100% - 300px) / 2);
+  padding-right: calc((100% - 300px) / 2);
+}
+@media screen and (min-width: 390px) {
+  .feedback__swiper {
+    padding-left: calc((100% - 350px) / 2);
+    padding-right: calc((100% - 350px) / 2);
+  }
 }
 
 @media screen and (min-width: 843px) {
@@ -1108,11 +1121,16 @@
 }
 
 .blog__thumb {
-  width: 310px;
+  width: auto;
   height: 238px;
   margin-bottom: 22px;
   border-radius: 6px;
   overflow: hidden;
+}
+@media screen and (min-width: 390px) {
+  .blog__thumb {
+    width: 310px;
+  }
 }
 
 .blog__thumb>img {

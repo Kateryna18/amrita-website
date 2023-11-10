@@ -76,9 +76,15 @@
 
 
 /* --------------------------SERVICES------------------------------- */
-.services-page__container {
+/* .services-page__container {
     display: flex;
     gap: 56px;
+} */
+@media screen and (min-width: 390px) {
+    .services-page__container {
+        display: flex;
+        gap: 56px;
+    }
 }
 
 /* -------------filter-desctop */
@@ -760,7 +766,7 @@ input[type='number'] {
     height: 100vh;
     overflow: auto;
 
-    transform: translateX(100%);
+    transform: translateX(200%);
     transition: transform 250ms ease-in-out;
 }
 @media screen and (min-width: 843px) {

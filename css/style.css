@@ -75,22 +75,30 @@ footer {
 
 /*----------------------CONTAINER ----------------------*/
 .container {
-  width: 390px;
+  width: 100%;
+  max-width: 390px;
+  /* width: 390px; */
   margin: 0 auto;
   padding: 0 20px;
 }
 
-@media screen and (min-width: 843px) {
+@media screen and (min-width: 390px) {
   .container {
-    width: 803px;
+    max-width: 803px;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 843px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* @media screen and (min-width: 1440px) {
   .container {
     width: 1320px;
   }
-}
+} */
 
 /*-----------------------------------------HEADER-------------------------------*/
 .header {
@@ -246,13 +254,20 @@ footer {
   /* ----select */
   .select {
     position: relative;
-    width: 86px;
+    width: 70px;
     height: 42px;
+  }
+  @media screen and (min-width: 390px) {
+    .select {
+      width: 86px;
+    }
   }
   .select.is-active .select-body{
     display: block;
   }
   .select-header {
+    padding-top: 5px;
+    padding-bottom: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -260,20 +275,37 @@ footer {
     border-radius: 100px;
     cursor: pointer;
   }
+  @media screen and (min-width: 390px) {
+    .select-header {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
   .select-current {
     font-family: "Playfair Display", serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.33;
     color: var(--accent-color);
   }
+  @media screen and (min-width: 390px) {
+    .select-current {
+      font-size: 20px;
+    }
+  }
   .select-icon {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+  }
+  @media screen and (min-width: 390px) {
+    .select-icon {
+      width: 40px;
+      height: 40px;
+    }
   }
   .select__icon {
     fill: transparent;
@@ -781,7 +813,12 @@ footer {
 .header__buttons {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 0;
+}
+@media screen and (min-width: 390px) {
+  .header__buttons {
+    gap: 14px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .header__buttons {

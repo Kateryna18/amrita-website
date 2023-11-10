@@ -13,11 +13,16 @@
     }
 }
 .info__thumb {
-    width: 350px;
+    width: auto;
     height: 420px;
     margin-bottom: 40px;
     border-radius: 12px;
     overflow: hidden;
+}
+@media screen and (min-width: 390px) {
+    .info__thumb {
+        width: 350px;
+    }
 }
 @media screen and (min-width: 843px) {
     .info__thumb {
@@ -46,6 +51,11 @@
 }
 .info__content {
     margin-bottom: 40px;
+}
+@media screen and (max-width: 389px) {
+    .title.info__title {
+        overflow-wrap: anywhere;
+    }
 }
 .title.info__title {
     margin-bottom: 40px;
